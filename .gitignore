@@ -1,5 +1,6 @@
 *.suo
 *.vspscc
+*.scc
 
-bin/*.*
-BTWEB.DHTML/obj/*.*
+/bin/*.*
+/BTWEB.DHTML/obj/*.*
