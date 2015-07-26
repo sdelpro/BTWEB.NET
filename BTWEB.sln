@@ -1,0 +1,43 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BTWEB.NET", "http://localhost/BTWEB.NET/BTWEB.NET.vbproj", "{A4C6B157-110C-400E-94E8-4D88A06A9347}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BTWEB.DHTML.Menu", "BTWEB.DHTML\BTWEB.DHTML.Menu.vbproj", "{D92192C4-55E2-44F4-8A68-BEB33B8D1BCF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccProjectUniqueName0 = http://localhost/BTWEB.NET/BTWEB.NET.vbproj
+		SccProjectName0 = \u0022$/BRAMBILLA/BTWEB.NET\u00202.0\u0022,\u0020UKWAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = false
+		SccProjectEnlistmentChoice0 = 2
+		SccProjectUniqueName1 = BTWEB.DHTML\\BTWEB.DHTML.Menu.vbproj
+		SccProjectName1 = \u0022$/BRAMBILLA/BTWEB.NET\u00202.0/BTWEB.DHTML\u0022,\u0020VKWAAAAA
+		SccLocalPath1 = BTWEB.DHTML
+		SccProvider1 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A4C6B157-110C-400E-94E8-4D88A06A9347}.Debug.ActiveCfg = Debug|.NET
+		{A4C6B157-110C-400E-94E8-4D88A06A9347}.Debug.Build.0 = Debug|.NET
+		{A4C6B157-110C-400E-94E8-4D88A06A9347}.Release.ActiveCfg = Release|.NET
+		{A4C6B157-110C-400E-94E8-4D88A06A9347}.Release.Build.0 = Release|.NET
+		{D92192C4-55E2-44F4-8A68-BEB33B8D1BCF}.Debug.ActiveCfg = Debug|.NET
+		{D92192C4-55E2-44F4-8A68-BEB33B8D1BCF}.Debug.Build.0 = Debug|.NET
+		{D92192C4-55E2-44F4-8A68-BEB33B8D1BCF}.Release.ActiveCfg = Release|.NET
+		{D92192C4-55E2-44F4-8A68-BEB33B8D1BCF}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1277 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Web"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{A4C6B157-110C-400E-94E8-4D88A06A9347}"
+        SccProjectName = "SAK"
+        SccLocalPath = "SAK"
+        SccAuxPath = "SAK"
+        SccProvider = "SAK"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "BTWEB.NET"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "BTWEB.NET"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "System.Web.Services"
+                    AssemblyName = "System.Web.Services"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Web.Services.dll"
+                />
+                <Reference
+                    Name = "BTWEB.DHTML.Menu"
+                    Project = "{D92192C4-55E2-44F4-8A68-BEB33B8D1BCF}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Configuration" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Web" />
+                <Import Namespace = "System.Web.UI" />
+                <Import Namespace = "System.Web.UI.HtmlControls" />
+                <Import Namespace = "System.Web.UI.WebControls" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "clsDataBase.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "clsUtility.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "configHelper.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ControlPanel.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ControlPanel.aspx.vb"
+                    DependentUpon = "ControlPanel.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ControlPanel.aspx.resx"
+                    DependentUpon = "ControlPanel.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "DBConn.config"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Download.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Download.aspx.vb"
+                    DependentUpon = "Download.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Download.aspx.resx"
+                    DependentUpon = "Download.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Error.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Error.aspx.vb"
+                    DependentUpon = "Error.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Error.aspx.resx"
+                    DependentUpon = "Error.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FindNews.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "FindNews.aspx.vb"
+                    DependentUpon = "FindNews.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FindNews.aspx.resx"
+                    DependentUpon = "FindNews.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Global.asax"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.asax.vb"
+                    DependentUpon = "Global.asax"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Global.asax.resx"
+                    DependentUpon = "Global.asax.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "IDXMenu.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "IDXMenu.aspx.vb"
+                    DependentUpon = "IDXMenu.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "IDXMenu.aspx.resx"
+                    DependentUpon = "IDXMenu.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "IDXMenuIn.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "IDXMenuIn.aspx.vb"
+                    DependentUpon = "IDXMenuIn.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "IDXMenuIn.aspx.resx"
+                    DependentUpon = "IDXMenuIn.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "index.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Logout.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Logout.aspx.vb"
+                    DependentUpon = "Logout.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Logout.aspx.resx"
+                    DependentUpon = "Logout.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "menu_cnt.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "menu_nav.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "News.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "News.aspx.vb"
+                    DependentUpon = "News.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "News.aspx.resx"
+                    DependentUpon = "News.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PopupNews.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PopupNews.aspx.vb"
+                    DependentUpon = "PopupNews.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PopupNews.aspx.resx"
+                    DependentUpon = "PopupNews.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PublicDeclare.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PublicSubs.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "stm31.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Styles.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web.config"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZAssemblee.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZAssemblee.aspx.vb"
+                    DependentUpon = "AZAssemblee.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZAssemblee.aspx.resx"
+                    DependentUpon = "AZAssemblee.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZCda.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZCda.aspx.vb"
+                    DependentUpon = "AZCda.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZCda.aspx.resx"
+                    DependentUpon = "AZCda.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZConvertibili.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZConvertibili.aspx.vb"
+                    DependentUpon = "AZConvertibili.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZConvertibili.aspx.resx"
+                    DependentUpon = "AZConvertibili.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettAssemblea.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettAssemblea.aspx.vb"
+                    DependentUpon = "AZDettAssemblea.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettAssemblea.aspx.resx"
+                    DependentUpon = "AZDettAssemblea.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettCDA.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettCDA.aspx.vb"
+                    DependentUpon = "AZDettCDA.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettCDA.aspx.resx"
+                    DependentUpon = "AZDettCDA.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettDIVDEL.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettDIVDEL.aspx.vb"
+                    DependentUpon = "AZDettDIVDEL.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettDIVDEL.aspx.resx"
+                    DependentUpon = "AZDettDIVDEL.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettDIVPRE.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettDIVPRE.aspx.vb"
+                    DependentUpon = "AZDettDIVPRE.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettDIVPRE.aspx.resx"
+                    DependentUpon = "AZDettDIVPRE.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettOPCAP.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettOPCAP.aspx.vb"
+                    DependentUpon = "AZDettOPCAP.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettOPCAP.aspx.resx"
+                    DependentUpon = "AZDettOPCAP.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettTitolo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettTitolo.aspx.vb"
+                    DependentUpon = "AZDettTitolo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettTitolo.aspx.resx"
+                    DependentUpon = "AZDettTitolo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettWarr.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettWarr.aspx.vb"
+                    DependentUpon = "AZDettWarr.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZDettWarr.aspx.resx"
+                    DependentUpon = "AZDettWarr.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZDividendi.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZDividendi.aspx.vb"
+                    DependentUpon = "AZDividendi.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZDividendi.aspx.resx"
+                    DependentUpon = "AZDividendi.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindAssemblee.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindAssemblee.aspx.vb"
+                    DependentUpon = "AZFindAssemblee.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindAssemblee.aspx.resx"
+                    DependentUpon = "AZFindAssemblee.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindCDA.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindCDA.aspx.vb"
+                    DependentUpon = "AZFindCDA.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindCDA.aspx.resx"
+                    DependentUpon = "AZFindCDA.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindCONV.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindCONV.aspx.vb"
+                    DependentUpon = "AZFindCONV.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindCONV.aspx.resx"
+                    DependentUpon = "AZFindCONV.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindDIV.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindDIV.aspx.vb"
+                    DependentUpon = "AZFindDIV.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindDIV.aspx.resx"
+                    DependentUpon = "AZFindDIV.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindNEWS.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindNEWS.aspx.vb"
+                    DependentUpon = "AZFindNEWS.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindNEWS.aspx.resx"
+                    DependentUpon = "AZFindNEWS.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindOPCAP.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindOPCAP.aspx.vb"
+                    DependentUpon = "AZFindOPCAP.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindOPCAP.aspx.resx"
+                    DependentUpon = "AZFindOPCAP.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindQUOT.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindQUOT.aspx.vb"
+                    DependentUpon = "AZFindQUOT.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindQUOT.aspx.resx"
+                    DependentUpon = "AZFindQUOT.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindSocieta.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindSocieta.aspx.vb"
+                    DependentUpon = "AZFindSocieta.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindSocieta.aspx.resx"
+                    DependentUpon = "AZFindSocieta.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindTitoli.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindTitoli.aspx.vb"
+                    DependentUpon = "AZFindTitoli.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindTitoli.aspx.resx"
+                    DependentUpon = "AZFindTitoli.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindWARR.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindWARR.aspx.vb"
+                    DependentUpon = "AZFindWARR.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZFindWARR.aspx.resx"
+                    DependentUpon = "AZFindWARR.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZLista.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZLista.aspx.vb"
+                    DependentUpon = "AZLista.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZLista.aspx.resx"
+                    DependentUpon = "AZLista.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZMenu.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZMenu.aspx.vb"
+                    DependentUpon = "AZMenu.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZMenu.aspx.resx"
+                    DependentUpon = "AZMenu.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZNews.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZNews.aspx.vb"
+                    DependentUpon = "AZNews.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZNews.aspx.resx"
+                    DependentUpon = "AZNews.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZOpCapitale.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZOpCapitale.aspx.vb"
+                    DependentUpon = "AZOpCapitale.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZOpCapitale.aspx.resx"
+                    DependentUpon = "AZOpCapitale.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZPopupNews.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZPopupNews.aspx.vb"
+                    DependentUpon = "AZPopupNews.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZPopupNews.aspx.resx"
+                    DependentUpon = "AZPopupNews.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZQuotazioni.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZQuotazioni.aspx.vb"
+                    DependentUpon = "AZQuotazioni.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZQuotazioni.aspx.resx"
+                    DependentUpon = "AZQuotazioni.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZSocieta.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZSocieta.aspx.vb"
+                    DependentUpon = "AZSocieta.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZSocieta.aspx.resx"
+                    DependentUpon = "AZSocieta.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZTabellaConv.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZTabellaConv.aspx.vb"
+                    DependentUpon = "AZTabellaConv.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZTabellaConv.aspx.resx"
+                    DependentUpon = "AZTabellaConv.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZTabellaQuot.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZTabellaQuot.aspx.vb"
+                    DependentUpon = "AZTabellaQuot.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZTabellaQuot.aspx.resx"
+                    DependentUpon = "AZTabellaQuot.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZTitoli.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZTitoli.aspx.vb"
+                    DependentUpon = "AZTitoli.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZTitoli.aspx.resx"
+                    DependentUpon = "AZTitoli.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZTitolo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZTitolo.aspx.vb"
+                    DependentUpon = "AZTitolo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZTitolo.aspx.resx"
+                    DependentUpon = "AZTitolo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\AZWarrant.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\AZWarrant.aspx.vb"
+                    DependentUpon = "AZWarrant.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AZIONI\AZWarrant.aspx.resx"
+                    DependentUpon = "AZWarrant.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AZIONI\chromeless.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\menu_cnt.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\menu_nav.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AZIONI\stm31.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "InfoDoc\Comeabbonarsi.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "InfoDoc\Informazioni.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\chromeless.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\menu_cnt.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\menu_nav.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBConvertibili.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBConvertibili.aspx.vb"
+                    DependentUpon = "OBConvertibili.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBConvertibili.aspx.resx"
+                    DependentUpon = "OBConvertibili.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindCedole.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindCedole.aspx.vb"
+                    DependentUpon = "OBFindCedole.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindCedole.aspx.resx"
+                    DependentUpon = "OBFindCedole.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindCedScad.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindCedScad.aspx.vb"
+                    DependentUpon = "OBFindCedScad.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindCedScad.aspx.resx"
+                    DependentUpon = "OBFindCedScad.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindConv.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindConv.aspx.vb"
+                    DependentUpon = "OBFindConv.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindConv.aspx.resx"
+                    DependentUpon = "OBFindConv.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindDesc.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindDesc.aspx.vb"
+                    DependentUpon = "OBFindDesc.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindDesc.aspx.resx"
+                    DependentUpon = "OBFindDesc.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindMagg.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindMagg.aspx.vb"
+                    DependentUpon = "OBFindMagg.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindMagg.aspx.resx"
+                    DependentUpon = "OBFindMagg.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindNews.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindNews.aspx.vb"
+                    DependentUpon = "OBFindNews.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindNews.aspx.resx"
+                    DependentUpon = "OBFindNews.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindPAmm.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindPAmm.aspx.vb"
+                    DependentUpon = "OBFindPAmm.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindPAmm.aspx.resx"
+                    DependentUpon = "OBFindPAmm.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindQuot.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindQuot.aspx.vb"
+                    DependentUpon = "OBFindQuot.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindQuot.aspx.resx"
+                    DependentUpon = "OBFindQuot.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindRegol.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindRegol.aspx.vb"
+                    DependentUpon = "OBFindRegol.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindRegol.aspx.resx"
+                    DependentUpon = "OBFindRegol.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindScad.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindScad.aspx.vb"
+                    DependentUpon = "OBFindScad.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBFindScad.aspx.resx"
+                    DependentUpon = "OBFindScad.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBLista.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBLista.aspx.vb"
+                    DependentUpon = "OBLista.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBLista.aspx.resx"
+                    DependentUpon = "OBLista.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBMaggiorazioni.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBMaggiorazioni.aspx.vb"
+                    DependentUpon = "OBMaggiorazioni.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBMaggiorazioni.aspx.resx"
+                    DependentUpon = "OBMaggiorazioni.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBMenu.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBMenu.aspx.vb"
+                    DependentUpon = "OBMenu.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBMenu.aspx.resx"
+                    DependentUpon = "OBMenu.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBNews.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBNews.aspx.vb"
+                    DependentUpon = "OBNews.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBNews.aspx.resx"
+                    DependentUpon = "OBNews.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBPianoAmm.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBPianoAmm.aspx.vb"
+                    DependentUpon = "OBPianoAmm.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBPianoAmm.aspx.resx"
+                    DependentUpon = "OBPianoAmm.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBPianoInd.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBPianoInd.aspx.vb"
+                    DependentUpon = "OBPianoInd.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBPianoInd.aspx.resx"
+                    DependentUpon = "OBPianoInd.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBPopupNews.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBPopupNews.aspx.vb"
+                    DependentUpon = "OBPopupNews.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBPopupNews.aspx.resx"
+                    DependentUpon = "OBPopupNews.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBPrecedente.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBPrecedente.aspx.vb"
+                    DependentUpon = "OBPrecedente.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBPrecedente.aspx.resx"
+                    DependentUpon = "OBPrecedente.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBPrimo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBPrimo.aspx.vb"
+                    DependentUpon = "OBPrimo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBPrimo.aspx.resx"
+                    DependentUpon = "OBPrimo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBQuotazioni.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBQuotazioni.aspx.vb"
+                    DependentUpon = "OBQuotazioni.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBQuotazioni.aspx.resx"
+                    DependentUpon = "OBQuotazioni.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBRegolamento.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBRegolamento.aspx.vb"
+                    DependentUpon = "OBRegolamento.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBRegolamento.aspx.resx"
+                    DependentUpon = "OBRegolamento.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBSingleNews.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBSingleNews.aspx.vb"
+                    DependentUpon = "OBSingleNews.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBSingleNews.aspx.resx"
+                    DependentUpon = "OBSingleNews.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBSuccessivo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBSuccessivo.aspx.vb"
+                    DependentUpon = "OBSuccessivo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBSuccessivo.aspx.resx"
+                    DependentUpon = "OBSuccessivo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBTabellaConv.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBTabellaConv.aspx.vb"
+                    DependentUpon = "OBTabellaConv.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBTabellaConv.aspx.resx"
+                    DependentUpon = "OBTabellaConv.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBTabellaQuot.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBTabellaQuot.aspx.vb"
+                    DependentUpon = "OBTabellaQuot.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBTabellaQuot.aspx.resx"
+                    DependentUpon = "OBTabellaQuot.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBUltimo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBUltimo.aspx.vb"
+                    DependentUpon = "OBUltimo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBUltimo.aspx.resx"
+                    DependentUpon = "OBUltimo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBView.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBView.aspx.vb"
+                    DependentUpon = "OBView.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\OBView.aspx.resx"
+                    DependentUpon = "OBView.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OBBLIGAZIONI\stm31.js"
+                    BuildAction = "Content"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+
