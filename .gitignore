@@ -1,2 +1,5 @@
 *.suo
 *.vspscc
+
+bin/*.*
+BTWEB.DHTML/obj/*.*
