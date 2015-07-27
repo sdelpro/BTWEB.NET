@@ -4,10 +4,10 @@
 <HTML>
 	<HEAD>
 		<title>...::: Brambilla Titoli - Tutto Titoli :::...</title>
-		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
-		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
-		<meta content="JavaScript" name="vs_defaultClientScript">
-		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" content="Visual Basic .NET 7.1">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
 		<!------- Begin StatMentor code -------------
 		//<script language="JavaScript"> 
 		var now = new Date(); 
@@ -22,57 +22,72 @@
 		document.write('">');
 		</script>
 		<!------- End StatMentor code ------------->
-		<script type="text/javascript">
+		<!--<script type="text/javascript">
 			<!--
 			var stile = "top="+ screen.height-250 + ", left=" +  screen.width-200 + ", width=400, height=500, status=no, menubar=no, toolbar=no, scrollbars=no";
 				function Popup(apri) {
 					window.open(apri, "", stile);
 				}
-			//-->
-		</script>
+			//
+		</script>-->
+		<LINK rel="stylesheet" type="text/css" href="css/style.css">
 	</HEAD>
-	<body bgProperties="fixed" background="Images\sfHome.jpg" MS_POSITIONING="GridLayout">
+	<body>
+		<!--<body bgProperties="fixed" background="Images\sfHome.jpg" MS_POSITIONING="GridLayout">-->
 		<form id="Form1" method="post" runat="server">
-			<TABLE id="Table1" style="Z-INDEX: 109; LEFT: 4px; POSITION: absolute; TOP: 0px; HEIGHT: 8px"
-				cellSpacing="0" cols="2" cellPadding="0" width="95%" border="0">
+			<div id="riga-header">
+				<div id="header"><IMG id="logo" alt="" src="images/ImagesLogo.gif" width="352">
+				</div> <!-- header --></div> <!-- riga-header -->
+			<div id="riga-menu">
+				<div id="menu">
+					<ul>
+						<li>							
+							<a href=IDXMenuIn.aspx>HOME</a>
+						</li>
+						<li>							
+							<asp:linkbutton id="lblAZIONI" Runat=server>AZIONI</asp:linkbutton>
+						</li>
+						<li>
+							<asp:linkbutton id="lblOBBLIGAZIONI" Runat=server>OBBLIGAZIONI</asp:linkbutton>
+						</li>
+						<li>
+							<asp:linkbutton id="lblINFOVARIE" Runat=server>INFORMAZIONI VARIE</asp:linkbutton>
+						</li>
+						<li>
+							<asp:linkbutton id="lbEstrazioni" Runat=server>ESTRAZIONI</asp:linkbutton>
+						</li>
+												<li>							
+							<a href=Logout.aspx>LOGOUT</a>
+						</li>
+
+					</ul>
+					<div id="ultima-connessione">
+						<asp:label id="lblLastLogin" runat="server" >Ultima connessione</asp:label>
+					</div>
+				</div> <!-- menu --></div> <!-- riga-menu -->
+			<!--
+			<TABLE style="Z-INDEX: 109; POSITION: absolute; HEIGHT: 8px; TOP: 0px; LEFT: 4px" id="Table1"
+				border="0" cellSpacing="0" cellPadding="0" width="95%" cols="2">
 				<TR>
-					<TD vAlign="middle"><ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" TypeMenu="TopMenuHome" ImagePath="Images/"></ucmenu:dhtmlmenucontrol></TD>
+					<TD vAlign="middle"><ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" ImagePath="Images/" TypeMenu="TopMenuHome"></ucmenu:dhtmlmenucontrol></TD>
 					<TD style="HEIGHT: 30px" align="right"></TD>
 				</TR>
 			</TABLE>
-			<TABLE id="Table2" style="Z-INDEX: 108; LEFT: 0px; WIDTH: 962px; POSITION: absolute; TOP: 8px; HEIGHT: 8px"
-				cellSpacing="0" cols="2" cellPadding="0" width="962" border="0">
+			-->
+			<TABLE style="Z-INDEX: 108; POSITION: absolute; WIDTH: 962px; HEIGHT: 8px; TOP: 8px; LEFT: 0px"
+				id="Table2" border="0" cellSpacing="0" cellPadding="0" width="962" cols="2">
 			</TABLE>
-			<asp:label id="lblLastLogin" style="Z-INDEX: 106; LEFT: 8px; POSITION: absolute; TOP: 80px"
-				runat="server" Visible="False" BackColor="Transparent" Font-Size="12px" Font-Names="Tahoma"
-				Height="16px" Width="360px">Ultima connessione</asp:label>
-			<TABLE id="Table5" style="Z-INDEX: 105; LEFT: 8px; POSITION: absolute; TOP: 160px; HEIGHT: 440px"
-				cellSpacing="10" cellPadding="0" width="95%" align="center" border="0">
+			<TABLE style="Z-INDEX: 105; POSITION: absolute; HEIGHT: 440px; TOP: 160px; LEFT: 8px" id="Table5"
+				border="0" cellSpacing="10" cellPadding="0" width="95%" align="center">
 				<TR>
-					<TD style="HEIGHT: 37px" align="center" width="100%"><asp:linkbutton id="lblAZIONI" runat="server" Visible="False" Font-Size="18px" Font-Names="Verdana"
-							Height="16px" Width="123px" ForeColor="Navy"> AZIONI</asp:linkbutton></TD>
-				</TR>
-				<TR>
-					<TD style="HEIGHT: 37px" align="center" width="100%"><asp:linkbutton id="lblOBBLIGAZIONI" runat="server" Visible="False" Font-Size="18px" Font-Names="Verdana"
-							Height="16px" Width="185px" ForeColor="Navy"> OBBLIGAZIONI</asp:linkbutton></TD>
-				</TR>
-				<TR>
-					<TD style="HEIGHT: 37px" align="center" width="100%"><asp:linkbutton id="lblINFOVARIE" runat="server" Visible="False" Font-Size="18px" Font-Names="Verdana"
-							Height="16px" Width="245px" ForeColor="Navy"> INFORMAZIONI VARIE</asp:linkbutton></TD>
-				</TR>
-				<TR>
-					<TD style="HEIGHT: 37px" align="center" width="100%"><asp:linkbutton id="lbEstrazioni" runat="server" Visible="False" Font-Size="18px" Font-Names="Verdana"
-							Height="16px" Width="245px" ForeColor="Navy"> ESTRAZIONI</asp:linkbutton>&nbsp;&nbsp;</TD>
-				</TR>
-				<TR>
-					<TD style="HEIGHT: 37px" align="center" width="100%"><asp:label id="lbScarichi" runat="server" Visible="False" Font-Size="18px" Font-Names="Verdana"
+					<TD style="HEIGHT: 37px" width="100%" align="center"><asp:label id="lbScarichi" runat="server" Font-Names="Verdana" Font-Size="18px" Visible="False"
 							ForeColor="Navy">SCARICHI</asp:label>&nbsp;&nbsp;
-						<asp:linkbutton id="lbScarA" runat="server" Visible="False" Font-Size="18px" Font-Names="Verdana"
-							Height="16px" Width="43px" ForeColor="Navy">A</asp:linkbutton><asp:linkbutton id="lbScarB" runat="server" Visible="False" Font-Size="18px" Font-Names="Verdana"
-							Height="16px" Width="34px" ForeColor="Navy">B</asp:linkbutton></TD>
+						<asp:linkbutton id="lbScarA" runat="server" Width="43px" Height="16px" Font-Names="Verdana" Font-Size="18px"
+							Visible="False" ForeColor="Navy">A</asp:linkbutton><asp:linkbutton id="lbScarB" runat="server" Width="34px" Height="16px" Font-Names="Verdana" Font-Size="18px"
+							Visible="False" ForeColor="Navy">B</asp:linkbutton></TD>
 				<TR>
-					<TD style="HEIGHT: 191px" align="center"><asp:table id="tbComun" runat="server" Visible="False" Font-Size="15px" Font-Names="Tahoma"
-							Height="139px" Width="500px" Font-Bold="True">
+					<TD style="HEIGHT: 191px" align="center"><asp:table id="tbComun" runat="server" Width="500px" Height="139px" Font-Names="Tahoma" Font-Size="15px"
+							Visible="False" Font-Bold="True">
 							<asp:TableRow HorizontalAlign="Center" ForeColor="White" BackColor="Navy" Height="30px" Font-Bold="True">
 								<asp:TableCell Text="Comunicazioni agli Utenti"></asp:TableCell>
 							</asp:TableRow>
@@ -90,8 +105,10 @@
 					<TD style="HEIGHT: 0px" align="center" width="100%">&nbsp;</TD>
 				</TR>
 			</TABLE>
-			&nbsp;<asp:image id="Image1" style="Z-INDEX: 104; LEFT: 16px; POSITION: absolute; TOP: 32px" runat="server"
-				Height="44px" Width="352px" ImageUrl="Images\Logo.gif"></asp:image><asp:label id="lblError" style="Z-INDEX: 110; LEFT: 12px; POSITION: absolute; TOP: 136px" runat="server"
-				BackColor="Transparent" Font-Size="12px" Font-Names="Tahoma" Height="20px" Width="524px" ForeColor="Red" Font-Bold="True" BorderColor="Transparent"></asp:label></form>
+			<!--&nbsp;<asp:image id="Image1" style="Z-INDEX: 104; POSITION: absolute; TOP: 32px; LEFT: 16px" runat="server"
+				Height="44px" Width="352px" ImageUrl="Images\Logo.gif"></asp:image><asp:label id="lblError" style="Z-INDEX: 110; POSITION: absolute; TOP: 136px; LEFT: 12px" runat="server"
+				BackColor="Transparent" Font-Size="12px" Font-Names="Tahoma" Height="20px" Width="524px" ForeColor="Red" Font-Bold="True" BorderColor="Transparent"></asp:label>-->
+				
+		</form>
 	</body>
 </HTML>

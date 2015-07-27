@@ -823,6 +823,62 @@
                     BuildAction = "Content"
                 />
                 <File
+                    RelPath = "css\style.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\bollettinoestrazioni.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\Imagesbollettinoestrazioni.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\ImagesLogo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\ImagessfHome.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\label.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\label-destra.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\label-destra-fine.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\label-sinistra.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\label-sinistra-fine.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\Logo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\sfHome.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\tv21.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\tv22.gif"
+                    BuildAction = "Content"
+                />
+                <File
                     RelPath = "InfoDoc\Comeabbonarsi.htm"
                     BuildAction = "Content"
                 />

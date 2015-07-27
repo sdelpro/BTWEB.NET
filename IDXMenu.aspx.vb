@@ -17,18 +17,18 @@ Public Class IDXMenu
     Protected WithEvents lblUsername As System.Web.UI.WebControls.Label
     Protected WithEvents lblPassword As System.Web.UI.WebControls.Label
     Protected WithEvents lblUser As System.Web.UI.WebControls.Label
-    Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
     Protected WithEvents lblError As System.Web.UI.WebControls.Label
     Protected WithEvents Dhtmlmenucontrol4 As BTWEB.DHTML.MenuControl.DHTMLMenuControl
     Protected WithEvents Linkbutton1 As System.Web.UI.WebControls.LinkButton
     Protected WithEvents Label1 As System.Web.UI.WebControls.Label
-    Protected WithEvents imgBollettino As System.Web.UI.WebControls.Image
-    Protected WithEvents lbDal As System.Web.UI.WebControls.Label
     Protected WithEvents lbStaffbt As System.Web.UI.WebControls.Label
     Protected WithEvents lbTuttotitoli As System.Web.UI.WebControls.Label
     Protected WithEvents Label2 As System.Web.UI.WebControls.Label
+    Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
     Protected WithEvents imgBtnInfo1 As System.Web.UI.WebControls.ImageButton
     Protected WithEvents imgBtnInfo2 As System.Web.UI.WebControls.ImageButton
+    Protected WithEvents imgBollettino As System.Web.UI.WebControls.Image
+    Protected WithEvents lbDal As System.Web.UI.WebControls.Label
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
@@ -244,8 +244,8 @@ Public Class IDXMenu
             lblLastLogin.Visible = True
             lblLastLogin.Text = Session("LASTLOGIN")
             btnLogin.Visible = False
-            imgBtnInfo1.Visible = False
-            imgBtnInfo2.Visible = False
+            'imgBtnInfo1.Visible = False
+            'imgBtnInfo2.Visible = False
             'With cdt
             '    sql = "SELECT * FROM NEWSGENERALI WHERE TITOLO = 'COMUNICAZIONE' ORDER BY DMODIFICA DESC"
             '    .ReadGenericQuery(ds, sql, "NEWSGENERALI")
@@ -268,11 +268,11 @@ Public Class IDXMenu
     '    Response.Redirect("FindNews.aspx")
     'End Sub
 
-    Private Sub imgBtnInfo1_Click(ByVal sender As System.Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles imgBtnInfo1.Click
+    Private Sub imgBtnInfo1_Click(ByVal sender As System.Object, ByVal e As System.Web.UI.ImageClickEventArgs)
         Response.Redirect("infoDoc/Informazioni.htm")
     End Sub
 
-    Private Sub imgBtnInfo2_Click(ByVal sender As System.Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles imgBtnInfo2.Click
+    Private Sub imgBtnInfo2_Click(ByVal sender As System.Object, ByVal e As System.Web.UI.ImageClickEventArgs)
         Response.Redirect("infoDoc/Comeabbonarsi.htm")
     End Sub
 End Class
