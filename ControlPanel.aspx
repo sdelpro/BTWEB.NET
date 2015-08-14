@@ -14,14 +14,14 @@
 				Text="GESTIONE UTENTI" Width="132px" Height="28px" BackColor="Red" BorderColor="Transparent"
 				BorderStyle="None" ForeColor="White" Visible="False"></asp:Button>
 			<asp:datagrid id="dtgOBB" style="Z-INDEX: 107; LEFT: 0px; POSITION: absolute; TOP: 160px" runat="server"
-				ForeColor="#454582" BorderStyle="None" BorderColor="Silver" BackColor="#454582" Width="400px"
+				ForeColor="#00547d" BorderStyle="None" BorderColor="Silver" BackColor="#00547d" Width="400px"
 				Font-Size="12px" Font-Names="Tahoma" ShowFooter="True" AllowSorting="True" BorderWidth="0px"
 				CellPadding="0" GridLines="Vertical" AllowPaging="True" AutoGenerateColumns="False">
 				<SelectedItemStyle Font-Bold="True" ForeColor="Black" BackColor="LemonChiffon"></SelectedItemStyle>
 				<AlternatingItemStyle BackColor="Gainsboro"></AlternatingItemStyle>
 				<ItemStyle ForeColor="Black" BackColor="White"></ItemStyle>
 				<HeaderStyle Font-Size="12px" Font-Names="Tahoma" Font-Bold="True" Wrap="False" HorizontalAlign="Left"
-					ForeColor="White" BackColor="#454582"></HeaderStyle>
+					ForeColor="White" BackColor="#00547d"></HeaderStyle>
 				<FooterStyle ForeColor="White" BackColor="White"></FooterStyle>
 				<PagerStyle NextPageText="&amp;gt; Avanti" Font-Size="12px" Font-Bold="True" PrevPageText="&amp;lt; Indietro"
 					HorizontalAlign="Right" ForeColor="White" Position="Top" Mode="NumericPages"></PagerStyle>

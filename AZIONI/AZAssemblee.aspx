@@ -55,7 +55,7 @@
 							<span class="label-sinistra">CONVOCAZIONI ASSEMBLEE<img src="../Images/label-sinistra-fine.png" alt=""></span>
 						</div>
 						<div id="contenuto">
-							<asp:table id="tbAss" style="Z-INDEX: 109" runat="server">
+							<asp:table id="tbAss" class="quattro-colonne" style="Z-INDEX: 109" runat="server">
 								<asp:TableRow Font-Size="12px">
 									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" ColumnSpan="2" Width="25%" ForeColor="#4DB1E2"
 										BorderColor="Black"></asp:TableCell>

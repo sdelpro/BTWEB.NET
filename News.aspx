@@ -54,7 +54,7 @@
 				</TR>
 			</TABLE>
 			<asp:datagrid id="dtgOBB" style="Z-INDEX: 101; LEFT: 0px; POSITION: absolute; TOP: 136px" runat="server"
-				Width="100%" BackColor="#454582" Font-Names="Tahoma" Font-Size="12px" ForeColor="#454582"
+				Width="100%" BackColor="#00547d" Font-Names="Tahoma" Font-Size="12px" ForeColor="#00547d"
 				BorderColor="Silver" AutoGenerateColumns="False" AllowPaging="True" PageSize="40" GridLines="Vertical"
 				CellPadding="0" BorderWidth="0px" BorderStyle="None" AllowSorting="True" ShowFooter="True">
 				<FooterStyle ForeColor="White" BackColor="DarkGray"></FooterStyle>
@@ -62,9 +62,9 @@
 				<AlternatingItemStyle BackColor="Gainsboro"></AlternatingItemStyle>
 				<ItemStyle Font-Size="12px" Font-Names="Tahoma" Height="20px" ForeColor="Black" BackColor="White"></ItemStyle>
 				<HeaderStyle Font-Size="12px" Font-Names="Tahoma" Font-Bold="True" Wrap="False" HorizontalAlign="Left"
-					ForeColor="White" BackColor="#454582"></HeaderStyle>
+					ForeColor="White" BackColor="#00547d"></HeaderStyle>
 				<PagerStyle NextPageText="&amp;gt; Avanti" Font-Size="12px" Font-Bold="True" PrevPageText="&amp;lt; Indietro"
-					HorizontalAlign="Right" ForeColor="White" Position="Top" BackColor="#454582" Mode="NumericPages"></PagerStyle>
+					HorizontalAlign="Right" ForeColor="White" Position="Top" BackColor="#00547d" Mode="NumericPages"></PagerStyle>
 			</asp:datagrid><asp:label id="lblNoRecord" style="Z-INDEX: 106; LEFT: 16px; POSITION: absolute; TOP: 192px"
 				runat="server" Width="340px" Height="23px" BackColor="Transparent" Font-Names="Tahoma" Font-Size="Medium"
 				Font-Bold="True" ForeColor="Red" BorderColor="Transparent" Visible="False">La ricerca non ha prodotto risultati</asp:label></form>

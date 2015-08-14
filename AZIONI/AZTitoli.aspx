@@ -66,7 +66,7 @@
 							BackColor="Gainsboro"></HeaderStyle>
 						<FooterStyle ForeColor="White" BackColor="DarkGray"></FooterStyle>
 						<PagerStyle NextPageText="&amp;gt; Avanti" Font-Size="10px" Font-Bold="True" PrevPageText="&amp;lt; Indietro"
-							HorizontalAlign="Right" ForeColor="White" Position="Top" BackColor="#454582" Mode="NumericPages"></PagerStyle>
+							HorizontalAlign="Right" ForeColor="White" Position="Top" BackColor="#00547d" Mode="NumericPages"></PagerStyle>
 					</asp:datagrid>
 					<asp:table id="tbCarPrinc" runat="server" Height="57" Width="100%" Font-Size="14px">
 						<asp:TableRow Width="100%" Font-Size="10px">

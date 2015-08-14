@@ -19,17 +19,17 @@
 		rightMargin="0" ms_positioning="GridLayout">
 		<form id="Form1" method="post" runat="server">
 			<asp:datagrid id="dtgOBB" style="Z-INDEX: 101; LEFT: 0px; POSITION: absolute; TOP: 128px" runat="server"
-				ForeColor="#454582" AutoGenerateColumns="False" AllowPaging="True" PageSize="40" GridLines="Vertical"
-				CellPadding="0" BackColor="#454582" BorderWidth="0px" BorderStyle="None" BorderColor="Silver"
+				ForeColor="#00547d" AutoGenerateColumns="False" AllowPaging="True" PageSize="40" GridLines="Vertical"
+				CellPadding="0" BackColor="#00547d" BorderWidth="0px" BorderStyle="None" BorderColor="Silver"
 				AllowSorting="True" ShowFooter="True" Width="100%" Font-Names="Tahoma" Font-Size="12px">
 				<SelectedItemStyle Font-Bold="True" ForeColor="Black" BackColor="LemonChiffon"></SelectedItemStyle>
 				<AlternatingItemStyle BackColor="Gainsboro"></AlternatingItemStyle>
 				<ItemStyle ForeColor="Black" BackColor="White"></ItemStyle>
 				<HeaderStyle Font-Size="12px" Font-Names="Tahoma" Font-Bold="True" Wrap="False" HorizontalAlign="Left"
-					ForeColor="White" BackColor="#454582"></HeaderStyle>
+					ForeColor="White" BackColor="#00547d"></HeaderStyle>
 				<FooterStyle ForeColor="White" BackColor="DarkGray"></FooterStyle>
 				<PagerStyle NextPageText="&amp;gt; Avanti" Font-Size="12px" Font-Bold="True" PrevPageText="&amp;lt; Indietro"
-					HorizontalAlign="Right" ForeColor="White" Position="Top" BackColor="#454582" Mode="NumericPages"></PagerStyle>
+					HorizontalAlign="Right" ForeColor="White" Position="Top" BackColor="#00547d" Mode="NumericPages"></PagerStyle>
 			</asp:datagrid>
 			<TABLE id="Table2" style="Z-INDEX: 104; LEFT: 4px; POSITION: absolute; TOP: 0px; HEIGHT: 8px"
 				cellSpacing="0" cols="2" cellPadding="0" width="99%" border="0">

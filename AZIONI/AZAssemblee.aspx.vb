@@ -94,27 +94,21 @@ Public Class AZAssemblee
         'riga 1
         tr = New TableRow
         tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Gainsboro
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.BorderColor = System.Drawing.Color.Black
-        tch.Width = Unit.Percentage(25)
+        'tch.BackColor = System.Drawing.Color.Gainsboro
+        'tch.BorderStyle = BorderStyle.Solid
+        'tch.BorderWidth = Unit.Pixel(1)
+        'tch.BorderColor = System.Drawing.Color.Black
+        tch.CssClass = "etichetta"
+
+        'tch.Width = Unit.Percentage(25)
         tch.ColumnSpan = 2
         tch.Text = ""
-        tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Transparent
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.BorderColor = Color.Black
-        tch.Width = Unit.Percentage(25)
+        'tch.Width = Unit.Percentage(25)
         tch.ColumnSpan = 2
         tch.Text = ""
-        tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
 
@@ -124,88 +118,92 @@ Public Class AZAssemblee
         'riga 2
         tr = New TableRow
         tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Gainsboro
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.BorderColor = System.Drawing.Color.Black
-        tch.Width = Unit.Percentage(14)
+        'tch.BackColor = System.Drawing.Color.Gainsboro
+        'tch.BorderStyle = BorderStyle.Solid
+        'tch.BorderWidth = Unit.Pixel(1)
+        'tch.BorderColor = System.Drawing.Color.Black
+        tch.CssClass = "etichetta"
+        ''tch.Width = Unit.Percentage(14)
+        tch.Text = ""
+        'tch.Font.Name = "Tahoma"
+        'tch.Font.Size = FontUnit.Point(10)
+        tr.Cells.Add(tch)
+        tch = Nothing
+        tch = New TableCell
+        'tch.BackColor = System.Drawing.Color.Transparent
+        'tch.BorderStyle = BorderStyle.Solid
+        'tch.BorderWidth = Unit.Pixel(1)
+        'tch.BorderColor = Color.Black
+        ''tch.Width = Unit.Percentage(11)
+        tch.Text = ""
+        'tch.Font.Name = "Tahoma"
+        'tch.Font.Size = FontUnit.Point(10)
+        tr.Cells.Add(tch)
+        tch = Nothing
+        tch = New TableCell
+        'tch.BackColor = System.Drawing.Color.Gainsboro
+        'tch.BorderStyle = BorderStyle.Solid
+        'tch.BorderWidth = Unit.Pixel(1)
+        'tch.BorderColor = System.Drawing.Color.Black
+        tch.CssClass = "etichetta"
+        'tch.Width = Unit.Percentage(14)
+        tch.Text = ""
+        'tch.Font.Name = "Tahoma"
+        'tch.Font.Size = FontUnit.Point(10)
+        tr.Cells.Add(tch)
+        tch = Nothing
+        tch = New TableCell
+        'tch.BackColor = System.Drawing.Color.Transparent
+        'tch.BorderStyle = BorderStyle.Solid
+        'tch.BorderWidth = Unit.Pixel(1)
+        'tch.BorderColor = Color.Black
+        'tch.Width = Unit.Percentage(11)
+        tch.Text = ""
+        'tch.Font.Name = "Tahoma"
+        'tch.Font.Size = FontUnit.Point(10)
+        tr.Cells.Add(tch)
+        tch = Nothing
+        tch = New TableCell
+        'tch.BackColor = System.Drawing.Color.Gainsboro
+        'tch.BorderStyle = BorderStyle.Solid
+        'tch.BorderWidth = Unit.Pixel(1)
+        'tch.BorderColor = System.Drawing.Color.Black
+        'tch.Width = Unit.Percentage(14)
+        tch.CssClass = "etichetta"
         tch.Text = ""
         tch.Font.Name = "Tahoma"
         'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Transparent
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.BorderColor = Color.Black
-        tch.Width = Unit.Percentage(11)
+        'tch.BackColor = System.Drawing.Color.Transparent
+        'tch.BorderStyle = BorderStyle.Solid
+        'tch.BorderWidth = Unit.Pixel(1)
+        'tch.BorderColor = Color.Black
+        'tch.Width = Unit.Percentage(11)
         tch.Text = ""
         tch.Font.Name = "Tahoma"
         'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Gainsboro
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.BorderColor = System.Drawing.Color.Black
-        tch.Width = Unit.Percentage(14)
+        'tch.BackColor = System.Drawing.Color.Gainsboro
+        'tch.BorderStyle = BorderStyle.Solid
+        'tch.BorderWidth = Unit.Pixel(1)
+        'tch.BorderColor = System.Drawing.Color.Black
+        'tch.Width = Unit.Percentage(14)
+        tch.CssClass = "etichetta"
         tch.Text = ""
         tch.Font.Name = "Tahoma"
         'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Transparent
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.BorderColor = Color.Black
-        tch.Width = Unit.Percentage(11)
-        tch.Text = ""
-        tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
-        tr.Cells.Add(tch)
-        tch = Nothing
-        tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Gainsboro
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.BorderColor = System.Drawing.Color.Black
-        tch.Width = Unit.Percentage(14)
-        tch.Text = ""
-        tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
-        tr.Cells.Add(tch)
-        tch = Nothing
-        tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Transparent
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.BorderColor = Color.Black
-        tch.Width = Unit.Percentage(11)
-        tch.Text = ""
-        tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
-        tr.Cells.Add(tch)
-        tch = Nothing
-        tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Gainsboro
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.BorderColor = System.Drawing.Color.Black
-        tch.Width = Unit.Percentage(14)
-        tch.Text = ""
-        tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
-        tr.Cells.Add(tch)
-        tch = Nothing
-        tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Transparent
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.BorderColor = Color.Black
-        tch.Width = Unit.Percentage(11)
+        'tch.BackColor = System.Drawing.Color.Transparent
+        'tch.BorderStyle = BorderStyle.Solid
+        'tch.BorderWidth = Unit.Pixel(1)
+        'tch.BorderColor = Color.Black
+        'tch.Width = Unit.Percentage(11)
         tch.Text = ""
         tch.Font.Name = "Tahoma"
         'tch.Font.Size = FontUnit.Point(10)
@@ -218,13 +216,13 @@ Public Class AZAssemblee
         'riga(3)
         tr = New TableRow
         tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Gainsboro
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.BorderColor = System.Drawing.Color.Black
-        tch.Width = Unit.Percentage(25)
+        'tch.BackColor = System.Drawing.Color.Gainsboro
+        'tch.BorderStyle = BorderStyle.Solid
+        'tch.BorderWidth = Unit.Pixel(1)
+        'tch.BorderColor = System.Drawing.Color.Black
+        'tch.Width = Unit.Percentage(25)
         tch.Text = ""
-        tch.Font.Name = "Tahoma"
+        'tch.Font.Name = "Tahoma"
         'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
@@ -235,14 +233,14 @@ Public Class AZAssemblee
         'riga(4)
         tr = New TableRow
         tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Transparent
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.BorderColor = System.Drawing.Color.Black
-        tch.Width = Unit.Percentage(100)
+        'tch.BackColor = System.Drawing.Color.Transparent
+        'tch.BorderStyle = BorderStyle.Solid
+        'tch.BorderWidth = Unit.Pixel(1)
+        'tch.BorderColor = System.Drawing.Color.Black
+        'tch.Width = Unit.Percentage(100)
         tch.ColumnSpan = 8
         tch.Text = ""
-        tch.Font.Name = "Tahoma"
+        'tch.Font.Name = "Tahoma"
         'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing

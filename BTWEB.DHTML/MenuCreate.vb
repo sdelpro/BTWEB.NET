@@ -19,7 +19,7 @@ Namespace BTWEB.DHTML.MenuControl
         Private m_TypeMenu As enTypeMenu
         Private m_ImagePath As String = ""
         Private m_ColorItemSelect As Boolean
-        Private Const COLORSELECT As String = "#454582"
+        Private Const COLORSELECT As String = "#00547d"
         Public Enum enTypeMenu
             Generale = 0
             Obbligazioni
@@ -135,9 +135,9 @@ Namespace BTWEB.DHTML.MenuControl
             m_strScriptMenu += " 	<script language=""JavaScript"">" & vbCrLf
             m_strScriptMenu += " <!--" & vbCrLf
             m_strScriptMenu += " stm_bm([""menu0544"",400,"""",""" & _PathImage & "blank.gif"",0,"""","""",0,0,250,0,1000,1,0,0,""""],this);" & vbCrLf
-            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,0,7,100,"""",-2,"""",-2,50,0,0,""#fffff7"",""#454582"","""",3,1,1,""#454582""]);" & vbCrLf
-            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Brambilla Titoli Milano  "","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#454582"",0,"""","""",3,3,1,1,""#454582"",""#454582"",""#ffff99"",""#ffff99"",""bold 8pt Arial"",""bold 8pt Arial"",0,0]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""Home  "","""","""",-1,-1,0,"""",""_self"","""",""Home Page"","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#b5bed6"",0,"""","""",3,3,1,1,""#454582"",""#ffffff"",""#ffffff"",""#000000"",""bold 7pt Arial"",""bold 7pt Arial""]);" & vbCrLf
+            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,0,7,100,"""",-2,"""",-2,50,0,0,""#fffff7"",""#00547d"","""",3,1,1,""#00547d""]);" & vbCrLf
+            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Brambilla Titoli Milano  "","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#00547d"",0,"""","""",3,3,1,1,""#00547d"",""#00547d"",""#ffff99"",""#ffff99"",""bold 8pt Arial"",""bold 8pt Arial"",0,0]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""Home  "","""","""",-1,-1,0,"""",""_self"","""",""Home Page"","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#b5bed6"",0,"""","""",3,3,1,1,""#00547d"",""#ffffff"",""#ffffff"",""#000000"",""bold 7pt Arial"",""bold 7pt Arial""]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p0i2"",""p0i1"",[0,""Società"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,""" & _PathImage & "arrow_r.gif"",""" & _PathImage & "arrow_r.gif"",7,7]);" & vbCrLf
             m_strScriptMenu += " stm_bpx(""p1"",""p0"",[1,4,0,0,0,0,0,0]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p1i0"",""p0i1"",[0,""Chi Siamo"","""","""",-1,-1,0,"""",""_self"","""",""""]);" & vbCrLf
@@ -188,14 +188,14 @@ Namespace BTWEB.DHTML.MenuControl
             m_strScriptMenu += " 	<script language=""JavaScript"">" & vbCrLf
             m_strScriptMenu += " <!--" & vbCrLf
             m_strScriptMenu += " stm_bm([""menu0544"",400,"""",""" & _PathImage & "blank.gif"",0,""stgcl()"",""stgct()"",0,0,250,0,1000,1,0,0,""""],this);" & vbCrLf
-            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,0,7,100,"""",-2,"""",-2,32,0,0,""#fffff7"",""#454582"","""",3,1,1,""#454582""]);" & vbCrLf
-            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Copyright Brambilla & C. Servizi Telematici Srl - Riproduzione Vietata"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#454582"",0,"""","""",3,3,1,1,""#454582"",""#454582"",""#00ff00"",""#ffffff"",""bold 7pt Arial"",""bold 7pt Arial"",0,0]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""     <BR>"","""","""",-1,-1,0,"""","""","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#454582"",0,"""","""",3,3,1,1,""#454582"",""#454582"",""#ffff99"",""#ffff99"",""bold 8pt Arial"",""bold 8pt Arial""]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i2"",""p0i0"",[0,""Menu"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",7,7,0,0,1,""#454582"",0,""#454582"",0,"""","""",3,3,1,1,""#454582"",""#454582"",""#ffffff"",""#ffffff"",""10pt Arial"",""10pt Arial""]);" & vbCrLf
+            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,0,7,100,"""",-2,"""",-2,32,0,0,""#fffff7"",""#00547d"","""",3,1,1,""#00547d""]);" & vbCrLf
+            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Copyright Brambilla & C. Servizi Telematici Srl - Riproduzione Vietata"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#00547d"",0,"""","""",3,3,1,1,""#00547d"",""#00547d"",""#00ff00"",""#ffffff"",""bold 7pt Arial"",""bold 7pt Arial"",0,0]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""     <BR>"","""","""",-1,-1,0,"""","""","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#00547d"",0,"""","""",3,3,1,1,""#00547d"",""#00547d"",""#ffff99"",""#ffff99"",""bold 8pt Arial"",""bold 8pt Arial""]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p0i2"",""p0i0"",[0,""Menu"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",7,7,0,0,1,""#00547d"",0,""#00547d"",0,"""","""",3,3,1,1,""#00547d"",""#00547d"",""#ffffff"",""#ffffff"",""10pt Arial"",""10pt Arial""]);" & vbCrLf
             m_strScriptMenu += " stm_bpx(""p1"",""p0"",[1,4,-10,1,0,0,0,0,100,"""",-2,"""",-2,50]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p1i0"",""p0i0"",[0,""Menu Principale"","""","""",-1,-1,0,""../IDXMenuIn.aspx"",""_self"","""",""Home Page"","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#00ff00"",0,"""","""",3,3,1,1,""#454582"",""#00ff00"",""#ffffff"",""#000000"",""10pt Arial"",""bold 10pt Arial""]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p1i0"",""p0i0"",[0,""Menu Principale"","""","""",-1,-1,0,""../IDXMenuIn.aspx"",""_self"","""",""Home Page"","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#00ff00"",0,"""","""",3,3,1,1,""#00547d"",""#00ff00"",""#ffffff"",""#000000"",""10pt Arial"",""bold 10pt Arial""]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p1i1"",""p1i0"",[0,""Menu Ricerche Obbligazioni"","""","""",-1,-1,0,""OBMenu.aspx"",""_self"","""",""""]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p1i2"",""p1i0"",[0,""Logout"","""","""",-1,-1,0,""../Logout.aspx"",""_self"","""","""","""",""" & _PathImage & "Exit_ico.gif"",0,0,0,"""","""",0,0,0,1,1,""#454582"",0,""#ff0000"",0,"""","""",3,3,1,1,""#454582"",""#ff0000"",""#ffffff"",""#ffffff""]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p1i2"",""p1i0"",[0,""Logout"","""","""",-1,-1,0,""../Logout.aspx"",""_self"","""","""","""",""" & _PathImage & "Exit_ico.gif"",0,0,0,"""","""",0,0,0,1,1,""#00547d"",0,""#ff0000"",0,"""","""",3,3,1,1,""#00547d"",""#ff0000"",""#ffffff"",""#ffffff""]);" & vbCrLf
             m_strScriptMenu += " stm_ep();" & vbCrLf
             m_strScriptMenu += " stm_ep();" & vbCrLf
             m_strScriptMenu += " stm_em();" & vbCrLf
@@ -219,10 +219,10 @@ Namespace BTWEB.DHTML.MenuControl
             m_strScriptMenu += " 	<script language=""JavaScript"">" & vbCrLf
             m_strScriptMenu += " <!--" & vbCrLf
             m_strScriptMenu += " stm_bm([""menu0544"",400,"""",""" & _PathImage & "blank.gif"",0,""stgcl()"",""stgct()"",0,0,250,0,1000,1,0,0,""""],this);" & vbCrLf
-            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,0,0,100,"""",-2,"""",-2,32,0,0,""#fffff7"",""#454582"","""",3,1,1,""#454582""]);" & vbCrLf
-            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Copyright Brambilla & C. Servizi Telematici Srl - Riproduzione Vietata"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#454582"",0,"""","""",3,3,1,1,""#454582"",""#454582"",""#00ff00"",""#ffffff"",""bold 7pt Arial"",""bold 7pt Arial"",0,0]);" & vbCrLf
-            'm_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""   <BR>"","""","""",-1,-1,0,"""","""","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#454582"",0,"""","""",3,3,1,1,""#454582"",""#454582"",""#ffff99"",""#ffff99"",""bold 8pt Arial"",""bold 8pt Arial""]);" & vbCrLf
-            'm_strScriptMenu += " stm_aix(""p0i2"",""p0i0"",[0,""Logout"","""","""",-1,-1,0,""Logout.aspx"",""_self"","""","""","""",""Exit_ico.gif"",0,0,0,"""","""",0,0,0,1,1,""#454582"",0,""#ff0000"",0,"""","""",3,3,1,1,""#454582"",""#ff0000"",""#ffffff"",""#ffffff"",""10pt Arial"",""bold 10pt Arial""]);" & vbCrLf
+            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,0,0,100,"""",-2,"""",-2,32,0,0,""#fffff7"",""#00547d"","""",3,1,1,""#00547d""]);" & vbCrLf
+            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Copyright Brambilla & C. Servizi Telematici Srl - Riproduzione Vietata"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#00547d"",0,"""","""",3,3,1,1,""#00547d"",""#00547d"",""#00ff00"",""#ffffff"",""bold 7pt Arial"",""bold 7pt Arial"",0,0]);" & vbCrLf
+            'm_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""   <BR>"","""","""",-1,-1,0,"""","""","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#00547d"",0,"""","""",3,3,1,1,""#00547d"",""#00547d"",""#ffff99"",""#ffff99"",""bold 8pt Arial"",""bold 8pt Arial""]);" & vbCrLf
+            'm_strScriptMenu += " stm_aix(""p0i2"",""p0i0"",[0,""Logout"","""","""",-1,-1,0,""Logout.aspx"",""_self"","""","""","""",""Exit_ico.gif"",0,0,0,"""","""",0,0,0,1,1,""#00547d"",0,""#ff0000"",0,"""","""",3,3,1,1,""#00547d"",""#ff0000"",""#ffffff"",""#ffffff"",""10pt Arial"",""bold 10pt Arial""]);" & vbCrLf
             m_strScriptMenu += " stm_ep();" & vbCrLf
             m_strScriptMenu += " stm_em();" & vbCrLf
             m_strScriptMenu += " //-->" & vbCrLf
@@ -244,10 +244,10 @@ Namespace BTWEB.DHTML.MenuControl
             m_strScriptMenu += " 	<script language=""JavaScript"">" & vbCrLf
             m_strScriptMenu += " <!--" & vbCrLf
             m_strScriptMenu += " stm_bm([""menu0544"",400,"""",""" & _PathImage & "blank.gif"",0,""stgcl()"",""stgct()"",0,0,250,0,1000,1,0,0,""""],this);" & vbCrLf
-            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,0,0,100,"""",-2,"""",-2,32,0,0,""#fffff7"",""#454582"","""",3,1,1,""#454582""]);" & vbCrLf
-            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Tuttotitoli® di Brambilla & C. Servizi Telematici Srl - via Giardino 4 - 20123 Milano  - tel. 02 72022440 - fax 02 809571 "","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#454582"",0,"""","""",3,3,1,1,""#454582"",""#454582"",""#00ff00"",""#ffffff"",""bold 9pt Arial"",""bold 9pt Arial"",0,0]);" & vbCrLf
-            'm_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""   <BR>"","""","""",-1,-1,0,"""","""","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#454582"",0,"""","""",3,3,1,1,""#454582"",""#454582"",""#ffff99"",""#ffff99"",""bold 8pt Arial"",""bold 8pt Arial""]);" & vbCrLf
-            'm_strScriptMenu += " stm_aix(""p0i2"",""p0i0"",[0,""Logout"","""","""",-1,-1,0,""Logout.aspx"",""_self"","""","""","""",""Exit_ico.gif"",0,0,0,"""","""",0,0,0,1,1,""#454582"",0,""#ff0000"",0,"""","""",3,3,1,1,""#454582"",""#ff0000"",""#ffffff"",""#ffffff"",""10pt Arial"",""bold 10pt Arial""]);" & vbCrLf
+            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,0,0,100,"""",-2,"""",-2,32,0,0,""#fffff7"",""#00547d"","""",3,1,1,""#00547d""]);" & vbCrLf
+            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Tuttotitoli® di Brambilla & C. Servizi Telematici Srl - via Giardino 4 - 20123 Milano  - tel. 02 72022440 - fax 02 809571 "","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#00547d"",0,"""","""",3,3,1,1,""#00547d"",""#00547d"",""#00ff00"",""#ffffff"",""bold 9pt Arial"",""bold 9pt Arial"",0,0]);" & vbCrLf
+            'm_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""   <BR>"","""","""",-1,-1,0,"""","""","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#00547d"",0,"""","""",3,3,1,1,""#00547d"",""#00547d"",""#ffff99"",""#ffff99"",""bold 8pt Arial"",""bold 8pt Arial""]);" & vbCrLf
+            'm_strScriptMenu += " stm_aix(""p0i2"",""p0i0"",[0,""Logout"","""","""",-1,-1,0,""Logout.aspx"",""_self"","""","""","""",""Exit_ico.gif"",0,0,0,"""","""",0,0,0,1,1,""#00547d"",0,""#ff0000"",0,"""","""",3,3,1,1,""#00547d"",""#ff0000"",""#ffffff"",""#ffffff"",""10pt Arial"",""bold 10pt Arial""]);" & vbCrLf
             m_strScriptMenu += " stm_ep();" & vbCrLf
             m_strScriptMenu += " stm_em();" & vbCrLf
             m_strScriptMenu += " //-->" & vbCrLf
@@ -268,13 +268,13 @@ Namespace BTWEB.DHTML.MenuControl
             m_strScriptMenu += " 	<script language=""JavaScript"">" & vbCrLf
             m_strScriptMenu += " <!--" & vbCrLf
             m_strScriptMenu += " stm_bm([""menu0544"",400,"""",""" & _PathImage & "blank.gif"",0,""stgcl()"",""stgct()"",0,0,250,0,1000,1,0,0,""""],this);" & vbCrLf
-            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,0,7,100,"""",-2,"""",-2,32,0,0,""#fffff7"",""#454582"","""",3,1,1,""#454582""]);" & vbCrLf
-            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Copyright Brambilla & C. Servizi Telematici Srl - Riproduzione Vietata"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#454582"",0,"""","""",3,3,1,1,""#454582"",""#454582"",""#00ff00"",""#ffffff"",""bold 7pt Arial"",""bold 7pt Arial"",0,0]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""     <BR>"","""","""",-1,-1,0,"""","""","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#454582"",0,"""","""",3,3,1,1,""#454582"",""#454582"",""#ffff99"",""#ffff99"",""bold 8pt Arial"",""bold 8pt Arial""]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i2"",""p0i0"",[0,""Menu"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",7,7,0,0,1,""#454582"",0,""#454582"",0,"""","""",3,3,1,1,""#454582"",""#454582"",""#ffffff"",""#ffffff"",""10pt Arial"",""10pt Arial""]);" & vbCrLf
+            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,0,7,100,"""",-2,"""",-2,32,0,0,""#fffff7"",""#00547d"","""",3,1,1,""#00547d""]);" & vbCrLf
+            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Copyright Brambilla & C. Servizi Telematici Srl - Riproduzione Vietata"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#00547d"",0,"""","""",3,3,1,1,""#00547d"",""#00547d"",""#00ff00"",""#ffffff"",""bold 7pt Arial"",""bold 7pt Arial"",0,0]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""     <BR>"","""","""",-1,-1,0,"""","""","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#00547d"",0,"""","""",3,3,1,1,""#00547d"",""#00547d"",""#ffff99"",""#ffff99"",""bold 8pt Arial"",""bold 8pt Arial""]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p0i2"",""p0i0"",[0,""Menu"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",7,7,0,0,1,""#00547d"",0,""#00547d"",0,"""","""",3,3,1,1,""#00547d"",""#00547d"",""#ffffff"",""#ffffff"",""10pt Arial"",""10pt Arial""]);" & vbCrLf
             m_strScriptMenu += " stm_bpx(""p1"",""p0"",[1,4,-10,1,0,0,0,0,100,"""",-2,"""",-2,50]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p1i0"",""p0i0"",[0,""Menu Principale"","""","""",-1,-1,0,""IDXMenuIn.aspx"",""_self"","""",""Home Page"","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#00ff00"",0,"""","""",3,3,1,1,""#454582"",""#00ff00"",""#ffffff"",""#000000"",""10pt Arial"",""bold 10pt Arial""]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p1i2"",""p1i0"",[0,""Logout"","""","""",-1,-1,0,""Logout.aspx"",""_self"","""","""","""",""" & _PathImage & "Exit_ico.gif"",0,0,0,"""","""",0,0,0,1,1,""#454582"",0,""#ff0000"",0,"""","""",3,3,1,1,""#454582"",""#ff0000"",""#ffffff"",""#ffffff""]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p1i0"",""p0i0"",[0,""Menu Principale"","""","""",-1,-1,0,""IDXMenuIn.aspx"",""_self"","""",""Home Page"","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#00ff00"",0,"""","""",3,3,1,1,""#00547d"",""#00ff00"",""#ffffff"",""#000000"",""10pt Arial"",""bold 10pt Arial""]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p1i2"",""p1i0"",[0,""Logout"","""","""",-1,-1,0,""Logout.aspx"",""_self"","""","""","""",""" & _PathImage & "Exit_ico.gif"",0,0,0,"""","""",0,0,0,1,1,""#00547d"",0,""#ff0000"",0,"""","""",3,3,1,1,""#00547d"",""#ff0000"",""#ffffff"",""#ffffff""]);" & vbCrLf
             m_strScriptMenu += " stm_ep();" & vbCrLf
             m_strScriptMenu += " stm_ep();" & vbCrLf
             m_strScriptMenu += " stm_em();" & vbCrLf
@@ -299,14 +299,14 @@ Namespace BTWEB.DHTML.MenuControl
             m_strScriptMenu += " 	<script language=""JavaScript"">" & vbCrLf
             m_strScriptMenu += " <!--" & vbCrLf
             m_strScriptMenu += " stm_bm([""menu0544"",400,"""",""" & _PathImage & "blank.gif"",0,""stgcl()"",""stgct()"",0,0,250,0,1000,1,0,0,""""],this);" & vbCrLf
-            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,0,7,100,"""",-2,"""",-2,32,0,0,""#fffff7"",""#454582"","""",3,1,1,""#454582""]);" & vbCrLf
-            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Copyright Brambilla & C. Servizi Telematici Srl - Riproduzione Vietata"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#454582"",0,"""","""",3,3,1,1,""#454582"",""#454582"",""#00ff00"",""#ffffff"",""bold 7pt Arial"",""bold 7pt Arial"",0,0]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""     <BR>"","""","""",-1,-1,0,"""","""","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#454582"",0,"""","""",3,3,1,1,""#454582"",""#454582"",""#ffff99"",""#ffff99"",""bold 8pt Arial"",""bold 8pt Arial""]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i2"",""p0i0"",[0,""Menu"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",7,7,0,0,1,""#454582"",0,""#454582"",0,"""","""",3,3,1,1,""#454582"",""#454582"",""#ffffff"",""#ffffff"",""10pt Arial"",""10pt Arial""]);" & vbCrLf
+            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,0,7,100,"""",-2,"""",-2,32,0,0,""#fffff7"",""#00547d"","""",3,1,1,""#00547d""]);" & vbCrLf
+            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Copyright Brambilla & C. Servizi Telematici Srl - Riproduzione Vietata"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#00547d"",0,"""","""",3,3,1,1,""#00547d"",""#00547d"",""#00ff00"",""#ffffff"",""bold 7pt Arial"",""bold 7pt Arial"",0,0]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""     <BR>"","""","""",-1,-1,0,"""","""","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#00547d"",0,"""","""",3,3,1,1,""#00547d"",""#00547d"",""#ffff99"",""#ffff99"",""bold 8pt Arial"",""bold 8pt Arial""]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p0i2"",""p0i0"",[0,""Menu"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",7,7,0,0,1,""#00547d"",0,""#00547d"",0,"""","""",3,3,1,1,""#00547d"",""#00547d"",""#ffffff"",""#ffffff"",""10pt Arial"",""10pt Arial""]);" & vbCrLf
             m_strScriptMenu += " stm_bpx(""p1"",""p0"",[1,4,-10,1,0,0,0,0,100,"""",-2,"""",-2,50]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p1i0"",""p0i0"",[0,""Menu Principale"","""","""",-1,-1,0,""../IDXMenuIn.aspx"",""_self"","""",""Home Page"","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#00ff00"",0,"""","""",3,3,1,1,""#454582"",""#00ff00"",""#ffffff"",""#000000"",""10pt Arial"",""bold 10pt Arial""]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p1i0"",""p0i0"",[0,""Menu Principale"","""","""",-1,-1,0,""../IDXMenuIn.aspx"",""_self"","""",""Home Page"","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#00ff00"",0,"""","""",3,3,1,1,""#00547d"",""#00ff00"",""#ffffff"",""#000000"",""10pt Arial"",""bold 10pt Arial""]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p1i1"",""p1i0"",[0,""Menu Ricerche Azioni"","""","""",-1,-1,0,""AZMenu.aspx"",""_self"","""",""""]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p1i2"",""p1i0"",[0,""Logout"","""","""",-1,-1,0,""../Logout.aspx"",""_self"","""","""","""",""" & _PathImage & "Exit_ico.gif"",0,0,0,"""","""",0,0,0,1,1,""#454582"",0,""#ff0000"",0,"""","""",3,3,1,1,""#454582"",""#ff0000"",""#ffffff"",""#ffffff""]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p1i2"",""p1i0"",[0,""Logout"","""","""",-1,-1,0,""../Logout.aspx"",""_self"","""","""","""",""" & _PathImage & "Exit_ico.gif"",0,0,0,"""","""",0,0,0,1,1,""#00547d"",0,""#ff0000"",0,"""","""",3,3,1,1,""#00547d"",""#ff0000"",""#ffffff"",""#ffffff""]);" & vbCrLf
             m_strScriptMenu += " stm_ep();" & vbCrLf
             m_strScriptMenu += " stm_ep();" & vbCrLf
             m_strScriptMenu += " stm_em();" & vbCrLf
@@ -328,10 +328,10 @@ Namespace BTWEB.DHTML.MenuControl
             m_strScriptMenu += " 	<script language=""JavaScript"">" & vbCrLf
             m_strScriptMenu += " <!--" & vbCrLf
             m_strScriptMenu += " stm_bm([""menu0544"",400,"""",""" & _PathImage & "blank.gif"",0,""stgcl()"",""stgct()"",0,0,250,0,1000,1,0,0,""""],this);" & vbCrLf
-            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,0,0,100,"""",-2,"""",-2,32,0,0,""#fffff7"",""#454582"","""",3,1,1,""#454582""]);" & vbCrLf
-            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Copyright Brambilla & C. Servizi Telematici Srl - Riproduzione Vietata"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#454582"",0,"""","""",3,3,1,1,""#454582"",""#454582"",""#00ff00"",""#ffffff"",""bold 7pt Arial"",""bold 7pt Arial"",0,0]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""   <BR>"","""","""",-1,-1,0,"""","""","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#454582"",0,"""","""",3,3,1,1,""#454582"",""#454582"",""#ffff99"",""#ffff99"",""bold 8pt Arial"",""bold 8pt Arial""]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i2"",""p0i0"",[0,""Logout"","""","""",-1,-1,0,""Logout.aspx"",""_self"","""","""","""",""Exit_ico.gif"",0,0,0,"""","""",0,0,0,1,1,""#454582"",0,""#ff0000"",0,"""","""",3,3,1,1,""#454582"",""#ff0000"",""#ffffff"",""#ffffff"",""10pt Arial"",""bold 10pt Arial""]);" & vbCrLf
+            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,0,0,100,"""",-2,"""",-2,32,0,0,""#fffff7"",""#00547d"","""",3,1,1,""#00547d""]);" & vbCrLf
+            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Copyright Brambilla & C. Servizi Telematici Srl - Riproduzione Vietata"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#00547d"",0,"""","""",3,3,1,1,""#00547d"",""#00547d"",""#00ff00"",""#ffffff"",""bold 7pt Arial"",""bold 7pt Arial"",0,0]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""   <BR>"","""","""",-1,-1,0,"""","""","""","""","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#00547d"",0,"""","""",3,3,1,1,""#00547d"",""#00547d"",""#ffff99"",""#ffff99"",""bold 8pt Arial"",""bold 8pt Arial""]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p0i2"",""p0i0"",[0,""Logout"","""","""",-1,-1,0,""Logout.aspx"",""_self"","""","""","""",""Exit_ico.gif"",0,0,0,"""","""",0,0,0,1,1,""#00547d"",0,""#ff0000"",0,"""","""",3,3,1,1,""#00547d"",""#ff0000"",""#ffffff"",""#ffffff"",""10pt Arial"",""bold 10pt Arial""]);" & vbCrLf
             m_strScriptMenu += " stm_ep();" & vbCrLf
             m_strScriptMenu += " stm_em();" & vbCrLf
             m_strScriptMenu += " //-->" & vbCrLf
@@ -354,9 +354,9 @@ Namespace BTWEB.DHTML.MenuControl
             m_strScriptMenu += " 	<script language=""JavaScript"">" & vbCrLf
             m_strScriptMenu += " <!--" & vbCrLf
             m_strScriptMenu += " stm_bm([""menu0544"",400,"""",""" & _PathImage & "blank.gif"",0,"""","""",0,0,250,0,1000,1,0,0,""""],this);" & vbCrLf
-            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,0,7,100,"""",-2,"""",-2,50,0,0,""#fffff7"",""#454582"","""",3,1,1,""#454582""]);" & vbCrLf
-            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Ricerche Obbligazioni"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,""" & _PathImage & "arrow_r.gif"",""" & _PathImage & "arrow_r.gif"",7,7,0,0,1,""#454582"",0,""#b5bed6"",0,"""","""",3,3,1,1,""#454582"",""#ffffff"",""#ffffff"",""#000000"",""10pt Arial"",""10pt Arial"",0,0]);" & vbCrLf
-            m_strScriptMenu += " stm_bp(""p1"",[1,4,0,0,0,0,0,0,100,"""",-2,"""",-2,50,0,0,""#fffff7"",""#454582"","""",3,1,1,""#ffffff""]);" & vbCrLf
+            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,0,7,100,"""",-2,"""",-2,50,0,0,""#fffff7"",""#00547d"","""",3,1,1,""#00547d""]);" & vbCrLf
+            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Ricerche Obbligazioni"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,""" & _PathImage & "arrow_r.gif"",""" & _PathImage & "arrow_r.gif"",7,7,0,0,1,""#00547d"",0,""#b5bed6"",0,"""","""",3,3,1,1,""#00547d"",""#ffffff"",""#ffffff"",""#000000"",""10pt Arial"",""10pt Arial"",0,0]);" & vbCrLf
+            m_strScriptMenu += " stm_bp(""p1"",[1,4,0,0,0,0,0,0,100,"""",-2,"""",-2,50,0,0,""#fffff7"",""#00547d"","""",3,1,1,""#ffffff""]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p1i0"",""p0i0"",[0,""Caratteristiche Principali"","""","""",-1,-1,0,""OBFindDesc.aspx"",""_self"","""",""Ricerca per descrizione e isincode"","""","""",0,0,0,"""","""",0,0]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p1i1"",""p1i0"",[0,""Data Scadenza"","""","""",-1,-1,0,""OBFindScad.aspx"",""_self"","""",""Ricerca obbligazioni in scadenza""]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p1i2"",""p1i0"",[0,""Cedole per Data Aggiornamento"","""","""",-1,-1,0,""OBFindCedole.aspx"",""_self"","""",""Ricerca delle cedole per data aggiornamento""]);" & vbCrLf
@@ -392,9 +392,9 @@ Namespace BTWEB.DHTML.MenuControl
             m_strScriptMenu += " 	<script language=""JavaScript"">" & vbCrLf
             m_strScriptMenu += " <!--" & vbCrLf
             m_strScriptMenu += " stm_bm([""menu0544"",400,"""",""" & _PathImage & "blank.gif"",0,"""","""",0,0,250,0,1000,1,0,0,""""],this);" & vbCrLf
-            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,0,7,100,"""",-2,"""",-2,50,0,0,""#fffff7"",""#454582"","""",3,1,1,""#454582""]);" & vbCrLf
-            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Ricerche Azioni"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,""" & _PathImage & "arrow_r.gif"",""" & _PathImage & "arrow_r.gif"",7,7,0,0,1,""#454582"",0,""#b5bed6"",0,"""","""",3,3,1,1,""#454582"",""#ffffff"",""#ffffff"",""#000000"",""10pt Arial"",""10pt Arial"",0,0]);" & vbCrLf
-            m_strScriptMenu += " stm_bp(""p1"",[1,4,0,0,0,0,0,0,100,"""",-2,"""",-2,50,0,0,""#fffff7"",""#454582"","""",3,1,1,""#ffffff""]);" & vbCrLf
+            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,0,7,100,"""",-2,"""",-2,50,0,0,""#fffff7"",""#00547d"","""",3,1,1,""#00547d""]);" & vbCrLf
+            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Ricerche Azioni"","""","""",-1,-1,0,"""",""_self"","""","""","""","""",0,0,0,""" & _PathImage & "arrow_r.gif"",""" & _PathImage & "arrow_r.gif"",7,7,0,0,1,""#00547d"",0,""#b5bed6"",0,"""","""",3,3,1,1,""#00547d"",""#ffffff"",""#ffffff"",""#000000"",""10pt Arial"",""10pt Arial"",0,0]);" & vbCrLf
+            m_strScriptMenu += " stm_bp(""p1"",[1,4,0,0,0,0,0,0,100,"""",-2,"""",-2,50,0,0,""#fffff7"",""#00547d"","""",3,1,1,""#ffffff""]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p1i0"",""p0i0"",[0,""Anagrafica Società"","""","""",-1,-1,0,""AZFindSocieta.aspx"",""_self"","""",""Ricerca per descrizione e Isincode"","""","""",0,0,0,"""","""",0,0]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p1i1"",""p1i0"",[0,""Titoli Società"","""","""",-1,-1,0,""AZFindTitoli.aspx"",""_self"","""",""Ricerca Titoli di una Società""]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p1i2"",""p1i0"",[0,""Convocazioni Assemblee"","""","""",-1,-1,0,""AZFindAssemblee.aspx"",""_self"","""",""Ricerca delle assemblee per data""]);" & vbCrLf
@@ -427,8 +427,8 @@ Namespace BTWEB.DHTML.MenuControl
             m_strScriptMenu += " 	<script language=""JavaScript"">" & vbCrLf
             m_strScriptMenu += " <!--" & vbCrLf
             m_strScriptMenu += " stm_bm([""menu0544"",400,"""",""" & _PathImage & "blank.gif"",0,"""","""",0,0,250,0,1000,1,0,0,""""],this);" & vbCrLf
-            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,22,0,100,"""",-2,"""",-2,50,0,0,""#fffff7"",""#454582"","""",3,1,1,""#454582""]);" & vbCrLf
-            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Elenco Obbligazioni  "","""","""",-1,-1,0,""OBLista.aspx"",""_self"","""",""Visualizza Obbligazione"","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#b5bed6"",0,"""","""",3,3,1,1,""#454582"",""#ffffff"",""#ffffff"",""#000000"",""bold 7pt Arial"",""bold 7pt Arial"",0,0]);" & vbCrLf
+            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,22,0,100,"""",-2,"""",-2,50,0,0,""#fffff7"",""#00547d"","""",3,1,1,""#00547d""]);" & vbCrLf
+            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Elenco Obbligazioni  "","""","""",-1,-1,0,""OBLista.aspx"",""_self"","""",""Visualizza Obbligazione"","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#b5bed6"",0,"""","""",3,3,1,1,""#00547d"",""#ffffff"",""#ffffff"",""#000000"",""bold 7pt Arial"",""bold 7pt Arial"",0,0]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""Caratteristiche Principali  "","""","""",-1,-1,0,""OBView.aspx"",""_self"","""",""""]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p0i2"",""p0i1"",[0,""Piano Ammortamento  "","""","""",-1,-1,0,""OBPianoAmm.aspx"",""_self"","""",""""]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p0i3"",""p0i2"",[0,""Maggiorazioni  "","""","""",-1,-1,0,""OBMaggiorazioni.aspx"",""_self"","""",""""]);" & vbCrLf
@@ -458,9 +458,9 @@ Namespace BTWEB.DHTML.MenuControl
             m_strScriptMenu += " 	<script language=""JavaScript"">" & vbCrLf
             m_strScriptMenu += " <!--" & vbCrLf
             m_strScriptMenu += " stm_bm([""menu0544"",400,"""",""" & _PathImage & "blank.gif"",0,"""","""",0,0,250,0,1000,1,0,0,""""],this);" & vbCrLf
-            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,22,0,100,"""",-2,"""",-2,50,0,0,""#fffff7"",""#454582"","""",3,1,1,""#454582""]);" & vbCrLf
-            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Risultati Ricerca  "","""","""",-1,-1,0,""AZLista.aspx"",""_self"","""",""Visualizza Titoli"","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#b5bed6"",0,"""","""",3,3,1,1,""#454582"",""#ffffff"",""#ffffff"",""#000000"",""bold 7pt Arial"",""bold 7pt Arial"",0,0]);" & vbCrLf
-            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Titoli Associati "","""","""",-1,-1,0,""AZTitoli.aspx"",""_self"","""",""Visualizza Titoli"","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#b5bed6"",0,"""","""",3,3,1,1,""#454582"",""#ffffff"",""#ffffff"",""#000000"",""bold 7pt Arial"",""bold 7pt Arial"",0,0]);" & vbCrLf
+            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,22,0,100,"""",-2,"""",-2,50,0,0,""#fffff7"",""#00547d"","""",3,1,1,""#00547d""]);" & vbCrLf
+            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Risultati Ricerca  "","""","""",-1,-1,0,""AZLista.aspx"",""_self"","""",""Visualizza Titoli"","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#b5bed6"",0,"""","""",3,3,1,1,""#00547d"",""#ffffff"",""#ffffff"",""#000000"",""bold 7pt Arial"",""bold 7pt Arial"",0,0]);" & vbCrLf
+            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Titoli Associati "","""","""",-1,-1,0,""AZTitoli.aspx"",""_self"","""",""Visualizza Titoli"","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#b5bed6"",0,"""","""",3,3,1,1,""#00547d"",""#ffffff"",""#ffffff"",""#000000"",""bold 7pt Arial"",""bold 7pt Arial"",0,0]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""Dividendi  "","""","""",-1,-1,0,""AZDividendi.aspx"",""_self"","""",""""]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p0i2"",""p0i1"",[0,""Quotazioni  "","""","""",-1,-1,0,""AZQuotazioni.aspx"",""_self"","""",""""]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p0i3"",""p0i2"",[0,""Operazioni sul Capitale  "","""","""",-1,-1,0,""AZOpCapitale.aspx"",""_self"","""",""""]);" & vbCrLf
@@ -490,8 +490,8 @@ Namespace BTWEB.DHTML.MenuControl
             m_strScriptMenu += " 	<script language=""JavaScript"">" & vbCrLf
             m_strScriptMenu += " <!--" & vbCrLf
             m_strScriptMenu += " stm_bm([""menu0544"",400,"""",""" & _PathImage & "blank.gif"",0,"""","""",0,0,250,0,1000,1,0,0,""""],this);" & vbCrLf
-            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,22,0,100,"""",-2,"""",-2,50,0,0,""#fffff7"",""#454582"","""",3,1,1,""#454582""]);" & vbCrLf
-            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Risultati Ricerca  "","""","""",-1,-1,0,""AZLista.aspx"",""_self"","""",""Visualizza Titoli"","""","""",0,0,0,"""","""",0,0,0,0,1,""#454582"",0,""#b5bed6"",0,"""","""",3,3,1,1,""#454582"",""#ffffff"",""#ffffff"",""#000000"",""bold 7pt Arial"",""bold 7pt Arial"",0,0]);" & vbCrLf
+            m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,22,0,100,"""",-2,"""",-2,50,0,0,""#fffff7"",""#00547d"","""",3,1,1,""#00547d""]);" & vbCrLf
+            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Risultati Ricerca  "","""","""",-1,-1,0,""AZLista.aspx"",""_self"","""",""Visualizza Titoli"","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#b5bed6"",0,"""","""",3,3,1,1,""#00547d"",""#ffffff"",""#ffffff"",""#000000"",""bold 7pt Arial"",""bold 7pt Arial"",0,0]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""Società  "","""","""",-1,-1,0,""AZSocieta.aspx"",""_self"","""",""""]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p0i2"",""p0i1"",[0,""Titoli Associati "","""","""",-1,-1,0,""AZTitoli.aspx"",""_self"","""",""""]);" & vbCrLf
             m_strScriptMenu += " stm_ep();" & vbCrLf
