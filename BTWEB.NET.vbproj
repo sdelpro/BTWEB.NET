@@ -300,6 +300,10 @@
                     BuildAction = "Compile"
                 />
                 <File
+                    RelPath = "singola-azione.html"
+                    BuildAction = "Content"
+                />
+                <File
                     RelPath = "stm31.js"
                     BuildAction = "Content"
                 />
@@ -884,6 +888,78 @@
                 />
                 <File
                     RelPath = "InfoDoc\Informazioni.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NewPages\anagrafe-societa-2015.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NewPages\home-2015.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NewPages\login-2015.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NewPages\ricerca.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NewPages\singola-azione.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NewPages\css\style.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NewPages\images\bollettinoestrazioni.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NewPages\images\ImagesLogo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NewPages\images\ImagessfHome.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NewPages\images\label.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NewPages\images\label-destra.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NewPages\images\label-destra-fine.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NewPages\images\label-sinistra.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NewPages\images\label-sinistra-fine.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NewPages\images\Logo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NewPages\images\sfHome.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NewPages\images\tv21.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NewPages\images\tv22.gif"
                     BuildAction = "Content"
                 />
                 <File

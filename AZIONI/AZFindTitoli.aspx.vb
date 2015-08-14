@@ -32,6 +32,10 @@ Public Class AZFindTitoli
     Protected WithEvents Label3 As System.Web.UI.WebControls.Label
     Protected WithEvents Label4 As System.Web.UI.WebControls.Label
     Protected WithEvents cmbSettore As System.Web.UI.WebControls.DropDownList
+    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.

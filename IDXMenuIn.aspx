@@ -1,8 +1,8 @@
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="IDXMenuIn.aspx.vb" Inherits="BTWEB.NET.IDXMenuIn" %>
+<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
-	<HEAD>
+  <HEAD>
 		<title>...::: Brambilla Titoli - Tutto Titoli :::...</title>
 		<meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1">
 		<meta name="CODE_LANGUAGE" content="Visual Basic .NET 7.1">
@@ -31,7 +31,7 @@
 			//
 		</script>-->
 		<LINK rel="stylesheet" type="text/css" href="css/style.css">
-	</HEAD>
+  </HEAD>
 	<body>
 		<!--<body bgProperties="fixed" background="Images\sfHome.jpg" MS_POSITIONING="GridLayout">-->
 		<form id="Form1" method="post" runat="server">
@@ -42,7 +42,7 @@
 				<div id="menu">
 					<ul>
 						<li>							
-							<a href=IDXMenuIn.aspx>HOME</a>
+							<a href="IDXMenuIn.aspx">HOME</a>
 						</li>
 						<li>							
 							<asp:linkbutton id="lblAZIONI" Runat=server>AZIONI</asp:linkbutton>
@@ -57,7 +57,7 @@
 							<asp:linkbutton id="lbEstrazioni" Runat=server>ESTRAZIONI</asp:linkbutton>
 						</li>
 												<li>							
-							<a href=Logout.aspx>LOGOUT</a>
+							<a href="Logout.aspx">LOGOUT</a>
 						</li>
 
 					</ul>
@@ -83,7 +83,8 @@
 					<TD style="HEIGHT: 37px" width="100%" align="center"><asp:label id="lbScarichi" runat="server" Font-Names="Verdana" Font-Size="18px" Visible="False"
 							ForeColor="Navy">SCARICHI</asp:label>&nbsp;&nbsp;
 						<asp:linkbutton id="lbScarA" runat="server" Width="43px" Height="16px" Font-Names="Verdana" Font-Size="18px"
-							Visible="False" ForeColor="Navy">A</asp:linkbutton><asp:linkbutton id="lbScarB" runat="server" Width="34px" Height="16px" Font-Names="Verdana" Font-Size="18px"
+							Visible="False" ForeColor="Navy">A</asp:linkbutton>
+							<asp:linkbutton id="lbScarB" runat="server" Width="34px" Height="16px" Font-Names="Verdana" Font-Size="18px"
 							Visible="False" ForeColor="Navy">B</asp:linkbutton></TD>
 				<TR>
 					<TD style="HEIGHT: 191px" align="center"><asp:table id="tbComun" runat="server" Width="500px" Height="139px" Font-Names="Tahoma" Font-Size="15px"
@@ -91,10 +92,10 @@
 							<asp:TableRow HorizontalAlign="Center" ForeColor="White" BackColor="Navy" Height="30px" Font-Bold="True">
 								<asp:TableCell Text="Comunicazioni agli Utenti"></asp:TableCell>
 							</asp:TableRow>
-							<asp:TableRow VerticalAlign="Middle" BorderWidth="1px" BorderColor="Navy" BorderStyle="Solid"
-								HorizontalAlign="Justify">
-								<asp:TableCell BorderStyle="Solid" BorderWidth="1px" VerticalAlign="Middle" ForeColor="Navy" HorizontalAlign="Justify"
-									Text="&lt;br&gt;   Nessuna Comunicazione&lt;br&gt;&lt;br&gt;"></asp:TableCell>
+							<asp:TableRow VerticalAlign="Middle" BorderWidth="1px" BorderColor="Navy" BorderStyle="Solid" 
+ HorizontalAlign="Justify">
+								<asp:TableCell BorderStyle="Solid" BorderWidth="1px" VerticalAlign="Middle" ForeColor="Navy" HorizontalAlign="Justify" 
+ Text="&lt;br&gt;   Nessuna Comunicazione&lt;br&gt;&lt;br&gt;"></asp:TableCell>
 							</asp:TableRow>
 						</asp:table></TD>
 				</TR>

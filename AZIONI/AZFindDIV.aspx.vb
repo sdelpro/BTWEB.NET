@@ -55,6 +55,12 @@ Public Class AZFindDIV
     Protected WithEvents CkDivOrd As System.Web.UI.WebControls.CheckBox
     Protected WithEvents CkDivAcc As System.Web.UI.WebControls.CheckBox
     Protected WithEvents CkDivNonConfr As System.Web.UI.WebControls.CheckBox
+    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents Label15 As System.Web.UI.WebControls.Label
+    Protected WithEvents Label14 As System.Web.UI.WebControls.Label
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.

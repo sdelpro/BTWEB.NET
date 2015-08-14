@@ -7,8 +7,19 @@ Public Class AZDettAssemblea
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
 
     End Sub
-    Protected WithEvents tbAss As System.Web.UI.WebControls.Table
-    Protected WithEvents Image1 As System.Web.UI.WebControls.Image
+    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_codisi As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_denomi As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_datass As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_tipass As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_pricon As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_seccon As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_tercon As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_testo As System.Web.UI.WebControls.Label
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.
@@ -44,38 +55,51 @@ Public Class AZDettAssemblea
         With clt
             Call .ReadGenericQuery(dt, sql)
             If dt.Rows.Count = 1 Then
-                tbAss.Rows(0).Cells(0).Text() = "CODICE ISIN"
-                tbAss.Rows(0).Cells(1).Text() = dt.Rows(0).Item("ISINCODE")
-                tbAss.Rows(0).Cells(2).Text() = "DENOMINAZIONE"
-                tbAss.Rows(0).Cells(3).Text() = dt.Rows(0).Item("DENOMINAZIONE")
-
-                tbAss.Rows(1).Cells(0).Text() = "DATA ASSEMBLEA"
-                tbAss.Rows(1).Cells(1).Text() = dt.Rows(0).Item("DATADEF")
-                tbAss.Rows(2).Cells(0).Text() = "TIPO ASSEMBLEA"
+                lbl_codisi.Text() = dt.Rows(0).Item("ISINCODE")
+                lbl_denomi.Text() = dt.Rows(0).Item("DENOMINAZIONE")
+                lbl_datass.Text() = dt.Rows(0).Item("DATADEF")
                 Select Case dt.Rows(0).Item("TIPO")
                     Case "o."
-                        tbAss.Rows(2).Cells(1).Text() = "ORDINARIA"
+                        lbl_tipass.Text() = "ORDINARIA"
                     Case "s."
-                        tbAss.Rows(2).Cells(1).Text() = "STRAORDINARIA"
+                        lbl_tipass.Text() = "STRAORDINARIA"
                     Case "o.s."
-                        tbAss.Rows(2).Cells(1).Text() = "ORDINARIA/STRAORDINARIA"
+                        lbl_tipass.Text() = "ORDINARIA/STRAORDINARIA"
                 End Select
-
-                tbAss.Rows(3).Cells(0).Text() = "1° CONVOCAZIONE"
-                tbAss.Rows(3).Cells(1).Text() = IIf(CType(dt.Rows(0).Item("DATA1") & "", String) = "", ".", dt.Rows(0).Item("DATA1") & "")
-                tbAss.Rows(3).Cells(2).Text() = "2° CONVOCAZIONE"
-                tbAss.Rows(3).Cells(3).Text() = IIf(CType(dt.Rows(0).Item("DATA2") & "", String) = "", ".", dt.Rows(0).Item("DATA2") & "")
-                tbAss.Rows(3).Cells(4).Text() = "3° CONVOCAZIONE"
-                tbAss.Rows(3).Cells(5).Text() = IIf(CType(dt.Rows(0).Item("DATA3") & "", String) = "", ".", dt.Rows(0).Item("DATA3") & "")
-
-                tbAss.Rows(4).Cells(0).Text() = "TESTO"
-                tbAss.Rows(5).Cells(0).Text() = dt.Rows(0).Item("TESTO")
-
-
-
-
-
+                lbl_pricon.Text() = IIf(CType(dt.Rows(0).Item("DATA1") & "", String) = "", ".", dt.Rows(0).Item("DATA1") & "")
+                lbl_seccon.Text() = IIf(CType(dt.Rows(0).Item("DATA2") & "", String) = "", ".", dt.Rows(0).Item("DATA2") & "")
+                lbl_tercon.Text() = IIf(CType(dt.Rows(0).Item("DATA3") & "", String) = "", ".", dt.Rows(0).Item("DATA3") & "")
+                lbl_testo.Text() = dt.Rows(0).Item("TESTO")
             End If
+            'If dt.Rows.Count = 1 Then
+            '    tbAss.Rows(0).Cells(0).Text() = "CODICE ISIN"
+            '    tbAss.Rows(0).Cells(1).Text() = dt.Rows(0).Item("ISINCODE")
+            '    tbAss.Rows(0).Cells(2).Text() = "DENOMINAZIONE"
+            '    tbAss.Rows(0).Cells(3).Text() = dt.Rows(0).Item("DENOMINAZIONE")
+
+            '    tbAss.Rows(1).Cells(0).Text() = "DATA ASSEMBLEA"
+            '    tbAss.Rows(1).Cells(1).Text() = dt.Rows(0).Item("DATADEF")
+            '    tbAss.Rows(2).Cells(0).Text() = "TIPO ASSEMBLEA"
+            '    Select Case dt.Rows(0).Item("TIPO")
+            '        Case "o."
+            '            tbAss.Rows(2).Cells(1).Text() = "ORDINARIA"
+            '        Case "s."
+            '            tbAss.Rows(2).Cells(1).Text() = "STRAORDINARIA"
+            '        Case "o.s."
+            '            tbAss.Rows(2).Cells(1).Text() = "ORDINARIA/STRAORDINARIA"
+            '    End Select
+
+            '    tbAss.Rows(3).Cells(0).Text() = "1° CONVOCAZIONE"
+            '    tbAss.Rows(3).Cells(1).Text() = IIf(CType(dt.Rows(0).Item("DATA1") & "", String) = "", ".", dt.Rows(0).Item("DATA1") & "")
+            '    tbAss.Rows(3).Cells(2).Text() = "2° CONVOCAZIONE"
+            '    tbAss.Rows(3).Cells(3).Text() = IIf(CType(dt.Rows(0).Item("DATA2") & "", String) = "", ".", dt.Rows(0).Item("DATA2") & "")
+            '    tbAss.Rows(3).Cells(4).Text() = "3° CONVOCAZIONE"
+            '    tbAss.Rows(3).Cells(5).Text() = IIf(CType(dt.Rows(0).Item("DATA3") & "", String) = "", ".", dt.Rows(0).Item("DATA3") & "")
+
+            '    tbAss.Rows(4).Cells(0).Text() = "TESTO"
+            '    tbAss.Rows(5).Cells(0).Text() = dt.Rows(0).Item("TESTO")
+            'End If
+
             .Dispose()
         End With
     End Sub

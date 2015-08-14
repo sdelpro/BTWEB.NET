@@ -11,6 +11,10 @@ Public Class AZNews
     Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
     Protected WithEvents tbNews As System.Web.UI.WebControls.Table
     Protected WithEvents lblTitoloForm As System.Web.UI.WebControls.Label
+    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.

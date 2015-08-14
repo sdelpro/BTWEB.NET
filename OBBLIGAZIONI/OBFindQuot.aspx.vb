@@ -23,6 +23,10 @@ Public Class OBFindQuot
     Protected WithEvents Label2 As System.Web.UI.WebControls.Label
     Protected WithEvents lblUser As System.Web.UI.WebControls.Label
     Protected WithEvents lbUpd As System.Web.UI.WebControls.Label
+    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.

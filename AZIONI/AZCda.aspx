@@ -1,5 +1,5 @@
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="AZCda.aspx.vb" Inherits="BTWEB.NET.AZCda"%>
+<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -8,52 +8,77 @@
 		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
 		<meta content="JavaScript" name="vs_defaultClientScript">
 		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
 	</HEAD>
-	<body bottomMargin="0" leftMargin="0" background="..\Images\sfMenuidx.jpg" topMargin="0"
-		rightMargin="0" MS_POSITIONING="GridLayout">
+	<body>
 		<form id="Form1" method="post" runat="server">
-			<asp:image id="Image1" style="Z-INDEX: 110; LEFT: 8px; POSITION: absolute; TOP: 32px" runat="server"
-				Width="352px" Height="44px" ImageUrl="..\Images\Logo.gif"></asp:image>
-			<TABLE id="Table2" style="Z-INDEX: 105; LEFT: 8px; POSITION: absolute; TOP: 0px; HEIGHT: 8px"
-				cellSpacing="0" cols="2" cellPadding="0" width="98%" border="0">
-				<TR>
-					<TD vAlign="middle"><ucmenu:dhtmlmenucontrol 
-      id=Dhtmlmenucontrol1 runat="server" 
-      Visible='<%# iif(Session("LOGIN_VALIDATE") = "ABILITATO_BT" ,"true","false") %>' 
-      ImagePath="Images/" TypeMenu="TopMenuAZ"></ucmenu:dhtmlmenucontrol></TD>
-					<TD style="HEIGHT: 30px" align="right"></TD>
-				</TR>
-			</TABLE>
-			<TABLE id="Table1" style="Z-INDEX: 111; LEFT: 8px; POSITION: absolute; TOP: 100px; HEIGHT: 32px"
-				cellSpacing="0" cols="2" cellPadding="0" width="98%" border="0">
-				<TR>
-					<TD></TD>
-					<TD style="WIDTH: 234px"><ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol3" runat="server" ImagePath="../Images/" TypeMenu="RicercheAzioni"></ucmenu:dhtmlmenucontrol><asp:label id="lblTitoloForm" runat="server" Width="88px" Height="16px" Font-Bold="True" ForeColor="Lime"
-							BackColor="Transparent" Font-Size="12px" Font-Names="Tahoma">CDA</asp:label></TD>
-					<TD style="HEIGHT: 30px" align="right"><ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" ImagePath="../Images/" TypeMenu="Azioni"></ucmenu:dhtmlmenucontrol></TD>
-				</TR>
-			</TABLE>
-			<asp:label id="lblLastLogin" style="Z-INDEX: 107; LEFT: 8px; POSITION: absolute; TOP: 80px"
-				runat="server" Width="360px" Height="16px" BackColor="Transparent" Font-Size="12px" Font-Names="Tahoma">Ultima connessione</asp:label><asp:table id="tbCda" style="Z-INDEX: 109; LEFT: 0px; POSITION: absolute; TOP: 144px" runat="server"
-				Width="100%" Height="57" Font-Size="12px" Font-Names="Tahoma">
-				<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-					<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" BorderColor="Black"></asp:TableCell>
-					<asp:TableCell BorderStyle="Solid" BorderWidth="1px" ColumnSpan="2" BorderColor="Black"></asp:TableCell>
-				</asp:TableRow>
-				<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-					<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" BorderColor="Black"></asp:TableCell>
-					<asp:TableCell BorderStyle="Solid" BorderWidth="1px" ColumnSpan="7" BorderColor="Black"></asp:TableCell>
-				</asp:TableRow>
-				<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-					<asp:TableCell Width="12.5%" BorderColor="Black"></asp:TableCell>
-					<asp:TableCell Width="12.5%"></asp:TableCell>
-					<asp:TableCell Width="12.5%"></asp:TableCell>
-					<asp:TableCell Width="12.5%"></asp:TableCell>
-					<asp:TableCell Width="12.5%"></asp:TableCell>
-					<asp:TableCell Width="12.5%"></asp:TableCell>
-					<asp:TableCell Width="12.5%"></asp:TableCell>
-					<asp:TableCell Width="12.5%"></asp:TableCell>
-				</asp:TableRow>
-			</asp:table></form>
+			<div id="riga-header">
+				<div id="header"><IMG id="logo" alt="" src="../images/ImagesLogo.gif" width="352"></div>
+			</div>
+			<div id="riga-menu">
+				<div id="menu">
+					<ul>
+						<li>
+							<a href="../IDXMenuIn.aspx">HOME</a>
+						</li>
+						<li class="selected">
+							<asp:linkbutton id="lblAZIONI" Runat="server">AZIONI</asp:linkbutton>
+						</li>
+						<li>
+							<asp:linkbutton id="lblOBBLIGAZIONI" Runat="server">OBBLIGAZIONI</asp:linkbutton>
+						</li>
+						<li>
+							<asp:linkbutton id="lblINFOVARIE" Runat="server">INFORMAZIONI VARIE</asp:linkbutton>
+						</li>
+						<li>
+							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
+						</li>
+						<li>
+							<a href="../Logout.aspx">LOGOUT</a>
+						</li>
+					</ul>
+					<div id="ultima-connessione">
+						<asp:label id="lblLastLogin" style="Z-INDEX: 114" runat="server">Ultima connessione</asp:label>
+					</div>
+				</div> <!-- menu -->
+												<div id="menuazioni" align=center>
+					
+					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" TypeMenu="Azioni" 
+					></ucmenu:dhtmlmenucontrol>
+				</div>
+
+			</div> <!-- riga-menu -->
+			<div id="riga-pagina">
+				<div id="pagina">
+					<div id="interna">
+						<div id="top">
+							<span class="label-sinistra">CDA<img src="../Images/label-sinistra-fine.png" alt=""></span>
+						</div>
+						<div id="contenuto">
+							<asp:table id="tbCda" style="Z-INDEX: 109" runat="server">
+								<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
+									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" BorderColor="Black"></asp:TableCell>
+									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" ColumnSpan="2" BorderColor="Black"></asp:TableCell>
+								</asp:TableRow>
+								<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
+									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" BorderColor="Black"></asp:TableCell>
+									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" ColumnSpan="7" BorderColor="Black"></asp:TableCell>
+								</asp:TableRow>
+								<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
+									<asp:TableCell Width="12.5%" BorderColor="Black"></asp:TableCell>
+									<asp:TableCell Width="12.5%"></asp:TableCell>
+									<asp:TableCell Width="12.5%"></asp:TableCell>
+									<asp:TableCell Width="12.5%"></asp:TableCell>
+									<asp:TableCell Width="12.5%"></asp:TableCell>
+									<asp:TableCell Width="12.5%"></asp:TableCell>
+									<asp:TableCell Width="12.5%"></asp:TableCell>
+									<asp:TableCell Width="12.5%"></asp:TableCell>
+								</asp:TableRow>
+							</asp:table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
 	</body>
 </HTML>

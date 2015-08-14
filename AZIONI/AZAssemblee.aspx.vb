@@ -11,6 +11,10 @@ Public Class AZAssemblee
     Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
     Protected WithEvents tbAss As System.Web.UI.WebControls.Table
     Protected WithEvents lblTitoloForm As System.Web.UI.WebControls.Label
+    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.
@@ -98,7 +102,7 @@ Public Class AZAssemblee
         tch.ColumnSpan = 2
         tch.Text = ""
         tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
+        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
@@ -110,7 +114,7 @@ Public Class AZAssemblee
         tch.ColumnSpan = 2
         tch.Text = ""
         tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
+        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
 
@@ -127,7 +131,7 @@ Public Class AZAssemblee
         tch.Width = Unit.Percentage(14)
         tch.Text = ""
         tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
+        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
@@ -138,7 +142,7 @@ Public Class AZAssemblee
         tch.Width = Unit.Percentage(11)
         tch.Text = ""
         tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
+        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
@@ -149,7 +153,7 @@ Public Class AZAssemblee
         tch.Width = Unit.Percentage(14)
         tch.Text = ""
         tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
+        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
@@ -160,7 +164,7 @@ Public Class AZAssemblee
         tch.Width = Unit.Percentage(11)
         tch.Text = ""
         tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
+        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
@@ -171,7 +175,7 @@ Public Class AZAssemblee
         tch.Width = Unit.Percentage(14)
         tch.Text = ""
         tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
+        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
@@ -182,7 +186,7 @@ Public Class AZAssemblee
         tch.Width = Unit.Percentage(11)
         tch.Text = ""
         tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
+        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
@@ -193,7 +197,7 @@ Public Class AZAssemblee
         tch.Width = Unit.Percentage(14)
         tch.Text = ""
         tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
+        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
@@ -204,7 +208,7 @@ Public Class AZAssemblee
         tch.Width = Unit.Percentage(11)
         tch.Text = ""
         tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
+        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
 
@@ -221,7 +225,7 @@ Public Class AZAssemblee
         tch.Width = Unit.Percentage(25)
         tch.Text = ""
         tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
+        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
 
@@ -239,7 +243,7 @@ Public Class AZAssemblee
         tch.ColumnSpan = 8
         tch.Text = ""
         tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
+        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
 

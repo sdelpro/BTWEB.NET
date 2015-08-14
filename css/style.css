@@ -20,6 +20,12 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+.clear {
+	float: none;
+	clear: both;
+}
+
+
 
 /* HEADER */
 #riga-header {
@@ -67,6 +73,9 @@ a:hover {
 #menu li:hover {
 	background-color: #00547d;
 }
+#menu li.selected {
+	background-color: #00547d;
+}
 #ultima-connessione {
 	position: absolute;
 	right: 20px;
@@ -102,14 +111,21 @@ span.intestazione {
 	-moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 }
-#foglio #top{
+#foglio #top {
 	padding-top: 20px;
 	display: block;
 	position: relative;
 	height: 75px;
 }
+#interna #top{
+	padding-top: 20px;
+	display: block;
+	position: relative;
+	height: 55px;
+}
+
 span.label-sinistra {
-	background: url(../images/label-sinistra.png) left top no-repeat;
+	background: url(../Images/label-sinistra.png) left top no-repeat;
 	padding: 20px 40px 40px 30px;
 	position: absolute;
 	left: -14px;
@@ -122,7 +138,7 @@ span.label-sinistra img {
 	right: 0;
 }
 span.label-destra {
-	background: url(../images/label-destra.png) right top no-repeat;
+	background: url(../Images/label-destra.png) right top no-repeat;
 	padding: 20px 30px 40px 40px;
 	position: absolute;
 	color: #ffffff;
@@ -134,6 +150,19 @@ span.label-destra img {
 	top: 0;
 	left: 0;
 }
+
+/* inserito da Lomascolo per gestire le label preesistenti */
+span.labels
+{
+	font-size:11px;
+	display: inline-block;
+	width: 200px;
+	height: 25px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/*padding-right: 30px;*/
+}	
+	
 #foglio #aree {
 	padding: 20px 60px 40px 120px;
 }
@@ -192,6 +221,247 @@ span.label-destra img {
 	font-style: normal;
 }
 
+#interna {
+	width: 900px;
+	min-height: 350px;
+	margin: 50px auto 80px;
+	background-color: #FFFFFF;
+	-moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+#contenuto {
+	padding: 0 20px 20px;
+}
+#contenuto input[type="text"] {
+	width: 200px;
+	height: 25px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#contenuto input[type="submit"] {
+	background-color: #4DB1E2;
+	border-style: none;
+	padding: 8px 20px;
+	color: #ffffff;
+	margin-top: 10px;
+}
+#contenuto table {
+	font-size: 11px;
+	padding: 10px 0 10px 20px;
+	display: block;
+}
+
+#contenuto table td {
+	padding-right: 30px;
+}
+.note {
+	font-size: 11px;
+	font-style: italic;
+	color: #aaaaaa;
+}
+#box-interna {
+	padding: 20px;
+	border-top: 1px dashed #d7d7d7;
+	margin: 20px;
+	color: #aaaaaa;
+	font-size: 12px;
+	font-style: italic;
+}
+#box-interna li {
+	list-style: disc;
+	margin-bottom: 5px;
+	font-size: 11px;
+	color: #aaaaaa;
+}
+
+/* RICERCA */
+#risultati-ricerca-sopra, #risultati-ricerca-sotto {
+	color: #aaa;
+	display: block;
+	position: relative;
+	height: 30px;
+	margin-bottom: 10px;
+}
+.risultati-ricerca-numero {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.risultati-ricerca-numero span.corrente {
+	font-size: 14px;
+	color: #4DB1E2;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+.risultati-ricerca-numero span.totale {
+	font-size: 13px;
+	font-weight:bold;
+	margin-top:30px;
+}
+.risultati-ricerca-numero span.totale a{
+	color: #4DB1E2;
+}
+
+
+.risultati-ricerca-paginazione {
+	position: absolute;
+	bottom: -10px;
+	right: 0;
+}
+.risultati-ricerca-paginazione li {
+	display: inline-block;
+	min-width: 24px;
+	text-align: center;
+	padding-right: 2px;
+	padding-left: 2px;
+}
+.risultati-ricerca-paginazione li a {
+	font-size: 12px;
+	color: #aaaaaa;
+	line-height: 30px;
+}
+.risultati-ricerca-paginazione li a.corrente {
+	color: #4DB1E2;
+	font-size: 14px;
+	font-weight: bold;
+}
+.risultati-ricerca-paginazione .prec {
+	background-image: url(../Images/prec.png);
+	width: 73px;
+	height: 38px;
+	display: inline-block;
+}
+.risultati-ricerca-paginazione a.prec {
+	color: #ffffff;
+}
+.risultati-ricerca-paginazione .succ {
+	background-image: url(../Images/succ.png);
+	width: 73px;
+	height: 38px;
+	display: inline-block;
+}
+.risultati-ricerca-paginazione a.succ {
+	color: #ffffff;
+}
+.risultati-ricerca-elenco {
+	/* margin-bottom: 20px;
+	margin-top: 20px; */
+}
+.risultati-ricerca-elenco table {
+	width: 100%;
+	padding: 0 !important;
+	min-width: 100%!important;
+	display: table !important;
+}
+.risultati-ricerca-elenco tr.bordo-sotto td {
+	border-bottom: 1px solid #f4f4f4 !important;
+}
+.risultati-ricerca-elenco table td {
+	padding: 5px!important;
+	font-size:9px;
+}
+.risultati-ricerca-elenco .prima-riga {
+	background-color: #4DB1E2;
+	color: #ffffff;
+	height: 35px;
+}
+.risultati-ricerca-elenco .prima-riga td {
+	padding: 5px!important;
+	text-align: center;
+}
+.risultati-ricerca-elenco td.grigio {
+	background-color: #f4f4f4;	
+}
+.risultati-ricerca-elenco tr:hover {
+//	background-color: #f4f4f4!important;
+}
+
+.pager-style {
+	font-size: 13px; 
+	font-weight: bold;
+	color:#4DB1E2;
+	background-color:White;
+}
+.item-style {
+	color:black;
+	background-color:white;
+}
+.altitem-style {
+	color:black;
+	background-color:#f4f4f4;	
+}
+.header-style td {
+  font-size: 12px; 
+  height:30px;
+  
+}
+
+/* regole css per le singole righe dei datagrid */
+.item-style td, .altitem-style td{
+ font-size: 11px; /* dimensione font delle colonne */
+}
+.item-style input[type="submit"], .altitem-style input[type="submit"]{
+ background-color: #4DB1E2;
+ color:White;
+ border:none;
+}
+#menuazioni 
+{
+	width:1000px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #454582;
+	color: #ffffff;
+	display: table;
+	position: relative;
+	padding:0px;
+	
+	/*margin-left:574px;*/
+}
+
+
+
+/* SCHEDA */
+#due-colonne {
+	width: 861px;
+}
+#due-colonne td {
+	width: 400px !important;
+	padding: 10px 15px;
+	border-bottom: 1px solid #f4f4f4;
+}
+#due-colonne td.separa {
+	width: 1px!important;
+	padding: 0!important;
+	border-right: 1px dashed #f4f4f4;
+}
+#due-colonne .etichetta {
+	color: #4DB1E2;
+	font-weight: bold;
+	padding-right: 5px;
+}
+#elenco1 {
+	color: #4DB1E2;
+	font-weight: bold;
+	padding-right: 5px;
+}
+#una-colonna {
+	width: 861px;
+}
+#una-colonna .etichetta {
+	color: #4DB1E2;
+	font-weight: bold;
+	padding-right: 5px;
+}
+
+
+/* formattazione per pagine tipo AZAssemblee */
+
+
+
+
 /* FONDO */
 #riga-fondo {
 	width: 100%;
@@ -224,3 +494,5 @@ span.label-destra img {
 	padding-right: 20px;
 	padding-left: 20px;
 }
+
+

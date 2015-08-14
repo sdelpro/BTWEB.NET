@@ -14,20 +14,15 @@ Public Class AZFindOPCAP
     Protected WithEvents cmbFind As System.Web.UI.WebControls.DropDownList
     Protected WithEvents Label2 As System.Web.UI.WebControls.Label
     Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
-    Protected WithEvents Image1 As System.Web.UI.WebControls.Image
     Protected WithEvents lblUser As System.Web.UI.WebControls.Label
     Protected WithEvents btnFindStor As System.Web.UI.WebControls.Button
     Protected WithEvents txtDtMDa As System.Web.UI.WebControls.TextBox
     Protected WithEvents txtDtMA As System.Web.UI.WebControls.TextBox
     Protected WithEvents Label10 As System.Web.UI.WebControls.Label
     Protected WithEvents Label3 As System.Web.UI.WebControls.Label
-    Protected WithEvents Label5 As System.Web.UI.WebControls.Label
-    Protected WithEvents Label6 As System.Web.UI.WebControls.Label
     Protected WithEvents Label11 As System.Web.UI.WebControls.Label
     Protected WithEvents Label12 As System.Web.UI.WebControls.Label
     Protected WithEvents cmbStato As System.Web.UI.WebControls.DropDownList
-    Protected WithEvents txtDtStoA As System.Web.UI.WebControls.TextBox
-    Protected WithEvents txtDtStoDa As System.Web.UI.WebControls.TextBox
     Protected WithEvents lbHelpDate As System.Web.UI.WebControls.Label
     Protected WithEvents lbHelp1 As System.Web.UI.WebControls.Label
     Protected WithEvents lbHelp2 As System.Web.UI.WebControls.Label
@@ -46,6 +41,12 @@ Public Class AZFindOPCAP
     Protected WithEvents txtTesto As System.Web.UI.WebControls.TextBox
     Protected WithEvents Label7 As System.Web.UI.WebControls.Label
     Protected WithEvents txtTestoStor As System.Web.UI.WebControls.TextBox
+    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents txtDtStoA As System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtDtStoDa As System.Web.UI.WebControls.TextBox
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.
@@ -186,11 +187,17 @@ Public Class AZFindOPCAP
             End If
         End If
         Session("AZ_SQL") = sql & " " & sSql & " AND B.STATO='STORICIZZATO' AND A.ISINCODE=B.ISINCODE"  ' ORDER BY B.DATASTOR"
-        If txtFind.Text = "" And txtIsincode.Text = "" And txtDtStoDa.Text = "" And txtDtStoA.Text = "" And txtDtMDa.Text = "" And txtDtMA.Text = "" Then
+        'If txtFind.Text = "" And txtIsincode.Text = "" And txtDtStoDa.Text = "" And txtDtStoA.Text = "" And txtDtMDa.Text = "" And txtDtMA.Text = "" Then
+        'Session("AZ_SQL") = Session("AZ_SQL") & " ORDER BY A.DENOMINAZIONE"
+        'Else
+        '    Session("AZ_SQL") = Session("AZ_SQL") & " ORDER BY B.DATASTOR"
+        'End If
+        If txtFind.Text = "" And txtIsincode.Text = "" And txtDtMDa.Text = "" And txtDtMA.Text = "" Then
             Session("AZ_SQL") = Session("AZ_SQL") & " ORDER BY A.DENOMINAZIONE"
         Else
             Session("AZ_SQL") = Session("AZ_SQL") & " ORDER BY B.DATASTOR"
         End If
+
         Session("TYPE_GRID") = "FINDOPSTOR"
 
         Response.Redirect("AZLista.aspx")

@@ -11,11 +11,15 @@ Public Class AZLista
     Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
     Protected WithEvents Image1 As System.Web.UI.WebControls.Image
     Protected WithEvents lblNumRecord As System.Web.UI.WebControls.Label
-    Protected WithEvents Dhtmlmenucontrol3 As DHTML.MenuControl.DHTMLMenuControl
-    Protected WithEvents lblTIPORICERCA As System.Web.UI.WebControls.Label
+    Protected WithEvents lblTipoRicerca As System.Web.UI.WebControls.Label
+    'Protected WithEvents Dhtmlmenucontrol3 As DHTML.MenuControl.DHTMLMenuControl
     Protected WithEvents lblFirstPage As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblLastPage As System.Web.UI.WebControls.LinkButton
     Protected WithEvents dtgAZIO As System.Web.UI.WebControls.DataGrid
+    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.
@@ -45,7 +49,7 @@ Public Class AZLista
             Me.Response.Redirect("../Error.aspx")
         End If
         Call LoadListAZ()
-        Dhtmlmenucontrol3.Visible = True
+
     End Sub
     Private Sub LoadListAZ()
 
@@ -288,41 +292,41 @@ Public Class AZLista
             .DataField = "DATAN"
             .HeaderText = "DATA NEWS"
             .SortExpression = "DATA"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(9)
         End With
 
         With c3
             .DataField = "ISINCODE"
             .HeaderText = "CODICE ISIN"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(9)
         End With
 
         With c4
             .DataField = "DENOMINAZIONE"
             .HeaderText = "DENOMINAZIONE"
             .SortExpression = "DENOMINAZIONE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(45)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(45)
         End With
 
         With c5
             .DataField = "LINKNEWS"
             .HeaderText = ""
             .SortExpression = "LINKNEWS"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(25)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(25)
         End With
 
         With c6
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            '.ButtonType = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         GridCtrl.Columns.Add(c2)
@@ -353,24 +357,24 @@ Public Class AZLista
             .DataField = "ISINCODE"
             .HeaderText = "CODICE ISIN"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         With c2
             .DataField = "DENOMINAZIONE"
             .HeaderText = "DESCRIZIONE"
             .SortExpression = "DESCRL"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(50)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(50)
         End With
 
         With c3
             .DataField = "MINIMO"
             .HeaderText = "MIN. ANNO"
             .SortExpression = "MINIMO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(12)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(12)
             .ItemStyle.HorizontalAlign = HorizontalAlign.Center
         End With
 
@@ -378,8 +382,8 @@ Public Class AZLista
             .DataField = "MASSIMO"
             .HeaderText = "MAX. ANNO"
             .SortExpression = "MASSIMO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
             .ItemStyle.HorizontalAlign = HorizontalAlign.Center
         End With
 
@@ -387,8 +391,8 @@ Public Class AZLista
             .DataField = "COMPENSO"
             .HeaderText = "MEDIA"
             .SortExpression = "COMPENSO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(5)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(5)
             .ItemStyle.HorizontalAlign = HorizontalAlign.Center
         End With
 
@@ -396,8 +400,8 @@ Public Class AZLista
             .DataField = "QMINIMA"
             .HeaderText = "Q.MIN"
             .SortExpression = "QMIN"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(5)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(5)
             .ItemStyle.HorizontalAlign = HorizontalAlign.Center
         End With
 
@@ -405,18 +409,18 @@ Public Class AZLista
             .DataField = "ACRONIMO"
             .HeaderText = "ACRONIMO"
             .SortExpression = "ACRONIMO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(5)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(5)
             .ItemStyle.HorizontalAlign = HorizontalAlign.Center
         End With
 
         With c8
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            '.ButtonType = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         GridCtrl.Columns.Add(c1)
@@ -450,24 +454,24 @@ Public Class AZLista
             .DataField = "ISINCODE"
             .HeaderText = "CODICE ISIN"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(12)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(12)
         End With
 
         With c2
             .DataField = "DENOMINAZIONE"
             .HeaderText = "DESCRIZIONE"
             .SortExpression = "DENOMINAZIONE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(48)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(48)
         End With
 
         With c3
             .DataField = "MIN1"
             .HeaderText = "MIN. ANNO"
             .SortExpression = "MINIMO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(12)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(12)
             .ItemStyle.HorizontalAlign = HorizontalAlign.Center
         End With
 
@@ -475,8 +479,8 @@ Public Class AZLista
             .DataField = "MAX1"
             .HeaderText = "MAX. ANNO"
             .SortExpression = "MASSIMO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
             .ItemStyle.HorizontalAlign = HorizontalAlign.Center
         End With
 
@@ -484,8 +488,8 @@ Public Class AZLista
             .DataField = "COMP"
             .HeaderText = "MEDIA"
             .SortExpression = "COMPENSO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(5)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(5)
             .ItemStyle.HorizontalAlign = HorizontalAlign.Center
         End With
 
@@ -493,8 +497,8 @@ Public Class AZLista
             .DataField = "QMINIMA"
             .HeaderText = "Q.MIN"
             .SortExpression = "QMINIMA"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(5)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(5)
             .ItemStyle.HorizontalAlign = HorizontalAlign.Center
         End With
 
@@ -502,18 +506,18 @@ Public Class AZLista
             .DataField = "ACRONIMO"
             .HeaderText = "ACRONIMO"
             .SortExpression = "ACRONIMO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(5)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(5)
             .ItemStyle.HorizontalAlign = HorizontalAlign.Center
         End With
 
         With c8
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            '.ButtonType = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         GridCtrl.Columns.Add(c1)
@@ -545,44 +549,44 @@ Public Class AZLista
             .DataField = "ISINCODE"
             .HeaderText = "CODICE ISIN"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         With c3
             .DataField = "DENOMINAZIONE"
             .HeaderText = "DENOMINAZIONE"
             .SortExpression = "DENOMINAZIONE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(45)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(45)
         End With
         With c4
             .DataField = "DATAIN"
             .HeaderText = "DATA INIZIO"
             .SortExpression = "DATAINIZIO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         With c5
             .DataField = "DATAFIN"
             .HeaderText = "DATA FINE"
             .SortExpression = "DATAFINE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         With c6
             .DataField = "OPCAP"
             .HeaderText = ""
             .SortExpression = "OpCap"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(40)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(40)
         End With
         With c7
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            '.ButtonType = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         GridCtrl.Columns.Add(c2)
@@ -612,51 +616,51 @@ Public Class AZLista
             .DataField = "ISINCODE"
             .HeaderText = "CODICE ISIN"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         With c3
             .DataField = "DENOMINAZIONE"
             .HeaderText = "DENOMINAZIONE"
             .SortExpression = "DENOMINAZIONE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(30)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(30)
         End With
         With c4
             .DataField = "DATAIN"
             .HeaderText = "DATA INIZIO"
             .SortExpression = "DATAINIZIO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         With c5
             .DataField = "DATAFIN"
             .HeaderText = "DATA FINE"
             .SortExpression = "DATAFINE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         With c6
             .DataField = "DATASTORO"
             .HeaderText = "DATA STOR"
             .SortExpression = "DATASTOR"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         With c7
             .DataField = "OPCAP"
             .HeaderText = ""
             .SortExpression = "OpCap"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(20)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(20)
         End With
         With c8
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            '.ButtonType = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         GridCtrl.Columns.Add(c2)
@@ -681,29 +685,29 @@ Public Class AZLista
             .DataField = "ISINCODE"
             .HeaderText = "CODICE ISIN"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(20)
+            ''.ItemStyle.Font.Size = FontUnit.Point(9)
+            ''.ItemStyle.Width = Unit.Percentage(20)
         End With
         With c3
             .DataField = "RAGSOC"
             .HeaderText = "DESCRIZIONE"
             .SortExpression = "RAGSOC"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(70)
+            ''.ItemStyle.Font.Size = FontUnit.Point(9)
+            ''.ItemStyle.Width = Unit.Percentage(70)
         End With
         With c4
             .DataField = "STATO"
             .HeaderText = ""
             .Visible = False
-            .ItemStyle.Width = Unit.Percentage(0)
+            '.ItemStyle.Width = Unit.Percentage(0)
         End With
         With c5
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            ''.ButtonType = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         GridCtrl.Columns.Add(c2)
@@ -725,30 +729,30 @@ Public Class AZLista
             .DataField = "ISINCODE"
             .HeaderText = "CODICE ISIN"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(20)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(20)
         End With
         With c3
             .DataField = "DENOMINAZIONE"
             .HeaderText = "DESCRIZIONE"
             .SortExpression = "DENOMINAZIONE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(35)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(35)
         End With
         With c4
             .DataField = "NOTACONVRIEP"
             .HeaderText = "PERIODO DI CONVERSIONE"
             .SortExpression = "NOTACONVRIEP"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(35)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(35)
         End With
         With c5
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            '.ButtonType = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         GridCtrl.Columns.Add(c2)
         GridCtrl.Columns.Add(c3)
@@ -769,30 +773,30 @@ Public Class AZLista
             .DataField = "ISINCODE"
             .HeaderText = "CODICE ISIN"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(20)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(20)
         End With
         With c3
             .DataField = "DENOMINAZIONE"
             .HeaderText = "DESCRIZIONE"
             .SortExpression = "DENOMINAZIONE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(60)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(60)
         End With
         With c4
             .DataField = "WARR"
             .HeaderText = ""
             .SortExpression = "Warr"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         With c5
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            ''.ButtonType = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         GridCtrl.Columns.Add(c2)
         GridCtrl.Columns.Add(c3)
@@ -812,30 +816,30 @@ Public Class AZLista
             .DataField = "ISINCODE"
             .HeaderText = "CODICE ISIN"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(15)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(15)
         End With
         With c3
             .DataField = "DENOMINAZIONE"
             .HeaderText = "DENOMINAZIONE"
             .SortExpression = "DENOMINAZIONE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(40)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(40)
         End With
         With c4
             .DataField = "OPCAP"
             .HeaderText = ""
             .SortExpression = "OpCap"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(40)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(40)
         End With
         With c5
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            '.ButtonType = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         GridCtrl.Columns.Add(c2)
         GridCtrl.Columns.Add(c3)
@@ -856,37 +860,37 @@ Public Class AZLista
             .DataField = "DATADEFA"
             .HeaderText = "DATA ASSEMBLEA"
             .SortExpression = "DATADEF"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(15)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(15)
         End With
         With c3
             .DataField = "ISINCODE"
             .HeaderText = "CODICE ISIN"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(25)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(25)
         End With
         With c4
             .DataField = "RAGSOC"
             .HeaderText = "DENOMINAZIONE"
             .SortExpression = "RAGSOC"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(50)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(50)
         End With
         With c5
             .DataField = "ASSEMBLEA"
             .HeaderText = ""
             .SortExpression = "Scheda"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(5)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(5)
         End With
         With c6
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            '.ButtonType = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         GridCtrl.Columns.Add(c2)
         GridCtrl.Columns.Add(c3)
@@ -909,44 +913,44 @@ Public Class AZLista
             .DataField = "ISINCODE"
             .HeaderText = "CODICE ISIN"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(20)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(20)
         End With
         With c3
             .DataField = "DENOMINAZIONE"
             .HeaderText = "DENOMINAZIONE"
             .SortExpression = "DENOMINAZIONE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(50)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(50)
         End With
         With c4
             .DataField = "VAL"
             .HeaderText = "VAL"
             .SortExpression = "VAL"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(15)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(15)
         End With
         With c5
             .DataField = "LORDO"
             .HeaderText = "LORDO"
             .SortExpression = "LORDO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(15)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(15)
         End With
         With c6
             .DataField = "DIV"
             .HeaderText = ""
             .SortExpression = "DIV"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         With c7
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            '.ButtonType = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         GridCtrl.Columns.Add(c2)
         GridCtrl.Columns.Add(c3)
@@ -972,58 +976,58 @@ Public Class AZLista
             .DataField = "DPAG"
             .HeaderText = "PAGAMENTO"
             .SortExpression = "DATAPAG"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         With c2
             .DataField = "DTSTACCO"
             .HeaderText = "STACCO"
             .SortExpression = "DATASTACCO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         With c3
             .DataField = "ISINCODE"
             .HeaderText = "CODICE ISIN"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(15)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(15)
         End With
         With c4
             .DataField = "DENOMINAZIONE"
             .HeaderText = "DENOMINAZIONE"
             .SortExpression = "DENOMINAZIONE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(40)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(40)
         End With
         With c5
             .DataField = "VAL"
             .HeaderText = "VAL."
             .SortExpression = "VAL"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(5)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(5)
         End With
         With c6
             .DataField = "LORDO"
             .HeaderText = "LORDO"
             .SortExpression = "LORDO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         With c7
             .DataField = "DIV"
             .HeaderText = ""
             .SortExpression = "DIV"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         With c8
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            '.ButtonType = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         GridCtrl.Columns.Add(c1)
         GridCtrl.Columns.Add(c2)
@@ -1049,37 +1053,37 @@ Public Class AZLista
             .DataField = "DATAC"
             .HeaderText = "DATA"
             .SortExpression = "DATA"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         With c3
             .DataField = "ISINCODE"
             .HeaderText = "CODICE ISIN"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(20)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(20)
         End With
         With c4
             .DataField = "DENOMINAZIONE"
             .HeaderText = "DENOMINAZIONE"
             .SortExpression = "DENOMINAZIONE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(60)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(60)
         End With
         With c5
             .DataField = "CDA"
             .HeaderText = ""
             .SortExpression = "Scheda"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(60)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(60)
         End With
         With c6
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            '.ButtonType = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         GridCtrl.Columns.Add(c2)
         GridCtrl.Columns.Add(c3)
@@ -1106,72 +1110,72 @@ Public Class AZLista
             .DataField = "ISINCODERIF"
             .HeaderText = "ISIN SOCIETA'"
             .SortExpression = "ISINCODERIF"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         With c2
             .DataField = "ISINCODE"
             .HeaderText = "ISIN TITOLO"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
         'ISINCODERIF,ISINCODE, DENOMINAZIONE,TIPOAZIONE,QUOTATA,QUANTITA,VALNOMINALE,CAPITALE
         With c3
             .DataField = "DENOMINAZIONE"
             .HeaderText = "DENOMINAZIONE"
             .SortExpression = "DENOMINAZIONE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(18)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(18)
         End With
         With c4
             .DataField = "TIPOAZIONE"
             .HeaderText = "TIPO AZIONE"
             .SortExpression = "TIPOAZIONE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(20)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(20)
         End With
         With c5
             .DataField = "QUOTATA"
             .HeaderText = "QUOT."
             .SortExpression = "QUOTATA"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(4)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(4)
         End With
         With c6
             .DataField = "VNOM"
             .HeaderText = "NOM."
             .SortExpression = "VALNOMINALE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(8)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(8)
         End With
         With c7
             .DataField = "CAPITALE"
             .HeaderText = "CAPITALE"
             .SortExpression = "CAP"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(15)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(15)
         End With
         With c8
             .DataField = "TITOLO"
             .HeaderText = ""
             .SortExpression = "Scheda"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(5)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(5)
         End With
         With c9
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            '.ButtonType = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(5)
+            '.ItemStyle.Font.Size = FontUnit.Point(9)
+            '.ItemStyle.Width = Unit.Percentage(5)
         End With
         With c10
             .DataField = "STATO"
             .HeaderText = ""
             .Visible = False
-            .ItemStyle.Width = Unit.Percentage(0)
+            '.ItemStyle.Width = Unit.Percentage(0)
         End With
 
         GridCtrl.Columns.Add(c1)

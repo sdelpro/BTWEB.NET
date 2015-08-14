@@ -7,8 +7,27 @@ Public Class AZDettDIV
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
 
     End Sub
-    Protected WithEvents Image1 As System.Web.UI.WebControls.Image
-    Protected WithEvents tbDiv As System.Web.UI.WebControls.Table
+    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_codisi As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_denomi As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_valuta As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_stato As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_lordo As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_vadipr As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_divpre As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_pagame As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_stacco As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_straor As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_ordina As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_ordnet As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_accont As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_saldo As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_noncfr As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_nota As System.Web.UI.WebControls.Label
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.
@@ -47,47 +66,84 @@ Public Class AZDettDIV
         With clt
             Call .ReadGenericQuery(dt, sql)
             If dt.Rows.Count = 1 Then
-                tbDiv.Rows(0).Cells(0).Text() = "CODICE ISIN"
-                tbDiv.Rows(0).Cells(1).Text() = dt.Rows(0).Item("ISINCODE")
-                tbDiv.Rows(0).Cells(2).Text() = "DENOMINAZIONE"
-                tbDiv.Rows(0).Cells(3).Text() = dt.Rows(0).Item("DENOMINAZIONE")
 
-                tbDiv.Rows(1).Cells(0).Text() = "VALUTA"
-                tbDiv.Rows(1).Cells(1).Text() = dt.Rows(0).Item("VAL")
-                tbDiv.Rows(1).Cells(2).Text() = "STATO"
-                tbDiv.Rows(1).Cells(3).Text() = UCase(dt.Rows(0).Item("STATO"))
+                lbl_codisi.Text() = dt.Rows(0).Item("ISINCODE")
 
-                tbDiv.Rows(2).Cells(0).Text() = "LORDO"
-                tbDiv.Rows(2).Cells(1).Text() = IIf(dt.Rows(0).Item("LORDO") & "" = "", ".", dt.Rows(0).Item("LORDO"))
-                'tbDiv.Rows(2).Cells(2).Text() = "ALIQUOTA %"
-                'tbDiv.Rows(2).Cells(3).Text() = IIf(dt.Rows(0).Item("ALIQUOTA") & "" = "", ".", dt.Rows(0).Item("ALIQUOTA"))
-                'tbDiv.Rows(2).Cells(4).Text() = "NETTO"
-                'tbDiv.Rows(2).Cells(5).Text() = IIf(dt.Rows(0).Item("NETTO") & "" = "", ".", dt.Rows(0).Item("NETTO"))
+                lbl_denomi.Text() = dt.Rows(0).Item("DENOMINAZIONE")
 
-                tbDiv.Rows(2).Cells(2).Text() = "VAL. DIV. PREC."
-                tbDiv.Rows(2).Cells(3).Text() = dt.Rows(0).Item("VALUD")
-                tbDiv.Rows(2).Cells(4).Text() = "DIV. PREC."
-                tbDiv.Rows(2).Cells(5).Text() = fmtNumbertoDecimal(dt.Rows(0).Item("UD"))
 
-                tbDiv.Rows(3).Cells(0).Text() = "PAGAMENTO"
-                tbDiv.Rows(3).Cells(1).Text() = IIf(dt.Rows(0).Item("DATAPAG") & "" = "" Or dt.Rows(0).Item("DATAPAG") & "" = "01/01/1900" Or dt.Rows(0).Item("DATAPAG") & "" = "1/1/1900", ".", dt.Rows(0).Item("DATAPAG"))
-                tbDiv.Rows(3).Cells(2).Text() = "STACCO"
-                tbDiv.Rows(3).Cells(3).Text() = IIf(dt.Rows(0).Item("DATASTACCO") & "" = "", ".", dt.Rows(0).Item("DATASTACCO"))
+                lbl_valuta.Text() = dt.Rows(0).Item("VAL")
 
-                tbDiv.Rows(4).Cells(0).Text() = "STRAORD."
-                tbDiv.Rows(4).Cells(1).Text() = IIf(dt.Rows(0).Item("STRAORDINARIO") = "SI", "SI", ".")
-                tbDiv.Rows(4).Cells(2).Text() = "ORD."
-                tbDiv.Rows(4).Cells(3).Text() = IIf(dt.Rows(0).Item("ORDINARIO") = "SI", "SI", ".")
-                tbDiv.Rows(4).Cells(4).Text() = "NETTO"
-                tbDiv.Rows(4).Cells(5).Text() = IIf(dt.Rows(0).Item("TIPONETTO") = "SI", "SI", ".")
+                lbl_valuta.Text() = UCase(dt.Rows(0).Item("STATO"))
 
-                tbDiv.Rows(5).Cells(0).Text() = "ACCONTO"
-                tbDiv.Rows(5).Cells(1).Text() = IIf(dt.Rows(0).Item("ACCONTO") = "SI", "SI", ".")
-                tbDiv.Rows(5).Cells(2).Text() = "SALDO"
-                tbDiv.Rows(5).Cells(3).Text() = IIf(dt.Rows(0).Item("SALDO") = "SI", "SI", ".")
-                tbDiv.Rows(5).Cells(4).Text() = "NON CONFR."
-                tbDiv.Rows(5).Cells(5).Text() = IIf(dt.Rows(0).Item("NONCONFR") = "SI", "SI", ".")
+
+                lbl_lordo.Text() = IIf(dt.Rows(0).Item("LORDO") & "" = "", ".", dt.Rows(0).Item("LORDO"))
+                lbl_vadipr.Text() = dt.Rows(0).Item("VALUD")
+
+                lbl_divpre.Text() = fmtNumbertoDecimal(dt.Rows(0).Item("UD"))
+
+
+                lbl_pagame.Text() = IIf(dt.Rows(0).Item("DATAPAG") & "" = "" Or dt.Rows(0).Item("DATAPAG") & "" = "01/01/1900" Or dt.Rows(0).Item("DATAPAG") & "" = "1/1/1900", ".", dt.Rows(0).Item("DATAPAG"))
+
+                lbl_stacco.Text() = IIf(dt.Rows(0).Item("DATASTACCO") & "" = "", ".", dt.Rows(0).Item("DATASTACCO"))
+
+                lbl_straor.Text() = IIf(dt.Rows(0).Item("STRAORDINARIO") = "SI", "SI", ".")
+
+                lbl_ordina.Text() = IIf(dt.Rows(0).Item("ORDINARIO") = "SI", "SI", ".")
+
+                lbl_ordnet.Text() = IIf(dt.Rows(0).Item("TIPONETTO") = "SI", "SI", ".")
+
+
+                lbl_accont.Text() = IIf(dt.Rows(0).Item("ACCONTO") = "SI", "SI", ".")
+
+                lbl_saldo.Text() = IIf(dt.Rows(0).Item("SALDO") = "SI", "SI", ".")
+
+                lbl_noncfr.Text() = IIf(dt.Rows(0).Item("NONCONFR") = "SI", "SI", ".")
+
             End If
+            'If dt.Rows.Count = 1 Then
+            '    tbDiv.Rows(0).Cells(0).Text() = "CODICE ISIN"
+            '    tbDiv.Rows(0).Cells(1).Text() = dt.Rows(0).Item("ISINCODE")
+            '    tbDiv.Rows(0).Cells(2).Text() = "DENOMINAZIONE"
+            '    tbDiv.Rows(0).Cells(3).Text() = dt.Rows(0).Item("DENOMINAZIONE")
+
+            '    tbDiv.Rows(1).Cells(0).Text() = "VALUTA"
+            '    tbDiv.Rows(1).Cells(1).Text() = dt.Rows(0).Item("VAL")
+            '    tbDiv.Rows(1).Cells(2).Text() = "STATO"
+            '    tbDiv.Rows(1).Cells(3).Text() = UCase(dt.Rows(0).Item("STATO"))
+
+            '    tbDiv.Rows(2).Cells(0).Text() = "LORDO"
+            '    tbDiv.Rows(2).Cells(1).Text() = IIf(dt.Rows(0).Item("LORDO") & "" = "", ".", dt.Rows(0).Item("LORDO"))
+            '    'tbDiv.Rows(2).Cells(2).Text() = "ALIQUOTA %"
+            '    'tbDiv.Rows(2).Cells(3).Text() = IIf(dt.Rows(0).Item("ALIQUOTA") & "" = "", ".", dt.Rows(0).Item("ALIQUOTA"))
+            '    'tbDiv.Rows(2).Cells(4).Text() = "NETTO"
+            '    'tbDiv.Rows(2).Cells(5).Text() = IIf(dt.Rows(0).Item("NETTO") & "" = "", ".", dt.Rows(0).Item("NETTO"))
+
+            '    tbDiv.Rows(2).Cells(2).Text() = "VAL. DIV. PREC."
+            '    tbDiv.Rows(2).Cells(3).Text() = dt.Rows(0).Item("VALUD")
+            '    tbDiv.Rows(2).Cells(4).Text() = "DIV. PREC."
+            '    tbDiv.Rows(2).Cells(5).Text() = fmtNumbertoDecimal(dt.Rows(0).Item("UD"))
+
+            '    tbDiv.Rows(3).Cells(0).Text() = "PAGAMENTO"
+            '    tbDiv.Rows(3).Cells(1).Text() = IIf(dt.Rows(0).Item("DATAPAG") & "" = "" Or dt.Rows(0).Item("DATAPAG") & "" = "01/01/1900" Or dt.Rows(0).Item("DATAPAG") & "" = "1/1/1900", ".", dt.Rows(0).Item("DATAPAG"))
+            '    tbDiv.Rows(3).Cells(2).Text() = "STACCO"
+            '    tbDiv.Rows(3).Cells(3).Text() = IIf(dt.Rows(0).Item("DATASTACCO") & "" = "", ".", dt.Rows(0).Item("DATASTACCO"))
+
+            '    tbDiv.Rows(4).Cells(0).Text() = "STRAORD."
+            '    tbDiv.Rows(4).Cells(1).Text() = IIf(dt.Rows(0).Item("STRAORDINARIO") = "SI", "SI", ".")
+            '    tbDiv.Rows(4).Cells(2).Text() = "ORD."
+            '    tbDiv.Rows(4).Cells(3).Text() = IIf(dt.Rows(0).Item("ORDINARIO") = "SI", "SI", ".")
+            '    tbDiv.Rows(4).Cells(4).Text() = "NETTO"
+            '    tbDiv.Rows(4).Cells(5).Text() = IIf(dt.Rows(0).Item("TIPONETTO") = "SI", "SI", ".")
+
+            '    tbDiv.Rows(5).Cells(0).Text() = "ACCONTO"
+            '    tbDiv.Rows(5).Cells(1).Text() = IIf(dt.Rows(0).Item("ACCONTO") = "SI", "SI", ".")
+            '    tbDiv.Rows(5).Cells(2).Text() = "SALDO"
+            '    tbDiv.Rows(5).Cells(3).Text() = IIf(dt.Rows(0).Item("SALDO") = "SI", "SI", ".")
+            '    tbDiv.Rows(5).Cells(4).Text() = "NON CONFR."
+            '    tbDiv.Rows(5).Cells(5).Text() = IIf(dt.Rows(0).Item("NONCONFR") = "SI", "SI", ".")
+            'End If
+
             .Dispose()
         End With
         Dim dtn As New DataTable
@@ -95,14 +151,14 @@ Public Class AZDettDIV
         sql = "SELECT * FROM NOTADIV WHERE NUMNOTA IN(SELECT NUMNOTA FROM NOTEDIVAZIONI WHERE ISINCODE = '" & dt.Rows(0).Item("ISINCODE") & "' AND DINSERIMENTO='" & dt.Rows(0).Item("DINSERIMENTO") & "') ORDER BY NUMNOTA"
         With cltn
             Call .ReadGenericQuery(dtn, sql)
-            tbDiv.Rows(6).Cells(0).Text() = "NOTE"
+
             If dtn.Rows.Count > 0 Then
                 For zx = 0 To dtn.Rows.Count - 1
-                    tbDiv.Rows(7 + zx).Cells(0).Text() = dtn.Rows(zx).Item("NOTA")
+                    lbl_stato.Text() = dtn.Rows(zx).Item("NOTA")
                 Next zx
                 .Dispose()
             Else
-                tbDiv.Rows(7).Cells(0).Text() = "Nessuna"
+                lbl_stato.Text() = "Nessuna"
             End If
         End With
     End Sub

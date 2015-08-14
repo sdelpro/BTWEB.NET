@@ -19,6 +19,10 @@ Public Class AZMenu
     Protected WithEvents lbl3 As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbl2 As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbl1 As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.

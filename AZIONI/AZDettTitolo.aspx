@@ -7,18 +7,96 @@
 		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
 		<meta content="JavaScript" name="vs_defaultClientScript">
 		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
 	</HEAD>
-	<body bottomMargin="0" leftMargin="0" background="..\Images\sfMenuidx.jpg" topMargin="0"
-		rightMargin="0" MS_POSITIONING="GridLayout">
+	<body>
 		<form id="Form1" method="post" runat="server">
-			<asp:image id="Image1" style="Z-INDEX: 104; LEFT: 8px; POSITION: absolute; TOP: 32px" runat="server"
-				Height="44px" Width="352px" ImageUrl="..\Images\Logo.gif"></asp:image>
-			<TABLE id="Table1" style="Z-INDEX: 105; LEFT: 0px; WIDTH: 100%; POSITION: absolute; TOP: 96px; HEIGHT: 36px"
-				cellSpacing="1" cellPadding="1" width="100%" border="0">
-				<TR>
-					<TD><A class="NAV" href="JavaScript:window.close();"><B style="COLOR: lime; FONT-STYLE: normal; FONT-FAMILY: Tahoma; FONT-VARIANT: normal; TEXT-DECORATION: none">CHIUDI</B></A><A class="NAV" href="JavaScript:window.close();"><B style="COLOR: lime; FONT-STYLE: normal; FONT-FAMILY: Tahoma; FONT-VARIANT: normal; TEXT-DECORATION: none"></B></A></TD>
-				</TR>
-			</TABLE>
+			<div id="riga-header">
+				<div id="header">
+					<div><IMG id="logo" alt="" src="../images/ImagesLogo.gif" width="352">
+					<span class="etichetta" style="margin-left:900px;margin-top:0px">
+						<a class="selected" href="JavaScript:window.close();"><img src="../Images/close2.png""></a></span>
+					</div>
+				</div> <!-- header --></div> <!-- riga-header -->
+			<div id="riga-menu">
+				<div id="menu">
+					<ul>
+						<li>
+							<A href="../IDXMenuIn.aspx">HOME</A>
+						</li>
+						<li class="selected">
+							<asp:linkbutton id="lblAZIONI" Runat="server">AZIONI</asp:linkbutton></li>
+						<li>
+							<asp:linkbutton id="lblOBBLIGAZIONI" Runat="server">OBBLIGAZIONI</asp:linkbutton></li>
+						<li>
+							<asp:linkbutton id="lblINFOVARIE" Runat="server">INFORMAZIONI VARIE</asp:linkbutton></li>
+						<li>
+							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton></li>
+						<li>
+							<A href="../Logout.aspx">LOGOUT</A>
+						</li>
+					</ul>
+					<div id="ultima-connessione"><asp:label style="Z-INDEX: 114" id="lblLastLogin" runat="server">Ultima connessione</asp:label></div>
+				</div> <!-- menu --></div> <!-- riga-menu -->
+			<div id="riga-pagina">
+				<div id="pagina">
+					<div id="interna">
+						<div id="top">
+							<div><span class="label-sinistra">TITOLI SOCIETA<IMG alt="" src="../Images/label-sinistra-fine.png"></span></div></div>
+						<div id="contenuto">
+							<div id="due-colonne">
+								<table>
+									<tr>
+										<td><span class="etichetta">CODICE ISIN</span>
+											<asp:label id="lbl_codisi" runat="server" CssClass="valore">Ultima connessione</asp:label></td>
+										<td class="separa"></td>
+										<td><span class="etichetta">DENOMINAZIONE</span>
+											<asp:label id="lbl_denomi" runat="server" CssClass="valore"></asp:label></td>
+									</tr>
+									<tr>
+										<td><span class="etichetta">TIPO AZIONE</span>
+											<asp:label id="lbl_tipazi" runat="server" cssclass="valore"></asp:label></td>
+										<td class="separa"></td>
+										<td><span class="etichetta">QUOTATA</span>
+											<asp:label id="lbl_quotat" runat="server" cssclass="valore"></asp:label></td>
+									</tr>
+									<tr>
+										<td><span class="etichetta">INDICE</span>
+											<asp:label id="lbl_indice" runat="server" cssclass="valore"></asp:label></td>
+										<td class="separa"></td>
+										<td><span class="etichetta">PESO%</span>
+											<asp:label id="lbl_peso" runat="server" cssclass="valore"></asp:label></td>
+									</tr>
+									<tr>
+										<td><span class="etichetta">QUANTITA'</span>
+											<asp:label id="lbl_qta" runat="server" cssclass="valore"></asp:label></td>
+										<td class="separa"></td>
+										<td><span class="etichetta">VALORE NOMINALE</span>
+											<asp:label id="lbl_valnom" runat="server" cssclass="valore"></asp:label>
+										</td>
+									</tr>
+									<tr>
+										<td><span class="etichetta">CAPITALE</span>
+											<asp:label id="lbl_capita" runat="server" cssclass="valore"></asp:label></td>
+										<td class="separa"></td>
+										<td><span class="etichetta">ACRONIMO</span>
+											<asp:label id="lbl_acroni" runat="server" cssclass="valore"></asp:label></td>
+									</tr>
+									<tr>
+										<td><span class="etichetta">QTA MINIMA</span>
+											<asp:label id="lbl_qtamin" runat="server" cssclass="valore"></asp:label></td>
+										<td class="separa"></td>
+										<td><span class="etichetta">MERCATO</span>
+											<asp:label id="lbl_mercat" runat="server" cssclass="valore"></asp:label></td>
+									</tr>
+									<tr>
+										<td><span class="etichetta">ALTRO INDICE</span>
+											<asp:label id="lbl_altind" runat="server" cssclass="valore"></asp:label></td>
+									</tr>
+								</table>
+								<div class="clear"></div>
+							</div>
+							<!--
 			<asp:table id="tbTitolo" style="Z-INDEX: 103; LEFT: 0px; POSITION: absolute; TOP: 136px" runat="server"
 				Height="80px" Width="100%">
 				<asp:TableRow Width="100%" BorderWidth="1px" Font-Size="12px" Font-Names="Tahoma">
@@ -65,6 +143,12 @@
 					<asp:TableCell BorderStyle="Double" BorderWidth="1px" BackColor="Transparent" ColumnSpan="2" Width="12.5%"
 						BorderColor="Black"></asp:TableCell>
 				</asp:TableRow>
-			</asp:table></form>
+			</asp:table>
+			-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
 	</body>
 </HTML>

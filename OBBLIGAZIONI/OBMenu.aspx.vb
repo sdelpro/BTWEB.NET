@@ -22,12 +22,17 @@ Public Class OBMenu
     Protected WithEvents lbl7 As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbl8 As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbl9 As System.Web.UI.WebControls.LinkButton
-    Protected WithEvents lbl10 As System.Web.UI.WebControls.LinkButton
-    Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
+    Protected WithEvents LBLLASTLOGIN As System.Web.UI.WebControls.Label
     Protected WithEvents Image1 As System.Web.UI.WebControls.Image
     Protected WithEvents lbl1 As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbl12 As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbl11 As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbl As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbl10 As System.Web.UI.WebControls.LinkButton
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.

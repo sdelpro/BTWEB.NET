@@ -10,6 +10,19 @@ Public Class AZDettOPCAP
     End Sub
     Protected WithEvents Image1 As System.Web.UI.WebControls.Image
     Protected WithEvents tbOp As System.Web.UI.WebControls.Table
+    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_codisi As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_denomi As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_stato As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_inizio As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_fine As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_storic As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_operaz As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_parita As System.Web.UI.WebControls.Label
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.
@@ -43,24 +56,43 @@ Public Class AZDettOPCAP
         With clt
             Call .ReadGenericQuery(dt, sql)
             If dt.Rows.Count = 1 Then
-                tbOp.Rows(0).Cells(0).Text() = "ISINCODE"
-                tbOp.Rows(0).Cells(1).Text() = dt.Rows(0).Item("ISINCODE")
-                tbOp.Rows(0).Cells(2).Text() = "DENOMINAZIONE"
-                tbOp.Rows(0).Cells(3).Text() = dt.Rows(0).Item("DENOMINAZIONE") & ""
-                tbOp.Rows(1).Cells(0).Text() = "STATO"
-                tbOp.Rows(1).Cells(1).Text() = dt.Rows(0).Item("STATO")
-                tbOp.Rows(1).Cells(2).Text() = "INIZIO"
-                tbOp.Rows(1).Cells(3).Text() = IIf(dt.Rows(0).Item("DATAINIZIO") Is System.DBNull.Value, ".", dt.Rows(0).Item("DATAINIZIO"))
-                tbOp.Rows(1).Cells(4).Text() = "FINE"
-                tbOp.Rows(1).Cells(5).Text() = IIf(dt.Rows(0).Item("DATAFINE") Is System.DBNull.Value, ".", dt.Rows(0).Item("DATAFINE"))
-                tbOp.Rows(1).Cells(6).Text() = "STORICIZZAZIONE"
-                tbOp.Rows(1).Cells(7).Text() = IIf(dt.Rows(0).Item("DATASTOR") Is System.DBNull.Value, ".", dt.Rows(0).Item("DATASTOR"))
-                tbOp.Rows(2).Cells(0).Text() = "OPERAZIONI SUL CAPITALE - TESTO COMPLETO DELL'OPERAZIONE"
-                tbOp.Rows(3).Cells(0).Text() = dt.Rows(0).Item("TESTO") & ""
-                tbOp.Rows(4).Cells(0).Text() = "TABELLA DI PARITA'"
-                tbOp.Rows(5).Cells(0).Text() = IIf(dt.Rows(0).Item("PARITA") & "." = ".", "nessuna", Replace(dt.Rows(0).Item("PARITA") & ".", Chr(13), "<br>"))
-                'tbOp.Rows(4).Cells(0).Text() = IIf(dt.Rows(0).Item("PARITA") Is System.DBNull.Value, ".", Replace(dt.Rows(0).Item("PARITA"), Chr(13), "<br>"))
+
+                lbl_codisi.Text() = dt.Rows(0).Item("ISINCODE")
+
+                lbl_denomi.Text() = dt.Rows(0).Item("DENOMINAZIONE") & ""
+
+                lbl_stato.Text() = dt.Rows(0).Item("STATO")
+
+                lbl_inizio.Text() = IIf(dt.Rows(0).Item("DATAINIZIO") Is System.DBNull.Value, ".", dt.Rows(0).Item("DATAINIZIO"))
+
+                lbl_fine.Text() = IIf(dt.Rows(0).Item("DATAFINE") Is System.DBNull.Value, ".", dt.Rows(0).Item("DATAFINE"))
+
+                lbl_storic.Text() = IIf(dt.Rows(0).Item("DATASTOR") Is System.DBNull.Value, ".", dt.Rows(0).Item("DATASTOR"))
+
+                lbl_operaz.Text() = dt.Rows(0).Item("TESTO") & ""
+
+                lbl_parita.Text() = IIf(dt.Rows(0).Item("PARITA") & "." = ".", "nessuna", Replace(dt.Rows(0).Item("PARITA") & ".", Chr(13), "<br>"))
+
             End If
+            'If dt.Rows.Count = 1 Then
+            '    tbOp.Rows(0).Cells(0).Text() = "ISINCODE"
+            '    tbOp.Rows(0).Cells(1).Text() = dt.Rows(0).Item("ISINCODE")
+            '    tbOp.Rows(0).Cells(2).Text() = "DENOMINAZIONE"
+            '    tbOp.Rows(0).Cells(3).Text() = dt.Rows(0).Item("DENOMINAZIONE") & ""
+            '    tbOp.Rows(1).Cells(0).Text() = "STATO"
+            '    tbOp.Rows(1).Cells(1).Text() = dt.Rows(0).Item("STATO")
+            '    tbOp.Rows(1).Cells(2).Text() = "INIZIO"
+            '    tbOp.Rows(1).Cells(3).Text() = IIf(dt.Rows(0).Item("DATAINIZIO") Is System.DBNull.Value, ".", dt.Rows(0).Item("DATAINIZIO"))
+            '    tbOp.Rows(1).Cells(4).Text() = "FINE"
+            '    tbOp.Rows(1).Cells(5).Text() = IIf(dt.Rows(0).Item("DATAFINE") Is System.DBNull.Value, ".", dt.Rows(0).Item("DATAFINE"))
+            '    tbOp.Rows(1).Cells(6).Text() = "STORICIZZAZIONE"
+            '    tbOp.Rows(1).Cells(7).Text() = IIf(dt.Rows(0).Item("DATASTOR") Is System.DBNull.Value, ".", dt.Rows(0).Item("DATASTOR"))
+            '    tbOp.Rows(2).Cells(0).Text() = "OPERAZIONI SUL CAPITALE - TESTO COMPLETO DELL'OPERAZIONE"
+            '    tbOp.Rows(3).Cells(0).Text() = dt.Rows(0).Item("TESTO") & ""
+            '    tbOp.Rows(4).Cells(0).Text() = "TABELLA DI PARITA'"
+            '    tbOp.Rows(5).Cells(0).Text() = IIf(dt.Rows(0).Item("PARITA") & "." = ".", "nessuna", Replace(dt.Rows(0).Item("PARITA") & ".", Chr(13), "<br>"))
+            '    'tbOp.Rows(4).Cells(0).Text() = IIf(dt.Rows(0).Item("PARITA") Is System.DBNull.Value, ".", Replace(dt.Rows(0).Item("PARITA"), Chr(13), "<br>"))
+            'End If
             .Dispose()
         End With
 

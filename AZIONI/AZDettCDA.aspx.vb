@@ -7,8 +7,16 @@ Public Class AZDettCDA
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
 
     End Sub
-    Protected WithEvents Image1 As System.Web.UI.WebControls.Image
-    Protected WithEvents tbAss As System.Web.UI.WebControls.Table
+    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_codisi As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_denomi As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_datcda As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_temcda As System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_testo As System.Web.UI.WebControls.Label
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.
@@ -42,19 +50,26 @@ Public Class AZDettCDA
         With clt
             Call .ReadGenericQuery(dt, sql)
             If dt.Rows.Count = 1 Then
-                tbAss.Rows(0).Cells(0).Text() = "CODICE ISIN"
-                tbAss.Rows(0).Cells(1).Text() = dt.Rows(0).Item("ISINCODE")
-                tbAss.Rows(0).Cells(2).Text() = "DENOMINAZIONE"
-                tbAss.Rows(0).Cells(3).Text() = dt.Rows(0).Item("DENOMINAZIONE")
-
-                tbAss.Rows(1).Cells(0).Text() = "DATA CDA"
-                tbAss.Rows(1).Cells(1).Text() = dt.Rows(0).Item("DATA")
-                tbAss.Rows(1).Cells(2).Text() = "TEMA CDA"
-                tbAss.Rows(1).Cells(3).Text() = dt.Rows(0).Item("TEMA")
-
-                tbAss.Rows(2).Cells(0).Text() = "TESTO"
-                tbAss.Rows(3).Cells(0).Text() = IIf(dt.Rows(0).Item("TESTO") = "", "nessuno", dt.Rows(0).Item("TESTO"))
+                lbl_codisi.Text() = dt.Rows(0).Item("ISINCODE")
+                lbl_denomi.Text() = dt.Rows(0).Item("DENOMINAZIONE")
+                lbl_datcda.Text() = dt.Rows(0).Item("DATA")
+                lbl_temcda.Text() = dt.Rows(0).Item("TEMA")
+                lbl_testo.Text() = IIf(dt.Rows(0).Item("TESTO") = "", "nessuno", dt.Rows(0).Item("TESTO"))
             End If
+            'If dt.Rows.Count = 1 Then
+            '    tbAss.Rows(0).Cells(0).Text() = "CODICE ISIN"
+            '    tbAss.Rows(0).Cells(1).Text() = dt.Rows(0).Item("ISINCODE")
+            '    tbAss.Rows(0).Cells(2).Text() = "DENOMINAZIONE"
+            '    tbAss.Rows(0).Cells(3).Text() = dt.Rows(0).Item("DENOMINAZIONE")
+
+            '    tbAss.Rows(1).Cells(0).Text() = "DATA CDA"
+            '    tbAss.Rows(1).Cells(1).Text() = dt.Rows(0).Item("DATA")
+            '    tbAss.Rows(1).Cells(2).Text() = "TEMA CDA"
+            '    tbAss.Rows(1).Cells(3).Text() = dt.Rows(0).Item("TEMA")
+
+            '    tbAss.Rows(2).Cells(0).Text() = "TESTO"
+            '    tbAss.Rows(3).Cells(0).Text() = IIf(dt.Rows(0).Item("TESTO") = "", "nessuno", dt.Rows(0).Item("TESTO"))
+            'End If
             .Dispose()
         End With
     End Sub
