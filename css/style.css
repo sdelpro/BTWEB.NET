@@ -76,6 +76,33 @@ a:hover {
 #menu li.selected {
 	background-color: #00547d;
 }
+
+#menu-s {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #4DB1E2;
+	color: #ffffff;
+	display: table;
+	position: relative;
+}
+#menu-s li {
+	float: left;
+	transition: background-color 0.3s ease;
+}
+#menu-s li a {
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+}
+#menu-s li:hover {
+	background-color: #00547d;
+}
+#menu-s li.selected {
+	background-color: #00547d;
+}
+
 #ultima-connessione {
 	position: absolute;
 	right: 20px;
@@ -103,6 +130,11 @@ span.intestazione {
 	margin-right: auto;
 	margin-left: auto;
 }
+#pagina-s {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
 #foglio {
 	width: 600px;
 	min-height: 350px;
@@ -118,6 +150,12 @@ span.intestazione {
 	height: 75px;
 }
 #interna #top{
+	padding-top: 20px;
+	display: block;
+	position: relative;
+	height: 55px;
+}
+#interna-s #top{
 	padding-top: 20px;
 	display: block;
 	position: relative;
@@ -234,6 +272,16 @@ span.labels
 	-moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 }
+
+#interna-s {
+	width: 660px;
+	min-height: 350px;
+	margin: 50px auto 80px;
+	background-color: #FFFFFF;
+	-moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
 #contenuto {
 	padding: 0 20px 20px;
 }
@@ -253,9 +301,10 @@ span.labels
 }
 #contenuto table {
 	font-size: 11px;
-	padding: 10px 0 10px 20px;
+	padding: 10px 0 10px 0;
 	display: block;
 }
+
 
 #contenuto table td {
 	padding-right: 30px;
@@ -454,6 +503,15 @@ span.labels
 	font-weight: bold;
 	padding-right: 5px;
 }
+
+.etichetta2 
+{
+	font-size:11px;
+	color: #4DB1E2;
+	font-weight: bold;
+	padding-right: 5px;
+}
+
 #elenco1 {
 	color: #4DB1E2;
 	font-weight: bold;
@@ -463,6 +521,28 @@ span.labels
 	width: 861px;
 }
 #una-colonna .etichetta {
+	color: #4DB1E2;
+	font-weight: bold;
+	padding-right: 5px;
+}
+
+
+#due-colonne-s {
+	width: 600px;
+}
+#due-colonne-s td {
+	width: 300px !important;
+	padding-top: 5px;
+	border-bottom: 1px solid #f4f4f4;
+	padding-right: 9px !important
+}
+
+#due-colonne-s td.separa {
+	width: 1px!important;
+	padding: 0!important;
+	border-right: 1px dashed #f4f4f4;
+}
+#due-colonne-s .etichetta {
 	color: #4DB1E2;
 	font-weight: bold;
 	padding-right: 5px;

@@ -31,7 +31,8 @@
 				</TR>
 			</TABLE>
 			<asp:label id="lblLastLogin" style="Z-INDEX: 101; LEFT: 4px; POSITION: absolute; TOP: 80px"
-				runat="server" Height="16px" Width="360px" BackColor="Transparent" Font-Size="12px" Font-Names="Tahoma">Ultima connessione</asp:label><asp:table id="tbCarPrinc" style="Z-INDEX: 102; LEFT: 0px; POSITION: absolute; TOP: 136px"
+				runat="server" Height="16px" Width="360px" BackColor="Transparent" Font-Size="12px" Font-Names="Tahoma">Ultima connessione</asp:label>
+			<asp:table id="tbCarPrinc" style="Z-INDEX: 102; LEFT: 0px; POSITION: absolute; TOP: 136px"
 				runat="server" Height="57" Width="100%" Font-Size="14px" Font-Names="Tahoma">
 				<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
 					<asp:TableCell BackColor="Transparent" ColumnSpan="1" Width="12.5%" BorderColor="Black"></asp:TableCell>

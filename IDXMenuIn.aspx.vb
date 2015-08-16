@@ -17,7 +17,7 @@ Public Class IDXMenuIn
     Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
-    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblError As System.Web.UI.WebControls.Label
     Protected WithEvents tbComun As System.Web.UI.WebControls.Table
     Protected WithEvents Dhtmlmenucontrol4 As BTWEB.DHTML.MenuControl.DHTMLMenuControl
@@ -33,6 +33,7 @@ Public Class IDXMenuIn
     Protected WithEvents lbScarA As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbScarB As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbScarichi As System.Web.UI.WebControls.Label
+    Protected WithEvents lblTitoloForm As System.Web.UI.WebControls.Label
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
@@ -94,10 +95,6 @@ Public Class IDXMenuIn
         lblINFOVARIE.Visible = True
         lblLastLogin.Visible = True
         lblLastLogin.Text = Session("LASTLOGIN")
-    End Sub
-
-    Private Sub lblAZIONI_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblAZIONI.Click
-        Response.Redirect("AZIONI/AZMenu.aspx")
     End Sub
 
     Private Sub lblINFOVARIE_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblINFOVARIE.Click

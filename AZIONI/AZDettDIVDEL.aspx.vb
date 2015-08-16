@@ -9,11 +9,6 @@ Public Class AZDettDIVDEL
     End Sub
     Protected WithEvents Image1 As System.Web.UI.WebControls.Image
     Protected WithEvents tbDiv As System.Web.UI.WebControls.Table
-    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
-    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
-    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
-    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
-    Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
     Protected WithEvents lbl_codisi As System.Web.UI.WebControls.Label
     Protected WithEvents lbl_denomi As System.Web.UI.WebControls.Label
     Protected WithEvents lbl_tipazi As System.Web.UI.WebControls.Label

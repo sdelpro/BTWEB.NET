@@ -8,7 +8,6 @@ Public Class AZDettWarr
 
     End Sub
     Protected WithEvents tbAss As System.Web.UI.WebControls.Table
-    Protected WithEvents Image1 As System.Web.UI.WebControls.Image
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.

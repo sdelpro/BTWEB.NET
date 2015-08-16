@@ -24,7 +24,7 @@
 		<!------- End StatMentor code ------------->
 		<script type="text/javascript">
 			<!--
-			var stile = "top="+ screen.height-250 + ", left=" +  screen.width-200 + ", width=400, height=500, status=no, menubar=no, toolbar=no, scrollbars=no";
+			var stile = "top="+ screen.height-250 + ", left=" +  screen.width-200 + ", status=no, menubar=no, toolbar=no, scrollbars=no";
 				function Popup(apri) {
 					window.open(apri, "", stile);
 				}

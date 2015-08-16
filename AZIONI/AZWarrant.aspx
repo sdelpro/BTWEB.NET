@@ -14,8 +14,7 @@
 		<form id="Form1" method="post" runat="server">
 			<div id="riga-header">
 				<div id="header">
-					<IMG id="logo" alt="" src="../images/ImagesLogo.gif" width="352"> <span class="etichetta" style="margin-left:900px;margin-top:0px">
-						<a class="selected" href="JavaScript:window.close();"><img src="../Images/close2.png""></a></span>
+					<IMG id="logo" alt="" src="../images/ImagesLogo.gif" width="352">
 				</div>
 			</div> <!-- header --> </div> <!-- riga-header -->
 			<div id="riga-menu">
@@ -25,7 +24,7 @@
 							<A href="../IDXMenuIn.aspx">HOME</A>
 						</li>
 						<li class="selected">
-							<asp:linkbutton id="lblAZIONI" Runat="server">AZIONI</asp:linkbutton></li>
+							<a runat="server" id="lblAZIONI" href="../AZIONI/AZMenu.aspx">AZIONI</a></li>
 						<li>
 							<asp:linkbutton id="lblOBBLIGAZIONI" Runat="server">OBBLIGAZIONI</asp:linkbutton></li>
 						<li>

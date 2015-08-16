@@ -22,7 +22,7 @@
 							<A href="../IDXMenuIn.aspx">HOME</A>
 						</li>
 						<li class="selected">
-							<asp:linkbutton id="lblAZIONI" Runat="server">AZIONI</asp:linkbutton></li>
+							<a runat="server" id="lblAZIONI" href="../AZIONI/AZMenu.aspx">AZIONI</a></li>
 						<li>
 							<asp:linkbutton id="lblOBBLIGAZIONI" Runat="server">OBBLIGAZIONI</asp:linkbutton></li>
 						<li>
@@ -35,13 +35,10 @@
 					</ul>
 					<div id="ultima-connessione"><asp:label style="Z-INDEX: 114" id="lblLastLogin" runat="server">Ultima connessione</asp:label></div>
 				</div> <!-- menu -->
-												<div id="menuazioni" align=center>
-					
-					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol1" runat="server" TypeMenu="Titoli" 
-					></ucmenu:dhtmlmenucontrol>
+				<div id="menuazioni" align="center">
+					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol1" runat="server" TypeMenu="Titoli"></ucmenu:dhtmlmenucontrol>
 				</div>
-
-				</div> <!-- riga-menu -->
+			</div> <!-- riga-menu -->
 			<div id="riga-pagina">
 				<div id="pagina">
 					<div id="interna">
@@ -49,62 +46,93 @@
 						</div> <!-- top -->
 						<div id="contenuto">
 							<div id="due-colonne">
-								<table>
-									<tr>
-										<td><span class="etichetta">CODICE ISIN</span>
-											<asp:label id="lbl_codisi" runat="server" CssClass="valore">Ultima connessione</asp:label></td>
-										<td class="separa"></td>
-										<td><span class="etichetta">RAGIONE SOCIALE</span>
-											<asp:label id="lbl_ragsoc" runat="server" CssClass="valore"></asp:label></td>
-									</tr>
-									<tr>
-										<td><span class="etichetta">SEDE AMMINISTRATIVA</span>
-											<asp:label id="lbl_sedamm" runat="server" cssclass="valore"></asp:label></td>
-										<td class="separa"></td>
-										<td><span class="etichetta">SEDE LEGALE</span>
-											<asp:label id="lbl_sedleg" runat="server" cssclass="valore"></asp:label></td>
-									</tr>
-									<tr>
-										<td><span class="etichetta">TELEFONO</span>
-											<asp:label id="lbl_telefo" runat="server" cssclass="valore"></asp:label></td>
-										<td class="separa"></td>
-										<td><span class="etichetta">FAX</span>
-											<asp:label id="lbl_fax" runat="server" cssclass="valore"></asp:label></td>
-									</tr>
-									<tr>
-										<td><span class="etichetta">QUOTATA</span>
-											<asp:label id="lbl_quotat" runat="server" cssclass="valore"></asp:label></td>
-										<td class="separa"></td>
-										<td><span class="etichetta">VALUTA</span>
-											<asp:label id="lbl_valuta" runat="server" cssclass="valore"></asp:label></td>
-									</tr>
-									<tr>
-										<td><span class="etichetta">CAP. SOCIALE</span>
-											<asp:label id="lbl_capsoc" runat="server" cssclass="valore"></asp:label></td>
-										<td class="separa"></td>
-										<td><span class="etichetta">ESERC. SOCIALE DA</span>
-											<asp:label id="lbl_iniese" runat="server" cssclass="valore"></asp:label><span class="etichetta"> A</span>
-											<asp:label id="lbl_finese" runat="server" cssclass="valore"></asp:label></td>
-									</tr>
-									<tr>
-										<td><span class="etichetta">P.IVA/C.FISCALE</span>
-											<asp:label id="lbl_pivacf" runat="server" cssclass="valore"></asp:label></td>
-										<td class="separa"></td>
-										<td><span class="etichetta">STATO</span>
-											<asp:label id="lbl_stato" runat="server" cssclass="valore"></asp:label></td>
-									</tr>
-									<tr>
-										<td><span class="etichetta">TIPO SOCIETA'</span>
-											<asp:label id="lbl_tipsoc" runat="server" cssclass="valore"></asp:label></td>
-										<td class="separa"></td>
-										<td><span class="etichetta">CASSE</span>
-											<asp:label id="lbl_casse" runat="server" cssclass="valore"></asp:label></td>
-									</tr>
-									<tr>
-										<td><span class="etichetta">PRECEDENTI DENOMINAZIONI SOCIETA'</span>
-											<asp:label id="lbl_prdeso" runat="server" cssclass="valore"></asp:label></td>
-									</tr>
-								</table>
+								<asp:Table id="tbCarPrinc" runat="server">
+									<asp:TableRow>
+										<asp:TableCell>
+											<span class="etichetta">CODICE ISIN</span>
+											<asp:label id="lbl_codisi" runat="server" CssClass="valore">Ultima connessione</asp:label>
+										</asp:TableCell>
+										<asp:TableCell class="separa"></asp:TableCell>
+										<asp:TableCell>
+											<span class="etichetta">RAGIONE SOCIALE</span>
+											<asp:label id="lbl_ragsoc" runat="server" CssClass="valore"></asp:label>
+										</asp:TableCell>
+									</asp:TableRow>
+									<asp:TableRow>
+										<asp:TableCell>
+											<span class="etichetta">SEDE AMMINISTRATIVA</span>
+											<asp:label id="lbl_sedamm" runat="server" cssclass="valore"></asp:label>
+										</asp:TableCell>
+										<asp:TableCell class="separa"></asp:TableCell>
+										<asp:TableCell>
+											<span class="etichetta">SEDE LEGALE</span>
+											<asp:label id="lbl_sedleg" runat="server" cssclass="valore"></asp:label>
+										</asp:TableCell>
+									</asp:TableRow>
+									<asp:TableRow>
+										<asp:TableCell>
+											<span class="etichetta">TELEFONO</span>
+											<asp:label id="lbl_telefo" runat="server" cssclass="valore"></asp:label>
+										</asp:TableCell>
+										<asp:TableCell class="separa"></asp:TableCell>
+										<asp:TableCell>
+											<span class="etichetta">FAX</span>
+											<asp:label id="lbl_fax" runat="server" cssclass="valore"></asp:label>
+										</asp:TableCell>
+									</asp:TableRow>
+									<asp:TableRow>
+										<asp:TableCell>
+											<span class="etichetta">QUOTATA</span>
+											<asp:label id="lbl_quotat" runat="server" cssclass="valore"></asp:label>
+										</asp:TableCell>
+										<asp:TableCell class="separa"></asp:TableCell>
+										<asp:TableCell>
+											<span class="etichetta">VALUTA</span>
+											<asp:label id="lbl_valuta" runat="server" cssclass="valore"></asp:label>
+										</asp:TableCell>
+									</asp:TableRow>
+									<asp:TableRow>
+										<asp:TableCell>
+											<span class="etichetta">CAP. SOCIALE</span>
+											<asp:label id="lbl_capsoc" runat="server" cssclass="valore"></asp:label>
+										</asp:TableCell>
+										<asp:TableCell class="separa"></asp:TableCell>
+										<asp:TableCell>
+											<span class="etichetta">ESERC. SOCIALE DA</span>
+											<asp:label id="lbl_iniese" runat="server" cssclass="valore"></asp:label>
+											<span class="etichetta">A</span>
+											<asp:label id="lbl_finese" runat="server" cssclass="valore"></asp:label>
+										</asp:TableCell>
+									</asp:TableRow>
+									<asp:TableRow>
+										<asp:TableCell>
+											<span class="etichetta">P.IVA/C.FISCALE</span>
+											<asp:label id="lbl_pivacf" runat="server" cssclass="valore"></asp:label>
+										</asp:TableCell>
+										<asp:TableCell class="separa"></asp:TableCell>
+										<asp:TableCell>
+											<span class="etichetta">STATO</span>
+											<asp:label id="lbl_stato" runat="server" cssclass="valore"></asp:label>
+										</asp:TableCell>
+									</asp:TableRow>
+									<asp:TableRow>
+										<asp:TableCell>
+											<span class="etichetta">TIPO SOCIETA'</span>
+											<asp:label id="lbl_tipsoc" runat="server" cssclass="valore"></asp:label>
+										</asp:TableCell>
+										<asp:TableCell class="separa"></asp:TableCell>
+										<asp:TableCell>
+											<span class="etichetta">CASSE</span>
+											<asp:label id="lbl_casse" runat="server" cssclass="valore"></asp:label>
+										</asp:TableCell>
+									</asp:TableRow>
+									<asp:TableRow>
+										<asp:TableCell>
+											<span class="etichetta">PRECEDENTI DENOMINAZIONI SOCIETA'</span>
+											<asp:label id="lbl_prdeso" runat="server" cssclass="valore"></asp:label>
+										</asp:TableCell>
+									</asp:TableRow>
+								</asp:Table>
 								<div class="clear"></div>
 							</div>
 						</div>

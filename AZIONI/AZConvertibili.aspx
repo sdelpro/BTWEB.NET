@@ -28,7 +28,7 @@
 							<A href="../IDXMenuIn.aspx">HOME</A>
 						</li>
 						<li class="selected">
-							<asp:linkbutton id="lblAZIONI" Runat="server">AZIONI</asp:linkbutton></li>
+							<a runat="server" id="lblAZIONI" href="../AZIONI/AZMenu.aspx">AZIONI</a></li>
 						<li>
 							<asp:linkbutton id="lblOBBLIGAZIONI" Runat="server">OBBLIGAZIONI</asp:linkbutton></li>
 						<li>

@@ -12,14 +12,12 @@ Public Class AZTitoli
     Protected WithEvents tbCarPrinc As System.Web.UI.WebControls.Table
     Protected WithEvents dtgAZIO As System.Web.UI.WebControls.DataGrid
     Protected WithEvents lblTitoloForm As System.Web.UI.WebControls.Label
-    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
     Protected WithEvents Label1 As System.Web.UI.WebControls.Label
     Protected WithEvents lblNumRecord As System.Web.UI.WebControls.Label
-    Protected WithEvents lblFirstPage As System.Web.UI.WebControls.LinkButton
-    Protected WithEvents lblLastPage As System.Web.UI.WebControls.LinkButton
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.
@@ -81,8 +79,8 @@ Public Class AZTitoli
                 kCol += 1
                 tbCarPrinc.Rows(kCol).Cells(0).Text = "DESCRIZIONE"
                 tbCarPrinc.Rows(kCol).Cells(1).Text = dtt.Rows(0).Item("RAGSOC") ' Right(Session("ISINCODE"), Len(Session("ISINCODE")) - 12)
-                kCol += 1
-                tbCarPrinc.Rows(kCol).Cells(0).Text = "TITOLI ASSOCIATI ALLA SOCIETA'"
+                'kCol += 1
+                'tbCarPrinc.Rows(kCol).Cells(0).Text = "TITOLI ASSOCIATI ALLA SOCIETA'"
 
                 If Not dtt.Rows.Count = 0 Then
                     Call SetGridFindTitoli(dtgAZIO)
@@ -164,59 +162,45 @@ Public Class AZTitoli
             .DataField = "ISINCODE"
             .HeaderText = "CODICE ISIN"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
         End With
         'ISINCODERIF,ISINCODE, DENOMINAZIONE,TIPOAZIONE,QUOTATA,QUANTITA,VALNOMINALE,CAPITALE
         With c2
             .DataField = "DENOMINAZIONE"
             .HeaderText = "DENOMINAZIONE"
             .SortExpression = "DENOMINAZIONE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(30)
         End With
         With c3
             .DataField = "TIPOAZIONE"
             .HeaderText = "TIPO AZIONE"
             .SortExpression = "TIPOAZIONE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(20)
         End With
         With c4
             .DataField = "QUOTATA2"
             .HeaderText = "QUOT."
             .SortExpression = "QUOTATA"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(5)
         End With
         With c5
             .DataField = "QTA"
             .HeaderText = "QUANTITA'"
             .SortExpression = "QUANTITA"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
         End With
         With c6
             .DataField = "VALNOMINALE"
             .HeaderText = "NOM."
             .SortExpression = "VALNOMINALE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(5)
         End With
         With c7
             .DataField = "CAP"
             .HeaderText = "CAPITALE SOCIALE"
             .SortExpression = "CAPITALE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(15)
         End With
         With c9
             .HeaderText = ""
             .Text = "Dettagli"
             .ButtonType = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(5)
+            .ItemStyle.HorizontalAlign = HorizontalAlign.Center
+            .ItemStyle.VerticalAlign = VerticalAlign.Middle
         End With
         GridCtrl.Columns.Add(c1)
         GridCtrl.Columns.Add(c2)
