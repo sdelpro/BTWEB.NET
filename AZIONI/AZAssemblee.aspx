@@ -55,18 +55,14 @@
 							<span class="label-sinistra">CONVOCAZIONI ASSEMBLEE<img src="../Images/label-sinistra-fine.png" alt=""></span>
 						</div>
 						<div id="contenuto">
-							<asp:table id="tbAss" class="quattro-colonne" style="Z-INDEX: 109" runat="server">
+							<asp:table id="tbAss" class="quattro-colonne" runat="server">
 								<asp:TableRow Font-Size="12px">
-									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" ColumnSpan="2" Width="25%" ForeColor="#4DB1E2"
-										BorderColor="Black"></asp:TableCell>
-									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" ColumnSpan="6" BorderColor="Black"></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" ColumnSpan="2" Width="25%" BorderColor="Black"></asp:TableCell>
-									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" ColumnSpan="6" BorderColor="Black"></asp:TableCell>
-								</asp:TableRow>
-								<asp:TableRow id="elenco1" Font-Size="12px" Font-Names="Tahoma">
-									<asp:TableCell ColumnSpan="8" BorderColor="Black"></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
 								</asp:TableRow>
 							</asp:table>
 						</div>

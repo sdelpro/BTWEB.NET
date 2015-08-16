@@ -52,11 +52,17 @@ Public Class AZAssemblee
             Call .ReadGenericQuery(dt, sql)
             If dt.Rows.Count > 0 Then
                 tbAss.Rows(0).Cells(0).Text() = "CODICE ISIN"
+                tbAss.Rows(0).Cells(0).ColumnSpan = 2
+                tbAss.Rows(0).Cells(0).CssClass = "etichetta"
                 tbAss.Rows(0).Cells(1).Text() = dt.Rows(0).Item("ISINCODE")
+                tbAss.Rows(0).Cells(1).ColumnSpan = 6
                 tbAss.Rows(1).Cells(0).Text() = "DENOMINAZIONE"
+                tbAss.Rows(1).Cells(0).ColumnSpan = 2
+                tbAss.Rows(1).Cells(0).CssClass = "etichetta"
                 tbAss.Rows(1).Cells(1).Text() = dt.Rows(0).Item("DENOMINAZIONE")
-                tbAss.Rows(2).Cells(0).Text() = ""
-                zxR = 3
+                tbAss.Rows(1).Cells(1).ColumnSpan = 6
+
+                zxR = 2
                 For zx = 0 To dt.Rows.Count - 1
                     Call CreaTabella()
                     tbAss.Rows(zxR).Cells(0).Text() = "TIPO ASSEMBLEA"
@@ -68,15 +74,16 @@ Public Class AZAssemblee
                         Case "o.s."
                             tbAss.Rows(zxR).Cells(1).Text() = "ORDINARIA/STRAORDINARIA"
                     End Select
+                    tbAss.Rows(zxR).Cells(1).ColumnSpan = 6
                     tbAss.Rows(zxR + 1).Cells(0).Text() = "DATA ASSEMBLEA"
-                    tbAss.Rows(zxR + 1).Cells(1).Text() = IIf(dt.Rows(zx).Item("DATADEF") & "" = "", ".", dt.Rows(zx).Item("DATADEF"))
+                    tbAss.Rows(zxR + 1).Cells(1).Text() = IIf(dt.Rows(zx).Item("DATADEF") & "" = "", "-", dt.Rows(zx).Item("DATADEF"))
                     tbAss.Rows(zxR + 1).Cells(2).Text() = "1° CONVOCAZIONE"
-                    tbAss.Rows(zxR + 1).Cells(3).Text() = IIf(dt.Rows(zx).Item("DATA1") & "" = "", ".", dt.Rows(zx).Item("DATA1"))
+                    tbAss.Rows(zxR + 1).Cells(3).Text() = IIf(dt.Rows(zx).Item("DATA1") & "" = "", "-", dt.Rows(zx).Item("DATA1"))
                     tbAss.Rows(zxR + 1).Cells(4).Text() = "2° CONVOCAZIONE"
-                    tbAss.Rows(zxR + 1).Cells(5).Text() = IIf(dt.Rows(zx).Item("DATA2") & "" = "", ".", dt.Rows(zx).Item("DATA2"))
+                    tbAss.Rows(zxR + 1).Cells(5).Text() = IIf(dt.Rows(zx).Item("DATA2") & "" = "", "-", dt.Rows(zx).Item("DATA2"))
                     tbAss.Rows(zxR + 1).Cells(6).Text() = "3° CONVOCAZIONE"
-                    tbAss.Rows(zxR + 1).Cells(7).Text() = IIf(dt.Rows(zx).Item("DATA3") & "" = "", ".", dt.Rows(zx).Item("DATA3"))
-                    tbAss.Rows(zxR + 2).Cells(0).Text() = "TESTO"
+                    tbAss.Rows(zxR + 1).Cells(7).Text() = IIf(dt.Rows(zx).Item("DATA3") & "" = "", "-", dt.Rows(zx).Item("DATA3"))
+                    tbAss.Rows(zxR + 2).Cells(0).Text() = "testo non disponibile"
                     tbAss.Rows(zxR + 3).Cells(0).Text() = Replace(dt.Rows(zx).Item("TESTO"), Chr(13), "<br>")
                     zxR = zxR + 4
                 Next zx
@@ -90,164 +97,83 @@ Public Class AZAssemblee
         Dim zx As Int16
         Dim tr As TableRow
         Dim tch As TableCell
-
         'riga 1
         tr = New TableRow
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Gainsboro
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = System.Drawing.Color.Black
         tch.CssClass = "etichetta"
-
-        'tch.Width = Unit.Percentage(25)
         tch.ColumnSpan = 2
         tch.Text = ""
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
-        'tch.Width = Unit.Percentage(25)
         tch.ColumnSpan = 2
         tch.Text = ""
         tr.Cells.Add(tch)
         tch = Nothing
-
         tbAss.Rows.Add(tr)
         tr = Nothing
-
         'riga 2
         tr = New TableRow
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Gainsboro
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = System.Drawing.Color.Black
         tch.CssClass = "etichetta"
-        ''tch.Width = Unit.Percentage(14)
         tch.Text = ""
-        'tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Transparent
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = Color.Black
-        ''tch.Width = Unit.Percentage(11)
         tch.Text = ""
-        'tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Gainsboro
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = System.Drawing.Color.Black
         tch.CssClass = "etichetta"
-        'tch.Width = Unit.Percentage(14)
         tch.Text = ""
-        'tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Transparent
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = Color.Black
-        'tch.Width = Unit.Percentage(11)
         tch.Text = ""
-        'tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Gainsboro
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = System.Drawing.Color.Black
-        'tch.Width = Unit.Percentage(14)
         tch.CssClass = "etichetta"
         tch.Text = ""
         tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Transparent
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = Color.Black
-        'tch.Width = Unit.Percentage(11)
         tch.Text = ""
         tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Gainsboro
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = System.Drawing.Color.Black
-        'tch.Width = Unit.Percentage(14)
         tch.CssClass = "etichetta"
         tch.Text = ""
         tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Transparent
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = Color.Black
-        'tch.Width = Unit.Percentage(11)
         tch.Text = ""
         tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
-
         tbAss.Rows.Add(tr)
         tr = Nothing
-
         'riga(3)
         tr = New TableRow
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Gainsboro
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = System.Drawing.Color.Black
-        'tch.Width = Unit.Percentage(25)
+        tch.ColumnSpan = 8
         tch.Text = ""
-        'tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
-
         tbAss.Rows.Add(tr)
         tr = Nothing
-
         'riga(4)
         tr = New TableRow
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Transparent
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = System.Drawing.Color.Black
-        'tch.Width = Unit.Percentage(100)
         tch.ColumnSpan = 8
         tch.Text = ""
-        'tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
-
         tbAss.Rows.Add(tr)
         tr = Nothing
-
     End Sub
 
 End Class

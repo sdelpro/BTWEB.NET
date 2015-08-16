@@ -95,7 +95,7 @@
 									<li>
 										La ricerca può essere richiesta per descrizione (anche solo parte del nome), per codice ISIN o UIC, per tipo di ammortamento, oppure nel range temporale tra le due date;></li>
 									<li>
-										Per ottenere l’elenco di TUTTI i Titoli con Piano Ammortamento basta premere il pulsante “Ricerca“ senza aver effettuato alcun’altra selezione;</li></ul>
+										Per ottenere l’elenco di TUTTI i Titoli con Piano Ammortamento basta premere il pulsante "Ricerca" senza aver effettuato alcun’altra selezione;</li></ul>
 							</div>
 							<asp:checkbox id="ckPiano" style="Z-INDEX: 107" tabIndex="4" runat="server" Text="TITOLI CON PIANO AMMORTAMENTO"
 								Visible="False"></asp:checkbox>

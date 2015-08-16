@@ -48,9 +48,7 @@
 					<div id="interna">
 						<div id="top">
 							<span class="label-sinistra">ANAGRAFE SOCIETA<img src="../images/label-sinistra-fine.png" alt=""></span>
-							<div style="margin-left:640px;margin-top:25px">
-								<asp:label id="lbUpd" style="Z-INDEX: 127;" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
-							</div>
+							<asp:label id="lbUpd" CssClass="label-destra" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
 						</div> <!-- top -->
 						<div id="contenuto">
 							<table>
@@ -67,11 +65,11 @@
 								<!--</div>-->
 								<tr>
 									<td>ISINCODE o UIC</td>
-									<td><asp:textbox id="txtIsincode" style="Z-INDEX: 105" runat="server" tabIndex="2"></asp:textbox></td>
+									<td><asp:textbox id="txtIsincode" runat="server" tabIndex="2"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>DATA MODIFICA/INSERIMENTO</td>
-									<td><asp:textbox id="txtDtMDa" style="Z-INDEX: 108" runat="server" tabIndex="3" placeholder="Da"></asp:textbox></td>
+									<td><asp:textbox id="txtDtMDa" runat="server" tabIndex="3" placeholder="Da"></asp:textbox></td>
 									<td><asp:textbox id="txtDtMA" style="Z-INDEX: 109" runat="server" tabIndex="4" placeholder="A"></asp:textbox></td>
 								</tr>
 								<tr class="note">
@@ -87,15 +85,15 @@
 							<div id="box-interna">
 								<ul>
 									<li>
-										<asp:label id="lbHelp1" style="Z-INDEX: 106" runat="server">• La ricerca può essere effettuata per descrizione (anche solo parte del nome), per codice ISIN o UIC, oppure all’interno del range temporale tra le due date.</asp:label>
+										<asp:label id="lbHelp1" style="Z-INDEX: 106" runat="server">La ricerca può essere effettuata per descrizione (anche solo parte del nome), per codice ISIN o UIC, oppure all’interno del range temporale tra le due date.</asp:label>
 									<li>
-										<asp:label id="lbHelp2" style="Z-INDEX: 122" runat="server">• Le società storicizzate sono evidenziate in rosso.</asp:label>
+										<asp:label id="lbHelp2" style="Z-INDEX: 122" runat="server">Le società storicizzate sono evidenziate in rosso.</asp:label>
 									<li>
-										<asp:label id="lbHelp3" style="Z-INDEX: 120" runat="server">• Le NOVITA’ si cercano copiando nel campo “DATA MODIFICA/INSERIMENTO DA” la data di “ultima connessione” riportata qui in alto sotto il logo Brambilla Titoli.</asp:label>
+										<asp:label id="lbHelp3" runat="server">Le NOVITA’ si cercano copiando nel campo "DATA MODIFICA/INSERIMENTO DA" la data di "ultima connessione" riportata qui in alto sotto il logo Brambilla Titoli.</asp:label>
 									<li>
-										<asp:label id="lbHelp4" style="Z-INDEX: 119" runat="server">• Premendo il solo pulsante “Ricerca” senza avere effettuato alcuna selezione si ottiene l’elenco di TUTTE le società presenti.</asp:label>
+										<asp:label id="lbHelp4" style="Z-INDEX: 119" runat="server">Premendo il solo pulsante "Ricerca" senza avere effettuato alcuna selezione si ottiene l’elenco di TUTTE le società presenti.</asp:label>
 									<li>
-										<asp:label id="lbHelp5" style="Z-INDEX: 121" runat="server">• Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata.   </asp:label></li>
+										<asp:label id="lbHelp5" style="Z-INDEX: 121" runat="server">Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata.   </asp:label></li>
 								</ul>
 							</div>
 						</div>

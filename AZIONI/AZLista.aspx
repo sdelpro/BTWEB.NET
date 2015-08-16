@@ -80,7 +80,7 @@
 										HorizontalAlign="Right" Position="Top" Mode="NumericPages"></PagerStyle>
 								</asp:datagrid>
 								<!--</div>-->
-								<asp:label id="lblNoRecord" style="Z-INDEX: 105" runat="server" Font-Size="Medium" Font-Names="Tahoma"
+								<asp:label id="lblNoRecord" runat="server" Font-Size="Medium" Font-Names="Tahoma"
 									Width="340px" BorderColor="Transparent" BackColor="Transparent" ForeColor="Red" Font-Bold="True"
 									Height="23px" Visible="False">La ricerca non ha prodotto risultati</asp:label>
 							</div>

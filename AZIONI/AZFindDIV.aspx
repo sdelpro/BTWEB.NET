@@ -49,9 +49,7 @@
 					<div id="interna">
 						<div id="top">
 							<span class="label-sinistra">DIVIDENDI<img src="../images/label-sinistra-fine.png" alt=""></span>
-							<div style="MARGIN-TOP:25px;MARGIN-LEFT:640px">
-								<asp:label id="Label14" style="Z-INDEX: 127" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
-							</div>
+							<asp:label id="Label1" CssClass="label-destra" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
 						</div>
 						<div id="contenuto">
 							<table>
@@ -100,7 +98,7 @@
 								</tr>
 								<tr>
 									<td>ISINCODE o UIC</td>
-									<td><asp:textbox id="txtIsincode" style="Z-INDEX: 105" runat="server" tabIndex="11"></asp:textbox></td>
+									<td><asp:textbox id="txtIsincode" runat="server" tabIndex="11"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>DATA PAGAMENTO</td>
@@ -138,19 +136,19 @@
 									<li>
 										<asp:label id="lbUpd" style="Z-INDEX: 138" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
 									<li>
-										<asp:label id="lbHelp6" style="Z-INDEX: 137" runat="server">• Le NOVITA’ si cercano copiando nel campo “DATA MODIFICA/INSERIMENTO DA” la data di “ultima connessione” riportata qui in alto sotto il logo Brambilla Titoli.</asp:label>
+										<asp:label id="lbHelp6" style="Z-INDEX: 137" runat="server">Le NOVITA’ si cercano copiando nel campo "DATA MODIFICA/INSERIMENTO DA" la data di "ultima connessione" riportata qui in alto sotto il logo Brambilla Titoli.</asp:label>
 									<li>
-										<asp:label id="lbHelp5" style="Z-INDEX: 136" runat="server">• La ricerca per DIVIDENDI DELIBERATI può essere effettuata per descrizione (anche solo parte del nome), per codice ISIN o UIC, per DATA PAGAMENTO (range temporale tra due date) oppure per DATA MODIFICA/INSERIMENTO (range temporale tra due date), per tipo dividendo (porre il flag apposito).</asp:label>
+										<asp:label id="lbHelp5" style="Z-INDEX: 136" runat="server">La ricerca per DIVIDENDI DELIBERATI può essere effettuata per descrizione (anche solo parte del nome), per codice ISIN o UIC, per DATA PAGAMENTO (range temporale tra due date) oppure per DATA MODIFICA/INSERIMENTO (range temporale tra due date), per tipo dividendo (porre il flag apposito).</asp:label>
 									<li>
-										<asp:label id="lbHelp7" style="Z-INDEX: 135" runat="server">• Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata.</asp:label>
+										<asp:label id="lbHelp7" style="Z-INDEX: 135" runat="server">Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata.</asp:label>
 									<li>
-										<asp:label id="lbHelp4" style="Z-INDEX: 134" runat="server">• Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata.</asp:label>
+										<asp:label id="lbHelp4" style="Z-INDEX: 134" runat="server">Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata.</asp:label>
 									<li>
-										<asp:label id="lbHelp3" style="Z-INDEX: 120" runat="server">• Premendo il solo pulsante “Ricerca” senza avere effettuato alcuna selezione si ottiene l’elenco di TUTTI I DIVIDENDI PREANNUNCIATI presenti.</asp:label>
+										<asp:label id="lbHelp3" runat="server">Premendo il solo pulsante "Ricerca" senza avere effettuato alcuna selezione si ottiene l’elenco di TUTTI I DIVIDENDI PREANNUNCIATI presenti.</asp:label>
 									<li>
-										<asp:label id="lbHelp2" style="Z-INDEX: 124" runat="server">• Le NOVITÀ si cercano copiando nel campo “DATA MODIFICA/INSERIMENTO DA” la data di ”Ultima Connessione” riportata qui in alto, sotto il logo Brambilla Titoli.</asp:label>
+										<asp:label id="lbHelp2" style="Z-INDEX: 124" runat="server">Le NOVITÀ si cercano copiando nel campo "DATA MODIFICA/INSERIMENTO DA" la data di "Ultima Connessione" riportata qui in alto, sotto il logo Brambilla Titoli.</asp:label>
 									<li>
-										<asp:label id="lbHelp1" style="Z-INDEX: 107" runat="server">• La ricerca per DIVIDENDI PREANNUNCIATI può essere effettuata per DATA MODIFICA/INSERIMENTO (range temporale tra due date), per tipo dividendo (porre il flag apposito).</asp:label></li></ul>
+										<asp:label id="lbHelp1" style="Z-INDEX: 107" runat="server">La ricerca per DIVIDENDI PREANNUNCIATI può essere effettuata per DATA MODIFICA/INSERIMENTO (range temporale tra due date), per tipo dividendo (porre il flag apposito).</asp:label></li></ul>
 							</div>
 						</div>
 					</div>

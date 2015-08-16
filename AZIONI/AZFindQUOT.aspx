@@ -48,9 +48,7 @@
 					<div id="interna">
 						<div id="top">
 							<span class="label-sinistra">QUOTAZIONI<img src="../images/label-sinistra-fine.png" alt=""></span>
-							<div style="MARGIN-TOP:25px;MARGIN-LEFT:640px">
-								<asp:label id="lbUpd" style="Z-INDEX: 127" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
-							</div>
+							<asp:label id="lbUpd" CssClass="label-destra" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
 						</div> <!-- top -->
 						<div id="contenuto">
 							<table>
@@ -65,7 +63,7 @@
 								</tr>
 								<tr>
 									<td>ISINCODE o UIC</td>
-									<td><asp:textbox id="txtIsincode" style="Z-INDEX: 104" tabIndex="2" runat="server"></asp:textbox></td>
+									<td><asp:textbox id="txtIsincode" tabIndex="2" runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>MESE</td>
@@ -95,7 +93,7 @@
 							<div id="box-interna">
 								<ul>
 									<li>
-										<asp:label id="lbHelp1" style="Z-INDEX: 105" runat="server">• Definita una richiesta operando nei campi per “MESE” e/o per “ANNO verrà restituito l’elenco delle Azioni Quotate comprese nel periodo richiesto.</asp:label></li>
+										<asp:label id="lbHelp1" runat="server">Definita una richiesta operando nei campi per "MESE" e/o per "ANNO verrà restituito l’elenco delle Azioni Quotate comprese nel periodo richiesto.</asp:label></li>
 								</ul>
 							</div>
 						</div>

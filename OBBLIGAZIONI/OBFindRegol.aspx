@@ -68,7 +68,7 @@
 								</tr>
 								<tr>
 									<td>TESTO REGOLAMENTO</td>
-									<td><asp:textbox id="txtReg" style="Z-INDEX: 105" tabIndex="4" runat="server"></asp:textbox></td>
+									<td><asp:textbox id="txtReg" tabIndex="4" runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>DATA MODIFICA/INSERIMENTO</td>
@@ -99,8 +99,8 @@
 									temporale tra due date; la ricerca per Testo del Regolamento rallenterà 
 									considerevolmente i tempi di risposta;
 									<li>
-									Le NOVITÀ si cercano copiando nel campo “DATA MODIFICA/INSERIMENTO DA” la data 
-									di ”Ultima Connessione” riportata qui in alto, sotto il logo Brambilla Titoli. 
+									Le NOVITÀ si cercano copiando nel campo "DATA MODIFICA/INSERIMENTO DA" la data 
+									di "Ultima Connessione" riportata qui in alto, sotto il logo Brambilla Titoli. 
 									Si ricorda che sono presenti solo i regolamenti delle obbligazioni emesse a 
 									partire dal 1990, se disponibili;
 									<li>
@@ -113,7 +113,7 @@
 								</ul>
 							</div>
 							<asp:textbox id="txtDtInA" style="Z-INDEX: 111" tabIndex="3" runat="server" Visible="False"></asp:textbox>
-							<asp:textbox id="txtDtInDa" style="Z-INDEX: 108" runat="server" Visible="False"></asp:textbox>
+							<asp:textbox id="txtDtInDa" runat="server" Visible="False"></asp:textbox>
 							<asp:label id="Label3" style="Z-INDEX: 107; POSITION: absolute; TOP: 640px; LEFT: 24px" runat="server"
 								Height="16px" Width="104px" ForeColor="Black" BackColor="Transparent" Font-Size="8pt" Font-Names="Tahoma"
 								Visible="False">DATA INSERIMENTO</asp:label>

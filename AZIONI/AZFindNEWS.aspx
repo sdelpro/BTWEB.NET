@@ -43,9 +43,7 @@
 					<div id="interna">
 						<div id="top">
 							<span class="label-sinistra">NEWS AZIONI<img src="../images/label-sinistra-fine.png" alt=""></span>
-							<div style="MARGIN-TOP:25px;MARGIN-LEFT:640px">
-								<asp:label id="lbUpd" style="Z-INDEX: 127" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
-							</div>
+							<asp:label id="lbUpd" CssClass="label-destra" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
 						</div> <!-- top -->
 						<div id="contenuto">
 							<table>
@@ -60,11 +58,11 @@
 								</tr>
 								<tr>
 									<td>ISINCODE o UIC</td>
-									<td><asp:textbox id="txtIsincode" style="Z-INDEX: 105" runat="server" tabIndex="2"></asp:textbox></td>
+									<td><asp:textbox id="txtIsincode" runat="server" tabIndex="2"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>DATA NEWS</td>
-									<td><asp:textbox id="txtDtDa" style="Z-INDEX: 108" runat="server" placeholder="Da" tabIndex="3"></asp:textbox></td>
+									<td><asp:textbox id="txtDtDa" runat="server" placeholder="Da" tabIndex="3"></asp:textbox></td>
 									<td><asp:textbox id="txtDtA" style="Z-INDEX: 109" runat="server" placeholder="A" tabIndex="4"></asp:textbox></td>
 								</tr>
 								<tr class="note">
@@ -83,11 +81,11 @@
 							<div id="box-interna">
 								<ul>
 									<li>
-										<asp:label id="lbHelp3" style="Z-INDEX: 120" runat="server">• Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata.</asp:label>
+										<asp:label id="lbHelp3" runat="server">Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata.</asp:label>
 									<li>
-										<asp:label id="lbHelp2" style="Z-INDEX: 121" runat="server">• Le NOVITA’ si cercano copiando nel campo “DATA NEWS DA” la data di “ultima connessione” riportata qui in alto sotto il logo Brambilla Titoli.</asp:label>
+										<asp:label id="lbHelp2" style="Z-INDEX: 121" runat="server">Le NOVITA’ si cercano copiando nel campo "DATA NEWS DA" la data di "ultima connessione" riportata qui in alto sotto il logo Brambilla Titoli.</asp:label>
 									<li>
-										<asp:label id="lbHelp1" style="Z-INDEX: 107" runat="server">• La ricerca può essere effettuata per descrizione (anche solo parte del nome), per codice ISIN o UIC, per DATA NEWS (range temporale tra due date) o per testo della news.</asp:label></li></ul>
+										<asp:label id="lbHelp1" style="Z-INDEX: 107" runat="server">La ricerca può essere effettuata per descrizione (anche solo parte del nome), per codice ISIN o UIC, per DATA NEWS (range temporale tra due date) o per testo della news.</asp:label></li></ul>
 							</div>
 						</div>
 					</div>

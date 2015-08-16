@@ -29,7 +29,7 @@ Public Class IDXMenu
     Protected WithEvents imgBtnInfo2 As System.Web.UI.WebControls.ImageButton
     Protected WithEvents imgBollettino As System.Web.UI.WebControls.Image
     Protected WithEvents lbDal As System.Web.UI.WebControls.Label
-
+    Protected WithEvents btnGotoHome As System.Web.UI.WebControls.Button
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
     Private designerPlaceholderDeclaration As System.Object
@@ -242,8 +242,11 @@ Public Class IDXMenu
             lblPassword.Visible = False
             txtPassword.Visible = False
             lblLastLogin.Visible = True
+
             lblLastLogin.Text = Session("LASTLOGIN")
             btnLogin.Visible = False
+            btnGotoHome.Visible = True
+
             'imgBtnInfo1.Visible = False
             'imgBtnInfo2.Visible = False
             'With cdt
@@ -257,6 +260,7 @@ Public Class IDXMenu
         Else
             Session("MACADDRESSSTATUS") = ""
             MacAddressClient = ""
+            btnGotoHome.Visible = False
         End If
     End Sub
 
@@ -274,5 +278,9 @@ Public Class IDXMenu
 
     Private Sub imgBtnInfo2_Click(ByVal sender As System.Object, ByVal e As System.Web.UI.ImageClickEventArgs)
         Response.Redirect("infoDoc/Comeabbonarsi.htm")
+    End Sub
+
+    Private Sub btnGotoHome_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnGotoHome.Click
+        Response.Redirect("IDXMenuIn.aspx")
     End Sub
 End Class

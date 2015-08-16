@@ -53,7 +53,7 @@
 						<div id="top">
 							<div>
 							<span class="label-sinistra">LOGIN<img src="images/label-sinistra-fine.png" alt=""></span>
-							<asp:label id="lblLastLogin" runat="server" style="margin-left:150px">Ultima connessione</asp:label></div>
+							<asp:label id="lblLastLogin" runat="server" CssClass="label-destra">&nbsp;</asp:label></div>
 						</div> <!-- top -->
 						<div id="login">
 							<form>
@@ -64,16 +64,20 @@
 									</tr>
 									<tr>
 										<td><asp:label id="lblPassword" runat=server>PASSWORD</asp:label></td>
-										<td><asp:textbox id="txtPassword" style="Z-INDEX: 104" runat="server" TextMode="Password"></asp:textbox></td>
+										<td><asp:textbox id="txtPassword" runat="server" TextMode="Password"></asp:textbox></td>
 									</tr>
 									<tr>
 										<td></td>
-										<td><asp:button id="btnLogin" style="Z-INDEX: 108" runat="server" Text="ACCEDI"></asp:button></td>
+										<td><asp:button id="btnLogin" runat="server" Text="Accedi"></asp:button></td>
 									</tr>
 									<tr>
 										<td>
 											<asp:label id="lblError" runat="server"></asp:label>
 										</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td><asp:button id="btnGotoHome" runat="server" Text="Vai alla HomePage"></asp:button></td>
 									</tr>
 								</table>
 							</form>

@@ -66,7 +66,7 @@
 								<tr>
 									<td>DATA MODIFICA/INSERIMENTO</asp:label></td>
 									<td><asp:textbox id="txtDtMDa" style="Z-INDEX: 107" tabIndex="5" placeholder="Da" runat="server"></asp:textbox></td>
-									<td><asp:textbox id="txtDtMA" style="Z-INDEX: 108" tabIndex="6" placeholder="A" runat="server"></asp:textbox></td>
+									<td><asp:textbox id="txtDtMA" tabIndex="6" placeholder="A" runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td></td>
@@ -81,22 +81,22 @@
 								<tr>
 									<td></td>
 									<td colspan="2">
-										<asp:button id="btnFind" style="Z-INDEX: 123" tabIndex="8" runat="server" Text="Ricerca"></asp:button></td>
+										<asp:button id="btnFind" tabIndex="8" runat="server" Text="Ricerca"></asp:button></td>
 								</tr>
 							</table>
 							<div id="box-interna"><ul>
 									<li>
-										<asp:label id="lbHelp1" style="Z-INDEX: 104" runat="server">• La ricerca per  “DATA SCADENZA”  restituisce lo scadenziario mensile, mentre quella per  “DATA RIMBORSO ANTICIPATO”  trova gli eventuali call esercitati.</asp:label></li>
+										<asp:label id="lbHelp1" runat="server">La ricerca per  "DATA SCADENZA"  restituisce lo scadenziario mensile, mentre quella per  "DATA RIMBORSO ANTICIPATO"  trova gli eventuali call esercitati.</asp:label></li>
 									<li>
-										<asp:label id="lbHelp3" style="Z-INDEX: 126" runat="server">• Premendo il solo pulsante ‘Ricerca’ senza avere effettuato alcuna selezione si ottiene l’elenco di TUTTI i Titoli Obbligazionari attivi presenti.</asp:label></li>
+										<asp:label id="lbHelp3" style="Z-INDEX: 126" runat="server">Premendo il solo pulsante ‘Ricerca’ senza avere effettuato alcuna selezione si ottiene l’elenco di TUTTI i Titoli Obbligazionari attivi presenti.</asp:label></li>
 									<li>
-										<asp:label id="lbHelp4" style="Z-INDEX: 129" runat="server">• Spuntando ‘RICERCA ANCHE NELLO STORICO’ si aggiungono automaticamente anche i Titoli storicizzati (non più attivi). Questa opzione può rallentare il lavoro.</asp:label></li>
+										<asp:label id="lbHelp4" style="Z-INDEX: 129" runat="server">Spuntando ‘RICERCA ANCHE NELLO STORICO’ si aggiungono automaticamente anche i Titoli storicizzati (non più attivi). Questa opzione può rallentare il lavoro.</asp:label></li>
 									<li>
 										<asp:label id="lbHelp5" style="Z-INDEX: 132" runat="server">•Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata</asp:label></li></ul>
 							</div>
 							<asp:label id="Label7" style="Z-INDEX: 102" runat="server" Visible="False">DA</asp:label>
 							<asp:label id="Label6" style="Z-INDEX: 103" runat="server" Visible="False">A</asp:label>
-							<asp:textbox id="txtDtInA" style="Z-INDEX: 105" tabIndex="7" runat="server" Visible="False"></asp:textbox>
+							<asp:textbox id="txtDtInA" tabIndex="7" runat="server" Visible="False"></asp:textbox>
 							<asp:textbox id="txtDtInDa" style="Z-INDEX: 101" tabIndex="6" runat="server" Visible="False"></asp:textbox>
 							<asp:label id="Label3" style="Z-INDEX: 100" runat="server" Visible="False">DATA INSERIMENTO</asp:label>
 						</div>

@@ -55,7 +55,7 @@
 							<table>
 								<tr>
 									<td>DESCRIZIONE</td>
-									<td><asp:dropdownlist id="cmbFind" style="Z-INDEX: 105" tabIndex="1" runat="server">
+									<td><asp:dropdownlist id="cmbFind" tabIndex="1" runat="server">
 											<asp:ListItem Value="Contiene">Contiene</asp:ListItem>
 											<asp:ListItem Value="Inizia per">Inizia per</asp:ListItem>
 											<asp:ListItem Value="Termina per">Termina per</asp:ListItem>
@@ -92,7 +92,7 @@
 									<li>
 										La ricerca può essere richiesta per descrizione (anche solo parte del nome), per codice ISIN o UIC, oppure all’interno del range temporale tra le due date;</li>
 									<li>
-										La ricerca di cedole Pro Rata si esegue spuntando “RICERCA SOLO PRO RATA” e/o riempiendo i campi “DATA PRO RATA” per ottenere il periodo in cui cercarle;</li>
+										La ricerca di cedole Pro Rata si esegue spuntando "RICERCA SOLO PRO RATA" e/o riempiendo i campi "DATA PRO RATA" per ottenere il periodo in cui cercarle;</li>
 									<li>
 										Premendo il solo pulsante ‘Ricerca’ senza avere effettuato alcuna selezione si ottiene l’elenco di TUTTE le Cedole presenti;</li>
 									<li>
@@ -102,9 +102,9 @@
 							</div>
 							<asp:textbox id="txtDtPRA" style="Z-INDEX: 110" tabIndex="7" runat="server" Visible="False"></asp:textbox>
 							<asp:label id="Label11" style="Z-INDEX: 109" runat="server" Visible="False">A</asp:label>
-							<asp:textbox id="txtDtPRDa" style="Z-INDEX: 108" tabIndex="6" runat="server" Visible="False"></asp:textbox>
+							<asp:textbox id="txtDtPRDa" tabIndex="6" runat="server" Visible="False"></asp:textbox>
 							<asp:label id="Label5" style="Z-INDEX: 107" runat="server" Visible="False">DA</asp:label>
-							<asp:label id="Label4" style="Z-INDEX: 104" runat="server" Visible="False"> DATA PRO RATA</asp:label>
+							<asp:label id="Label4" runat="server" Visible="False"> DATA PRO RATA</asp:label>
 						</div>
 					</div>
 				</div></div>

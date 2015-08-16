@@ -21,16 +21,16 @@
 				tabIndex="3" runat="server" Height="20px" Width="112px" BorderStyle="Groove"></asp:textbox>
 			<asp:label id="lbHelp5" style="Z-INDEX: 134; LEFT: 16px; POSITION: absolute; TOP: 544px" runat="server"
 				Height="16px" Width="456px" BackColor="Transparent" Font-Size="9pt" Font-Names="Tahoma"
-				ForeColor="#0000C0" Font-Italic="True">•Per cambiare l’ordinamento (crescente/decrescente e di colonna) dell'elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata</asp:label>
+				ForeColor="#00547d" Font-Italic="True">•Per cambiare l’ordinamento (crescente/decrescente e di colonna) dell'elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata</asp:label>
 			<asp:label id="lbHelp4" style="Z-INDEX: 129; LEFT: 16px; POSITION: absolute; TOP: 504px" runat="server"
 				Height="16px" Width="456px" BackColor="Transparent" Font-Size="9pt" Font-Names="Tahoma"
-				ForeColor="#0000C0" Font-Italic="True">• Spuntando ‘RICERCA ANCHE NELLO STORICO’ si aggiungono automaticamente anche i Titoli storicizzati (non più attivi). Questa opzione può rallentare il lavoro.</asp:label>
+				ForeColor="#00547d" Font-Italic="True">Spuntando ‘RICERCA ANCHE NELLO STORICO’ si aggiungono automaticamente anche i Titoli storicizzati (non più attivi). Questa opzione può rallentare il lavoro.</asp:label>
 			<asp:label id="lbHelp3" style="Z-INDEX: 125; LEFT: 16px; POSITION: absolute; TOP: 464px" runat="server"
 				Height="16px" Width="456px" BackColor="Transparent" Font-Size="9pt" Font-Names="Tahoma"
-				ForeColor="#0000C0" Font-Italic="True">• Premendo il solo pulsante ‘Ricerca’ senza avere effettuato alcuna selezione si ottiene l’elenco di TUTTE le cedole presenti</asp:label>
+				ForeColor="#00547d" Font-Italic="True">Premendo il solo pulsante ‘Ricerca’ senza avere effettuato alcuna selezione si ottiene l’elenco di TUTTE le cedole presenti</asp:label>
 			<asp:label id="lbHelp1" style="Z-INDEX: 103; LEFT: 16px; POSITION: absolute; TOP: 424px" runat="server"
 				Height="16px" Width="456px" BackColor="Transparent" Font-Size="9pt" Font-Names="Tahoma"
-				ForeColor="#0000C0" Font-Italic="True">• La ricerca può essere richiesta per descrizione (anche solo parte del nome), per codice ISIN o UIC, oppure all’interno del range temporale tra le due date.</asp:label>
+				ForeColor="#00547d" Font-Italic="True">La ricerca può essere richiesta per descrizione (anche solo parte del nome), per codice ISIN o UIC, oppure all’interno del range temporale tra le due date.</asp:label>
 			<asp:dropdownlist id="cmbTipoInd" style="Z-INDEX: 132; LEFT: 200px; POSITION: absolute; TOP: 264px"
 				tabIndex="4" runat="server" Height="16px" Width="204px" Font-Size="X-Small" Font-Names="Tahoma">
 				<asp:ListItem Value="-1">TUTTI</asp:ListItem>
@@ -42,7 +42,7 @@
 			<asp:label id="Label15" style="Z-INDEX: 131; LEFT: 16px; POSITION: absolute; TOP: 267px" runat="server"
 				Height="16px" Width="188px" BackColor="Transparent" Font-Size="8pt" Font-Names="Tahoma"
 				ForeColor="Black">TIPO CEDOLE</asp:label><asp:label id="lbHelpDate" style="Z-INDEX: 130; LEFT: 16px; POSITION: absolute; TOP: 296px"
-				runat="server" ForeColor="#0000C0" Font-Names="Tahoma" Font-Size="8pt" BackColor="Transparent" Width="394px" Height="16px" Font-Bold="True"
+				runat="server" ForeColor="#00547d" Font-Names="Tahoma" Font-Size="8pt" BackColor="Transparent" Width="394px" Height="16px" Font-Bold="True"
 				Font-Italic="True">Attenzione: le date devono essere inserite nella forma GG/MM/AAAA</asp:label>
 			<TABLE id="Table2" style="Z-INDEX: 128; LEFT: 4px; WIDTH: 962px; POSITION: absolute; TOP: 0px; HEIGHT: 8px"
 				cellSpacing="0" cols="2" cellPadding="0" width="962" border="0">

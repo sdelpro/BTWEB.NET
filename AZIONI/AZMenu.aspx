@@ -9,7 +9,6 @@
 		<meta name="vs_defaultClientScript" content="JavaScript">
 		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
 		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
-		<!--<body MS_POSITIONING="GridLayout" background="..\Images\sfHome.JPG">-->
 	</HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
@@ -77,27 +76,6 @@
 					</div> <!-- foglio -->
 				</div> <!-- pagina -->
 			</div> <!-- riga-pagina -->
-			<TABLE id="Table5" style="Z-INDEX: 111; POSITION: absolute; WIDTH: 100%; HEIGHT: 88px; TOP: 136px; LEFT: 16px"
-				cellSpacing="10" cellPadding="0" width="100%" align="center" border="0">
-			</TABLE>
-			<!--
-			<TABLE id="Table1" style="Z-INDEX: 110; LEFT: 4px; POSITION: absolute; TOP: 0px; HEIGHT: 8px"
-				cellSpacing="0" cols="2" cellPadding="0" width="100%" border="0">
-				<TR>
-					<TD vAlign="middle">
-						<ucmenu:dhtmlmenucontrol id=Dhtmlmenucontrol4 runat="server" Visible='<%# iif(Session("LOGIN_VALIDATE") = "ABILITATO_BT" ,"true","false") %>' TypeMenu="TopMenuAZ" ImagePath="Images/">
-						</ucmenu:dhtmlmenucontrol></TD>
-					<TD style="HEIGHT: 30px" align="right"></TD>
-				</TR>
-			</TABLE>-->
-			<!--
-			<asp:image id="Image1" style="Z-INDEX: 106; LEFT: 4px; POSITION: absolute; TOP: 32px" runat="server"
-				Height="44px" Width="352px" ImageUrl="..\Images\Logo.gif"></asp:image>
-			<TABLE id="Table3" style="Z-INDEX: 102; LEFT: 60px; WIDTH: 348px; POSITION: absolute; TOP: 364px; HEIGHT: 84px"
-				cellSpacing="1" cellPadding="1" width="300" border="1">-->
-			<TR>
-			</TR>
-			</TABLE>
 		</form>
 	</body>
 </HTML>

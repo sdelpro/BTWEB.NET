@@ -70,7 +70,7 @@
 								<tr>
 									<td></td>
 									<td colspan="2">
-										<asp:textbox id="txtDtInDa" style="Z-INDEX: 108" tabIndex="4" placeholder="Da" runat="server"></asp:textbox>
+										<asp:textbox id="txtDtInDa" tabIndex="4" placeholder="Da" runat="server"></asp:textbox>
 										<asp:textbox id="txtDtInA" style="Z-INDEX: 112" tabIndex="5" placeholder="A" runat="server"></asp:textbox></td>
 								</tr>
 								<tr>

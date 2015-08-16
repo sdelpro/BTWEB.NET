@@ -1,5 +1,5 @@
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="AZFindAssemblee.aspx.vb" Inherits="BTWEB.NET.AZFindAssemblee"%>
+<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -48,15 +48,13 @@
 					<div id="interna">
 						<div id="top">
 							<span class="label-sinistra">CONVOCAZIONI ASSEMBLEE<img src="../images/label-sinistra-fine.png" alt=""></span>
-							<div style="margin-left:640px;margin-top:25px">
-								<asp:label id="lbUpd" style="Z-INDEX: 127;" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
-							</div>
+							<asp:label id="lbUpd" CssClass="label-destra" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
 						</div>
 						<div id="contenuto">
 							<table>
 								<tr>
 									<td>DESCRIZIONE</td>
-									<td><asp:textbox id="txtFind" style="Z-INDEX: 100" runat="server"></asp:textbox></td>
+									<td><asp:textbox id="txtFind" runat="server"></asp:textbox></td>
 									<td><asp:dropdownlist id="cmbFind" style="Z-INDEX: 102" runat="server" tabIndex="1">
 											<asp:ListItem Value="Contiene">Contiene</asp:ListItem>
 											<asp:ListItem Value="Inizia per">Inizia per</asp:ListItem>
@@ -65,40 +63,38 @@
 								</tr>
 								<tr>
 									<td>ISINCODE o UIC</td>
-									<td><asp:textbox id="txtIsincode" style="Z-INDEX: 104" runat="server" tabIndex="2"></asp:textbox></td>
+									<td><asp:textbox id="txtIsincode" runat="server" tabIndex="2"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>DATA ASSEMBLEA</td>
-									<td><asp:textbox id="txtDtDa" style="Z-INDEX: 113;" runat="server" placeholder="Da" tabIndex="3"></asp:textbox></td>
-									<td><asp:textbox id="txtDtA" style="Z-INDEX: 115;" runat="server" placeholder="A" tabIndex="4"></asp:textbox></td>
+									<td><asp:textbox id="txtDtDa" runat="server" placeholder="Da" tabIndex="3"></asp:textbox></td>
+									<td><asp:textbox id="txtDtA" runat="server" placeholder="A" tabIndex="4"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>DATA MODIFICA/INSERIMENTO</td>
-									<td><asp:textbox id="txtDtMDa" style="Z-INDEX: 109" runat="server" placeholder="Da" tabIndex="5"></asp:textbox>
-									<td><asp:textbox id="txtDtMA" style="Z-INDEX: 110" runat="server" placeholder="A" tabIndex="6"></asp:textbox>
-								</tr>
+									<td><asp:textbox id="txtDtMDa" runat="server" placeholder="Da" tabIndex="5"></asp:textbox>
+									<td><asp:textbox id="txtDtMA" runat="server" placeholder="A" tabIndex="6"></asp:textbox></td>
 								<tr class="note">
 									<td></td>
 									<td colspan="2">Attenzione: le date devono essere inserite nella forma GG/MM/AAAA</td>
 								</tr>
 								<tr>
 									<td>TESTO CONVOCAZIONE</td>
-									<td><asp:textbox id="txtAss" style="Z-INDEX: 128" runat="server" tabIndex="7"></asp:textbox>
-								</tr>
+									<td><asp:textbox id="txtAss" runat="server" tabIndex="7"></asp:textbox></td>
 								<tr>
 									<td></td>
 									<td colspan="2">
-										<asp:button id="btnFind" style="Z-INDEX: 101" Text="Ricerca" runat="server" tabIndex="8"></asp:button></td>
+										<asp:button id="btnFind" Text="Ricerca" runat="server" tabIndex="8"></asp:button></td>
 								</tr>
 							</table>
 							<div id="box-interna">
 								<ul>
 									<li>
-										<asp:label id="lbHelp3" style="Z-INDEX: 120" runat="server">• Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata.</asp:label>
+										<asp:label id="lbHelp3" runat="server"> Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata.</asp:label>
 									<li>
-										<asp:label id="lbHelp2" style="Z-INDEX: 123" runat="server" ForeColor="#0000C0" Font-Italic="True">• Le NOVITA’ si cercano copiando nel campo “DATA MODIFICA/INSERIMENTO DA” la data di “ultima connessione” riportata qui in alto sotto il logo Brambilla Titoli.</asp:label>
+										<asp:label id="lbHelp2" runat="server" Font-Italic="True"> Le NOVITA’ si cercano copiando nel campo "DATA MODIFICA/INSERIMENTO DA" la data di "ultima connessione" riportata qui in alto sotto il logo Brambilla Titoli.</asp:label>
 									<li>
-										<asp:label id="lbHelp1" style="Z-INDEX: 105" runat="server">• La ricerca può essere effettuata per descrizione (anche solo parte del nome), per codice ISIN o UIC, per DATA ASSEMBLEA (range temporale tra due date), per DATA MODIFICA/INSERIMENTO (range temporale tra due date), per testo della convocazione.</asp:label></li>
+										<asp:label id="lbHelp1" runat="server"> La ricerca può essere effettuata per descrizione (anche solo parte del nome), per codice ISIN o UIC, per DATA ASSEMBLEA (range temporale tra due date), per DATA MODIFICA/INSERIMENTO (range temporale tra due date), per testo della convocazione.</asp:label></li>
 								</ul>
 							</div>
 						</div>

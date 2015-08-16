@@ -65,7 +65,7 @@
 								</tr>
 								<tr>
 									<td>ISINCODE o UIC</td>
-									<td><asp:textbox id="txtIsincode" style="Z-INDEX: 105" tabIndex="2" runat="server"></asp:textbox></td>
+									<td><asp:textbox id="txtIsincode" tabIndex="2" runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>MESE</td>
@@ -98,7 +98,7 @@
 							<div id="box-interna">
 								<ul>
 									<li>
-										Definita una richiesta operando nei campi per “MESE” e/o per “ANNO” verrà 
+										Definita una richiesta operando nei campi per "MESE" e/o per "ANNO" verrà 
 										restituito l’elenco delle Obbligazioni Quotate comprese nel periodo richiesto;</li></ul>
 							</div>
 						</div>

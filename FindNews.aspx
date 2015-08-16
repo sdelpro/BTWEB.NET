@@ -26,7 +26,7 @@
 				Width="352px" Height="44px" ImageUrl="Images\Logo.gif"></asp:image>
 			<asp:label id="lbHelpDate" style="Z-INDEX: 116; LEFT: 24px; POSITION: absolute; TOP: 256px"
 				runat="server" Height="16px" Width="392px" Font-Size="8pt" Font-Names="Tahoma" BackColor="Transparent"
-				ForeColor="#0000C0" Font-Bold="True" Font-Italic="True">Attenzione: le date devono essere inserite nella forma GG/MM/AAAA</asp:label>
+				ForeColor="#00547d" Font-Bold="True" Font-Italic="True">Attenzione: le date devono essere inserite nella forma GG/MM/AAAA</asp:label>
 			<asp:label id="Label3" style="Z-INDEX: 107; LEFT: 24px; POSITION: absolute; TOP: 280px" runat="server"
 				Height="16px" Width="92px" Font-Size="8pt" Font-Names="Tahoma" BackColor="Transparent"
 				ForeColor="Black">DATA NEWS</asp:label>
@@ -54,7 +54,7 @@
 				runat="server" Height="20px" Width="256px" BorderStyle="Groove" tabIndex="1"></asp:textbox>
 			<asp:label id="lbHelp1" style="Z-INDEX: 111; LEFT: 16px; POSITION: absolute; TOP: 416px" runat="server"
 				Height="16px" Width="456px" Font-Size="9pt" Font-Names="Tahoma" BackColor="Transparent"
-				ForeColor="#0000C0" Font-Italic="True">• La ricerca può essere effettuata per argomento, per testo (anche solo parte del testo), per DATA NEWS (range temporale tra due date.</asp:label>
+				ForeColor="#00547d" Font-Italic="True">La ricerca può essere effettuata per argomento, per testo (anche solo parte del testo), per DATA NEWS (range temporale tra due date.</asp:label>
 			<asp:label id="Label1" style="Z-INDEX: 114; LEFT: 16px; POSITION: absolute; TOP: 144px" runat="server"
 				Height="24px" Width="272px" Font-Size="18px" Font-Names="Tahoma">INFORMAZIONI VARIE</asp:label>
 			<TABLE id="Table2" style="Z-INDEX: 105; LEFT: 0px; POSITION: absolute; TOP: 104px" cellSpacing="0"

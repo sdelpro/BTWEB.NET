@@ -49,9 +49,7 @@
 					<div id="interna">
 						<div id="top">
 							<span class="label-sinistra">TITOLI SOCIETA'<img src="../images/label-sinistra-fine.png" alt=""></span>
-							<div style="margin-left:640px;margin-top:25px">
-								<asp:label id="lbUpd" style="Z-INDEX: 127;" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
-							</div>
+							<asp:label id="lbUpd" CssClass="label-destra" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
 						</div>
 						
 						<div id="contenuto">
@@ -68,13 +66,13 @@
 								<!-- RIGA ISINCODE -->
 								<tr>
 									<td>ISINCODE o UIC</td>
-									<td><asp:textbox id="txtIsincode" style="Z-INDEX: 104" tabIndex="2" runat="server"></asp:textbox>
+									<td><asp:textbox id="txtIsincode" tabIndex="2" runat="server"></asp:textbox>
 									</td>
 								</tr>
 								<tr>
 									<!-- RIGA MERCATO -->
 									<td>MERCATO</td>
-									<td><asp:dropdownlist id="cmbMercato" style="Z-INDEX: 123" tabIndex="3" runat="server">
+									<td><asp:dropdownlist id="cmbMercato" tabIndex="3" runat="server">
 											<asp:ListItem Value="Contiene">Contiene</asp:ListItem>
 											<asp:ListItem Value="Inizia per">Inizia per</asp:ListItem>
 											<asp:ListItem Value="Termina per">Termina per</asp:ListItem>
@@ -93,7 +91,7 @@
 								<tr>
 									<td>DATA MODIFICA/INSERIMENTO</td>
 									<td><asp:textbox id="txtDtMDa" style="Z-INDEX: 107" tabIndex="5" placeholder="Da" runat="server"></asp:textbox>
-									<td><asp:textbox id="txtDtMA" style="Z-INDEX: 108" tabIndex="6" placeholder="A" runat="server"></asp:textbox>
+									<td><asp:textbox id="txtDtMA" tabIndex="6" placeholder="A" runat="server"></asp:textbox>
 									</td>
 								</tr>
 								<tr class="note">
@@ -111,15 +109,15 @@
 							<div id="box-interna">
 								<ul>
 									<li>
-										<asp:label id="lbHelp2" style="Z-INDEX: 121" runat="server">• I titoli storicizzati sono evidenziati in rosso.</asp:label>
+										<asp:label id="lbHelp2" style="Z-INDEX: 121" runat="server">I titoli storicizzati sono evidenziati in rosso.</asp:label>
 									<li>
-										<asp:label id="lbHelp5" style="Z-INDEX: 120" runat="server">• Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata.   </asp:label>
+										<asp:label id="lbHelp5" runat="server">Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata.   </asp:label>
 									<li>
-										<asp:label id="lbHelp4" style="Z-INDEX: 118" runat="server">• Premendo il solo pulsante “Ricerca” senza avere effettuato alcuna selezione si ottiene l’elenco di TUTTI i Titoli presenti.</asp:label>
+										<asp:label id="lbHelp4" style="Z-INDEX: 118" runat="server">Premendo il solo pulsante "Ricerca" senza avere effettuato alcuna selezione si ottiene l’elenco di TUTTI i Titoli presenti.</asp:label>
 									<li>
-										<asp:label id="lbHelp3" style="Z-INDEX: 119" runat="server">• Le NOVITA’ si cercano copiando nel campo “DATA MODIFICA/INSERIMENTO DA” la data di “ultima connessione” riportata qui in alto sotto il logo Brambilla Titoli.</asp:label>
+										<asp:label id="lbHelp3" style="Z-INDEX: 119" runat="server">Le NOVITA’ si cercano copiando nel campo "DATA MODIFICA/INSERIMENTO DA" la data di "ultima connessione" riportata qui in alto sotto il logo Brambilla Titoli.</asp:label>
 									<li>
-										<asp:label id="lbHelp1" style="Z-INDEX: 105" runat="server">• La ricerca può essere effettuata per descrizione (anche solo parte del nome), per codice ISIN o UIC, per mercato, per settore, per DATA MODIFICA/INSERIMENTO (range temporale tra due date).</asp:label>
+										<asp:label id="lbHelp1" runat="server">La ricerca può essere effettuata per descrizione (anche solo parte del nome), per codice ISIN o UIC, per mercato, per settore, per DATA MODIFICA/INSERIMENTO (range temporale tra due date).</asp:label>
 									<li>
 										<asp:label id="lbHelpDate" style="Z-INDEX: 117" runat="server">Attenzione: le date devono essere inserite nella forma GG/MM/AAAA</asp:label></li></ul>
 							</div>

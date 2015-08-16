@@ -132,6 +132,7 @@ span.label-sinistra {
 	color: #ffffff;
 	font-size: 14px;
 }
+
 span.label-sinistra img {
 	position: absolute;
 	top: 0;
@@ -186,6 +187,10 @@ span.labels
 	padding: 0 60px 0 120px;
 }
 #foglio #login label {
+	font-size: 11px;
+	margin-right: 20px;
+}
+#foglio #login span {
 	font-size: 11px;
 	margin-right: 20px;
 }

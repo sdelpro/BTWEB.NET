@@ -48,9 +48,7 @@
 					<div id="interna">
 						<div id="top">
 							<span class="label-sinistra">AZIONI CONVERTIBILI<img src="../images/label-sinistra-fine.png" alt=""></span>
-							<div style="MARGIN-TOP:25px;MARGIN-LEFT:640px">
-								<asp:label id="lbUpd" style="Z-INDEX: 127" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
-							</div>
+							<asp:label id="lbUpd" CssClass="label-destra" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
 						</div>
 						<div id="contenuto">
 							<table>
@@ -65,7 +63,7 @@
 								</tr>
 								<tr>
 									<td>ISINCODE o UIC</td>
-									<td><asp:textbox id="txtIsincode" style="Z-INDEX: 104" runat="server" tabIndex="2"></asp:textbox></td>
+									<td><asp:textbox id="txtIsincode" runat="server" tabIndex="2"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td><asp:button id="btnFind" style="Z-INDEX: 101" runat="server" Text="Ricerca" tabIndex="3"></asp:button></td>
@@ -74,11 +72,11 @@
 							<div id="box-interna">
 								<ul>
 									<li>
-										<asp:label id="lbHelp1" style="Z-INDEX: 105" runat="server">• Per ricercare una sola azione convertibile; inserire la descrizione (anche solo parte del nome), o il codice ISIN o UIC; per ottenere l’elenco di TUTTE le azioni convertibili basta premere il pulsante “Ricerca” senza avere effettuato alcun’altra selezione.</asp:label>
+										<asp:label id="lbHelp1" runat="server">Per ricercare una sola azione convertibile; inserire la descrizione (anche solo parte del nome), o il codice ISIN o UIC; per ottenere l’elenco di TUTTE le azioni convertibili basta premere il pulsante "Ricerca" senza avere effettuato alcun’altra selezione.</asp:label>
 									<li>
-										<asp:label id="lbHelp2" style="Z-INDEX: 112" runat="server">• Selezionando l’azione convertibile desiderata si accede alla consultazione della Tabella di Convertibilità.</asp:label>
+										<asp:label id="lbHelp2" style="Z-INDEX: 112" runat="server">Selezionando l’azione convertibile desiderata si accede alla consultazione della Tabella di Convertibilità.</asp:label>
 									<li>
-										<asp:label id="lbHelp3" style="Z-INDEX: 107" runat="server">• Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata</asp:label></li></ul>
+										<asp:label id="lbHelp3" style="Z-INDEX: 107" runat="server">Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata</asp:label></li></ul>
 							</div>
 						</div>
 					</div>
