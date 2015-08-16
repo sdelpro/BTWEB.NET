@@ -134,7 +134,7 @@ Public Class IDXMenu
                     ds.Tables("CLIENTI").Rows(0).Item("ULTIMALOGIN") = Format(Now, "dd/MM/yyyy")
                     Session("PROFILO1") = ds.Tables("CLIENTI").Rows(0).Item("PROFILO1")
                     Session("PROFILO2") = ds.Tables("CLIENTI").Rows(0).Item("PROFILO2")
-                    Session("PROFILO3") = ds.Tables("CLIENTI").Rows(0).Item("PROFILO3")
+                    Session("PROFILO3") = False 'ds.Tables("CLIENTI").Rows(0).Item("PROFILO3")
                     Session("PROFILO4") = ds.Tables("CLIENTI").Rows(0).Item("PROFILO4")
                     Session("PROFILO5") = ds.Tables("CLIENTI").Rows(0).Item("PROFILO5")
                     Session("PROFILO6") = ds.Tables("CLIENTI").Rows(0).Item("PROFILO6")

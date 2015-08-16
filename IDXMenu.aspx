@@ -53,7 +53,7 @@
 						<div id="top">
 							<div>
 							<span class="label-sinistra">LOGIN<img src="images/label-sinistra-fine.png" alt=""></span>
-							<asp:label id="lblLastLogin" runat="server" CssClass="label-destra">&nbsp;</asp:label></div>
+							<asp:label id="lblLastLogin" runat="server" CssClass="label-destra">Tutto Titoli</asp:label></div>
 						</div> <!-- top -->
 						<div id="login">
 							<form>

@@ -14,7 +14,7 @@
 		<SCRIPT>
 <!--
 // ----- Variabili di personalizzazione -----
-var attesa="<table border='0' cellpadding='0' cellspacing='0' style='border-collapse: collapse' bordercolor='#111111' width='100%' id='AutoNumber1'><tr><td width='100%'><p align='center'><img border='0' src='../Images/wait.gif' width='150' height='15'><br><b><font face='Tahoma' color='#CC3300'>Caricamento Quotazioni in corso...</font></b></td></tr></table>"
+var attesa="<table border='0' cellpadding='0' cellspacing='0' style='border-collapse: collapse' bordercolor='#111111' width='100%' id='AutoNumber1'><tr><td width='100%'><p align='center'><img border='0' src='../Images/wait.gif' ><br><b><font face='Tahoma' color='#00547d'>Caricamento Quotazioni in corso...</font></b></td></tr></table>"
 var colore="white";
 // ----- Fine variabili di personalizzazione -----
 

@@ -17,6 +17,9 @@ Public Class AZTitoli
     Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
     Protected WithEvents Label1 As System.Web.UI.WebControls.Label
+    Protected WithEvents lblNumRecord As System.Web.UI.WebControls.Label
+    Protected WithEvents lblFirstPage As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblLastPage As System.Web.UI.WebControls.LinkButton
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.

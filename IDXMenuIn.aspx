@@ -81,20 +81,20 @@
 				border="0" cellSpacing="10" cellPadding="0" width="95%" align="center">
 				<TR>
 					<TD style="HEIGHT: 37px" width="100%" align="center"><asp:label id="lbScarichi" runat="server" Font-Names="Verdana" Font-Size="18px" Visible="False"
-							ForeColor="Navy">SCARICHI</asp:label>&nbsp;&nbsp;
+							ForeColor="#00547d">SCARICHI</asp:label>&nbsp;&nbsp;
 						<asp:linkbutton id="lbScarA" runat="server" Width="43px" Height="16px" Font-Names="Verdana" Font-Size="18px"
-							Visible="False" ForeColor="Navy">A</asp:linkbutton>
+							Visible="False" ForeColor="#00547d">A</asp:linkbutton>
 							<asp:linkbutton id="lbScarB" runat="server" Width="34px" Height="16px" Font-Names="Verdana" Font-Size="18px"
-							Visible="False" ForeColor="Navy">B</asp:linkbutton></TD>
+							Visible="False" ForeColor="#00547d">B</asp:linkbutton></TD>
 				<TR>
 					<TD style="HEIGHT: 191px" align="center"><asp:table id="tbComun" runat="server" Width="500px" Height="139px" Font-Names="Tahoma" Font-Size="15px"
 							Visible="False" Font-Bold="True">
-							<asp:TableRow HorizontalAlign="Center" ForeColor="White" BackColor="Navy" Height="30px" Font-Bold="True">
+							<asp:TableRow HorizontalAlign="Center" ForeColor="White" BackColor="#00547d" Height="30px" Font-Bold="True">
 								<asp:TableCell Text="Comunicazioni agli Utenti"></asp:TableCell>
 							</asp:TableRow>
-							<asp:TableRow VerticalAlign="Middle" BorderWidth="1px" BorderColor="Navy" BorderStyle="Solid" 
+							<asp:TableRow VerticalAlign="Middle" BorderWidth="1px" BorderColor="#00547d" BorderStyle="Solid" 
  HorizontalAlign="Justify">
-								<asp:TableCell BorderStyle="Solid" BorderWidth="1px" VerticalAlign="Middle" ForeColor="Navy" HorizontalAlign="Justify" 
+								<asp:TableCell BorderStyle="Solid" BorderWidth="1px" VerticalAlign="Middle" ForeColor="#00547d" HorizontalAlign="Justify" 
  Text="&lt;br&gt;   Nessuna Comunicazione&lt;br&gt;&lt;br&gt;"></asp:TableCell>
 							</asp:TableRow>
 						</asp:table></TD>
@@ -106,10 +106,6 @@
 					<TD style="HEIGHT: 0px" align="center" width="100%">&nbsp;</TD>
 				</TR>
 			</TABLE>
-			<!--&nbsp;<asp:image id="Image1" style="Z-INDEX: 104; POSITION: absolute; TOP: 32px; LEFT: 16px" runat="server"
-				Height="44px" Width="352px" ImageUrl="Images\Logo.gif"></asp:image><asp:label id="lblError" style="Z-INDEX: 110; POSITION: absolute; TOP: 136px; LEFT: 12px" runat="server"
-				BackColor="Transparent" Font-Size="12px" Font-Names="Tahoma" Height="20px" Width="524px" ForeColor="Red" Font-Bold="True" BorderColor="Transparent"></asp:label>-->
-				
 		</form>
 	</body>
 </HTML>

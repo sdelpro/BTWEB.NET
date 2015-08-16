@@ -101,7 +101,7 @@
 				<asp:TableCell BackColor="Transparent" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
 			</asp:TableRow>
 			<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-				<asp:TableCell BackColor="Transparent" ForeColor="Navy" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
+				<asp:TableCell BackColor="Transparent" ForeColor="#00547d" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
 			</asp:TableRow>
 			<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
 				<asp:TableCell BackColor="Transparent" ColumnSpan="1" Width="12.5%"></asp:TableCell>
@@ -163,7 +163,7 @@
 				<asp:TableCell BackColor="Transparent" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
 			</asp:TableRow>
 			<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-				<asp:TableCell BackColor="Transparent" ForeColor="Navy" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
+				<asp:TableCell BackColor="Transparent" ForeColor="#00547d" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
 			</asp:TableRow>
 			<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
 				<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" ColumnSpan="2" Width="25%"
@@ -185,7 +185,7 @@
 				<asp:TableCell BackColor="Transparent" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
 			</asp:TableRow>
 			<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-				<asp:TableCell BackColor="Transparent" ForeColor="Navy" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
+				<asp:TableCell BackColor="Transparent" ForeColor="#00547d" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
 			</asp:TableRow>
 			<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
 				<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" ColumnSpan="2" Width="25%"
@@ -209,7 +209,7 @@
 				<asp:TableCell BackColor="Transparent" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
 			</asp:TableRow>
 			<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-				<asp:TableCell BackColor="Transparent" ForeColor="Navy" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
+				<asp:TableCell BackColor="Transparent" ForeColor="#00547d" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
 			</asp:TableRow>
 			<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
 				<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" ColumnSpan="2" Width="25%"
@@ -231,7 +231,7 @@
 				<asp:TableCell BackColor="Transparent" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
 			</asp:TableRow>
 			<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-				<asp:TableCell BackColor="Transparent" ForeColor="Navy" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
+				<asp:TableCell BackColor="Transparent" ForeColor="#00547d" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
 			</asp:TableRow>
 			<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
 				<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Transparent" ColumnSpan="8" Width="100%"
@@ -241,7 +241,7 @@
 				<asp:TableCell BackColor="Transparent" ForeColor="Transparent" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
 			</asp:TableRow>
 			<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-				<asp:TableCell BackColor="Transparent" ForeColor="Navy" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
+				<asp:TableCell BackColor="Transparent" ForeColor="#00547d" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
 			</asp:TableRow>
 		</asp:table>
 		<TABLE id="Table2" style="Z-INDEX: 105; LEFT: 5px; WIDTH: 962px; POSITION: absolute; TOP: -3px; HEIGHT: 8px"

@@ -66,7 +66,7 @@
 					<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Transparent" ColumnSpan="3" BorderColor="Black"></asp:TableCell>
 				</asp:TableRow>
 				<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-					<asp:TableCell BackColor="Transparent" ForeColor="Navy" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
+					<asp:TableCell BackColor="Transparent" ForeColor="#00547d" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
 				</asp:TableRow>
 			</asp:table><asp:dropdownlist id="cmbAnno" style="Z-INDEX: 104; LEFT: 8px; POSITION: absolute; TOP: 248px" runat="server"
 				Height="20px" Width="156px" AutoPostBack="True"></asp:dropdownlist><asp:table id="tbQuot" style="Z-INDEX: 103; LEFT: 0px; POSITION: absolute; TOP: 272px" runat="server"

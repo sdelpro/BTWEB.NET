@@ -437,6 +437,13 @@ span.labels
 	padding: 10px 15px;
 	border-bottom: 1px solid #f4f4f4;
 }
+.dett-tabella {
+	border: 0px;
+}
+.dett-tabella td {
+	border: 1px solid #f4f4f4;
+}
+
 #due-colonne td.separa {
 	width: 1px!important;
 	padding: 0!important;

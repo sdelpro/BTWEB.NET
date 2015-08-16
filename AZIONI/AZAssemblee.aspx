@@ -56,11 +56,11 @@
 						</div>
 						<div id="contenuto">
 							<asp:table id="tbAss" class="quattro-colonne" runat="server">
-								<asp:TableRow Font-Size="12px">
+								<asp:TableRow>
 									<asp:TableCell></asp:TableCell>
 									<asp:TableCell></asp:TableCell>
 								</asp:TableRow>
-								<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
+								<asp:TableRow>
 									<asp:TableCell></asp:TableCell>
 									<asp:TableCell></asp:TableCell>
 								</asp:TableRow>

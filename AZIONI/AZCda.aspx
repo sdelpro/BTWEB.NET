@@ -56,11 +56,11 @@
 						</div>
 						<div id="contenuto">
 							<asp:table id="tbCda" CssClass="quattro-colonne" runat="server">
-								<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
+								<asp:TableRow>
 									<asp:TableCell CssClass="etichetta"></asp:TableCell>
 									<asp:TableCell ColumnSpan="7"></asp:TableCell>
 								</asp:TableRow>
-								<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
+								<asp:TableRow>
 									<asp:TableCell CssClass="etichetta"></asp:TableCell>
 									<asp:TableCell ColumnSpan="7"></asp:TableCell>
 								</asp:TableRow>

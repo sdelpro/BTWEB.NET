@@ -82,78 +82,34 @@ Public Class AZDividendi
 
             tr = New TableRow
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Gainsboro
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(1)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
+            tch.CssClass = "etichetta"
             tch.Text = "STATO"
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
             tr.Cells.Add(tch)
             tch = Nothing
 
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Transparent
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(1)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
             tch.Text = IIf(_Row.Item("STATO") & "" = "", ".", _Row.Item("STATO") & "")  '_Row.Item("STATO") & ""
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
             tr.Cells.Add(tch)
             tch = Nothing
 
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Gainsboro
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(1)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
             tch.Text = "VALUTA"
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
+            tch.CssClass = "etichetta"
             tr.Cells.Add(tch)
             tch = Nothing
 
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Transparent
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(1)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
             tch.Text = IIf(_Row.Item("VAL") & "" = "", ".", _Row.Item("VAL") & "")  '_Row.Item("VAL") & ""
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
             tr.Cells.Add(tch)
             tch = Nothing
 
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Gainsboro
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(1)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
             tch.Text = "PAGAMENTO"
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
+            tch.CssClass = "etichetta"
             tr.Cells.Add(tch)
             tch = Nothing
 
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Transparent
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(1)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
-
             If _Row.Item("DATAPAG") & "" = "" Or _Row.Item("DATAPAG") & "" = "1/1/1900" Or _Row.Item("DATAPAG") & "" = "01/01/1900" Then
                 tch.Text = "."
             Else
@@ -164,34 +120,17 @@ Public Class AZDividendi
                 End If
             End If
             'tch.Text = IIf(_Row.Item("DATAPAG") & "" = "" Or _Row.Item("DATAPAG") & "1/1/1900" = "" Or _Row.Item("DATAPAG") & "" = "01/01/1900", ".", _Row.Item("DATAPAG") & "") '_Row.Item("DATAPAG") & ""
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
             tr.Cells.Add(tch)
             tch = Nothing
 
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Gainsboro
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(1)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
             tch.Text = "STACCO"
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
+            tch.CssClass = "etichetta"
             tr.Cells.Add(tch)
             tch = Nothing
 
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Transparent
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(1)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
             tch.Text = IIf(_Row.Item("DATASTACCO") & "" = "", ".", _Row.Item("DATASTACCO") & "")  '_Row.Item("DATASTACCO") & ""
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
             tr.Cells.Add(tch)
             tch = Nothing
 
@@ -202,51 +141,23 @@ Public Class AZDividendi
 
             tr = New TableRow
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Gainsboro
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(1)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
             tch.Text = "LORDO"
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
+            tch.CssClass = "etichetta"
             tr.Cells.Add(tch)
             tch = Nothing
 
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Transparent
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(1)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
             tch.Text = IIf(_Row.Item("LORDO") & "" = "", ".", _Row.Item("LORDO") & "")  '_Row.Item("LORDO") & ""
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
             tr.Cells.Add(tch)
             tch = Nothing
 
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Gainsboro
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(1)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
             tch.Text = "ALIQUOTA %"
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
+            tch.CssClass = "etichetta"
             tr.Cells.Add(tch)
             tch = Nothing
 
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Transparent
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(1)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
             If _Row.Item("ALIQUOTA") & "" = "" Then
                 tch.Text = "."
             Else
@@ -257,60 +168,28 @@ Public Class AZDividendi
                 End If
             End If
             'tch.Text = IIf(_Row.Item("ALIQUOTA") & "" = "", ".", _Row.Item("ALIQUOTA") & "")  '_Row.Item("ALIQUOTA") & ""
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
             tr.Cells.Add(tch)
             tch = Nothing
 
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Gainsboro
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(1)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
+            tch.CssClass = "etichetta"
             tch.Text = "NETTO"
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
             tr.Cells.Add(tch)
             tch = Nothing
 
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Transparent
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(1)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
             tch.Text = IIf(_Row.Item("NETTO") & "" = "", ".", _Row.Item("NETTO") & "")
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
             tr.Cells.Add(tch)
             tch = Nothing
 
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Gainsboro
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(1)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
+            tch.CssClass = "etichetta"
             tch.Text = "CEDOLA"
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
             tr.Cells.Add(tch)
             tch = Nothing
 
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Transparent
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(1)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
             tch.Text = IIf(_Row.Item("NUMCEDOLA") & "" = "", ".", _Row.Item("NUMCEDOLA") & "")
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
             tr.Cells.Add(tch)
             tch = Nothing
 
@@ -322,85 +201,38 @@ Public Class AZDividendi
 
             radioString = "<INPUT type=""radio"" value=""off"" " & IIf(_Row.Item("STRAORDINARIO") & "" = "SI", "CHECKED", "") & "> " & "STRAORDINARIO"
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Transparent
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(0)
-            tch.Width = Unit.Percentage(25)
-            tch.ColumnSpan = 2
-            tch.BorderColor = Color.Black
             tch.Text = radioString
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
             tr.Cells.Add(tch)
             tch = Nothing
 
             radioString = "<INPUT type=""radio"" value=""off"" " & IIf(_Row.Item("ORDINARIO") & "" = "SI", "CHECKED", "") & "> " & "ORDINARIO"
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Transparent
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(0)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
             tch.Text = radioString
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
             tr.Cells.Add(tch)
             tch = Nothing
 
             radioString = "<INPUT type=""radio"" value=""off"" " & IIf(_Row.Item("TIPONETTO") & "" = "SI", "CHECKED", "") & "> " & "NETTO"
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Transparent
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(0)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
             tch.Text = radioString
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
             tr.Cells.Add(tch)
             tch = Nothing
 
             radioString = "<INPUT type=""radio"" value=""off"" " & IIf(_Row.Item("ACCONTO") & "" = "SI", "CHECKED", "") & "> " & "ACCONTO"
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Transparent
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(0)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
             tch.Text = radioString
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
             tr.Cells.Add(tch)
             tch = Nothing
 
             radioString = "<INPUT type=""radio"" value=""off"" " & IIf(_Row.Item("SALDO") & "" = "SI", "CHECKED", "") & "> " & "SALDO"
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Transparent
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(0)
-            tch.Width = Unit.Percentage(12.5)
-            tch.ColumnSpan = 1
-            tch.BorderColor = Color.Black
             tch.Text = radioString
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
             tr.Cells.Add(tch)
             tch = Nothing
 
             radioString = "<INPUT type=""radio"" value=""off"" " & IIf(_Row.Item("NONCONFR") & "" = "SI", "CHECKED", "") & "> " & "NON CONFRONTABILE"
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Transparent
-            tch.BorderStyle = BorderStyle.Solid
-            tch.BorderWidth = Unit.Pixel(0)
-            tch.Width = Unit.Percentage(25)
-            tch.ColumnSpan = 2
-            tch.BorderColor = Color.Black
             tch.Text = radioString
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
+            tch.ColumnSpan = 3
             tr.Cells.Add(tch)
             tch = Nothing
 
@@ -414,16 +246,8 @@ Public Class AZDividendi
             tr = New TableRow
 
             tch = New TableCell
-            tch.BackColor = System.Drawing.Color.Transparent
-            tch.BorderStyle = BorderStyle.None
-            tch.BorderWidth = Unit.Pixel(0)
-            tch.Width = Unit.Percentage(100)
             tch.ColumnSpan = 8
-            tch.BorderColor = Color.Transparent
             tch.Text = "."
-            tch.Font.Name = "Tahoma"
-            tch.Font.Size = FontUnit.Point(10)
-            tch.ForeColor = Color.White
             tr.Cells.Add(tch)
             tch = Nothing
 
@@ -459,15 +283,9 @@ Public Class AZDividendi
                 tr = New TableRow
 
                 tch = New TableCell
-                tch.BackColor = System.Drawing.Color.Gainsboro
-                tch.BorderStyle = BorderStyle.Solid
-                tch.BorderWidth = Unit.Pixel(1)
-                tch.Width = Unit.Percentage(12.5)
-                tch.ColumnSpan = 1
-                tch.BorderColor = Color.Black
                 tch.Text = "NOTE"
-                tch.Font.Name = "Tahoma"
-                tch.Font.Size = FontUnit.Point(10)
+                tch.ColumnSpan = 8
+                tch.CssClass = "etichetta"
                 tr.Cells.Add(tch)
                 tch = Nothing
 
@@ -481,15 +299,8 @@ Public Class AZDividendi
                 tr = New TableRow
 
                 tch = New TableCell
-                tch.BackColor = System.Drawing.Color.Transparent
-                tch.BorderStyle = BorderStyle.Solid
-                tch.BorderWidth = Unit.Pixel(1)
-                tch.Width = Unit.Percentage(100)
                 tch.ColumnSpan = 8
-                tch.BorderColor = Color.Black
                 tch.Text = IIf(dtNote.Rows(zx).Item(0) & "" = "", ".", dtNote.Rows(zx).Item(0) & "")
-                tch.Font.Name = "Tahoma"
-                tch.Font.Size = FontUnit.Point(10)
                 tr.Cells.Add(tch)
                 tch = Nothing
 

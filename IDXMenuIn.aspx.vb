@@ -77,7 +77,7 @@ Public Class IDXMenuIn
 
         End If
         'End With
-        lblError.Visible = False
+        'lblError.Visible = False
         'If Not Session("USERNAME") = "btadmin" Then
         If Not Session("USERNAME") = "btadmin" Then
             If Session("PROFILO1") Then lblAZIONI.Visible = True

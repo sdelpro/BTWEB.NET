@@ -57,28 +57,18 @@
 						</div>
 						<div id="contenuto">
 
-							<asp:table id="tbDiv" runat="server">
-								<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" BorderColor="Black"></asp:TableCell>
-									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" ColumnSpan="2" BorderColor="Black"></asp:TableCell>
+							<asp:table id="tbDiv" runat="server" CssClass="quattro-colonne">
+								<asp:TableRow>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell ColumnSpan="7"></asp:TableCell>
 								</asp:TableRow>
-								<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" BorderColor="Black"></asp:TableCell>
-									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" ColumnSpan="7" BorderColor="Black"></asp:TableCell>
+								<asp:TableRow>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell ColumnSpan="7"></asp:TableCell>
 								</asp:TableRow>
-								<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" BorderColor="Black"></asp:TableCell>
-									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" ColumnSpan="2" BorderColor="Black"></asp:TableCell>
-								</asp:TableRow>
-								<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-									<asp:TableCell Width="12.5%" BorderColor="Black"></asp:TableCell>
-									<asp:TableCell Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%"></asp:TableCell>
+								<asp:TableRow>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell ColumnSpan="7"></asp:TableCell>
 								</asp:TableRow>
 							</asp:table>
 							

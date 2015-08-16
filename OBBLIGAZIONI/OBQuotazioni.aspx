@@ -70,7 +70,7 @@
 					BorderColor="Black"></asp:TableCell>
 			</asp:TableRow>
 			<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-				<asp:TableCell BackColor="Transparent" ForeColor="Navy" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
+				<asp:TableCell BackColor="Transparent" ForeColor="#00547d" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
 			</asp:TableRow>
 		</asp:table>
 		<asp:Table id="tbQuot" style="Z-INDEX: 106; LEFT: 0px; POSITION: absolute; TOP: 272px" runat="server"

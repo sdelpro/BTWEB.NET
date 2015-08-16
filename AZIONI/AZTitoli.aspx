@@ -1,5 +1,5 @@
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="AZTitoli.aspx.vb" Inherits="BTWEB.NET.AZTitoli"%>
+<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
