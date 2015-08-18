@@ -99,18 +99,18 @@ Public Class IDXMenu
                         End Try
                     End If
 
-                    If txtUsername.Text = "btadmin" And txtPassword.Text = "gef1815" Then
-                        Dim ctrlCP As String = "<a style=""FONT-SIZE: 16px; COLOR: navy; FONT-FAMILY: Tahoma; TEXT-DECORATION: underline"" href=""javascript:Popup('ControlPanel.aspx')"" id=""A1"" runat=""server"">PANNELLO DI CONTROLLO</a>"
-                        Session("LOGIN_VALIDATE") = "ABILITATO_BT"
-                        Session("ADMIN_VALIDATE") = "ABILITATO_GEF"
+                    'If txtUsername.Text = "btadmin" And txtPassword.Text = "gef1815" Then
+                    '    Dim ctrlCP As String = "<a style=""FONT-SIZE: 16px; COLOR: navy; FONT-FAMILY: Tahoma; TEXT-DECORATION: underline"" href=""javascript:Popup('ControlPanel.aspx')"" id=""A1"" runat=""server"">PANNELLO DI CONTROLLO</a>"
+                    '    Session("LOGIN_VALIDATE") = "ABILITATO_BT"
+                    '    Session("ADMIN_VALIDATE") = "ABILITATO_GEF"
 
-                        txtPassword.Text = ""
-                        txtUsername.Text = ""
-                    End If
+                    '    txtPassword.Text = ""
+                    '    txtUsername.Text = ""
+                    'End If
 
                     If ds.Tables("CLIENTI").Rows(0).Item("PASSWORD") <> txtPassword.Text Then
                         'Session("MACADDRESSSTATUS") = "OK"
-                        Session("ERROR") = "La Password  non è corretta.<br>Per info contattare il supporto tecnico."
+                        Session("ERROR") = "Username o Password  non corretti.<br>Per info contattare il supporto tecnico."
                         Response.Redirect("Error.aspx")
                     End If
 
@@ -134,7 +134,7 @@ Public Class IDXMenu
                     ds.Tables("CLIENTI").Rows(0).Item("ULTIMALOGIN") = Format(Now, "dd/MM/yyyy")
                     Session("PROFILO1") = ds.Tables("CLIENTI").Rows(0).Item("PROFILO1")
                     Session("PROFILO2") = ds.Tables("CLIENTI").Rows(0).Item("PROFILO2")
-                    Session("PROFILO3") = False 'ds.Tables("CLIENTI").Rows(0).Item("PROFILO3")
+                    Session("PROFILO3") = ds.Tables("CLIENTI").Rows(0).Item("PROFILO3")
                     Session("PROFILO4") = ds.Tables("CLIENTI").Rows(0).Item("PROFILO4")
                     Session("PROFILO5") = ds.Tables("CLIENTI").Rows(0).Item("PROFILO5")
                     Session("PROFILO6") = ds.Tables("CLIENTI").Rows(0).Item("PROFILO6")
