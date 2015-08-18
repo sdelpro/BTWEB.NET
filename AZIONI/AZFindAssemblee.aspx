@@ -1,5 +1,5 @@
-<%@ Page Language="vb" AutoEventWireup="false" Codebehind="AZFindAssemblee.aspx.vb" Inherits="BTWEB.NET.AZFindAssemblee"%>
 <%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="AZFindAssemblee.aspx.vb" Inherits="BTWEB.NET.AZFindAssemblee"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -41,6 +41,9 @@
 					<div id="ultima-connessione">
 						<asp:label id="lblLastLogin" style="Z-INDEX: 119" runat="server">Ultima connessione</asp:label>
 					</div>
+				</div>
+				<div id="menuazioni" align="center">
+					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" TypeMenu="RicercheAzioni"></ucmenu:dhtmlmenucontrol>
 				</div>
 			</div>
 			<div id="riga-pagina">

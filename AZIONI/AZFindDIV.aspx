@@ -42,6 +42,9 @@
 						<asp:Label id="lblLastLogin" style="Z-INDEX: 125" runat="server">Ultima connessione</asp:Label>
 					</div>
 				</div> <!-- menu -->
+				<div id="menuazioni" align="center">
+					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" TypeMenu="RicercheAzioni"></ucmenu:dhtmlmenucontrol>
+				</div>
 			</div> <!-- riga-menu -->
 			<!-- corpo centrale della pagina-->
 			<div id="riga-pagina">
@@ -60,7 +63,6 @@
 									<td>DATA MODIFICA/INSERIMENTO</td>
 									<td><asp:textbox id="txtDtMDaPre" style="Z-INDEX: 109" placeholder="Da" runat="server"></asp:textbox></td>
 									<td><asp:textbox id="txtDtMAPre" style="Z-INDEX: 111" runat="server" placeholder="A" tabIndex="1"></asp:textbox></td>
-
 								</tr>
 								<tr class="note">
 									<td></td>
@@ -106,7 +108,7 @@
 									<td><asp:textbox id="txtDtPagA" style="Z-INDEX: 119" runat="server" placeholder="A" tabIndex="13"></asp:textbox></td>
 								</tr>
 								<tr>
-									<td>DATA MODIFICA/INSERIMENTO</td>									
+									<td>DATA MODIFICA/INSERIMENTO</td>
 									<td><asp:textbox id="txtDtMDa" style="Z-INDEX: 110" runat="server" placeholder="Da" tabIndex="14"></asp:textbox></td>
 									<td><asp:textbox id="txtDtMA" style="Z-INDEX: 112" runat="server" placeholder="A" tabIndex="15"></asp:textbox></td>
 								</tr>

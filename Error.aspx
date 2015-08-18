@@ -7,19 +7,47 @@
 		<meta name="CODE_LANGUAGE" content="Visual Basic .NET 7.1">
 		<meta name="vs_defaultClientScript" content="JavaScript">
 		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK rel="stylesheet" type="text/css" href="css/style.css"> <!-- new -->
 	</HEAD>
-	<body MS_POSITIONING="GridLayout" background="Images\sfHome.jpg">
+	<body>
+		<div id="riga-header">
+			<div id="header">
+				<img id="logo" src="images/ImagesLogo.gif" alt="" width="352">
+			</div> <!-- header -->
+		</div> <!-- riga-header -->
+		<div id="riga-menu">
+			<div id="menu">
+				<span class="intestazione">Tuttotitoli - Brambilla &amp; C. Servizi Telematici Srl 
+					- Via Caradosso, 14 - 20124 Milano - tel. 02.20.40.45.03 - fax 02.39.19.54.04 </span>
+			</div> <!-- menu -->
+		</div> <!-- riga-menu -->
 		<form id="Form1" method="post" runat="server">
-			<asp:Label id="Label1" style="Z-INDEX: 101; LEFT: 12px; POSITION: absolute; TOP: 108px" runat="server"
-				Width="416px" Height="18px" BackColor="Transparent" ForeColor="Lime" Font-Names="Tahoma"
-				Font-Size="14px" BorderColor="Transparent" Font-Bold="True">ERRORE SISTEMA BTWEB.NET</asp:Label>
-			<asp:image id="Image1" style="Z-INDEX: 103; LEFT: 4px; POSITION: absolute; TOP: 32px" runat="server"
-				Height="44px" Width="352px" ImageUrl="Images\Logo.gif"></asp:image>
-			<asp:Label id="lblError" style="Z-INDEX: 102; LEFT: 12px; POSITION: absolute; TOP: 144px" runat="server"
-				Width="412px" Height="176px" BackColor="Transparent" ForeColor="Red" Font-Names="Tahoma"
-				Font-Size="14px" BorderColor="Transparent" Font-Bold="True"></asp:Label>&nbsp;
-			<asp:LinkButton id="lnbtn" style="Z-INDEX: 104; LEFT: 16px; POSITION: absolute; TOP: 328px" runat="server"
-				Font-Size="12px" Font-Names="Tahoma" Height="16px" Width="168px" Font-Bold="True" Visible="False">Torna alla Pagina Principale</asp:LinkButton>
+			<div id="riga-pagina">
+				<div id="pagina">
+					<div id="foglio">
+						<div id="top">
+							<div>
+								<span class="label-sinistra">Si è verificato un errore<img src="images/label-sinistra-fine.png" alt=""></span>
+								<asp:label id="lblLastLogin" runat="server" CssClass="label-destra">Tutto Titoli</asp:label></div>
+						</div> <!-- top -->
+						<div id="login">
+							<table>
+								<tr>
+									<td>
+										<asp:Label id="lblError" Font-Size="Medium" Font-Names="Tahoma" BorderColor="Transparent" BackColor="Transparent"
+											ForeColor="Red" Font-Bold="True" Height="23px" runat="server"></asp:Label>&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<asp:LinkButton id="lnbtn" runat="server" Visible="False">Torna alla Pagina Principale</asp:LinkButton>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
 		</form>
 	</body>
 </HTML>

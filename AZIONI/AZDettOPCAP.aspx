@@ -26,34 +26,36 @@
 							<div><span class="label-sinistra">OPERAZIONI SUL CAPITALE<IMG alt="" src="../Images/label-sinistra-fine.png"></span></div>
 						</div>
 						<div id="contenuto">
-							<asp:table id="tbOp" CssClass="quattro-colonne" runat="server">
-								<asp:TableRow>
-									<asp:TableCell CssClass="etichetta"></asp:TableCell>
-									<asp:TableCell></asp:TableCell>
-									<asp:TableCell CssClass="etichetta"></asp:TableCell>
-									<asp:TableCell ColumnSpan="5"></asp:TableCell>
-								</asp:TableRow>
+							<asp:table id="tbOp" CssClass="quattro-colonne-s" runat="server">
 								<asp:TableRow>
 									<asp:TableCell CssClass="etichetta"></asp:TableCell>
 									<asp:TableCell></asp:TableCell>
 									<asp:TableCell CssClass="etichetta"></asp:TableCell>
 									<asp:TableCell></asp:TableCell>
+								</asp:TableRow>
+								<asp:TableRow>
 									<asp:TableCell CssClass="etichetta"></asp:TableCell>
 									<asp:TableCell></asp:TableCell>
 									<asp:TableCell CssClass="etichetta"></asp:TableCell>
-									<asp:TableCell ></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell CssClass="etichetta" ColumnSpan="8"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell ColumnSpan="8"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ColumnSpan="4"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell CssClass="etichetta" ColumnSpan="8"></asp:TableCell>
+									<asp:TableCell ColumnSpan="4"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell ColumnSpan="8"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ColumnSpan="4"></asp:TableCell>
+								</asp:TableRow>
+								<asp:TableRow>
+									<asp:TableCell ColumnSpan="4"></asp:TableCell>
 								</asp:TableRow>
 							</asp:table>
 							<div id="due-colonne-s">

@@ -64,14 +64,14 @@ Public Class AZDettOPCAP
                 tbOp.Rows(1).Cells(1).Text() = dt.Rows(0).Item("STATO")
                 tbOp.Rows(1).Cells(2).Text() = "INIZIO"
                 tbOp.Rows(1).Cells(3).Text() = IIf(dt.Rows(0).Item("DATAINIZIO") Is System.DBNull.Value, ".", dt.Rows(0).Item("DATAINIZIO"))
-                tbOp.Rows(1).Cells(4).Text() = "FINE"
-                tbOp.Rows(1).Cells(5).Text() = IIf(dt.Rows(0).Item("DATAFINE") Is System.DBNull.Value, ".", dt.Rows(0).Item("DATAFINE"))
-                tbOp.Rows(1).Cells(6).Text() = "STORICIZZAZIONE"
-                tbOp.Rows(1).Cells(7).Text() = IIf(dt.Rows(0).Item("DATASTOR") Is System.DBNull.Value, ".", dt.Rows(0).Item("DATASTOR"))
-                tbOp.Rows(2).Cells(0).Text() = "OPERAZIONI SUL CAPITALE - TESTO COMPLETO DELL'OPERAZIONE"
-                tbOp.Rows(3).Cells(0).Text() = dt.Rows(0).Item("TESTO") & ""
-                tbOp.Rows(4).Cells(0).Text() = "TABELLA DI PARITA'"
-                tbOp.Rows(5).Cells(0).Text() = IIf(dt.Rows(0).Item("PARITA") & "." = ".", "nessuna", Replace(dt.Rows(0).Item("PARITA") & ".", Chr(13), "<br>"))
+                tbOp.Rows(2).Cells(0).Text() = "FINE"
+                tbOp.Rows(2).Cells(1).Text() = IIf(dt.Rows(0).Item("DATAFINE") Is System.DBNull.Value, ".", dt.Rows(0).Item("DATAFINE"))
+                tbOp.Rows(2).Cells(2).Text() = "STORICIZZAZIONE"
+                tbOp.Rows(2).Cells(3).Text() = IIf(dt.Rows(0).Item("DATASTOR") Is System.DBNull.Value, ".", dt.Rows(0).Item("DATASTOR"))
+                tbOp.Rows(3).Cells(0).Text() = "OPERAZIONI SUL CAPITALE - TESTO COMPLETO DELL'OPERAZIONE"
+                tbOp.Rows(4).Cells(0).Text() = dt.Rows(0).Item("TESTO") & ""
+                tbOp.Rows(5).Cells(0).Text() = "TABELLA DI PARITA'"
+                tbOp.Rows(6).Cells(0).Text() = IIf(dt.Rows(0).Item("PARITA") & "." = ".", "nessuna", Replace(dt.Rows(0).Item("PARITA") & ".", Chr(13), "<br>"))
                 'tbOp.Rows(4).Cells(0).Text() = IIf(dt.Rows(0).Item("PARITA") Is System.DBNull.Value, ".", Replace(dt.Rows(0).Item("PARITA"), Chr(13), "<br>"))
             End If
             .Dispose()

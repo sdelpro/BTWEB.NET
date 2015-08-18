@@ -7,8 +7,7 @@ Public Class AZPopupNews
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
 
     End Sub
-    Protected WithEvents Image1 As System.Web.UI.WebControls.Image
-    Protected WithEvents tbNews As System.Web.UI.WebControls.Table
+    Protected WithEvents lblNews2 As System.Web.UI.WebControls.Label
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
@@ -49,14 +48,14 @@ Public Class AZPopupNews
             With clt
                 Call .ReadGenericQuery(dt, sql)
                 If dt.Rows.Count > 0 Then
-                    tbNews.Rows(0).Cells(0).Text() = dt.Rows(0).Item("TESTO")
+                    lblNews2.Text = dt.Rows(0).Item("TESTO")
                 End If
                 .Dispose()
             End With
         Else
-            tbNews.Rows(0).Cells(0).Text() = "Accesso non autorizzato o sessione scaduta"
-            tbNews.Rows(0).Cells(0).Font.Bold = True
-            tbNews.Rows(0).Cells(0).ForeColor = System.Drawing.Color.Red
+            lblNews2.Text = "Accesso non autorizzato o sessione scaduta"
+            lblNews2.Font.Bold = True
+            lblNews2.ForeColor = System.Drawing.Color.Red
         End If
 
     End Sub

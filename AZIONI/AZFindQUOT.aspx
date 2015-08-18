@@ -1,5 +1,5 @@
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="AZFindQUOT.aspx.vb" Inherits="BTWEB.NET.AZFindQUOT"%>
+<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -41,6 +41,9 @@
 						<asp:label id="lblLastLogin" style="Z-INDEX: 119" runat="server">Ultima connessione</asp:label>
 					</div>
 				</div> <!-- menu -->
+				<div id="menuazioni" align="center">
+					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" TypeMenu="RicercheAzioni"></ucmenu:dhtmlmenucontrol>
+				</div>
 			</div> <!-- riga-menu -->
 			<!-- corpo centrale della pagina-->
 			<div id="riga-pagina">
@@ -107,6 +110,7 @@
 			<asp:textbox id="txtDtMA" style="Z-INDEX: 110;" runat="server" Visible="False"></asp:textbox>
 			<asp:textbox id="txtDtMDa" style="Z-INDEX: 109;" runat="server" Visible="False"></asp:textbox>
 			<asp:label id="Label8" style="Z-INDEX: 106;" runat="server" Visible="False">DATA MODIFICA</asp:label>
-			<asp:label id="Label1" style="Z-INDEX: 114;" runat="server">QUOTAZIONI</asp:label></FORM>-->
+			<asp:label id="Label1" style="Z-INDEX: 114;" runat="server">QUOTAZIONI</asp:label></FORM>--> 
+		</DIV>
 	</body>
 </HTML>

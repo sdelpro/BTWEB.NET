@@ -47,6 +47,9 @@
 						<asp:label id="lblLastLogin" style="Z-INDEX: 114" runat="server">Ultima connessione</asp:label>
 					</div>
 				</div> <!-- menu -->
+				<div id="menuazioni" align="center">
+					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" TypeMenu="RicercheAzioni"></ucmenu:dhtmlmenucontrol>
+				</div>
 			</div> <!-- riga-menu -->
 			<div id="riga-pagina">
 				<div id="pagina">
@@ -80,9 +83,9 @@
 										HorizontalAlign="Right" Position="Top" Mode="NumericPages"></PagerStyle>
 								</asp:datagrid>
 								<!--</div>-->
-								<asp:label id="lblNoRecord" runat="server" Font-Size="Medium" Font-Names="Tahoma"
-									Width="340px" BorderColor="Transparent" BackColor="Transparent" ForeColor="Red" Font-Bold="True"
-									Height="23px" Visible="False">La ricerca non ha prodotto risultati</asp:label>
+								<asp:label id="lblNoRecord" runat="server" Font-Size="Medium" Font-Names="Tahoma" Width="340px"
+									BorderColor="Transparent" BackColor="Transparent" ForeColor="Red" Font-Bold="True" Height="23px"
+									Visible="False">La ricerca non ha prodotto risultati</asp:label>
 							</div>
 						</div>
 					</div>

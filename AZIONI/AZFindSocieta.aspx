@@ -41,6 +41,9 @@
 						<asp:label id="lblLastLogin" runat="server">Ultima connessione</asp:label>
 					</div>
 				</div> <!-- menu -->
+				<div id="menuazioni" align="center">
+					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" TypeMenu="RicercheAzioni"></ucmenu:dhtmlmenucontrol>
+				</div>
 			</div> <!-- riga-menu -->
 			<!-- corpo centrale della pagina-->
 			<div id="riga-pagina">

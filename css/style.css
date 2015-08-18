@@ -568,6 +568,25 @@ span.labels
 	padding-right: 2px;
 }
 
+.quattro-colonne-s {
+	width: 620px;
+}
+.quattro-colonne-s td {
+	width: 200px !important;
+	padding-top: 5px;
+	border-bottom: 1px solid #f4f4f4;
+	padding-right: 9px !important
+}
+.quattro-colonne-s td.separa {
+	width: 1px!important;
+	padding: 0!important;
+	border-right: 1px dashed #f4f4f4;
+}
+.quattro-colonne-s .etichetta {
+	color: #4DB1E2;
+	font-weight: bold;
+	padding-right: 2px;
+}
 
 /* formattazione per pagine tipo AZAssemblee */
 

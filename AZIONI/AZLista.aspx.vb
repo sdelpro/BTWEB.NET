@@ -255,6 +255,10 @@ Public Class AZLista
                     Next
                 End If
                 TotRecord = dt.Rows.Count
+                lblNumRecord.Visible = True
+                lblFirstPage.Visible = True
+                lblLastPage.Visible = True
+
                 If dt.Rows.Count <> 0 Then
                     dtgAZIO.Visible = True
                     If IsNumeric(Session("ITEMSELECTINDEX")) Then dtgAZIO.SelectedIndex = Session("ITEMSELECTINDEX")
@@ -267,6 +271,9 @@ Public Class AZLista
                 Else
                     dtgAZIO.Visible = False
                     lblNoRecord.Visible = True
+                    lblNumRecord.Visible = False
+                    lblFirstPage.Visible = False
+                    lblLastPage.Visible = False
                 End If
             Else
                 dtgAZIO.Visible = False
