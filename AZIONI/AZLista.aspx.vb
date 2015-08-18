@@ -61,6 +61,10 @@ Public Class AZLista
         Dim zy As Integer = 0
         Dim sql As String = Session("AZ_SQL")
         Dim RecCorrenti As String
+        lblNumRecord.Visible = True
+        lblFirstPage.Visible = True
+        lblLastPage.Visible = True
+
         lblTIPORICERCA.Text = ""
         lblTIPORICERCA.Text = Session("TIPORICERCA") '"Ricerca Corrente:  " & Session("TIPORICERCA")
         With clt
@@ -255,9 +259,6 @@ Public Class AZLista
                     Next
                 End If
                 TotRecord = dt.Rows.Count
-                lblNumRecord.Visible = True
-                lblFirstPage.Visible = True
-                lblLastPage.Visible = True
 
                 If dt.Rows.Count <> 0 Then
                     dtgAZIO.Visible = True
@@ -278,6 +279,9 @@ Public Class AZLista
             Else
                 dtgAZIO.Visible = False
                 lblNoRecord.Visible = True
+                lblNumRecord.Visible = False
+                lblFirstPage.Visible = False
+                lblLastPage.Visible = False
             End If
             .Dispose()
         End With

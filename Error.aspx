@@ -30,7 +30,7 @@
 								<span class="label-sinistra">Si è verificato un errore<img src="images/label-sinistra-fine.png" alt=""></span>
 								<asp:label id="lblLastLogin" runat="server" CssClass="label-destra">Tutto Titoli</asp:label></div>
 						</div> <!-- top -->
-						<div id="login">
+						<div id="contenuto">
 							<table>
 								<tr>
 									<td>
