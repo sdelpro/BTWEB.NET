@@ -57,35 +57,6 @@
 						<div id="contenuto">
 							<table>
 								<tr>
-									<td style="FONT-WEIGHT:bold">DIVIDENDI PREANNUNCIATI</td>
-								</tr>
-								<tr>
-									<td>DATA MODIFICA/INSERIMENTO</td>
-									<td><asp:textbox id="txtDtMDaPre" style="Z-INDEX: 109" placeholder="Da" runat="server"></asp:textbox></td>
-									<td><asp:textbox id="txtDtMAPre" style="Z-INDEX: 111" runat="server" placeholder="A" tabIndex="1"></asp:textbox></td>
-								</tr>
-								<tr class="note">
-									<td></td>
-									<td colspan="2">Attenzione: le date devono essere inserite nella forma GG/MM/AAAA</td>
-								</tr>
-								<tr>
-									<td><asp:CheckBox id="CkDivStr" style="Z-INDEX: 145" runat="server" Text="Dividendo Straordinario"
-											tabIndex="2"></asp:CheckBox></td>
-									<td><asp:CheckBox id="CkDivNetto" style="Z-INDEX: 146" runat="server" Text="Dividendo Netto" tabIndex="3"></asp:CheckBox></td>
-									<td><asp:CheckBox id="CkDivSaldo" style="Z-INDEX: 147" runat="server" Text="Saldo Dividendo" tabIndex="4"></asp:CheckBox></td>
-								</tr>
-								<tr>
-									<td><asp:CheckBox id="CkDivOrd" style="Z-INDEX: 148" runat="server" Text="Dividendo Ordinario" tabIndex="5"></asp:CheckBox></td>
-									<td><asp:CheckBox id="CkDivAcc" style="Z-INDEX: 149" runat="server" Text="Acconto Dividendo" tabIndex="6"></asp:CheckBox></td>
-									<td><asp:CheckBox id="CkDivNonConfr" style="Z-INDEX: 150" runat="server" Text="Dividendo Non Confrontabile"
-											tabIndex="7"></asp:CheckBox></td>
-								</tr>
-								<tr>
-									<td></td>
-									<td colspan="2">
-										<asp:button id="btnFindPre" style="Z-INDEX: 101" runat="server" Text="Ricerca" tabIndex="8"></asp:button></td>
-								</tr>
-								<tr>
 									<td style="FONT-WEIGHT:bold">DIVIDENDI DELIBERATI</td>
 								</tr>
 								<tr>

@@ -34,6 +34,7 @@ Public Class IDXMenuIn
     Protected WithEvents lbScarB As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbScarichi As System.Web.UI.WebControls.Label
     Protected WithEvents lblTitoloForm As System.Web.UI.WebControls.Label
+    Protected WithEvents phScarichi As System.Web.UI.WebControls.PlaceHolder
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.

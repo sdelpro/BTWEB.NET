@@ -1,5 +1,5 @@
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="IDXMenuIn.aspx.vb" Inherits="BTWEB.NET.IDXMenuIn" %>
+<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -50,12 +50,15 @@
 						<div id="contenuto">
 							<TABLE>
 								<TR>
-									<TD><asp:label id="lbScarichi" runat="server" Font-Names="Verdana" Font-Size="18px" Visible="False"
-											ForeColor="#00547d">SCARICHI</asp:label>&nbsp;&nbsp;
-										<asp:linkbutton id="lbScarA" runat="server" Width="43px" Height="16px" Font-Names="Verdana" Font-Size="18px"
-											Visible="False" ForeColor="#00547d">A</asp:linkbutton>
-										<asp:linkbutton id="lbScarB" runat="server" Width="34px" Height="16px" Font-Names="Verdana" Font-Size="18px"
-											Visible="False" ForeColor="#00547d">B</asp:linkbutton></TD>
+									<TD>
+										<asp:PlaceHolder ID="phScarichi" Runat="server" Visible="False">
+<asp:label id="lbScarichi" runat="server" ForeColor="#00547d" Visible="False" Font-Size="18px"
+												Font-Names="Verdana">SCARICHI</asp:label>&nbsp;&nbsp; 
+<asp:linkbutton id="lbScarA" runat="server" ForeColor="#00547d" Visible="False" Font-Size="18px"
+												Font-Names="Verdana" Height="16px" Width="43px">A</asp:linkbutton>
+<asp:linkbutton id="lbScarB" runat="server" ForeColor="#00547d" Visible="False" Font-Size="18px"
+												Font-Names="Verdana" Height="16px" Width="34px">B</asp:linkbutton></asp:PlaceHolder></TD>
+								</TR>
 								<TR>
 									<TD><asp:table id="tbComun" runat="server" CssClass="quattro-colonne">
 											<asp:TableRow CssClass="etichetta">
