@@ -11,7 +11,7 @@ Public Class AZCda
     Protected WithEvents Image1 As System.Web.UI.WebControls.Image
     Protected WithEvents lblTitoloForm As System.Web.UI.WebControls.Label
     Protected WithEvents tbCda As System.Web.UI.WebControls.Table
-    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
@@ -54,15 +54,14 @@ Public Class AZCda
                 tbCda.Rows(0).Cells(1).Text() = dt.Rows(0).Item("ISINCODE") & ""
                 tbCda.Rows(1).Cells(0).Text() = "DENOMINAZIONE"
                 tbCda.Rows(1).Cells(1).Text() = dt.Rows(0).Item("DENOMINAZIONE") & ""
-                tbCda.Rows(2).Cells(0).Text() = ""
-                zxR = 3
+                zxR = 2
                 For zx = 0 To dt.Rows.Count - 1
                     Call CreaTabella()
                     tbCda.Rows(zxR).Cells(0).Text() = "DATA" & ""
                     tbCda.Rows(zxR).Cells(1).Text() = IIf(dt.Rows(zx).Item("DATA") & "" = "", ".", dt.Rows(zx).Item("DATA"))
                     tbCda.Rows(zxR).Cells(2).Text() = "TEMA" & ""
                     tbCda.Rows(zxR).Cells(3).Text() = dt.Rows(zx).Item("TEMA")
-                    tbCda.Rows(zxR + 1).Cells(0).Text() = "TESTO" & ""
+                    tbCda.Rows(zxR + 1).Cells(0).Text() = "testo non disponibile"
                     If dt.Rows(zx).Item("TESTO") & "" = "" Then
                         tbCda.Rows(zxR + 2).Cells(0).Text() = "nessuno"
                     Else
@@ -81,48 +80,26 @@ Public Class AZCda
         Dim zx As Int16
         Dim tr As TableRow
         Dim tch As TableCell
-
         'riga 1
         tr = New TableRow
         tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Gainsboro
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.BorderColor = System.Drawing.Color.Black
+        tch.CssClass = "etichetta"
         tch.Text = ""
-        tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Transparent
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.BorderColor = Color.Black
         tch.Text = ""
         tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Gainsboro
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.BorderColor = Color.Black
         tch.Text = ""
-        tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
+        tch.CssClass = "etichetta"
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Transparent
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.BorderColor = Color.Black
         tch.ColumnSpan = 5
         tch.Text = ""
-        tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
 
@@ -132,30 +109,16 @@ Public Class AZCda
         'riga 2
         tr = New TableRow
         tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Gainsboro
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.BorderColor = System.Drawing.Color.Black
         tch.Text = ""
-        tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
-
         tbCda.Rows.Add(tr)
         tr = Nothing
-
         'riga(3)
         tr = New TableRow
         tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Transparent
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.BorderColor = System.Drawing.Color.Black
         tch.ColumnSpan = 8
         tch.Text = ""
-        tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
 

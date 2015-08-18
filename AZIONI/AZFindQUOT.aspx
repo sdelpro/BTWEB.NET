@@ -1,5 +1,5 @@
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="AZFindQUOT.aspx.vb" Inherits="BTWEB.NET.AZFindQUOT"%>
+<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -22,7 +22,7 @@
 							<a href="../IDXMenuIn.aspx">HOME</a>
 						</li>
 						<li class="selected">
-							<asp:linkbutton id="lblAZIONI" Runat="server">AZIONI</asp:linkbutton>
+							<a runat="server" id="lblAZIONI" href="../AZIONI/AZMenu.aspx">AZIONI</a>
 						</li>
 						<li>
 							<asp:linkbutton id="lblOBBLIGAZIONI" Runat="server">OBBLIGAZIONI</asp:linkbutton>
@@ -41,6 +41,9 @@
 						<asp:label id="lblLastLogin" style="Z-INDEX: 119" runat="server">Ultima connessione</asp:label>
 					</div>
 				</div> <!-- menu -->
+				<div id="menuazioni" align="center">
+					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" TypeMenu="RicercheAzioni"></ucmenu:dhtmlmenucontrol>
+				</div>
 			</div> <!-- riga-menu -->
 			<!-- corpo centrale della pagina-->
 			<div id="riga-pagina">
@@ -48,9 +51,7 @@
 					<div id="interna">
 						<div id="top">
 							<span class="label-sinistra">QUOTAZIONI<img src="../images/label-sinistra-fine.png" alt=""></span>
-							<div style="MARGIN-TOP:25px;MARGIN-LEFT:640px">
-								<asp:label id="lbUpd" style="Z-INDEX: 127" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
-							</div>
+							<asp:label id="lbUpd" CssClass="label-destra" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
 						</div> <!-- top -->
 						<div id="contenuto">
 							<table>
@@ -65,7 +66,7 @@
 								</tr>
 								<tr>
 									<td>ISINCODE o UIC</td>
-									<td><asp:textbox id="txtIsincode" style="Z-INDEX: 104" tabIndex="2" runat="server"></asp:textbox></td>
+									<td><asp:textbox id="txtIsincode" tabIndex="2" runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>MESE</td>
@@ -95,7 +96,7 @@
 							<div id="box-interna">
 								<ul>
 									<li>
-										<asp:label id="lbHelp1" style="Z-INDEX: 105" runat="server">• Definita una richiesta operando nei campi per “MESE” e/o per “ANNO verrà restituito l’elenco delle Azioni Quotate comprese nel periodo richiesto.</asp:label></li>
+										<asp:label id="lbHelp1" runat="server">Definita una richiesta operando nei campi per "MESE" e/o per "ANNO verrà restituito l’elenco delle Azioni Quotate comprese nel periodo richiesto.</asp:label></li>
 								</ul>
 							</div>
 						</div>
@@ -109,6 +110,7 @@
 			<asp:textbox id="txtDtMA" style="Z-INDEX: 110;" runat="server" Visible="False"></asp:textbox>
 			<asp:textbox id="txtDtMDa" style="Z-INDEX: 109;" runat="server" Visible="False"></asp:textbox>
 			<asp:label id="Label8" style="Z-INDEX: 106;" runat="server" Visible="False">DATA MODIFICA</asp:label>
-			<asp:label id="Label1" style="Z-INDEX: 114;" runat="server">QUOTAZIONI</asp:label></FORM>-->
+			<asp:label id="Label1" style="Z-INDEX: 114;" runat="server">QUOTAZIONI</asp:label></FORM>--> 
+		</DIV>
 	</body>
 </HTML>

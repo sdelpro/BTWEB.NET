@@ -61,20 +61,20 @@ Public Class OBTabellaConv
                         Case 12
                             tch.Text = "DIC"
                     End Select
-                    tch.BackColor = System.Drawing.Color.Navy
+                    tch.BackColor  = Color.FromArgb(255, 0, 84, 125)
                     tch.Font.Name = "Tahoma"
                     tch.Font.Bold = True
                     tch.Font.Size = FontUnit.Point(10)
                     tch.BorderStyle = BorderStyle.Solid
                     tch.ForeColor = Color.White
                     tch.BorderWidth = Unit.Pixel(1)
-                    tch.BorderColor = Color.Navy
+                    tch.BorderColor = Color.FromArgb(255, 0, 84, 125)
                     tr.Cells.Add(tch)
 
                     If zy = 0 Then
                         For zx = 1991 To 2100
                             Dim tc As New TableCell
-                            tc.BackColor = System.Drawing.Color.Navy
+                            tc.BackColor  = Color.FromArgb(255, 0, 84, 125)
                             tc.Text = Right(CType(zx, String), 2)
                             tc.Font.Name = "Tahoma"
                             tc.Font.Bold = True
@@ -82,7 +82,7 @@ Public Class OBTabellaConv
                             tc.Font.Size = FontUnit.Point(10)
                             tc.BorderStyle = BorderStyle.Solid
                             tc.BorderWidth = Unit.Pixel(1)
-                            tc.BorderColor = Color.Navy
+                            tc.BorderColor = Color.FromArgb(255, 0, 84, 125)
                             tr.Cells.Add(tc)
                         Next
                     Else

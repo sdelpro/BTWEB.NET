@@ -8,7 +8,7 @@
 		<meta content="False" name="vs_showGrid">
 		<script type="text/javascript">
 			<!--
-			var stile = "top="+ screen.height-250 + ", left=" +  screen.width-200 + ", width=700, height=500, status=no, menubar=no, toolbar=no, scrollbars=yes";
+			var stile = "top="+ screen.height-250 + ", left=" +  screen.width-200 + ", status=no, menubar=no, toolbar=no, scrollbars=yes";
 				function Popup(apri) {
 					window.open(apri, "", stile);
 				}
@@ -27,8 +27,8 @@
 						<li>
 							<a href="../IDXMenuIn.aspx">HOME</a>
 						</li>
-						<li>
-							<asp:linkbutton id="lblAZIONI" Runat="server">AZIONI</asp:linkbutton>
+						<li class="selected">
+							<a runat="server" id="lblAZIONI" href="../AZIONI/AZMenu.aspx">AZIONI</a>
 						</li>
 						<li>
 							<asp:linkbutton id="lblOBBLIGAZIONI" Runat="server">OBBLIGAZIONI</asp:linkbutton>
@@ -47,6 +47,9 @@
 						<asp:label id="lblLastLogin" style="Z-INDEX: 114" runat="server">Ultima connessione</asp:label>
 					</div>
 				</div> <!-- menu -->
+				<div id="menuazioni" align="center">
+					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" TypeMenu="RicercheAzioni"></ucmenu:dhtmlmenucontrol>
+				</div>
 			</div> <!-- riga-menu -->
 			<div id="riga-pagina">
 				<div id="pagina">
@@ -65,9 +68,7 @@
 												<asp:linkbutton id="lblLastPage" runat="server">Ultima Pag.</asp:linkbutton>
 											</span></span>
 									</div>
-									<asp:label id="lblNoRecord" runat="server" Visible="False">La ricerca non ha prodotto risultati</asp:label>
 								</div>
-
 								<!--<div class="risultati-ricerca-elenco">-->
 								<asp:datagrid id="dtgAZIO" style="Z-INDEX: 101" runat="server" Width="100%" ShowFooter="True"
 									AllowSorting="True" BorderColor="Silver" BorderStyle="None" BorderWidth="0" CellPadding="3"
@@ -82,7 +83,9 @@
 										HorizontalAlign="Right" Position="Top" Mode="NumericPages"></PagerStyle>
 								</asp:datagrid>
 								<!--</div>-->
-
+								<asp:label id="lblNoRecord" runat="server" Font-Size="Medium" Font-Names="Tahoma" Width="340px"
+									BorderColor="Transparent" BackColor="Transparent" ForeColor="Red" Font-Bold="True" Height="23px"
+									Visible="False">La ricerca non ha prodotto risultati</asp:label>
 							</div>
 						</div>
 					</div>

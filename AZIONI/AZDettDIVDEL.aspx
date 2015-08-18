@@ -11,40 +11,22 @@
 	</HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
-			<div id="riga-header">
-				<div id="header">
-					<div><IMG id="logo" alt="" src="../images/ImagesLogo.gif" width="352"> <span class="etichetta" style="margin-left:900px;margin-top:0px">
-							<a class="selected" href="JavaScript:window.close();"><img src="../Images/close2.png"></a></span>
-					</div>
-				</div> <!-- header --></div> <!-- riga-header -->
 			<div id="riga-menu">
-				<div id="menu">
+				<div id="menu-s">
 					<ul>
 						<li>
-							<A href="../IDXMenuIn.aspx">HOME</A>
-						</li>
-						<li class="selected">
-							<asp:linkbutton id="lblAZIONI" Runat="server">AZIONI</asp:linkbutton></li>
-						<li>
-							<asp:linkbutton id="lblOBBLIGAZIONI" Runat="server">OBBLIGAZIONI</asp:linkbutton></li>
-						<li>
-							<asp:linkbutton id="lblINFOVARIE" Runat="server">INFORMAZIONI VARIE</asp:linkbutton></li>
-						<li>
-							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton></li>
-						<li>
-							<A href="../Logout.aspx">LOGOUT</A>
+							<a class="selected" href="JavaScript:window.close();">CHIUDI</a></SPAN>
 						</li>
 					</ul>
-					<div id="ultima-connessione"><asp:label style="Z-INDEX: 114" id="lblLastLogin" runat="server">Ultima connessione</asp:label></div>
 				</div> <!-- menu --></div> <!-- riga-menu -->
 			<div id="riga-pagina">
-				<div id="pagina">
-					<div id="interna">
+				<div id="pagina-s">
+					<div id="interna-s">
 						<div id="top">
 							<div><span class="label-sinistra">DIVIDENDI DELIBERATI<IMG alt="" src="../Images/label-sinistra-fine.png"></span></div>
 						</div>
 						<div id="contenuto">
-							<div id="due-colonne">
+							<div id="due-colonne-s">
 								<table>
 									<tr>
 										<td><span class="etichetta">CODICE ISIN</span>

@@ -11,7 +11,7 @@ Public Class AZNews
     Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
     Protected WithEvents tbNews As System.Web.UI.WebControls.Table
     Protected WithEvents lblTitoloForm As System.Web.UI.WebControls.Label
-    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
@@ -52,13 +52,12 @@ Public Class AZNews
                 tbNews.Rows(0).Cells(1).Text() = dt.Rows(0).Item("ISINCODE")
                 tbNews.Rows(1).Cells(0).Text() = "DENOMINAZIONE"
                 tbNews.Rows(1).Cells(1).Text() = dt.Rows(0).Item("DENOMINAZIONE")
-                tbNews.Rows(2).Cells(0).Text() = ""
-                tbNews.Rows(3).Cells(0).Text() = "DATA"
-                tbNews.Rows(3).Cells(1).Text() = "TESTO"
+                tbNews.Rows(2).Cells(0).Text() = "DATA"
+                tbNews.Rows(2).Cells(1).Text() = "TESTO"
                 For zx = 0 To dt.Rows.Count - 1
                     Call CreaTabella()
-                    tbNews.Rows(zx + 4).Cells(0).Text() = dt.Rows(zx).Item("DATA")
-                    tbNews.Rows(zx + 4).Cells(1).Text() = Replace(dt.Rows(zx).Item("TESTO"), Chr(13), "<br>")
+                    tbNews.Rows(zx + 3).Cells(0).Text() = dt.Rows(zx).Item("DATA")
+                    tbNews.Rows(zx + 3).Cells(1).Text() = Replace(dt.Rows(zx).Item("TESTO"), Chr(13), "<br>")
                 Next zx
             Else
                 Response.Redirect("AZTitolo.aspx")
@@ -72,29 +71,15 @@ Public Class AZNews
 
         'riga 1
         tr = New TableRow
-        tr.Width = Unit.Percentage(100)
         tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Transparent
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.Width = Unit.Percentage(12.5)
-        tch.BorderColor = System.Drawing.Color.Black
+        tch.ColumnSpan = 1
         tch.Text = ""
-        tch.Font.Name = "Tahoma"
 
-        tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
         tch = New TableCell
-        tch.BackColor = System.Drawing.Color.Transparent
-        tch.BorderStyle = BorderStyle.Solid
-        tch.BorderWidth = Unit.Pixel(1)
-        tch.Width = Unit.Percentage(87.5)
-        tch.BorderColor = Color.Black
         tch.ColumnSpan = 7
         tch.Text = ""
-        tch.Font.Name = "Tahoma"
-        tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
 

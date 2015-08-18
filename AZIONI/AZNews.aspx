@@ -22,7 +22,7 @@
 							<a href="../IDXMenuIn.aspx">HOME</a>
 						</li>
 						<li class="selected">
-							<asp:linkbutton id="lblAZIONI" Runat="server">AZIONI</asp:linkbutton>
+							<a runat="server" id="lblAZIONI" href="../AZIONI/AZMenu.aspx">AZIONI</a>
 						</li>
 						<li>
 							<asp:linkbutton id="lblOBBLIGAZIONI" Runat="server">OBBLIGAZIONI</asp:linkbutton>
@@ -52,38 +52,18 @@
 							<span class="label-sinistra">NEWS<img src="../Images/label-sinistra-fine.png" alt=""></span>
 						</div>
 						<div id="contenuto">
-							<asp:table id="tbNews" runat="server">
-								<asp:TableRow Width="100%" Font-Size="12px" Font-Names="Tahoma">
-									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" Width="12.5%" BorderColor="Black"></asp:TableCell>
-									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Transparent" ColumnSpan="2" Width="25%"
-										BorderColor="Black"></asp:TableCell>
+							<asp:table id="tbNews" CssClass="quattro-colonne" runat="server">
+								<asp:TableRow>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell ColumnSpan="7"></asp:TableCell>
 								</asp:TableRow>
-								<asp:TableRow Width="100%" Font-Size="12px" Font-Names="Tahoma">
-									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" Width="12.5%" BorderColor="Black"></asp:TableCell>
-									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Transparent" ColumnSpan="7" Width="87.5%"
-										BorderColor="Black"></asp:TableCell>
+								<asp:TableRow>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell ColumnSpan="7"></asp:TableCell>
 								</asp:TableRow>
-								<asp:TableRow Width="100%" Font-Size="12px" Font-Names="Tahoma">
-									<asp:TableCell BackColor="Transparent" ForeColor="Navy" BorderColor="Black"></asp:TableCell>
-									<asp:TableCell></asp:TableCell>
-									<asp:TableCell></asp:TableCell>
-									<asp:TableCell></asp:TableCell>
-									<asp:TableCell></asp:TableCell>
-									<asp:TableCell></asp:TableCell>
-									<asp:TableCell></asp:TableCell>
-									<asp:TableCell></asp:TableCell>
-								</asp:TableRow>
-								<asp:TableRow Width="100%" Font-Size="12px" Font-Names="Tahoma">
-									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" ColumnSpan="1" Width="12.5%"
-										BorderColor="Black"></asp:TableCell>
-									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" ColumnSpan="7" Width="87.5%"
-										BorderColor="Black"></asp:TableCell>
-								</asp:TableRow>
-								<asp:TableRow Width="100%" Font-Size="12px" Font-Names="Tahoma">
-									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Transparent" ColumnSpan="1" Width="12.5%"
-										BorderColor="Black"></asp:TableCell>
-									<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Transparent" ColumnSpan="7" Width="87.5%"
-										BorderColor="Black"></asp:TableCell>
+								<asp:TableRow>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ColumnSpan="7"></asp:TableCell>
 								</asp:TableRow>
 							</asp:table>
 						</div>

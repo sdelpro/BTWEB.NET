@@ -227,7 +227,7 @@ span.label-destra img {
 }
 #contenuto table {
 	font-size: 11px;
-	padding: 10px 0 10px 20px;
+	padding: 10px 0 10px 0;
 	display: block;
 }
 #contenuto table td {

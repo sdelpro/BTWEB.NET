@@ -29,7 +29,7 @@ Public Class IDXMenu
     Protected WithEvents imgBtnInfo2 As System.Web.UI.WebControls.ImageButton
     Protected WithEvents imgBollettino As System.Web.UI.WebControls.Image
     Protected WithEvents lbDal As System.Web.UI.WebControls.Label
-
+    Protected WithEvents btnGotoHome As System.Web.UI.WebControls.Button
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
     Private designerPlaceholderDeclaration As System.Object
@@ -57,9 +57,9 @@ Public Class IDXMenu
                     sql = "SELECT * FROM CLIENTI WHERE USERNAME = '" & txtUsername.Text & "'"
                     sUser = txtUsername.Text
                     .ReadGenericQuery(ds, sql, "CLIENTI")
-                    If ds.Tables("CLIENTI").Rows.Count = 0 Then
+                    If ds.Tables("CLIENTI").Rows.Count = 0 Or DateTime.Now > New Date("2015", "10", "30") Or DateTime.Now < New Date("2015", "8", "10") Then
                         Session("MACADDRESSSTATUS") = ""
-                        Session("ERROR") = "La Username non esiste.<br>Contattare il supporto tecnico"
+                        Session("ERROR") = "Username o password errati.<br>Contattare il supporto tecnico"
                         Response.Redirect("Error.aspx")
                     End If
 
@@ -134,7 +134,7 @@ Public Class IDXMenu
                     ds.Tables("CLIENTI").Rows(0).Item("ULTIMALOGIN") = Format(Now, "dd/MM/yyyy")
                     Session("PROFILO1") = ds.Tables("CLIENTI").Rows(0).Item("PROFILO1")
                     Session("PROFILO2") = ds.Tables("CLIENTI").Rows(0).Item("PROFILO2")
-                    Session("PROFILO3") = ds.Tables("CLIENTI").Rows(0).Item("PROFILO3")
+                    Session("PROFILO3") = False 'ds.Tables("CLIENTI").Rows(0).Item("PROFILO3")
                     Session("PROFILO4") = ds.Tables("CLIENTI").Rows(0).Item("PROFILO4")
                     Session("PROFILO5") = ds.Tables("CLIENTI").Rows(0).Item("PROFILO5")
                     Session("PROFILO6") = ds.Tables("CLIENTI").Rows(0).Item("PROFILO6")
@@ -242,8 +242,11 @@ Public Class IDXMenu
             lblPassword.Visible = False
             txtPassword.Visible = False
             lblLastLogin.Visible = True
+
             lblLastLogin.Text = Session("LASTLOGIN")
             btnLogin.Visible = False
+            btnGotoHome.Visible = True
+
             'imgBtnInfo1.Visible = False
             'imgBtnInfo2.Visible = False
             'With cdt
@@ -257,6 +260,7 @@ Public Class IDXMenu
         Else
             Session("MACADDRESSSTATUS") = ""
             MacAddressClient = ""
+            btnGotoHome.Visible = False
         End If
     End Sub
 
@@ -274,5 +278,9 @@ Public Class IDXMenu
 
     Private Sub imgBtnInfo2_Click(ByVal sender As System.Object, ByVal e As System.Web.UI.ImageClickEventArgs)
         Response.Redirect("infoDoc/Comeabbonarsi.htm")
+    End Sub
+
+    Private Sub btnGotoHome_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnGotoHome.Click
+        Response.Redirect("IDXMenuIn.aspx")
     End Sub
 End Class

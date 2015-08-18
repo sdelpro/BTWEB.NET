@@ -7,10 +7,13 @@ Public Class AZTitolo
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
 
     End Sub
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
-    Protected WithEvents Image1 As System.Web.UI.WebControls.Image
+    Protected WithEvents lblTipoRicerca As System.Web.UI.WebControls.Label
     Protected WithEvents tbTitolo As System.Web.UI.WebControls.Table
-    Protected WithEvents lblTitoloForm As System.Web.UI.WebControls.Label
+    Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.
@@ -44,6 +47,7 @@ Public Class AZTitolo
         Dim zx As Integer = 0
         Dim sql As String = "SELECT *,CASE QUOTATA WHEN 1 THEN 'SI' WHEN 0 THEN 'NO' END AS QUOT2,CONVERT(VARCHAR,CONVERT (MONEY, CAPITALE),1) AS CAP,CONVERT(VARCHAR,CONVERT (MONEY, QUANTITA),1) AS QTA FROM TITOLOAZIONARIO WHERE ISINCODE = '" & Session("ISINCODE") & "'"
         lblLastLogin.Text = Session("LASTLOGIN")
+        lblTipoRicerca.Text = "DETTAGLIO TITOLO"
         With clt
 
             Call .ReadGenericQuery(dt, sql)

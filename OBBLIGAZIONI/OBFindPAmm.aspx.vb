@@ -42,7 +42,7 @@ Public Class OBFindPAmm
     Protected WithEvents lbHelp1 As System.Web.UI.WebControls.Label
     Protected WithEvents txtIsincode As System.Web.UI.WebControls.TextBox
     Protected WithEvents lbUpd As System.Web.UI.WebControls.Label
-    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton

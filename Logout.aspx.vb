@@ -8,7 +8,6 @@ Public Class Logout
 
     End Sub
     Protected WithEvents lbMessage As System.Web.UI.WebControls.Label
-    Protected WithEvents Image1 As System.Web.UI.WebControls.Image
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
@@ -29,7 +28,7 @@ Public Class Logout
                                    " WHERE USERNAME = '" & Session("USERNAME") & "'")
         cdt.Dispose()
         Session.Abandon()
-        'Response.Redirect("IDXMenu.aspx")
+        Response.Redirect("IDXMenu.aspx")
         'Inserire qui il codice utente necessario per inizializzare la pagina
     End Sub
 

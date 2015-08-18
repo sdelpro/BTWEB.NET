@@ -22,7 +22,7 @@
 							<a href="../IDXMenuIn.aspx">HOME</a>
 						</li>
 						<li class="selected">
-							<asp:linkbutton id="lblAZIONI" Runat="server">AZIONI</asp:linkbutton>
+							<a runat="server" id="lblAZIONI" href="../AZIONI/AZMenu.aspx">AZIONI</a>
 						</li>
 						<li>
 							<asp:linkbutton id="lblOBBLIGAZIONI" Runat="server">OBBLIGAZIONI</asp:linkbutton>
@@ -41,6 +41,9 @@
 						<asp:label id="lblLastLogin" style="Z-INDEX: 114" runat="server">Ultima connessione</asp:label>
 					</div>
 				</div> <!-- menu -->
+				<div id="menuazioni" align="center">
+					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" TypeMenu="RicercheAzioni"></ucmenu:dhtmlmenucontrol>
+				</div>
 			</div> <!-- riga-menu -->
 			<!-- corpo centrale della pagina-->
 			<div id="riga-pagina">
@@ -48,9 +51,7 @@
 					<div id="interna">
 						<div id="top">
 							<span class="label-sinistra">OPERAZIONI SUL CAPITALE<img src="../images/label-sinistra-fine.png" alt=""></span>
-							<div style="MARGIN-TOP:25px;MARGIN-LEFT:640px">
-								<asp:label id="lbUpd" style="Z-INDEX: 127" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
-							</div>
+							<asp:label id="lbUpd" CssClass="label-destra" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
 						</div> <!-- top -->
 						<div id="contenuto">
 							<table>
@@ -123,15 +124,15 @@
 							<div id="box-interna">
 								<ul>
 									<li>
-										<asp:label id="lbHelp1" style="Z-INDEX: 107" runat="server">• La ricerca per STATO (PREANNUNCIATO, APPROVATO, IN CORSO, TUTTI) può essere effettuata per DATA MODIFICA/INSERIMENTO (range temporale tra due date), per testo dell'operazione.</asp:label></li>
+										<asp:label id="lbHelp1" style="Z-INDEX: 107" runat="server">La ricerca per STATO (PREANNUNCIATO, APPROVATO, IN CORSO, TUTTI) può essere effettuata per DATA MODIFICA/INSERIMENTO (range temporale tra due date), per testo dell'operazione.</asp:label></li>
 									<li>
-										<asp:label id="lbHelp2" style="Z-INDEX: 127" runat="server">• Le NOVITA’ si cercano copiando nel campo “DATA MODIFICA/INSERIMENTO DA” la data di “ultima connessione” riportata qui in alto sotto il logo Brambilla Titoli.</asp:label></li>
+										<asp:label id="lbHelp2" style="Z-INDEX: 127" runat="server">Le NOVITA’ si cercano copiando nel campo "DATA MODIFICA/INSERIMENTO DA" la data di "ultima connessione" riportata qui in alto sotto il logo Brambilla Titoli.</asp:label></li>
 									<li>
-										<asp:label id="lbHelp3" style="Z-INDEX: 123" runat="server">• Ricercando per STATO e premendo il pulsante “Ricerca” si ottiene l’elenco di TUTTE LE OPERAZIONI presenti nello STATO prescelto. Inoltre si può ricercare per testo dell'operazione.</asp:label></li>
+										<asp:label id="lbHelp3" runat="server">Ricercando per STATO e premendo il pulsante "Ricerca" si ottiene l’elenco di TUTTE LE OPERAZIONI presenti nello STATO prescelto. Inoltre si può ricercare per testo dell'operazione.</asp:label></li>
 									<li>
-										<asp:label id="lbHelp4" style="Z-INDEX: 134" runat="server">• Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata.   </asp:label></li>
+										<asp:label id="lbHelp4" style="Z-INDEX: 134" runat="server">Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata.   </asp:label></li>
 									<li>
-										<asp:label id="lbHelp5" style="Z-INDEX: 135" runat="server">• La ricerca per STORICIZZATE può essere effettuata per descrizione (anche solo parte del nome), per testo dell'operazione, per codice ISIN o UIC oppure per DATA MODIFICA/INSERIMENTO (range temporale tra due date).</asp:label></li>
+										<asp:label id="lbHelp5" style="Z-INDEX: 135" runat="server">La ricerca per STORICIZZATE può essere effettuata per descrizione (anche solo parte del nome), per testo dell'operazione, per codice ISIN o UIC oppure per DATA MODIFICA/INSERIMENTO (range temporale tra due date).</asp:label></li>
 								</ul>
 							</div>
 							<asp:textbox id="txtDtStoA" style="Z-INDEX: 128" runat="server" Visible="False"></asp:textbox>

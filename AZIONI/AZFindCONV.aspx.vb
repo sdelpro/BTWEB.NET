@@ -20,7 +20,7 @@ Public Class AZFindCONV
     Protected WithEvents lbHelp2 As System.Web.UI.WebControls.Label
     Protected WithEvents lbHelp3 As System.Web.UI.WebControls.Label
     Protected WithEvents lbUpd As System.Web.UI.WebControls.Label
-    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton

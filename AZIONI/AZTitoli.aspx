@@ -1,5 +1,5 @@
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="AZTitoli.aspx.vb" Inherits="BTWEB.NET.AZTitoli"%>
+<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -22,8 +22,8 @@
 						<li>
 							<a href="../IDXMenuIn.aspx">HOME</a>
 						</li>
-						<li>
-							<asp:linkbutton id="lblAZIONI" Runat="server">AZIONI</asp:linkbutton>
+						<li class="selected">
+							<a runat="server" id="lblAZIONI" href="../AZIONI/AZMenu.aspx">AZIONI</a>
 						</li>
 						<li>
 							<asp:linkbutton id="lblOBBLIGAZIONI" Runat="server">OBBLIGAZIONI</asp:linkbutton>
@@ -46,41 +46,33 @@
 					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol2" runat="server" TypeMenu="Titoli"></ucmenu:dhtmlmenucontrol>
 				</div>
 			</div> <!-- riga-menu -->
-			<div id="contenuto">
-				<div id="risultati-ricerca">
-					<div id="risultati-ricerca-sopra">
-						<div class="risultati-ricerca-numero">
-							<span class="totale"><span>
-									<asp:label id="lblNumRecord" runat="server" /></span> <span style="MARGIN-LEFT:485px">
-									<asp:linkbutton id="lblFirstPage" runat="server">Prima Pag.</asp:linkbutton>
-									<asp:linkbutton id="lblLastPage" runat="server">Ultima Pag.</asp:linkbutton>
-								</span></span>
+			<div id="riga-pagina">
+				<div id="pagina">
+					<div id="interna">
+						<div id="top"><span class="label-sinistra"><asp:label ID="lblTitoloForm" Runat="server"></asp:label><IMG alt="" src="../Images/label-sinistra-fine.png"></span>
+						</div> <!-- top -->
+						<div id="contenuto">
+							<div id="risultati-ricerca">
+								<br />
+								<asp:table id="tbCarPrinc" CssClass="quattro-colonne" runat="server">
+									<asp:TableRow>
+										<asp:TableCell CssClass="etichetta"></asp:TableCell>
+										<asp:TableCell ColumnSpan="7"></asp:TableCell>
+									</asp:TableRow>
+									<asp:TableRow>
+										<asp:TableCell CssClass="etichetta"></asp:TableCell>
+										<asp:TableCell ColumnSpan="7"></asp:TableCell>
+									</asp:TableRow>
+								</asp:table>
+								<span class="etichetta2">TITOLI ASSOCIATI ALLA SOCIETA'</span>
+								<br />&nbsp;
+								<asp:datagrid id="dtgAZIO" runat="server" BorderColor="#f4f4f4" CssClass="quattro-colonne" AutoGenerateColumns="False">
+									<ItemStyle CssClass="elemento"></ItemStyle>
+									<HeaderStyle CssClass="etichetta onlyBottomBorder"></HeaderStyle>
+								</asp:datagrid>
+							</div>
 						</div>
 					</div>
-					<asp:datagrid id="dtgAZIO" runat="server" Width="100%" Font-Size="10px" BackColor="#FFFFFF" BorderStyle="None"
-						ForeColor="#FFFFFF" AutoGenerateColumns="False" PageSize="40" CellPadding="1" BorderWidth="1px"
-						BorderColor="Black" CellSpacing="3">
-						<SelectedItemStyle Font-Bold="True" ForeColor="Black" BackColor="LemonChiffon"></SelectedItemStyle>
-						<ItemStyle ForeColor="Black" BackColor="White"></ItemStyle>
-						<HeaderStyle Font-Size="10px" Font-Names="Tahoma" Wrap="False" HorizontalAlign="Left" ForeColor="Black"
-							BackColor="Gainsboro"></HeaderStyle>
-						<FooterStyle ForeColor="White" BackColor="DarkGray"></FooterStyle>
-						<PagerStyle NextPageText="&amp;gt; Avanti" Font-Size="10px" Font-Bold="True" PrevPageText="&amp;lt; Indietro"
-							HorizontalAlign="Right" ForeColor="White" Position="Top" BackColor="#00547d" Mode="NumericPages"></PagerStyle>
-					</asp:datagrid>
-					<asp:table id="tbCarPrinc" runat="server" Height="57" Width="100%" Font-Size="14px">
-						<asp:TableRow Width="100%" Font-Size="10px">
-							<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" Width="25%" BorderColor="Black"></asp:TableCell>
-							<asp:TableCell BorderStyle="Solid" BorderWidth="1px" ColumnSpan="6" Width="75%" BorderColor="Black"></asp:TableCell>
-						</asp:TableRow>
-						<asp:TableRow Width="100%" Font-Size="10px">
-							<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" Width="25%" BorderColor="Black"></asp:TableCell>
-							<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Transparent" Width="75%" BorderColor="Black"></asp:TableCell>
-						</asp:TableRow>
-						<asp:TableRow Width="100%" Font-Size="10px">
-							<asp:TableCell BorderColor="Black"></asp:TableCell>
-						</asp:TableRow>
-					</asp:table>
 				</div>
 			</div>
 		</form>

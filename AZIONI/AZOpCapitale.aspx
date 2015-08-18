@@ -1,5 +1,5 @@
-<%@ Page Language="vb" AutoEventWireup="false" Codebehind="AZOpCapitale.aspx.vb" Inherits="BTWEB.NET.AZOpCapitale"%>
 <%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="AZOpCapitale.aspx.vb" Inherits="BTWEB.NET.AZOpCapitale"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -10,9 +10,9 @@
 		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
 		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
 	</HEAD>
-	<body >
+	<body>
 		<form id="Form1" method="post" runat="server">
-					<div id="riga-header">
+			<div id="riga-header">
 				<div id="header"><IMG id="logo" alt="" src="../images/ImagesLogo.gif" width="352"></div>
 			</div>
 			<div id="riga-menu">
@@ -22,7 +22,7 @@
 							<a href="../IDXMenuIn.aspx">HOME</a>
 						</li>
 						<li class="selected">
-							<asp:linkbutton id="lblAZIONI" Runat="server">AZIONI</asp:linkbutton>
+							<a runat="server" id="lblAZIONI" href="../AZIONI/AZMenu.aspx">AZIONI</a>
 						</li>
 						<li>
 							<asp:linkbutton id="lblOBBLIGAZIONI" Runat="server">OBBLIGAZIONI</asp:linkbutton>
@@ -41,12 +41,9 @@
 						<asp:label id="lblLastLogin" style="Z-INDEX: 114" runat="server">Ultima connessione</asp:label>
 					</div>
 				</div> <!-- menu -->
-								<div id="menuazioni" align=center>
-					
-					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol1" runat="server" TypeMenu="Azioni" 
-					></ucmenu:dhtmlmenucontrol>
+				<div id="menuazioni" align="center">
+					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol1" runat="server" TypeMenu="Azioni"></ucmenu:dhtmlmenucontrol>
 				</div>
-
 			</div> <!-- riga-menu -->
 			<div id="riga-pagina">
 				<div id="pagina">
@@ -55,31 +52,21 @@
 							<span class="label-sinistra">CONVOCAZIONI ASSEMBLEE<img src="../Images/label-sinistra-fine.png" alt=""></span>
 						</div>
 						<div id="contenuto">
+							<asp:table id="tbOp" runat="server" CssClass="quattro-colonne">
+								<asp:TableRow>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell ColumnSpan="7"></asp:TableCell>
+								</asp:TableRow>
+								<asp:TableRow>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell ColumnSpan="7"></asp:TableCell>
+								</asp:TableRow>
 
-
-			<asp:table id="tbOp"  runat="server"
-				Height="57" Width="100%" Font-Size="12px" Font-Names="Tahoma">
-				<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-					<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" BorderColor="Black"></asp:TableCell>
-					<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BorderColor="Black"></asp:TableCell>
-				</asp:TableRow>
-				<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-					<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" BorderColor="Black"></asp:TableCell>
-					<asp:TableCell BorderStyle="Solid" BorderWidth="1px" ColumnSpan="7" BorderColor="Black"></asp:TableCell>
-				</asp:TableRow>
-				<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-					<asp:TableCell></asp:TableCell>
-					<asp:TableCell></asp:TableCell>
-					<asp:TableCell></asp:TableCell>
-					<asp:TableCell></asp:TableCell>
-					<asp:TableCell></asp:TableCell>
-					<asp:TableCell></asp:TableCell>
-					<asp:TableCell></asp:TableCell>
-					<asp:TableCell></asp:TableCell>
-				</asp:TableRow>
-			</asp:table>
-			
-			</div></div></div></div>
+							</asp:table>
+						</div>
+					</div>
+				</div>
+			</div>
 		</form>
 	</body>
 </HTML>

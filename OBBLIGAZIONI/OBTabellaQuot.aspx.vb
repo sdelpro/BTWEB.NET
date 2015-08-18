@@ -60,21 +60,21 @@ Public Class OBTabellaQuot
                         Case 12
                             tch.Text = "DICEMBRE"
                     End Select
-                    tch.BackColor = System.Drawing.Color.Navy
+                    tch.BackColor  = Color.FromArgb(255, 0, 84, 125)
                     tch.Font.Name = "Tahoma"
                     tch.Font.Bold = True
                     tch.Font.Size = FontUnit.Point(10)
                     tch.BorderStyle = BorderStyle.Solid
                     tch.ForeColor = Color.White
                     tch.BorderWidth = Unit.Pixel(1)
-                    tch.BorderColor = Color.Navy
+                    tch.BorderColor = Color.FromArgb(255, 0, 84, 125)
                     tch.Width = Unit.Pixel(100)
                     tr.Cells.Add(tch)
 
                     If zy = 0 Then
                         For zx = 0 To 2
                             Dim tc As New TableCell
-                            tc.BackColor = System.Drawing.Color.Navy
+                            tc.BackColor  = Color.FromArgb(255, 0, 84, 125)
                             Select Case zx
                                 Case 0
                                     tc.Text = "     COMPENSO      "
@@ -92,7 +92,7 @@ Public Class OBTabellaQuot
                             tc.Font.Size = FontUnit.Point(10)
                             tc.BorderStyle = BorderStyle.Solid
                             tc.BorderWidth = Unit.Pixel(1)
-                            tc.BorderColor = Color.Navy
+                            tc.BorderColor = Color.FromArgb(255, 0, 84, 125)
                             tc.HorizontalAlign = HorizontalAlign.Center
                             tc.Width = Unit.Pixel(100)
                             tr.Cells.Add(tc)

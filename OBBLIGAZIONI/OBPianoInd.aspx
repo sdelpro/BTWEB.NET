@@ -63,7 +63,7 @@
 					BorderColor="Black"></asp:TableCell>
 			</asp:TableRow>
 			<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-				<asp:TableCell BackColor="Transparent" ForeColor="Navy" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
+				<asp:TableCell BackColor="Transparent" ForeColor="#00547d" ColumnSpan="8" Width="100%" BorderColor="Black"></asp:TableCell>
 			</asp:TableRow>
 			<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
 				<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" ColumnSpan="2" Width="25%"

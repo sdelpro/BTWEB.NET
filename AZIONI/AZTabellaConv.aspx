@@ -7,13 +7,14 @@
 		<meta name="CODE_LANGUAGE" content="Visual Basic .NET 7.1">
 		<meta name="vs_defaultClientScript" content="JavaScript">
 		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
 	</HEAD>
 	<body link="#0000ff" vlink="#800080" onLoad="setTimeout('loaded()',1000)" bottomMargin="0"
 		leftMargin="0" topMargin="0" rightMargin="0">
 		<SCRIPT>
 <!--
 // ----- Variabili di personalizzazione -----
-var attesa="<table border='0' cellpadding='0' cellspacing='0' style='border-collapse: collapse' bordercolor='#111111' width='100%' id='AutoNumber1'><tr><td width='100%'><p align='center'><img border='0' src='../Images/wait.gif' width='150' height='15'><br><b><font face='Tahoma' color='#CC3300'>Caricamento Tabella in corso...</font></b></td></tr></table>"
+var attesa="<table border='0' cellpadding='0' cellspacing='0' style='border-collapse: collapse' bordercolor='#111111' width='100%' id='AutoNumber1'><tr><td width='100%'><p align='center'><img border='0' src='../Images/wait.gif' ><br><b><font face='Tahoma' color='#00547d'>Caricamento in corso...</font></b></td></tr></table>"
 var colore="white";
 // ----- Fine variabili di personalizzazione -----
 
@@ -33,7 +34,7 @@ function loaded(){
 //-->
 		</SCRIPT>
 		<form id="Form1" method="post" runat="server">
-			<asp:Table id="tbConv" runat="server" Height="16px" Width="56px"></asp:Table>
+			<asp:Table id="tbConv" CssClass="dett-tabella" runat="server" Height="16px" Width="56px"></asp:Table>
 		</form>
 	</body>
 </HTML>

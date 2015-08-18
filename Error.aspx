@@ -7,49 +7,43 @@
 		<meta name="CODE_LANGUAGE" content="Visual Basic .NET 7.1">
 		<meta name="vs_defaultClientScript" content="JavaScript">
 		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
-		<LINK rel="stylesheet" type="text/css" href="css/style.css">
+		<LINK rel="stylesheet" type="text/css" href="css/style.css"> <!-- new -->
 	</HEAD>
 	<body>
+		<div id="riga-header">
+			<div id="header">
+				<img id="logo" src="images/ImagesLogo.gif" alt="" width="352">
+			</div> <!-- header -->
+		</div> <!-- riga-header -->
+		<div id="riga-menu">
+			<div id="menu">
+				<span class="intestazione">Tuttotitoli - Brambilla &amp; C. Servizi Telematici Srl 
+					- Via Caradosso, 14 - 20124 Milano - tel. 02.20.40.45.03 - fax 02.39.19.54.04 </span>
+			</div> <!-- menu -->
+		</div> <!-- riga-menu -->
 		<form id="Form1" method="post" runat="server">
-			<div id="riga-header">
-				<div id="header"><IMG id="logo" alt="" src="images/ImagesLogo.gif" width="352">
-				</div> <!-- header --></div> <!-- riga-header -->
-			<div id="riga-menu">
-				<div id="menu">
-					<ul>
-						<li>
-							<a href="IDXMenuIn.aspx">HOME</a>
-						<li>
-							<a href="AZIONI/AZMenu.aspx">AZIONI</a>
-						<li>
-							<a href="OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
-						<li>
-							<a href="FindNews.aspx">INFORMAZIONI VARIE</a>
-						<li>
-							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
-						<li>
-							<a href="Logout.aspx">LOGOUT</a>
-							<div id="ultima-connessione">
-								<asp:Label id="lblLastLogin" style="Z-INDEX: 118" runat="server">Ultima connessione</asp:Label>
-							</div>
-						</li>
-					</ul>
-				</div> <!-- menu -->
-			</div> <!-- riga-menu -->
-			<!-- corpo centrale della pagina-->
 			<div id="riga-pagina">
 				<div id="pagina">
-					<div id="interna">
+					<div id="foglio">
 						<div id="top">
-							<span class="label-sinistra">ERRORE SISTEMA BTWEB.NET<img src="images/label-sinistra-fine.png" alt=""></span>
+							<div>
+								<span class="label-sinistra">Si è verificato un errore<img src="images/label-sinistra-fine.png" alt=""></span>
+								<asp:label id="lblLastLogin" runat="server" CssClass="label-destra">Tutto Titoli</asp:label></div>
 						</div> <!-- top -->
-						<div style="text-align:center">
-							<span style="font-size:17px;font-weight:bold;"><asp:label id="lbError" runat="server">Arrivederci da Brambilla Titoli</asp:label></span>
-						</div>
-
 						<div id="contenuto">
-							
-							<asp:LinkButton id="lnbtn" runat="server" Visible="False">Torna alla Pagina Principale</asp:LinkButton>
+							<table>
+								<tr>
+									<td>
+										<asp:Label id="lblError" Font-Size="Medium" Font-Names="Tahoma" BorderColor="Transparent" BackColor="Transparent"
+											ForeColor="Red" Font-Bold="True" Height="23px" runat="server"></asp:Label>&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<asp:LinkButton id="lnbtn" runat="server" Visible="False">Torna alla Pagina Principale</asp:LinkButton>
+									</td>
+								</tr>
+							</table>
 						</div>
 					</div>
 				</div>

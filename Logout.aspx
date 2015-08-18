@@ -10,37 +10,31 @@
 		<LINK rel="stylesheet" type="text/css" href="css/style.css">
 	</HEAD>
 	<body>
+		<div id="riga-header">
+			<div id="header">
+				<img id="logo" src="images/ImagesLogo.gif" alt="" width="352">
+			</div> <!-- header -->
+		</div> <!-- riga-header -->
+		<div id="riga-menu">
+			<div id="menu">
+				<span class="intestazione">Tuttotitoli - Brambilla &amp; C. Servizi Telematici Srl 
+					- Via Caradosso, 14 - 20124 Milano - tel. 02.20.40.45.03 - fax 02.39.19.54.04 </span>
+			</div> <!-- menu -->
+		</div> <!-- riga-menu -->
 		<form id="Form1" method="post" runat="server">
-					<div id="riga-header">
-				<div id="header"><IMG id="logo" alt="" src="images/ImagesLogo.gif" width="352">
-				</div>
-			</div>
-					<div id="riga-menu">
-				<div id="menu">
-					<ul>
-						<li>
-							<a href="IDXMenu.aspx">LOGIN</a>
-						</li>
-					</ul>
-					<div id="ultima-connessione">
-						<asp:label id="lblLastLogin" runat="server">Ultima connessione</asp:label>
+			<div id="riga-pagina">
+				<div id="pagina">
+					<div id="foglio">
+						<div id="top">
+							<div>
+								<span class="label-sinistra">Tutto Titoli<img src="images/label-sinistra-fine.png" alt=""></span></div>
+						</div> <!-- top -->
+						<div id="contenuto">
+							Arrivederci da Brambilla Titoli
+						</div>
 					</div>
 				</div>
 			</div>
-			<div id="riga-pagina">
-				<div id="pagina">
-					<div id="interna">
-						<div id="top">
-							<span class="label-sinistra">LOGOUT<img src="images/label-sinistra-fine.png" alt=""></span>
-						</div> <!-- top -->
-						<div style="text-align:center">
-							<span style="font-size:17px;font-weight:bold;"><asp:label id="lbMessage" runat="server">Arrivederci da Brambilla Titoli</asp:label></span>
-						</div>
-						<div id="contenuto">
-
-			
-				
-				</div></div></div></div>
 		</form>
 	</body>
 </HTML>

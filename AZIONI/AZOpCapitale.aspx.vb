@@ -11,6 +11,10 @@ Public Class AZOpCapitale
     Protected WithEvents Image1 As System.Web.UI.WebControls.Image
     Protected WithEvents tbOp As System.Web.UI.WebControls.Table
     Protected WithEvents lblTitoloForm As System.Web.UI.WebControls.Label
+    Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.
@@ -53,8 +57,7 @@ Public Class AZOpCapitale
                 tbOp.Rows(0).Cells(1).Text() = dt.Rows(0).Item("ISINCODE")
                 tbOp.Rows(1).Cells(0).Text() = "DENOMINAZIONE"
                 tbOp.Rows(1).Cells(1).Text() = dt.Rows(0).Item("DENOMINAZIONE")
-                tbOp.Rows(2).Cells(0).Text() = ""
-                zxR = 3
+                zxR = 2
                 For zx = 0 To dt.Rows.Count - 1
                     Call CreaTabella()
                     tbOp.Rows(zxR).Cells(0).Text() = "STATO"
@@ -95,83 +98,46 @@ Public Class AZOpCapitale
         'riga 1
         tr = New TableRow
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Gainsboro
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = System.Drawing.Color.Black
+        tch.CssClass = "etichetta"
         tch.Text = ""
-        'tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
+
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Transparent
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = Color.Black
         tch.Text = ""
-        'tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
+
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Gainsboro
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = System.Drawing.Color.Black
+        tch.CssClass = "etichetta"
         tch.Text = ""
-        'tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
+
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Transparent
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = Color.Black
         tch.Text = ""
-        'tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
+
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Gainsboro
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = System.Drawing.Color.Black
+        tch.CssClass = "etichetta"
         tch.Text = ""
-        'tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
+
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Transparent
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = Color.Black
         tch.Text = ""
-        'tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
+
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Gainsboro
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = System.Drawing.Color.Black
+        tch.CssClass = "etichetta"
         tch.Text = ""
-        'tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
+
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Transparent
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = Color.Black
         tch.Text = ""
-        'tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
 
@@ -181,14 +147,9 @@ Public Class AZOpCapitale
         'riga 2
         tr = New TableRow
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Gainsboro
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = System.Drawing.Color.Black
-        tch.ColumnSpan = 3
+        tch.CssClass = "etichetta"
+        tch.ColumnSpan = 8
         tch.Text = ""
-        'tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
 
@@ -198,14 +159,8 @@ Public Class AZOpCapitale
         'riga(3)
         tr = New TableRow
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Transparent
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = System.Drawing.Color.Black
         tch.ColumnSpan = 8
         tch.Text = ""
-        'tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
 
@@ -215,14 +170,9 @@ Public Class AZOpCapitale
         'riga 4
         tr = New TableRow
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Gainsboro
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = System.Drawing.Color.Black
-        tch.ColumnSpan = 3
+        tch.CssClass = "etichetta"
+        tch.ColumnSpan = 8
         tch.Text = ""
-        'tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
 
@@ -232,20 +182,13 @@ Public Class AZOpCapitale
         'riga(5)
         tr = New TableRow
         tch = New TableCell
-        'tch.BackColor = System.Drawing.Color.Transparent
-        'tch.BorderStyle = BorderStyle.Solid
-        'tch.BorderWidth = Unit.Pixel(1)
-        'tch.BorderColor = System.Drawing.Color.Black
         tch.ColumnSpan = 8
         tch.Text = ""
-        'tch.Font.Name = "Tahoma"
-        'tch.Font.Size = FontUnit.Point(10)
         tr.Cells.Add(tch)
         tch = Nothing
 
         tbOp.Rows.Add(tr)
         tr = Nothing
-
 
     End Sub
 

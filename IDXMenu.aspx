@@ -8,23 +8,9 @@
 		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
 		<meta content="JavaScript" name="vs_defaultClientScript">
 		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
-		<!------- Begin StatMentor code -------------
-		//<script language="JavaScript"> 
-		var now = new Date(); 
-		var nIndex = now.getTime(); 
-		document.write('<img height=1 width=1 border=0 src="');
-		document.write('http://1.60.58.67//StatMentorNET/statmentorhit.aspx?p=aspcode.net&page=');
-		document.write(escape(self.location.href));
-		document.write('&referer=');
-		document.write(escape(document.referrer));
-		document.write('&ct=');
-		document.write(nIndex);
-		document.write('">');
-		</script>
-		<!------- End StatMentor code ------------->
 		<script type="text/javascript">
 			<!--
-			var stile = "top="+ screen.height-250 + ", left=" +  screen.width-200 + ", width=400, height=500, status=no, menubar=no, toolbar=no, scrollbars=no";
+			var stile = "top="+ screen.height-250 + ", left=" +  screen.width-200 + ", status=no, menubar=no, toolbar=no, scrollbars=no";
 				function Popup(apri) {
 					window.open(apri, "", stile);
 				}
@@ -53,7 +39,7 @@
 						<div id="top">
 							<div>
 							<span class="label-sinistra">LOGIN<img src="images/label-sinistra-fine.png" alt=""></span>
-							</div>
+							<asp:label id="lblLastLogin" runat="server" CssClass="label-destra">Tutto Titoli</asp:label></div>
 						</div> <!-- top -->
 						<div id="login">
 							<form>
@@ -64,16 +50,20 @@
 									</tr>
 									<tr>
 										<td><asp:label id="lblPassword" runat=server>PASSWORD</asp:label></td>
-										<td><asp:textbox id="txtPassword" style="Z-INDEX: 104" runat="server" TextMode="Password"></asp:textbox></td>
+										<td><asp:textbox id="txtPassword" runat="server" TextMode="Password"></asp:textbox></td>
 									</tr>
 									<tr>
 										<td></td>
-										<td><asp:button id="btnLogin" style="Z-INDEX: 108" runat="server" Text="ACCEDI"></asp:button></td>
+										<td><asp:button id="btnLogin" runat="server" Text="Accedi"></asp:button></td>
 									</tr>
 									<tr>
 										<td>
 											<asp:label id="lblError" runat="server"></asp:label>
 										</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td><asp:button id="btnGotoHome" runat="server" Text="Vai alla HomePage"></asp:button></td>
 									</tr>
 								</table>
 							</form>

@@ -16,7 +16,7 @@ Public Class AZLista
     Protected WithEvents lblFirstPage As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblLastPage As System.Web.UI.WebControls.LinkButton
     Protected WithEvents dtgAZIO As System.Web.UI.WebControls.DataGrid
-    Protected WithEvents lblAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
@@ -61,6 +61,10 @@ Public Class AZLista
         Dim zy As Integer = 0
         Dim sql As String = Session("AZ_SQL")
         Dim RecCorrenti As String
+        lblNumRecord.Visible = True
+        lblFirstPage.Visible = True
+        lblLastPage.Visible = True
+
         lblTIPORICERCA.Text = ""
         lblTIPORICERCA.Text = Session("TIPORICERCA") '"Ricerca Corrente:  " & Session("TIPORICERCA")
         With clt
@@ -255,6 +259,7 @@ Public Class AZLista
                     Next
                 End If
                 TotRecord = dt.Rows.Count
+
                 If dt.Rows.Count <> 0 Then
                     dtgAZIO.Visible = True
                     If IsNumeric(Session("ITEMSELECTINDEX")) Then dtgAZIO.SelectedIndex = Session("ITEMSELECTINDEX")
@@ -267,10 +272,16 @@ Public Class AZLista
                 Else
                     dtgAZIO.Visible = False
                     lblNoRecord.Visible = True
+                    lblNumRecord.Visible = False
+                    lblFirstPage.Visible = False
+                    lblLastPage.Visible = False
                 End If
             Else
                 dtgAZIO.Visible = False
                 lblNoRecord.Visible = True
+                lblNumRecord.Visible = False
+                lblFirstPage.Visible = False
+                lblLastPage.Visible = False
             End If
             .Dispose()
         End With
