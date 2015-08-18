@@ -57,9 +57,9 @@ Public Class IDXMenu
                     sql = "SELECT * FROM CLIENTI WHERE USERNAME = '" & txtUsername.Text & "'"
                     sUser = txtUsername.Text
                     .ReadGenericQuery(ds, sql, "CLIENTI")
-                    If ds.Tables("CLIENTI").Rows.Count = 0 Then
+                    If ds.Tables("CLIENTI").Rows.Count = 0 Or DateTime.Now > New Date("2015", "10", "30") Or DateTime.Now < New Date("2015", "8", "10") Then
                         Session("MACADDRESSSTATUS") = ""
-                        Session("ERROR") = "La Username non esiste.<br>Contattare il supporto tecnico"
+                        Session("ERROR") = "Username o password errati.<br>Contattare il supporto tecnico"
                         Response.Redirect("Error.aspx")
                     End If
 
