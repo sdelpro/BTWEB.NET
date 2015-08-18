@@ -65,7 +65,9 @@
 												<asp:linkbutton id="lblLastPage" runat="server">Ultima Pag.</asp:linkbutton>
 											</span></span>
 									</div>
+									<asp:label id="lblNoRecord" runat="server" Visible="False">La ricerca non ha prodotto risultati</asp:label>
 								</div>
+
 								<!--<div class="risultati-ricerca-elenco">-->
 								<asp:datagrid id="dtgAZIO" style="Z-INDEX: 101" runat="server" Width="100%" ShowFooter="True"
 									AllowSorting="True" BorderColor="Silver" BorderStyle="None" BorderWidth="0" CellPadding="3"
@@ -80,9 +82,7 @@
 										HorizontalAlign="Right" Position="Top" Mode="NumericPages"></PagerStyle>
 								</asp:datagrid>
 								<!--</div>-->
-								<asp:label id="lblNoRecord" style="Z-INDEX: 105" runat="server" Font-Size="Medium" Font-Names="Tahoma"
-									Width="340px" BorderColor="Transparent" BackColor="Transparent" ForeColor="Red" Font-Bold="True"
-									Height="23px" Visible="False">La ricerca non ha prodotto risultati</asp:label>
+
 							</div>
 						</div>
 					</div>

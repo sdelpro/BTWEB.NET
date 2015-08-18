@@ -22,13 +22,15 @@
 							<a href="../IDXMenuIn.aspx">HOME</a>
 						</li>
 						<li>
-							<asp:linkbutton id="lblAZIONI" Runat="server">AZIONI</asp:linkbutton>
+							<a href="../AZIONI/AZMenu.aspx">AZIONI</a>
+							
+						</li>
+						<li class="selected">
+							<a href="../OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
+							
 						</li>
 						<li>
-							<asp:linkbutton id="lblOBBLIGAZIONI" Runat="server">OBBLIGAZIONI</asp:linkbutton>
-						</li>
-						<li>
-							<asp:linkbutton id="lblINFOVARIE" Runat="server">INFORMAZIONI VARIE</asp:linkbutton>
+							<a href="../FindNews.aspx">INFORMAZIONI VARIE</a>							
 						</li>
 						<li>
 							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
@@ -47,7 +49,7 @@
 					<div id="foglio">
 						<div id="top">
 							<span class="label-sinistra">BENVENUTI<img src="../images/label-sinistra-fine.png" alt=""></span>
-							<span class="label-destra">MENU AZIONI<img src="../images/label-destra-fine.png" alt=""></span>
+							<span class="label-destra">MENU OBBLIGAZIONI<img src="../images/label-destra-fine.png" alt=""></span>
 						</div> <!-- top -->
 						<div id="aree">
 							<ul>

@@ -16,6 +16,7 @@ Public Class OBView
     Protected WithEvents Image1 As System.Web.UI.WebControls.Image
     Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
     Protected WithEvents lblTIPORICERCA As System.Web.UI.WebControls.Label
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
@@ -116,24 +117,24 @@ Public Class OBView
 
                     kCol += 1
 
-                    tbCarPrinc.Rows(kCol).Cells(0).Text = "CONTROVALORE INIZIALE"
+                    tbCarPrinc.Rows(kCol).Cells(0).Text = "CONTROV.INIZIALE"
                     tbCarPrinc.Rows(kCol).Cells(1).Text = CType(Format(dt.Rows(0).Item("CVINIZIALE") & "", "standard"), String)
                     tbCarPrinc.Rows(kCol).Cells(2).Text = "TASSO LORDO"
                     tbCarPrinc.Rows(kCol).Cells(3).Text = Replace(CType(dt.Rows(0).Item("TLORDO") & "", String), ".", ",")
-                    tbCarPrinc.Rows(kCol).Cells(4).Text = "PREZZO DI EMISSIONE"
+                    tbCarPrinc.Rows(kCol).Cells(4).Text = "PREZZO EMISS."
                     tbCarPrinc.Rows(kCol).Cells(5).Text = CType(Format(dt.Rows(0).Item("PEMISSIONE"), "0.000000"), String)
-                    tbCarPrinc.Rows(kCol).Cells(6).Text = "TAGLIO MINIMO INIZIALE"
+                    tbCarPrinc.Rows(kCol).Cells(6).Text = "TAG.MIN.INIZ."
                     tbCarPrinc.Rows(kCol).Cells(7).Text = CType(Format(dt.Rows(0).Item("TMINIZIALE"), "#,###,##0.0000"), String)
 
                     kCol += 1
 
-                    tbCarPrinc.Rows(kCol).Cells(0).Text = "CONTROVALORE ATTUALE"
+                    tbCarPrinc.Rows(kCol).Cells(0).Text = "CONTROV. ATTUALE"
                     tbCarPrinc.Rows(kCol).Cells(1).Text = CType(Format(dt.Rows(0).Item("CVATTUALE") & "", "standard"), String)
-                    tbCarPrinc.Rows(kCol).Cells(2).Text = "RITENUTA FISCALE"
+                    tbCarPrinc.Rows(kCol).Cells(2).Text = "RITE.FISCALE"
                     tbCarPrinc.Rows(kCol).Cells(3).Text = Replace(CType(dt.Rows(0).Item("RITFISCALE") & "", String), ".", ",")
-                    tbCarPrinc.Rows(kCol).Cells(4).Text = "PREZZO DI RIMBORSO"
+                    tbCarPrinc.Rows(kCol).Cells(4).Text = "PREZZO RIMB."
                     tbCarPrinc.Rows(kCol).Cells(5).Text = CType(Format(dt.Rows(0).Item("PRIMBORSO"), "0.000000"), String)
-                    tbCarPrinc.Rows(kCol).Cells(6).Text = "TAGLIO MINIMO ATTUALE"
+                    tbCarPrinc.Rows(kCol).Cells(6).Text = "TAG.MIN.ATTU."
                     tbCarPrinc.Rows(kCol).Cells(7).Text = CType(Format(dt.Rows(0).Item("TMATTUALE"), "#,###,##0.0000"), String)
 
                     kCol += 1
@@ -351,15 +352,15 @@ Public Class OBView
                         .ReadGenericQuery(dt, sql)
                         Dim tr As New TableRow
                         Dim tch As New TableCell
-                        tch.BackColor = System.Drawing.Color.Transparent
-                        tch.BorderStyle = BorderStyle.Solid
-                        tch.BorderWidth = Unit.Pixel(1)
-                        tch.Width = Unit.Percentage(100)
+                        'tch.BackColor = System.Drawing.Color.Transparent
+                        'tch.BorderStyle = BorderStyle.Solid
+                        'tch.BorderWidth = Unit.Pixel(1)
+                        'tch.Width = Unit.Percentage(100)
                         tch.ColumnSpan = 8
-                        tch.BorderColor = Color.Black
+                        'tch.BorderColor = Color.Black
                         tch.Text = dt.Rows(zx).Item("NOTA") & ""
-                        tch.Font.Name = "Tahoma"
-                        tch.Font.Size = FontUnit.Point(10)
+                        'tch.Font.Name = "Tahoma"
+                        'tch.Font.Size = FontUnit.Point(10)
                         tr.Cells.Add(tch)
                         tbCarPrinc.Rows.Add(tr)
                     Next

@@ -16,6 +16,7 @@ Public Class OBNews
     Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
     Protected WithEvents Image1 As System.Web.UI.WebControls.Image
     Protected WithEvents lblTIPORICERCA As System.Web.UI.WebControls.Label
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
@@ -100,32 +101,24 @@ Public Class OBNews
                         .ReadGenericQuery(dt, sql)
 
                         Dim tch As New TableCell
-                        tch.BackColor = System.Drawing.Color.Transparent
-                        tch.BorderStyle = BorderStyle.Solid
-                        tch.BorderWidth = Unit.Pixel(1)
                         tch.Width = Unit.Percentage(12.5)
                         tch.ColumnSpan = 1
-                        tch.BorderColor = Color.Black
+
                         tch.Text = dt.Rows(zx).Item("DATA") & ""
-                        tch.Font.Name = "Tahoma"
-                        tch.Font.Size = FontUnit.Point(10)
+                        tch.CssClass = "etichetta"
+
                         tr.Cells.Add(tch)
 
                         Dim tce As New TableCell
-                        tce.BackColor = System.Drawing.Color.Transparent
-                        tce.BorderStyle = BorderStyle.Solid
-                        tce.BorderWidth = Unit.Pixel(1)
                         tce.Width = Unit.Percentage(87.5)
                         tce.ColumnSpan = 7
-                        tce.BorderColor = Color.Black
-                        tce.Font.Name = "Tahoma"
-                        tce.Font.Size = FontUnit.Point(10)
+
 
                         If dt.Rows(zx).Item("TESTO") & "" <> "" Then
                             tce.Text = dt.Rows(zx).Item("TESTO") & ""
                         Else
                             tce.Text = "."
-                            tce.ForeColor = Color.White
+
                         End If
                         tr.Cells.Add(tce)
                         tbCarPrinc.Rows.Add(tr)

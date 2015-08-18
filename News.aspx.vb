@@ -15,6 +15,8 @@ Public Class News
     Protected WithEvents lblLastPage As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblNoRecord As System.Web.UI.WebControls.Label
     Protected WithEvents lblBackRicerche As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents Label1 As System.Web.UI.WebControls.Label
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
@@ -167,16 +169,12 @@ Public Class News
             .DataField = "DMOD"
             .HeaderText = "Data"
             .SortExpression = "DMODIFICA"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(20)
         End With
 
         With c2
             .DataField = "TITOLO"
             .HeaderText = "Argomento"
             .SortExpression = "TITOLO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(30)
         End With
 
         'With c3
@@ -191,8 +189,7 @@ Public Class News
             .DataField = "LINK_NEWS"
             .HeaderText = "Testo News"
             .SortExpression = "NEWS"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(50)
+
         End With
 
         GridCtrl.Columns.Add(c1)

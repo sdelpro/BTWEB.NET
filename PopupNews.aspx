@@ -7,22 +7,36 @@
 		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
 		<meta content="JavaScript" name="vs_defaultClientScript">
 		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<LINK rel="stylesheet" type="text/css" href="css/style.css">
 	</HEAD>
-	<body background="images\sfNewsGen.jpg" MS_POSITIONING="GridLayout">
+	<body>
 		<form id="Form1" method="post" runat="server">
-			<asp:image id="Image1" style="Z-INDEX: 101; LEFT: 4px; POSITION: absolute; TOP: 32px" runat="server"
-				ImageUrl="Images\Logo.gif" Width="352px" Height="44px"></asp:image><asp:table id="tbNews" style="Z-INDEX: 103; LEFT: 8px; POSITION: absolute; TOP: 140px" runat="server"
-				Width="100%" Height="20px" Font-Names="Courier New">
-				<asp:TableRow Width="100%" BorderWidth="0px" Font-Size="12px" Font-Names="Courier New">
-					<asp:TableCell BorderWidth="0px" Width="100%" Font-Size="12px" Font-Names="Courier New"></asp:TableCell>
-				</asp:TableRow>
-			</asp:table>
-			<TABLE id="Table1" style="Z-INDEX: 102; LEFT: 8px; WIDTH: 98%; POSITION: absolute; TOP: 100px; HEIGHT: 36px"
-				cellSpacing="1" cellPadding="1" width="100%" border="0">
-				<TR>
-					<TD><A class="NAV" href="JavaScript:window.close();"><b style="COLOR: lime; FONT-STYLE: normal; FONT-FAMILY: Tahoma; FONT-VARIANT: normal; TEXT-DECORATION: none">CHIUDI</b></A></TD>
-				</TR>
-			</TABLE>
+			<div id="riga-header">
+				<div id="header"><IMG id="logo" alt="" src="images/ImagesLogo.gif" width="352"></div>
+				</div> <!-- header --></div> <!-- riga-header -->
+			<div id="riga-menu">
+				<div id="menu">
+					<ul>
+						<li class="selected">
+							<A href="JavaScript:window.close();">CHIUDI</A>
+						</li>
+					</ul>
+				</div> <!-- menu --></div> <!-- riga-menu -->
+			<div id="riga-pagina">
+				<div id="pagina">
+					<div id="interna">
+						<div id="top">
+							<div><span class="label-sinistra">NEWS<IMG alt="" src="Images/label-sinistra-fine.png"></span></div>
+						</div>
+						<div id="contenuto">
+							<asp:table id="tbNews" runat="server" class="quattro-colonne">
+								<asp:TableRow Width="100%">
+									<asp:TableCell Width="100%"></asp:TableCell>
+								</asp:TableRow>
+							</asp:table></div>
+					</div>
+				</div>
+			</div>
 		</form>
 	</body>
 </HTML>

@@ -53,7 +53,7 @@
 						<div id="top">
 							<div>
 							<span class="label-sinistra">LOGIN<img src="images/label-sinistra-fine.png" alt=""></span>
-							<asp:label id="lblLastLogin" runat="server" style="margin-left:150px">Ultima connessione</asp:label></div>
+							</div>
 						</div> <!-- top -->
 						<div id="login">
 							<form>

@@ -22,13 +22,15 @@
 							<a href="../IDXMenuIn.aspx">HOME</a>
 						</li>
 						<li>
-							<asp:linkbutton id="lblAZIONI" Runat="server">AZIONI</asp:linkbutton>
+							<a href="../AZIONI/AZMenu.aspx">AZIONI</a>
+							
 						</li>
 						<li class="selected">
-							<asp:linkbutton id="lblOBBLIGAZIONI" Runat="server">OBBLIGAZIONI</asp:linkbutton>
+							<a href="../OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
+							
 						</li>
 						<li>
-							<asp:linkbutton id="lblINFOVARIE" Runat="server">INFORMAZIONI VARIE</asp:linkbutton>
+							<a href="../FindNews.aspx">INFORMAZIONI VARIE</a>							
 						</li>
 						<li>
 							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
@@ -86,13 +88,13 @@
 							</table>
 							<div id="box-interna"><ul>
 									<li>
-										<asp:label id="lbHelp1" style="Z-INDEX: 104" runat="server">• La ricerca per  “DATA SCADENZA”  restituisce lo scadenziario mensile, mentre quella per  “DATA RIMBORSO ANTICIPATO”  trova gli eventuali call esercitati.</asp:label></li>
+										La ricerca per  “DATA SCADENZA”  restituisce lo scadenziario mensile, mentre quella per  “DATA RIMBORSO ANTICIPATO”  trova gli eventuali call esercitati</li>
 									<li>
-										<asp:label id="lbHelp3" style="Z-INDEX: 126" runat="server">• Premendo il solo pulsante ‘Ricerca’ senza avere effettuato alcuna selezione si ottiene l’elenco di TUTTI i Titoli Obbligazionari attivi presenti.</asp:label></li>
+										Premendo il solo pulsante ‘Ricerca’ senza avere effettuato alcuna selezione si ottiene l’elenco di TUTTI i Titoli Obbligazionari attivi presenti</li>
 									<li>
-										<asp:label id="lbHelp4" style="Z-INDEX: 129" runat="server">• Spuntando ‘RICERCA ANCHE NELLO STORICO’ si aggiungono automaticamente anche i Titoli storicizzati (non più attivi). Questa opzione può rallentare il lavoro.</asp:label></li>
+										Spuntando ‘RICERCA ANCHE NELLO STORICO’ si aggiungono automaticamente anche i Titoli storicizzati (non più attivi). Questa opzione può rallentare il lavoro></li>
 									<li>
-										<asp:label id="lbHelp5" style="Z-INDEX: 132" runat="server">•Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata</asp:label></li></ul>
+										Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata</li></ul>
 							</div>
 							<asp:label id="Label7" style="Z-INDEX: 102" runat="server" Visible="False">DA</asp:label>
 							<asp:label id="Label6" style="Z-INDEX: 103" runat="server" Visible="False">A</asp:label>

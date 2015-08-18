@@ -12,9 +12,10 @@ Public Class OBLista
     Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
     Protected WithEvents lblNoRecord As System.Web.UI.WebControls.Label
     Protected WithEvents lblNumRecord As System.Web.UI.WebControls.Label
-    Protected WithEvents lblTIPORICERCA As System.Web.UI.WebControls.Label
+    Protected WithEvents lblTipoRicerca As System.Web.UI.WebControls.Label
     Protected WithEvents lblFirstPage As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblLastPage As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
@@ -285,25 +286,25 @@ Public Class OBLista
             .DataField = "ISINCODE"
             .HeaderText = "ISINCODE"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(20)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(20)
         End With
 
         With c3
             .DataField = "DESCRL"
             .HeaderText = "DESCRIZIONE"
             .SortExpression = "DESCRL"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(70)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(70)
         End With
 
         With c5
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            '.buttontype = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         GridCtrl.Columns.Add(c2)
@@ -333,8 +334,8 @@ Public Class OBLista
             .DataField = "ISINCODE"
             .HeaderText = "ISINCODE"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(12)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(12)
         End With
 
 
@@ -342,62 +343,62 @@ Public Class OBLista
             .DataField = "DESCRL"
             .HeaderText = "DESCRIZIONE"
             .SortExpression = "DESCRL"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(45)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(45)
         End With
 
         With c3
             .DataField = "MIN1"
             .HeaderText = "MIN. ANNO"
             .SortExpression = "MINIMO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(12)
-            .ItemStyle.HorizontalAlign = HorizontalAlign.Center
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(12)
+            '.ItemStyle.HorizontalAlign = HorizontalAlign.Center
         End With
 
         With c4
             .DataField = "MAX1"
             .HeaderText = "MAX. ANNO"
             .SortExpression = "MASSIMO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(12)
-            .ItemStyle.HorizontalAlign = HorizontalAlign.Center
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(12)
+            '.ItemStyle.HorizontalAlign = HorizontalAlign.Center
         End With
 
         With c5
             .DataField = "COMP"
             .HeaderText = "MEDIA"
             .SortExpression = "COMPENSO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(7)
-            .ItemStyle.HorizontalAlign = HorizontalAlign.Center
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(7)
+            '.ItemStyle.HorizontalAlign = HorizontalAlign.Center
         End With
 
         With c6
             .DataField = "QMIN"
             .HeaderText = "Q.MIN"
             .SortExpression = "QMIN"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(7)
-            .ItemStyle.HorizontalAlign = HorizontalAlign.Center
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(7)
+            '.ItemStyle.HorizontalAlign = HorizontalAlign.Center
         End With
 
         With c7
             .DataField = "ACRONIMO"
             .HeaderText = "ACRONIMO"
             .SortExpression = "ACRONIMO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(5)
-            .ItemStyle.HorizontalAlign = HorizontalAlign.Center
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(5)
+            '.ItemStyle.HorizontalAlign = HorizontalAlign.Center
         End With
 
         With c8
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            '.buttontype = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         GridCtrl.Columns.Add(c1)
@@ -429,33 +430,33 @@ Public Class OBLista
             .DataField = "ISINCODE"
             .HeaderText = "ISINCODE"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(20)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(20)
         End With
 
         With c2
             .DataField = "DESCRL"
             .HeaderText = "DESCRIZIONE"
             .SortExpression = "DESCRL"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(35)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(35)
         End With
 
         With c3
             .DataField = "NOTACONVRIEP"
             .HeaderText = "NOTA CONV."
             .SortExpression = "NOTACONVRIEP"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(35)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(35)
         End With
 
         With c5
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            '.buttontype = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         GridCtrl.Columns.Add(c1)
@@ -482,41 +483,41 @@ Public Class OBLista
             .DataField = "DATANEWS"
             .HeaderText = "Data news"
             .SortExpression = "DATA"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         With c3
             .DataField = "ISINCODE"
             .HeaderText = "ISINCODE"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         With c4
             .DataField = "DESCRL"
             .HeaderText = "DESCRIZIONE"
             .SortExpression = "DESCRL"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(45)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(45)
         End With
 
         With c5
             .DataField = "LINK_NEWS"
             .HeaderText = ""
             .SortExpression = "LINK_NEWS"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(25)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(25)
         End With
 
         With c6
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            '.buttontype = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         GridCtrl.Columns.Add(c2)
@@ -544,41 +545,41 @@ Public Class OBLista
             .DataField = "DATA"
             .HeaderText = "Data Scadenza"
             .SortExpression = "DSCADENZA"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         With c2
             .DataField = "DTRIMBANT"
             .HeaderText = "Data Rimb. Anticip."
             .SortExpression = "DTRIMBANTICIPATO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         With c3
             .DataField = "ISINCODE"
             .HeaderText = "ISINCODE"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         With c4
             .DataField = "DESCRL"
             .HeaderText = "DESCRIZIONE"
             .SortExpression = "DESCRL"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(60)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(60)
         End With
 
         With c5
             .HeaderText = ""
             .Text = "Dettagli"
-            .ButtonType = ButtonColumnType.PushButton
+            '.buttontype = ButtonColumnType.PushButton
             .CommandName = "DETTAGLI"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         GridCtrl.Columns.Add(c1)
@@ -607,51 +608,51 @@ Public Class OBLista
             .DataField = "DATA"
             .HeaderText = "DATA CEDOLA"
             .SortExpression = "DATACED"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         With c2
             .DataField = "ISINCODE"
             .HeaderText = "ISINCODE"
             .SortExpression = "ISINCODE"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         With c3
             .DataField = "DESCRL"
             .HeaderText = "DESCRIZIONE"
             .SortExpression = "DESCRL"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(50)
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(50)
         End With
 
         With c4
             .DataField = "TLORDO"
             .HeaderText = "TASSO LORDO"
             .SortExpression = "TLORDO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
-            .ItemStyle.HorizontalAlign = HorizontalAlign.Center
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.HorizontalAlign = HorizontalAlign.Center
         End With
 
         With c5
             .DataField = "TNETTO"
             .HeaderText = "TASSO NETTO"
             .SortExpression = "TNETTO"
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
-            .ItemStyle.HorizontalAlign = HorizontalAlign.Center
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(10)
+            '.ItemStyle.HorizontalAlign = HorizontalAlign.Center
         End With
 
         With c6
             .HeaderText = ""
             .Text = "Dettagli"
             .CommandName = "DETTAGLI"
-            .ButtonType = ButtonColumnType.PushButton
-            .ItemStyle.Font.Size = FontUnit.Point(10)
-            .ItemStyle.Width = Unit.Percentage(10)
+            '.buttontype = ButtonColumnType.PushButton
+            '.ItemStyle.Font.Size = FontUnit.Point(10)
+            '.ItemStyle.Width = Unit.Percentage(10)
         End With
 
         GridCtrl.Columns.Add(c1)

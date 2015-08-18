@@ -7,7 +7,6 @@ Public Class FindNews
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
 
     End Sub
-    Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
     Protected WithEvents Label1 As System.Web.UI.WebControls.Label
     Protected WithEvents lbHelp1 As System.Web.UI.WebControls.Label
     Protected WithEvents txtTesto As System.Web.UI.WebControls.TextBox
@@ -23,6 +22,8 @@ Public Class FindNews
     Protected WithEvents lbHelpDate As System.Web.UI.WebControls.Label
     Protected WithEvents Image1 As System.Web.UI.WebControls.Image
     Protected WithEvents lbUpd As System.Web.UI.WebControls.Label
+    Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.

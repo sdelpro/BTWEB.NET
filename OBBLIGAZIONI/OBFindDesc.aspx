@@ -22,13 +22,15 @@
 							<a href="../IDXMenuIn.aspx">HOME</a>
 						</li>
 						<li>
-							<asp:linkbutton id="lblAZIONI" Runat="server">AZIONI</asp:linkbutton>
+							<a href="../AZIONI/AZMenu.aspx">AZIONI</a>
+							
 						</li>
 						<li class="selected">
-							<asp:linkbutton id="lblOBBLIGAZIONI" Runat="server">OBBLIGAZIONI</asp:linkbutton>
+							<a href="../OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
+							
 						</li>
 						<li>
-							<asp:linkbutton id="lblINFOVARIE" Runat="server">INFORMAZIONI VARIE</asp:linkbutton>
+							<a href="../FindNews.aspx">INFORMAZIONI VARIE</a>							
 						</li>
 						<li>
 							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
@@ -118,13 +120,13 @@
 							</table>
 							<div id="box-interna"><ul>
 									<li>
-										<asp:label id="lbHelp1" style="Z-INDEX: 104" runat="server">• La ricerca può essere richiesta per descrizione (anche solo parte del nome), per codice ISIN o UIC, per testo Nota Breve, per testo Note Associate, per range di prezzo di emissione, per tipo indicizzazione, per maggiorazioni (se presenti), per data scadenza e per data modifica/inserimento.</asp:label></li>
+										La ricerca può essere richiesta per descrizione (anche solo parte del nome), per codice ISIN o UIC, per testo Nota Breve, per testo Note Associate, per range di prezzo di emissione, per tipo indicizzazione, per maggiorazioni (se presenti), per data scadenza e per data modifica/inserimento.</asp:label></li>
 									<li>
-										<asp:label id="lbHelp3" style="Z-INDEX: 124" runat="server">• Premendo il solo pulsante ‘Ricerca’ senza avere effettuato alcuna selezione si ottiene l’elenco di TUTTI i Titoli Obbligazionari attivi presenti.</asp:label></li>
+										Premendo il solo pulsante ‘Ricerca’ senza avere effettuato alcuna selezione si ottiene l’elenco di TUTTI i Titoli Obbligazionari attivi presenti.</asp:label></li>
 									<li>
-										<asp:label id="lbHelp4" style="Z-INDEX: 125" runat="server">• Spuntando ‘RICERCA ANCHE NELLO STORICO’ si aggiungono automaticamente anche i Titoli storicizzati (non più attivi). Questa opzione può rallentare il lavoro.</asp:label></li>
+										Spuntando ‘RICERCA ANCHE NELLO STORICO’ si aggiungono automaticamente anche i Titoli storicizzati (non più attivi). Questa opzione può rallentare il lavoro.</asp:label></li>
 									<li>
-										<asp:label id="lbHelp5" style="Z-INDEX: 126" runat="server">•Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata</asp:label></li></ul>
+										Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata</asp:label></li></ul>
 							</div>
 							<!--<asp:textbox id="Textbox4" style="Z-INDEX: 112" tabIndex="4" runat="server"></asp:textbox>-->
 							<asp:textbox id="Textbox1" Visible="False" style="Z-INDEX: 128" tabIndex="3" runat="server"></asp:textbox>

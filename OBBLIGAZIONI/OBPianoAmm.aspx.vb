@@ -124,38 +124,23 @@ Public Class OBPianoAmm
                         .ReadGenericQuery(dt, sql)
 
                         Dim tch As New TableCell
-                        tch.BackColor = System.Drawing.Color.Transparent
-                        tch.BorderStyle = BorderStyle.Solid
-                        tch.BorderWidth = Unit.Pixel(1)
                         tch.Width = Unit.Percentage(25)
                         tch.ColumnSpan = 2
-                        tch.BorderColor = Color.Black
+
                         tch.Text = dt.Rows(zx).Item("DATA") & ""
-                        tch.Font.Name = "Tahoma"
-                        tch.Font.Size = FontUnit.Point(10)
                         tr.Cells.Add(tch)
 
                         Dim tcg As New TableCell
-                        tcg.BackColor = System.Drawing.Color.Transparent
-                        tcg.BorderStyle = BorderStyle.Solid
-                        tcg.BorderWidth = Unit.Pixel(1)
                         tcg.Width = Unit.Percentage(25)
                         tcg.ColumnSpan = 2
-                        tcg.BorderColor = Color.Black
+                        'tcg.BorderColor = Color.Black
                         tcg.Text = Format(CLng("0" & dt.Rows(zx).Item("CVALORE")), "###,###,###.00")
-                        tcg.Font.Name = "Tahoma"
-                        tcg.Font.Size = FontUnit.Point(10)
                         tr.Cells.Add(tcg)
 
                         Dim tce As New TableCell
-                        tce.BackColor = System.Drawing.Color.Transparent
-                        tce.BorderStyle = BorderStyle.Solid
-                        tce.BorderWidth = Unit.Pixel(1)
                         tce.Width = Unit.Percentage(25)
                         tce.ColumnSpan = 2
-                        tce.BorderColor = Color.Black
-                        tce.Font.Name = "Tahoma"
-                        tce.Font.Size = FontUnit.Point(10)
+                        'tce.BorderColor = Color.Black
                         tce.Text = Format(CLng("0" & dt.Rows(zx).Item("TAGLIO")), "###,###,###.00")
 
                         tr.Cells.Add(tce)

@@ -1,5 +1,5 @@
-<%@ Page Language="vb" AutoEventWireup="false" Codebehind="OBLista.aspx.vb" Inherits="BTWEB.NET.OBLista"%>
 <%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="OBLista.aspx.vb" Inherits="BTWEB.NET.OBLista"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -14,59 +14,75 @@
 				}
 			//-->
 		</script>
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
 	</HEAD>
-	<body bottomMargin="0" leftMargin="0" background="..\Images\sfHome.JPG" topMargin="0"
-		rightMargin="0" ms_positioning="GridLayout">
+	<body>
 		<form id="Form1" method="post" runat="server">
-			<asp:datagrid id="dtgOBB" style="Z-INDEX: 101; LEFT: 0px; POSITION: absolute; TOP: 128px" runat="server"
-				ForeColor="#00547d" AutoGenerateColumns="False" AllowPaging="True" PageSize="40" GridLines="Vertical"
-				CellPadding="0" BackColor="#00547d" BorderWidth="0px" BorderStyle="None" BorderColor="Silver"
-				AllowSorting="True" ShowFooter="True" Width="100%" Font-Names="Tahoma" Font-Size="12px">
-				<SelectedItemStyle Font-Bold="True" ForeColor="Black" BackColor="LemonChiffon"></SelectedItemStyle>
-				<AlternatingItemStyle BackColor="Gainsboro"></AlternatingItemStyle>
-				<ItemStyle ForeColor="Black" BackColor="White"></ItemStyle>
-				<HeaderStyle Font-Size="12px" Font-Names="Tahoma" Font-Bold="True" Wrap="False" HorizontalAlign="Left"
-					ForeColor="White" BackColor="#00547d"></HeaderStyle>
-				<FooterStyle ForeColor="White" BackColor="DarkGray"></FooterStyle>
-				<PagerStyle NextPageText="&amp;gt; Avanti" Font-Size="12px" Font-Bold="True" PrevPageText="&amp;lt; Indietro"
-					HorizontalAlign="Right" ForeColor="White" Position="Top" BackColor="#00547d" Mode="NumericPages"></PagerStyle>
-			</asp:datagrid>
-			<TABLE id="Table2" style="Z-INDEX: 104; LEFT: 4px; POSITION: absolute; TOP: 0px; HEIGHT: 8px"
-				cellSpacing="0" cols="2" cellPadding="0" width="99%" border="0">
-				<TR>
-					<TD><ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" ImagePath="../Images/" TypeMenu="TopMenuOB"></ucmenu:dhtmlmenucontrol></TD>
-					<TD style="HEIGHT: 30px" align="right"></TD>
-				</TR>
-			</TABLE>
-			<TABLE id="Table1" style="Z-INDEX: 103; LEFT: 4px; POSITION: absolute; TOP: 100px" cellSpacing="0"
-				cols="2" cellPadding="0" width="99%" border="0">
-				<TR>
-					<TD vAlign="top" align="left" width="428" style="WIDTH: 428px"><ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol3" runat="server" ImagePath="../Images/" TypeMenu="RicercheObbligazioni"></ucmenu:dhtmlmenucontrol>
-						<asp:label id="lblTIPORICERCA" runat="server" ForeColor="Lime" BackColor="Transparent" Width="288px"
-							Font-Names="Tahoma" Font-Size="12px" Height="16px" Font-Bold="True">TIPO RICERCA EFFETTUATA</asp:label></TD>
-					<TD align="right" width="60%" colSpan="1" rowSpan="1"><asp:label id="lblNumRecord" runat="server" ForeColor="White" BackColor="Transparent" BorderColor="Transparent"
-							Width="401px" Font-Names="Tahoma" Font-Size="12px" Height="18px" Font-Bold="True">Obbligazioni trovate: </asp:label></TD>
-					<TD style="HEIGHT: 30px" align="right"></TD>
-				</TR>
-			</TABLE>
-			<asp:image id="Image1" style="Z-INDEX: 102; LEFT: 4px; POSITION: absolute; TOP: 32px" runat="server"
-				Width="352px" Height="44px" ImageUrl="..\Images\Logo.gif"></asp:image><asp:label id="lblNoRecord" style="Z-INDEX: 105; LEFT: 8px; POSITION: absolute; TOP: 200px"
-				runat="server" ForeColor="Red" BackColor="Transparent" BorderColor="Transparent" Width="340px" Font-Names="Tahoma" Font-Size="Medium" Height="23px" Font-Bold="True"
-				Visible="False">La ricerca non ha prodotto risultati</asp:label>
-			<TABLE id="Table3" style="Z-INDEX: 106; LEFT: 4px; POSITION: absolute; TOP: 80px; HEIGHT: 8px"
-				cellSpacing="0" cellPadding="0" width="99%" border="0">
-				<TR>
-					<TD>
-						<asp:label id="lblLastLogin" runat="server" BackColor="Transparent" Width="248px" Font-Names="Tahoma"
-							Font-Size="12px" Height="16px">Ultima connessione</asp:label>
-					<TD align="right">
-						<asp:LinkButton id="lblFirstPage" runat="server" Font-Size="12px" Font-Names="Tahoma" Width="67px"
-							ForeColor="Black" Height="16px" Font-Bold="True">Prima Pag.</asp:LinkButton>
-						<asp:LinkButton id="lblLastPage" runat="server" Font-Size="12px" Font-Names="Tahoma" Width="76px"
-							ForeColor="Black" Height="16px" Font-Bold="True">Ultima Pag.</asp:LinkButton></TD>
-					</TD>
-				</TR>
-			</TABLE>
+			<div id="riga-header">
+				<div id="header"><IMG id="logo" alt="" src="../images/ImagesLogo.gif" width="352"></div>
+			</div>
+			<div id="riga-menu">
+				<div id="menu">
+					<ul>
+						<li>
+							<a href="../IDXMenuIn.aspx">HOME</a>
+						</li>
+						<li>
+							<a href="../AZIONI/AZMenu.aspx">AZIONI</a>
+						</li>
+						<li class="selected">
+							<a href="../OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
+						</li>
+						<li>
+							<a href="../FindNews.aspx">INFORMAZIONI VARIE</a>
+						</li>
+						<li>
+							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
+						</li>
+						<li>
+							<a href="../Logout.aspx">LOGOUT</a>
+						</li>
+					</ul>
+					<div id="ultima-connessione">
+						<asp:label id="lblLastLogin" style="Z-INDEX: 114" runat="server">Ultima connessione</asp:label>
+					</div>
+				</div> <!-- menu -->
+			</div> <!-- riga-menu -->
+			<div id="riga-pagina">
+				<div id="pagina">
+					<div id="interna">
+						<div style="align:center"><asp:label id="lblNoRecord" Font-Bold="true" runat="server" Visible="False">La ricerca non ha prodotto risultati</asp:label></div>
+						<div id="top">
+							<span class="label-sinistra">
+								<asp:label ID="lblTipoRicerca" Runat="server"></asp:label><img src="../Images/label-sinistra-fine.png" alt=""></span>
+						</div>
+						<div id="contenuto">
+							<div id="risultati-ricerca">
+								<div id="risultati-ricerca-sopra">
+									<div class="risultati-ricerca-numero">
+										<span class="totale"><span>
+												<asp:label id="lblNumRecord" runat="server" /></span> <span style="MARGIN-LEFT:460px">
+												<asp:linkbutton id="lblFirstPage" runat="server">Prima Pag.</asp:linkbutton>
+												<asp:linkbutton id="lblLastPage" runat="server">Ultima Pag.</asp:linkbutton>
+											</span></span>
+									</div>
+								</div>
+								<asp:datagrid id="dtgOBB" runat="server" AllowSorting="True" Width="100%" ShowFooter="True" BorderWidth="0"
+									CellPadding="3" GridLines="Vertical" PageSize="40" AllowPaging="True" AutoGenerateColumns="False">
+									<SelectedItemStyle Font-Bold="True" ForeColor="Black" BackColor="LemonChiffon"></SelectedItemStyle>
+									<AlternatingItemStyle CssClass="altitem-style"></AlternatingItemStyle>
+									<ItemStyle CssClass="item-style"></ItemStyle>
+									<HeaderStyle CssClass="header-style" Font-Size="11px" Height="20px" Wrap="False" HorizontalAlign="Center"
+										ForeColor="#ffffff" BackColor="#4DB1E2"></HeaderStyle>
+									<FooterStyle ForeColor="White" BackColor="DarkGray"></FooterStyle>
+									<PagerStyle CssClass="pager-style" NextPageText="&amp;gt; Avanti" PrevPageText="&amp;lt; Indietro"
+										HorizontalAlign="Right" Position="Top" Mode="NumericPages"></PagerStyle>
+								</asp:datagrid>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</form>
 	</body>
 </HTML>

@@ -14,6 +14,7 @@ Public Class OBQuotazioni
     Protected WithEvents cmbAnno As System.Web.UI.WebControls.DropDownList
     Protected WithEvents Label1 As System.Web.UI.WebControls.Label
     Protected WithEvents lblTIPORICERCA As System.Web.UI.WebControls.Label
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.

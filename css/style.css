@@ -289,14 +289,14 @@ span.labels
 	bottom: 0;
 }
 .risultati-ricerca-numero span.corrente {
-	font-size: 14px;
+	font-size: 13px;
 	color: #4DB1E2;
 	font-weight: bold;
 	line-height: 18px;
 }
 
 .risultati-ricerca-numero span.totale {
-	font-size: 13px;
+	font-size: 12px;
 	font-weight:bold;
 	margin-top:30px;
 }
@@ -379,7 +379,7 @@ span.labels
 }
 
 .pager-style {
-	font-size: 13px; 
+	font-size: 12px; 
 	font-weight: bold;
 	color:#4DB1E2;
 	background-color:White;

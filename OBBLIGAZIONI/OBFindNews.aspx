@@ -1,5 +1,5 @@
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="OBFindNews.aspx.vb" Inherits="BTWEB.NET.OBFindNews" %>
+<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -22,13 +22,14 @@
 							<a href="../IDXMenuIn.aspx">HOME</a>
 						</li>
 						<li>
-							<asp:linkbutton id="lblAZIONI" Runat="server">AZIONI</asp:linkbutton>
+							<a href="../AZIONI/AZMenu.aspx">AZIONI</a>
+							
 						</li>
 						<li class="selected">
-							<asp:linkbutton id="lblOBBLIGAZIONI" Runat="server">OBBLIGAZIONI</asp:linkbutton>
+							<a href="../OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>							
 						</li>
 						<li>
-							<asp:linkbutton id="lblINFOVARIE" Runat="server">INFORMAZIONI VARIE</asp:linkbutton>
+							<a href="../FindNews.aspx">INFORMAZIONI VARIE</a>							
 						</li>
 						<li>
 							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
@@ -55,25 +56,25 @@
 							<table>
 								<tr>
 									<td>DESCRIZIONE</td>
-									<td><asp:dropdownlist id="cmbFind" style="Z-INDEX: 104;" tabIndex="1" runat="server">
+									<td><asp:dropdownlist id="cmbFind" style="Z-INDEX: 104" tabIndex="1" runat="server">
 											<asp:ListItem Value="Contiene">Contiene</asp:ListItem>
 											<asp:ListItem Value="Inizia per">Inizia per</asp:ListItem>
 											<asp:ListItem Value="Termina per">Termina per</asp:ListItem>
 										</asp:dropdownlist></td>
-									<td><asp:textbox id="txtFind" style="Z-INDEX: 102;" tabIndex="2" runat="server"></asp:textbox></td>
+									<td><asp:textbox id="txtFind" style="Z-INDEX: 102" tabIndex="2" runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>ISINCODE o UIC</td>
-									<td><asp:textbox id="txtIsincode" style="Z-INDEX: 122;" tabIndex="3" runat="server"></asp:textbox></td>
+									<td><asp:textbox id="txtIsincode" style="Z-INDEX: 122" tabIndex="3" runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>TESTO NEWS</td>
-									<td><asp:textbox id="txtNews" style="Z-INDEX: 124;" tabIndex="4" runat="server"></asp:textbox></td>
+									<td><asp:textbox id="txtNews" style="Z-INDEX: 124" tabIndex="4" runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>DATA NEWS</td>
-									<td><asp:textbox id="txtDtInA" style="Z-INDEX: 110;" tabIndex="6" placeholder="Da" runat="server"></asp:textbox></td>
-									<td><asp:textbox id="txtDtInDa" style="Z-INDEX: 107;" tabIndex="5" placeholder="A" runat="server"></asp:textbox></td>
+									<td><asp:textbox id="txtDtInA" style="Z-INDEX: 110" tabIndex="6" placeholder="Da" runat="server"></asp:textbox></td>
+									<td><asp:textbox id="txtDtInDa" style="Z-INDEX: 107" tabIndex="5" placeholder="A" runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td></td>
@@ -81,7 +82,7 @@
 								</tr>
 								<tr>
 									<td></td>
-									<td colspan="2"><asp:button id="btnFind" style="Z-INDEX: 103;" tabIndex="7" runat="server" Text="Ricerca"></asp:button>
+									<td colspan="2"><asp:button id="btnFind" style="Z-INDEX: 103" tabIndex="7" runat="server" Text="Ricerca"></asp:button>
 									</td>
 								</tr>
 							</table>
@@ -90,18 +91,18 @@
 									<li>
 									La ricerca può essere richiesta per descrizione (anche solo parte del nome), 
 									per codice ISIN o UIC, per testo news oppure all’interno del range temporale 
-									tra due date</li>
+									tra due date
 									<li>
-										Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco 
-										restituito dalla ricerca bisogna cliccare sull’intestazione della colonna 
-										desiderata;</li>
+									Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco 
+									restituito dalla ricerca bisogna cliccare sull’intestazione della colonna 
+									desiderata;
 									<li>
 										La ricerca delle NEWS è sempre estesa anche ai Titoli non più attivi;</li>
 								</ul>
 							</div>
-							<asp:checkbox id="ckStor" style="Z-INDEX: 120;" runat="server" Text="RICERCA ANCHE NELLO STORICO"
+							<asp:checkbox id="ckStor" style="Z-INDEX: 120" runat="server" Text="RICERCA ANCHE NELLO STORICO"
 								Visible="False"></asp:checkbox>
-							<asp:label id="Label1" style="Z-INDEX: 111;" runat="server">NEWS</asp:label>
+							<asp:label id="Label1" style="Z-INDEX: 111" runat="server">NEWS</asp:label>
 						</div>
 					</div>
 				</div>
