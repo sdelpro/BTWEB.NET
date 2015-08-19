@@ -49,6 +49,26 @@ Public Class AZMenu
             Me.Response.Redirect("../Error.aspx")
         End If
         lblLastLogin.Text = Session("LASTLOGIN")
+        LoadListaTitoliAz()
+    End Sub
+
+    Private Sub LoadListaTitoliAz()
+        If Application("LISTA_TITOLI_AZ") Is Nothing Then
+            Dim sqlTitoli As String = "select RAGSOC as DENOMINAZIONE from SOCIETA group by RAGSOC order by 1"
+            '"select DENOMINAZIONE from TITOLOAZIONARIO group by DENOMINAZIONE order by 1"
+            Dim dtt As New System.Data.DataTable
+            Dim cdt As New AccessDBManager
+            cdt.ReadGenericQuery(dtt, sqlTitoli)
+            Dim i As Integer
+            Dim strMst1 As String = "<script>$(function(){var availableTags = ["
+            Dim strMst2 As String = "];$('.autcmpl').autocomplete({source:availableTags});});</script>"
+            Dim strScr As String = "''"
+            For i = 0 To dtt.Rows.Count - 1
+                strScr = String.Format("{0},'{1}'", strScr, dtt.Rows(i).Item("DENOMINAZIONE"))
+            Next
+            Dim finalStr As String = String.Format("{0}{1}{2}", strMst1, strScr, strMst2)
+            Application("LISTA_TITOLI_AZ") = finalStr
+        End If
     End Sub
 
     Private Sub lbl1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbl1.Click

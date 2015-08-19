@@ -60,7 +60,7 @@
 				<asp:ListItem Value="Contiene">Contiene</asp:ListItem>
 				<asp:ListItem Value="Inizia per">Inizia per</asp:ListItem>
 				<asp:ListItem Value="Termina per">Termina per</asp:ListItem>
-			</asp:dropdownlist><asp:textbox id="txtFind" style="Z-INDEX: 102; LEFT: 200px; POSITION: absolute; TOP: 184px" tabIndex="2"
+			</asp:dropdownlist><asp:textbox id="txtFind" CssClass="autcmpl" style="Z-INDEX: 102; LEFT: 200px; POSITION: absolute; TOP: 184px" tabIndex="2"
 				runat="server" Width="204px" Height="20px" BorderStyle="Groove"></asp:textbox>
 			<TABLE id="Table1" style="Z-INDEX: 121; LEFT: 8px; POSITION: absolute; TOP: 104px" cellSpacing="0"
 				cols="2" cellPadding="0" width="100%" border="0">

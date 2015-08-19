@@ -57,7 +57,7 @@
 							<table>
 								<tr>
 									<td>DESCRIZIONE</td>
-									<td><asp:textbox id="txtFind" style="Z-INDEX: 100" runat="server"></asp:textbox></td>
+									<td><asp:textbox id="txtFind" CssClass="autcmpl" style="Z-INDEX: 100" runat="server"></asp:textbox></td>
 									<td><asp:dropdownlist id="cmbFind" style="Z-INDEX: 102" runat="server" Width="152px" Height="16px" tabIndex="1">
 											<asp:ListItem Value="Contiene">Contiene</asp:ListItem>
 											<asp:ListItem Value="Inizia per">Inizia per</asp:ListItem>

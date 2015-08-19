@@ -62,7 +62,7 @@
 											<asp:ListItem Value="Inizia per">Inizia per</asp:ListItem>
 											<asp:ListItem Value="Termina per">Termina per</asp:ListItem>
 										</asp:dropdownlist></td>
-									<td><asp:textbox id="txtFind" style="Z-INDEX: 101" tabIndex="2" runat="server"></asp:textbox></td>
+									<td><asp:textbox id="txtFind" CssClass="autcmpl" style="Z-INDEX: 101" tabIndex="2" runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>ISINCODE o UIC</td>

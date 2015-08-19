@@ -1,5 +1,5 @@
-<%@ Page Language="vb" AutoEventWireup="false" Codebehind="AZFindAssemblee.aspx.vb" Inherits="BTWEB.NET.AZFindAssemblee"%>
 <%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="AZFindAssemblee.aspx.vb" Inherits="BTWEB.NET.AZFindAssemblee"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -67,7 +67,7 @@
 							<table>
 								<tr>
 									<td>DESCRIZIONE</td>
-									<td><asp:textbox id="txtFind" runat="server"></asp:textbox></td>
+									<td><asp:textbox id="txtFind" CssClass="autcmpl" runat="server"></asp:textbox></td>
 									<td><asp:dropdownlist id="cmbFind" style="Z-INDEX: 102" runat="server" tabIndex="1">
 											<asp:ListItem Value="Contiene">Contiene</asp:ListItem>
 											<asp:ListItem Value="Inizia per">Inizia per</asp:ListItem>
@@ -80,13 +80,13 @@
 								</tr>
 								<tr>
 									<td>DATA ASSEMBLEA</td>
-									<td><asp:textbox CssClass="datepicker"  id="txtDtDa" runat="server" placeholder="Da" tabIndex="3"></asp:textbox></td>
-									<td><asp:textbox CssClass="datepicker"  id="txtDtA" runat="server" placeholder="A" tabIndex="4"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker" id="txtDtDa" runat="server" placeholder="Da" tabIndex="3"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker" id="txtDtA" runat="server" placeholder="A" tabIndex="4"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>DATA MODIFICA/INSERIMENTO</td>
-									<td><asp:textbox CssClass="datepicker"  id="txtDtMDa" runat="server" placeholder="Da" tabIndex="5"></asp:textbox>
-									<td><asp:textbox CssClass="datepicker"  id="txtDtMA" runat="server" placeholder="A" tabIndex="6"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker" id="txtDtMDa" runat="server" placeholder="Da" tabIndex="5"></asp:textbox>
+									<td><asp:textbox CssClass="datepicker" id="txtDtMA" runat="server" placeholder="A" tabIndex="6"></asp:textbox></td>
 								<tr class="note">
 									<td></td>
 									<td colspan="2">Attenzione: le date devono essere inserite nella forma GG/MM/AAAA</td>

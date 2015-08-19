@@ -62,6 +62,7 @@ Public Class AZFindSocieta
                                "Contattare il supporto tecnico per maggiori informazioni."
             Me.Response.Redirect("../Error.aspx")
         End If
+        Page.RegisterStartupScript("titoliAz", Application("LISTA_TITOLI_AZ"))
         lblLastLogin.Text = Session("LASTLOGIN")
 
         Dim clsUtil As New clsUtility

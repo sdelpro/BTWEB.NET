@@ -48,12 +48,12 @@ Public Class AZTitoli
                                "Contattare il supporto tecnico per maggiori informazioni."
             Me.Response.Redirect("../Error.aspx")
         End If
-        lblLastLogin.Text = Session("LASTLOGIN")
+        lblLastlogin.Text = Session("LASTLOGIN")
         lblTitoloForm.Text = "TITOLI ASSOCIATI"
 
         Dim dtt As New System.Data.DataTable
         Dim dtHis As New System.Data.DataTable
-        Dim cdt As New AccessDBManager()
+        Dim cdt As New AccessDBManager
         Dim sql As String = ""
         Dim LastRecord As Boolean = False
         Dim kCol As Integer = -1
@@ -117,6 +117,7 @@ Public Class AZTitoli
         End With
         Session("ISINCODE") = Left(Session("ISINCODE"), 12)
     End Sub
+
 
 
 
@@ -212,10 +213,6 @@ Public Class AZTitoli
         GridCtrl.Columns.Add(c9)
     End Sub
 
-
-
-
-
     Private Sub dtgAZIO_ItemCommand(ByVal source As Object, ByVal e As System.Web.UI.WebControls.DataGridCommandEventArgs) Handles dtgAZIO.ItemCommand
         dtgAZIO.DataBind()
         If (e.CommandName = "DETTAGLI") Then
@@ -227,7 +224,4 @@ Public Class AZTitoli
 
     End Sub
 
-    Private Sub dtgAZIO_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtgAZIO.SelectedIndexChanged
-
-    End Sub
 End Class
