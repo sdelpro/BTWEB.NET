@@ -8,7 +8,7 @@
 		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
 		<meta content="JavaScript" name="vs_defaultClientScript">
 		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
-		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css"><link rel="stylesheet" href="../css/jquery-ui.css"><script src="../js//jquery-1.10.2.js"></script><script src="../js/jquery-ui.js"></script><script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
 	</HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
@@ -93,8 +93,8 @@
 								<!-- riga DATA -->
 								<tr>
 									<td>DATA MODIFICA/INSERIMENTO</td>
-									<td><asp:textbox id="txtDtMDa" style="Z-INDEX: 107" tabIndex="5" placeholder="Da" runat="server"></asp:textbox>
-									<td><asp:textbox id="txtDtMA" tabIndex="6" placeholder="A" runat="server"></asp:textbox>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtMDa" style="Z-INDEX: 107" tabIndex="5" placeholder="Da" runat="server"></asp:textbox>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtMA" tabIndex="6" placeholder="A" runat="server"></asp:textbox>
 									</td>
 								</tr>
 								<tr class="note">

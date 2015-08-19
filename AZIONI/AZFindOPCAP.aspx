@@ -8,7 +8,7 @@
 		<meta name="CODE_LANGUAGE" content="Visual Basic .NET 7.1">
 		<meta name="vs_defaultClientScript" content="JavaScript">
 		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
-		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css"><link rel="stylesheet" href="../css/jquery-ui.css"><script src="../js//jquery-1.10.2.js"></script><script src="../js/jquery-ui.js"></script><script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
 	</HEAD>
 	<body>
 		<FORM id="Form1" method="post" runat="server">
@@ -69,8 +69,8 @@
 								</tr>
 								<tr>
 									<td>DATA MODIFICA/INSERIMENTO</td>
-									<td><asp:textbox id="txtDtM1Da" style="Z-INDEX: 113" runat="server" placeholder="Da" tabIndex="1"></asp:textbox></td>
-									<td><asp:textbox id="txtDtM1A" style="Z-INDEX: 117" runat="server" placeholder="A" tabIndex="2"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtM1Da" style="Z-INDEX: 113" runat="server" placeholder="Da" tabIndex="1"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtM1A" style="Z-INDEX: 117" runat="server" placeholder="A" tabIndex="2"></asp:textbox></td>
 								</tr>
 								<tr class="note">
 									<td></td>
@@ -104,8 +104,8 @@
 								</tr>
 								<tr>
 									<td>DATA MODIFICA/INSERIMENTO</td>									
-									<td><asp:textbox id="txtDtMDa" style="Z-INDEX: 112" runat="server" placeholder="Da" tabIndex="8"></asp:textbox></td>
-									<td><asp:textbox id="txtDtMA" style="Z-INDEX: 116" runat="server" placeholder="A" tabIndex="9"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtMDa" style="Z-INDEX: 112" runat="server" placeholder="Da" tabIndex="8"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtMA" style="Z-INDEX: 116" runat="server" placeholder="A" tabIndex="9"></asp:textbox></td>
 								</tr>
 								<tr class="note">
 									<td></td>
@@ -135,8 +135,8 @@
 										<asp:label id="lbHelp5" style="Z-INDEX: 135" runat="server">La ricerca per STORICIZZATE può essere effettuata per descrizione (anche solo parte del nome), per testo dell'operazione, per codice ISIN o UIC oppure per DATA MODIFICA/INSERIMENTO (range temporale tra due date).</asp:label></li>
 								</ul>
 							</div>
-							<asp:textbox id="txtDtStoA" style="Z-INDEX: 128" runat="server" Visible="False"></asp:textbox>
-							<asp:textbox id="txtDtStoDa" style="Z-INDEX: 124" runat="server" Visible="False"></asp:textbox>
+							<asp:textbox CssClass="datepicker"  id="txtDtStoA" style="Z-INDEX: 128" runat="server" Visible="False"></asp:textbox>
+							<asp:textbox CssClass="datepicker"  id="txtDtStoDa" style="Z-INDEX: 124" runat="server" Visible="False"></asp:textbox>
 							<!--			
 						<asp:label id="Label6" style="Z-INDEX: 122; " runat="server" Visible="False">DATA STORICIZZAZIONE</asp:label>
 						<asp:label id="Label5" style="Z-INDEX: 129; " runat="server" Visible="False">A</asp:label>

@@ -80,13 +80,13 @@
 								</tr>
 								<tr>
 									<td>DATA ASSEMBLEA</td>
-									<td><asp:textbox id="txtDtDa" CssClass="datepicker" runat="server" placeholder="Da" tabIndex="3"></asp:textbox></td>
-									<td><asp:textbox id="txtDtA" CssClass="datepicker" runat="server" placeholder="A" tabIndex="4"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtDa" runat="server" placeholder="Da" tabIndex="3"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtA" runat="server" placeholder="A" tabIndex="4"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>DATA MODIFICA/INSERIMENTO</td>
-									<td><asp:textbox id="txtDtMDa" CssClass="datepicker" runat="server" placeholder="Da" tabIndex="5"></asp:textbox>
-									<td><asp:textbox id="txtDtMA" CssClass="datepicker" runat="server" placeholder="A" tabIndex="6"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtMDa" runat="server" placeholder="Da" tabIndex="5"></asp:textbox>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtMA" runat="server" placeholder="A" tabIndex="6"></asp:textbox></td>
 								<tr class="note">
 									<td></td>
 									<td colspan="2">Attenzione: le date devono essere inserite nella forma GG/MM/AAAA</td>

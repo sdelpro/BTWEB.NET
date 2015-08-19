@@ -8,7 +8,7 @@
 		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
 		<meta content="JavaScript" name="vs_defaultClientScript">
 		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
-		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css"><link rel="stylesheet" href="../css/jquery-ui.css"><script src="../js//jquery-1.10.2.js"></script><script src="../js/jquery-ui.js"></script><script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
 	</HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
@@ -101,13 +101,13 @@
 								</tr>
 								<tr>
 									<td><asp:label id="Label3" style="Z-INDEX: 106" runat="server">DATA SCADENZA</asp:label></td>
-									<td><asp:textbox id="txtDtScadDa" style="Z-INDEX: 107" tabIndex="10" placeholder="Da" runat="server"></asp:textbox></td>
-									<td><asp:textbox id="txtDtScadA" style="Z-INDEX: 110" tabIndex="11" placeholder="A" runat="server"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtScadDa" style="Z-INDEX: 107" tabIndex="10" placeholder="Da" runat="server"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtScadA" style="Z-INDEX: 110" tabIndex="11" placeholder="A" runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td><asp:label id="Label8" style="Z-INDEX: 111" runat="server">DATA MODIFICA/INSERIMENTO</asp:label></td>
-									<td><asp:textbox id="txtDtMA" style="Z-INDEX: 114" tabIndex="13" placeholder="Da" runat="server"></asp:textbox></td>
-									<td><asp:textbox id="txtDtMDa" style="Z-INDEX: 113" tabIndex="12" placeholder="A" runat="server"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtMA" style="Z-INDEX: 114" tabIndex="13" placeholder="Da" runat="server"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtMDa" style="Z-INDEX: 113" tabIndex="12" placeholder="A" runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td></td>

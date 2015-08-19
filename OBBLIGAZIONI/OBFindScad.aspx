@@ -8,7 +8,7 @@
 		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
 		<meta content="JavaScript" name="vs_defaultClientScript">
 		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
-		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css"><link rel="stylesheet" href="../css/jquery-ui.css"><script src="../js//jquery-1.10.2.js"></script><script src="../js/jquery-ui.js"></script><script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
 	</HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
@@ -57,18 +57,18 @@
 							<table>
 								<tr>
 									<td>DATA SCADENZA</td>
-									<td><asp:textbox id="txtDtScDa" style="Z-INDEX: 112" placeholder="Da" runat="server" tabIndex="1"></asp:textbox></td>
-									<td><asp:textbox id="txtDtScA" style="Z-INDEX: 113" placeholder="A" tabIndex="2" runat="server"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtScDa" style="Z-INDEX: 112" placeholder="Da" runat="server" tabIndex="1"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtScA" style="Z-INDEX: 113" placeholder="A" tabIndex="2" runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>DATA RIMB. ANTICIP.</td>
-									<td><asp:textbox id="txtDtRaDa" style="Z-INDEX: 114" placeholder="Da" tabIndex="3" runat="server"></asp:textbox></td>
-									<td><asp:textbox id="txtDtRaA" style="Z-INDEX: 115" placeholder="A" tabIndex="4" runat="server"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtRaDa" style="Z-INDEX: 114" placeholder="Da" tabIndex="3" runat="server"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtRaA" style="Z-INDEX: 115" placeholder="A" tabIndex="4" runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>DATA MODIFICA/INSERIMENTO</asp:label></td>
-									<td><asp:textbox id="txtDtMDa" style="Z-INDEX: 107" tabIndex="5" placeholder="Da" runat="server"></asp:textbox></td>
-									<td><asp:textbox id="txtDtMA" style="Z-INDEX: 108" tabIndex="6" placeholder="A" runat="server"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtMDa" style="Z-INDEX: 107" tabIndex="5" placeholder="Da" runat="server"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtMA" style="Z-INDEX: 108" tabIndex="6" placeholder="A" runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td></td>
@@ -98,8 +98,8 @@
 							</div>
 							<asp:label id="Label7" style="Z-INDEX: 102" runat="server" Visible="False">DA</asp:label>
 							<asp:label id="Label6" style="Z-INDEX: 103" runat="server" Visible="False">A</asp:label>
-							<asp:textbox id="txtDtInA" style="Z-INDEX: 105" tabIndex="7" runat="server" Visible="False"></asp:textbox>
-							<asp:textbox id="txtDtInDa" style="Z-INDEX: 101" tabIndex="6" runat="server" Visible="False"></asp:textbox>
+							<asp:textbox CssClass="datepicker"  id="txtDtInA" style="Z-INDEX: 105" tabIndex="7" runat="server" Visible="False"></asp:textbox>
+							<asp:textbox CssClass="datepicker"  id="txtDtInDa" style="Z-INDEX: 101" tabIndex="6" runat="server" Visible="False"></asp:textbox>
 							<asp:label id="Label3" style="Z-INDEX: 100" runat="server" Visible="False">DATA INSERIMENTO</asp:label>
 						</div>
 					</div>

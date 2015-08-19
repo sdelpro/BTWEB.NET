@@ -68,8 +68,8 @@
 								</tr>
 								<tr>
 									<td>DATA NEWS</td>
-									<td><asp:textbox id="txtDtDa" runat="server" placeholder="Da" tabIndex="2"></asp:textbox>
-										<asp:textbox id="txtDtA" runat="server" placeholder="A" tabIndex="3"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtDa" runat="server" placeholder="Da" tabIndex="2"></asp:textbox>
+										<asp:textbox CssClass="datepicker"  id="txtDtA" runat="server" placeholder="A" tabIndex="3"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td></td>

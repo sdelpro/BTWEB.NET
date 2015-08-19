@@ -8,7 +8,7 @@
 		<meta name="CODE_LANGUAGE" content="Visual Basic .NET 7.1">
 		<meta name="vs_defaultClientScript" content="JavaScript">
 		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
-		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css"><link rel="stylesheet" href="../css/jquery-ui.css"><script src="../js//jquery-1.10.2.js"></script><script src="../js/jquery-ui.js"></script><script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
 	</HEAD>
 	<body>
 		<FORM id="Form1" method="post" runat="server">
@@ -98,8 +98,8 @@
 								<asp:label id="Label3" style="Z-INDEX: 107" runat="server" Visible="False">DATA MODIFICA</asp:label>
 								<asp:label id="Label10" style="Z-INDEX: 111" runat="server" Visible="False">A</asp:label>
 								<asp:label id="Label9" style="Z-INDEX: 110" runat="server" Visible="False">DA</asp:label>
-								<asp:textbox id="txtDtMA" style="Z-INDEX: 109" runat="server" Visible="False"></asp:textbox>
-								<asp:textbox id="txtDtMDa" runat="server" Visible="False"></asp:textbox>
+								<asp:textbox CssClass="datepicker"  id="txtDtMA" style="Z-INDEX: 109" runat="server" Visible="False"></asp:textbox>
+								<asp:textbox CssClass="datepicker"  id="txtDtMDa" runat="server" Visible="False"></asp:textbox>
 								<asp:label id="Label8" style="Z-INDEX: 106" runat="server" Visible="False">DATA MODIFICA</asp:label>
 							</div>
 						</div>

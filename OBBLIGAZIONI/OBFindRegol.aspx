@@ -8,7 +8,7 @@
 		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
 		<meta content="JavaScript" name="vs_defaultClientScript">
 		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
-		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css"><link rel="stylesheet" href="../css/jquery-ui.css"><script src="../js//jquery-1.10.2.js"></script><script src="../js/jquery-ui.js"></script><script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
 	</HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
@@ -74,8 +74,8 @@
 								</tr>
 								<tr>
 									<td>DATA MODIFICA/INSERIMENTO</td>
-									<td><asp:textbox id="txtDtMDa" style="Z-INDEX: 113" tabIndex="5" placeholder="DA" runat="server"></asp:textbox></td>
-									<td><asp:textbox id="txtDtMA" style="Z-INDEX: 114" tabIndex="6" placeholder="A" runat="server"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtMDa" style="Z-INDEX: 113" tabIndex="5" placeholder="DA" runat="server"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtMA" style="Z-INDEX: 114" tabIndex="6" placeholder="A" runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td></td>
@@ -114,8 +114,8 @@
 										desiderata;</li>
 								</ul>
 							</div>
-							<asp:textbox id="txtDtInA" style="Z-INDEX: 111" tabIndex="3" runat="server" Visible="False"></asp:textbox>
-							<asp:textbox id="txtDtInDa" style="Z-INDEX: 108" runat="server" Visible="False"></asp:textbox>
+							<asp:textbox CssClass="datepicker"  id="txtDtInA" style="Z-INDEX: 111" tabIndex="3" runat="server" Visible="False"></asp:textbox>
+							<asp:textbox CssClass="datepicker"  id="txtDtInDa" style="Z-INDEX: 108" runat="server" Visible="False"></asp:textbox>
 							<asp:label id="Label3" style="Z-INDEX: 107; POSITION: absolute; TOP: 640px; LEFT: 24px" runat="server"
 								Height="16px" Width="104px" ForeColor="Black" BackColor="Transparent" Font-Size="8pt" Font-Names="Tahoma"
 								Visible="False">DATA INSERIMENTO</asp:label>

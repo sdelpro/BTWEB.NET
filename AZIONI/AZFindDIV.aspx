@@ -8,7 +8,7 @@
 		<meta name="CODE_LANGUAGE" content="Visual Basic .NET 7.1">
 		<meta name="vs_defaultClientScript" content="JavaScript">
 		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
-		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css"><link rel="stylesheet" href="../css/jquery-ui.css"><script src="../js//jquery-1.10.2.js"></script><script src="../js/jquery-ui.js"></script><script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
 	</HEAD>
 	<body>
 		<FORM id="Form1" method="post" runat="server">
@@ -75,13 +75,13 @@
 								</tr>
 								<tr>
 									<td>DATA PAGAMENTO</td>
-									<td><asp:textbox id="txtDtPagDa" style="Z-INDEX: 116" runat="server" placeholder="Da" tabIndex="12"></asp:textbox></td>
-									<td><asp:textbox id="txtDtPagA" style="Z-INDEX: 119" runat="server" placeholder="A" tabIndex="13"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtPagDa" style="Z-INDEX: 116" runat="server" placeholder="Da" tabIndex="12"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtPagA" style="Z-INDEX: 119" runat="server" placeholder="A" tabIndex="13"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>DATA MODIFICA/INSERIMENTO</td>
-									<td><asp:textbox id="txtDtMDa" style="Z-INDEX: 110" runat="server" placeholder="Da" tabIndex="14"></asp:textbox></td>
-									<td><asp:textbox id="txtDtMA" style="Z-INDEX: 112" runat="server" placeholder="A" tabIndex="15"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtMDa" style="Z-INDEX: 110" runat="server" placeholder="Da" tabIndex="14"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker"  id="txtDtMA" style="Z-INDEX: 112" runat="server" placeholder="A" tabIndex="15"></asp:textbox></td>
 								</tr>
 								<tr class="note">
 									<td></td>
