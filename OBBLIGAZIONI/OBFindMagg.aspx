@@ -42,7 +42,10 @@
 					<div id="ultima-connessione">
 						<asp:label id="lblLastLogin" runat="server">Ultima connessione</asp:label>
 					</div>
-				</div> <!-- menu -->
+				</div> <!-- menu -->				<div id="menuazioni" align="center">
+					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol3" runat="server" TypeMenu="RicercheObbligazioni"></ucmenu:dhtmlmenucontrol>
+				</div>
+
 			</div> <!-- riga-menu -->
 			<div id="riga-pagina">
 				<div id="pagina">
