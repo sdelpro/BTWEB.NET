@@ -61,9 +61,9 @@ Public Class OBMenu
         lblLastLogin.Text = Session("LASTLOGIN")
     End Sub
 
-    Private Sub lblOBBLIGAZIONI_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Response.Redirect("OBLista.aspx")
-    End Sub
+    'Private Sub lblOBBLIGAZIONI_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    '    Response.Redirect("OBLista.aspx")
+    'End Sub
 
     Private Sub lbl1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbl1.Click
         Response.Redirect("OBFindDesc.aspx")
