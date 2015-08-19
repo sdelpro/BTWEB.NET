@@ -52,25 +52,22 @@
 						<div id="aree">
 							<ul>
 								<li>
-									<asp:linkbutton id="lbl1" runat="server">ANAGRAFE SOCIETA'</asp:linkbutton>
+									<asp:linkbutton id="lbl1" runat="server">ANAGRAFE SOCIETA'</asp:linkbutton></li>
 								<li>
-									<asp:linkbutton id="lbl2" runat="server">TITOLI SOCIETA'</asp:linkbutton>
+									<asp:linkbutton id="lbl2" runat="server">TITOLI SOCIETA'</asp:linkbutton></li>
 								<li>
-									<asp:linkbutton id="lbl3" runat="server">CONVOCAZIONI ASSEMBLEE</asp:linkbutton>
+									<asp:linkbutton id="lbl3" runat="server">CONVOCAZIONI ASSEMBLEE</asp:linkbutton></li>
 								<li>
-									<asp:linkbutton id="lbl4" runat="server">CDA</asp:linkbutton>
+									<asp:linkbutton id="lbl4" runat="server">CDA</asp:linkbutton></li>
 								<li>
-									<asp:linkbutton id="lbl5" runat="server">DIVIDENDI</asp:linkbutton>
+									<asp:linkbutton id="lbl5" runat="server">DIVIDENDI</asp:linkbutton></li>
 								<li>
 									<asp:linkbutton id="lbl6" runat="server">NEWS AZIONI</asp:linkbutton>
-								<li>
-									<asp:linkbutton id="lbl7" runat="server">AZIONI CONVERTIBILI</asp:linkbutton>
+									<asp:linkbutton id="lbl7" Visible="False" runat="server">AZIONI CONVERTIBILI</asp:linkbutton></li>
 								<li>
 									<asp:linkbutton id="lbl8" runat="server">OPERAZIONI SUL CAPITALE</asp:linkbutton>
-								<li>
-									<asp:linkbutton id="lbl9" runat="server">TABELLA WARRANT IN CIRCOLAZIONE</asp:linkbutton>
-								<li>
-									<asp:linkbutton id="lbl10" runat="server">QUOTAZIONI</asp:linkbutton></li>
+									<asp:linkbutton id="lbl9" Visible="False" runat="server">TABELLA WARRANT IN CIRCOLAZIONE</asp:linkbutton>
+									<asp:linkbutton id="lbl10" Visible="False" runat="server">QUOTAZIONI</asp:linkbutton></li>
 							</ul>
 						</div> <!-- aree -->
 					</div> <!-- foglio -->

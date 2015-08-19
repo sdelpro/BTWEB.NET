@@ -1,5 +1,5 @@
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="AZFindAssemblee.aspx.vb" Inherits="BTWEB.NET.AZFindAssemblee"%>
+<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -9,6 +9,16 @@
 		<meta content="JavaScript" name="vs_defaultClientScript">
 		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
 		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" href="../css/jquery-ui.css">
+		<script src="../js//jquery-1.10.2.js"></script>
+		<script src="../js/jquery-ui.js"></script>
+		<script>
+		$(function() {
+			$.datepicker.setDefaults($.datepicker.regional['it']); 
+			$(".datepicker").datepicker();
+			$(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");
+		});
+		</script>
 	</HEAD>
 	<body>
 		<FORM id="Form1" method="post" runat="server">
@@ -70,13 +80,13 @@
 								</tr>
 								<tr>
 									<td>DATA ASSEMBLEA</td>
-									<td><asp:textbox id="txtDtDa" runat="server" placeholder="Da" tabIndex="3"></asp:textbox></td>
-									<td><asp:textbox id="txtDtA" runat="server" placeholder="A" tabIndex="4"></asp:textbox></td>
+									<td><asp:textbox id="txtDtDa" CssClass="datepicker" runat="server" placeholder="Da" tabIndex="3"></asp:textbox></td>
+									<td><asp:textbox id="txtDtA" CssClass="datepicker" runat="server" placeholder="A" tabIndex="4"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>DATA MODIFICA/INSERIMENTO</td>
-									<td><asp:textbox id="txtDtMDa" runat="server" placeholder="Da" tabIndex="5"></asp:textbox>
-									<td><asp:textbox id="txtDtMA" runat="server" placeholder="A" tabIndex="6"></asp:textbox></td>
+									<td><asp:textbox id="txtDtMDa" CssClass="datepicker" runat="server" placeholder="Da" tabIndex="5"></asp:textbox>
+									<td><asp:textbox id="txtDtMA" CssClass="datepicker" runat="server" placeholder="A" tabIndex="6"></asp:textbox></td>
 								<tr class="note">
 									<td></td>
 									<td colspan="2">Attenzione: le date devono essere inserite nella forma GG/MM/AAAA</td>

@@ -402,10 +402,10 @@ Namespace BTWEB.DHTML.MenuControl
             m_strScriptMenu += " stm_aix(""p0i3"",""p0i0"",[0,""CDA - "","""","""",-1,-1,0,""AZFindCDA.aspx"",""_self"","""",""Ricerca dei CDA per data""]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p0i4"",""p0i0"",[0,""Dividendi - "","""","""",-1,-1,0,""AZFindDIV.aspx"",""_self"","""",""Ricerca dividendi per stato per data""]);" & vbCrLf
             m_strScriptMenu += " stm_aix(""p0i5"",""p0i0"",[0,""News Azioni - "","""","""",-1,-1,0,""AZFindNEWS.aspx"",""_self"","""",""Ricerca News Società""]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i6"",""p0i5"",[0,""Azioni Convertibili - "","""","""",-1,-1,0,""AZFindCONV.aspx"",""_self"","""",""Ricerca Covertibili in Corso""]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i7"",""p0i5"",[0,""Operazioni sul Capitale - "","""","""",-1,-1,0,""AZFindOPCAP.aspx"",""_self"","""",""Ricerca Op. sul Capitale""]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i8"",""p0i0"",[0,""Tabella Warrant in circolazione - "","""","""",-1,-1,0,""AZFindWARR.aspx"",""_self"","""",""Ricerca warrant""]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i9"",""p0i5"",[0,""Quotazioni"","""","""",-1,-1,0,""AZFindQuot.aspx"",""_self"","""",""Ricerca quotazioni titolo""]);" & vbCrLf
+            'm_strScriptMenu += " stm_aix(""p0i6"",""p0i5"",[0,""Azioni Convertibili - "","""","""",-1,-1,0,""AZFindCONV.aspx"",""_self"","""",""Ricerca Covertibili in Corso""]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p0i7"",""p0i5"",[0,""Operazioni sul Capitale"","""","""",-1,-1,0,""AZFindOPCAP.aspx"",""_self"","""",""Ricerca Op. sul Capitale""]);" & vbCrLf
+            'm_strScriptMenu += " stm_aix(""p0i8"",""p0i0"",[0,""Tabella Warrant in circolazione - "","""","""",-1,-1,0,""AZFindWARR.aspx"",""_self"","""",""Ricerca warrant""]);" & vbCrLf
+            'm_strScriptMenu += " stm_aix(""p0i9"",""p0i5"",[0,""Quotazioni"","""","""",-1,-1,0,""AZFindQuot.aspx"",""_self"","""",""Ricerca quotazioni titolo""]);" & vbCrLf
             'm_strScriptMenu += " stm_aix(""p0i10"",""p0i5"",[0,""Obbligazioni estratte""]);" & vbCrLf
             m_strScriptMenu += " stm_ep();" & vbCrLf
             m_strScriptMenu += " stm_ep();" & vbCrLf
