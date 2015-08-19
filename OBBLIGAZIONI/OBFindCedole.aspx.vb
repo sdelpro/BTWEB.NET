@@ -47,6 +47,7 @@ Public Class OBFindCedole
     Protected WithEvents lbHelp5 As System.Web.UI.WebControls.Label
     Protected WithEvents txtIsincode As System.Web.UI.WebControls.TextBox
     Protected WithEvents lbUpd As System.Web.UI.WebControls.Label
+    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.

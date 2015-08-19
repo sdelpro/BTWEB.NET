@@ -54,8 +54,8 @@
 					<div id="interna">
 						<div id="top">
 							<span class="label-sinistra">OBBLIGAZIONI IN SCADENZA<img src="../images/label-sinistra-fine.png" alt=""></span>
-							<div style="MARGIN-TOP:25px;MARGIN-LEFT:640px">
-								<asp:label id="lbUpd" style="Z-INDEX: 127" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
+							<div>
+								<asp:label id="lbUpd" CssClass="label-destra" style="Z-INDEX: 127" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
 							</div>
 						</div> <!-- top -->
 						<div id="contenuto">
@@ -77,7 +77,7 @@
 								</tr>
 								<tr>
 									<td></td>
-									<td colspan="2">Attenzione: le date devono essere inserite nella forma GG/MM/AAAA</td>
+									<td class="note" colspan="2">Attenzione: le date devono essere inserite nella forma GG/MM/AAAA</td>
 								</tr>
 								<tr>
 									<td></td>

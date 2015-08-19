@@ -8,7 +8,11 @@
 		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
 		<meta content="JavaScript" name="vs_defaultClientScript">
 		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
-		<LINK rel="stylesheet" type="text/css" href="../css/style.css"><link rel="stylesheet" href="../css/jquery-ui.css"><script src="../js//jquery-1.10.2.js"></script><script src="../js/jquery-ui.js"></script><script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" href="../css/jquery-ui.css">
+		<script src="../js//jquery-1.10.2.js"></script>
+		<script src="../js/jquery-ui.js"></script>
+		<script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
 	</HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
@@ -23,14 +27,12 @@
 						</li>
 						<li>
 							<a href="../AZIONI/AZMenu.aspx">AZIONI</a>
-							
 						</li>
 						<li class="selected">
 							<a href="../OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
-							
 						</li>
 						<li>
-							<a href="../FindNews.aspx">INFORMAZIONI VARIE</a>							
+							<a href="../FindNews.aspx">INFORMAZIONI VARIE</a>
 						</li>
 						<li>
 							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
@@ -42,18 +44,18 @@
 					<div id="ultima-connessione">
 						<asp:label id="lblLastLogin" runat="server">Ultima connessione</asp:label>
 					</div>
-				</div> <!-- menu -->				<div id="menuazioni" align="center">
+				</div> <!-- menu -->
+				<div id="menuazioni" align="center">
 					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol3" runat="server" TypeMenu="RicercheObbligazioni"></ucmenu:dhtmlmenucontrol>
 				</div>
-
 			</div> <!-- riga-menu -->
 			<div id="riga-pagina">
 				<div id="pagina">
 					<div id="interna">
 						<div id="top">
 							<span class="label-sinistra">CARATTERISTICHE PRINCIPALI<img src="../images/label-sinistra-fine.png" alt=""></span>
-							<div style="MARGIN-TOP:25px;MARGIN-LEFT:640px">
-								<asp:label id="lbUpd" style="Z-INDEX: 127" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
+							<div>
+								<asp:label id="lbUpd" CssClass="label-destra" style="Z-INDEX: 127" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
 							</div>
 						</div> <!-- top -->
 						<div id="contenuto">
@@ -100,17 +102,22 @@
 								</tr>
 								<tr>
 									<td></td>
-									<td colspan="2">Attenzione: le date devono essere inserite nella forma GG/MM/AAAA</td>
+									<td class="note" colspan="2">Attenzione: le date devono essere inserite nella forma 
+										GG/MM/AAAA</td>
 								</tr>
 								<tr>
 									<td><asp:label id="Label3" style="Z-INDEX: 106" runat="server">DATA SCADENZA</asp:label></td>
-									<td><asp:textbox CssClass="datepicker"  id="txtDtScadDa" style="Z-INDEX: 107" tabIndex="10" placeholder="Da" runat="server"></asp:textbox></td>
-									<td><asp:textbox CssClass="datepicker"  id="txtDtScadA" style="Z-INDEX: 110" tabIndex="11" placeholder="A" runat="server"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker" id="txtDtScadDa" style="Z-INDEX: 107" tabIndex="10" placeholder="Da"
+											runat="server"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker" id="txtDtScadA" style="Z-INDEX: 110" tabIndex="11" placeholder="A"
+											runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td><asp:label id="Label8" style="Z-INDEX: 111" runat="server">DATA MODIFICA/INSERIMENTO</asp:label></td>
-									<td><asp:textbox CssClass="datepicker"  id="txtDtMA" style="Z-INDEX: 114" tabIndex="13" placeholder="Da" runat="server"></asp:textbox></td>
-									<td><asp:textbox CssClass="datepicker"  id="txtDtMDa" style="Z-INDEX: 113" tabIndex="12" placeholder="A" runat="server"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker" id="txtDtMA" style="Z-INDEX: 114" tabIndex="13" placeholder="Da"
+											runat="server"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker" id="txtDtMDa" style="Z-INDEX: 113" tabIndex="12" placeholder="A"
+											runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td></td>
@@ -123,19 +130,28 @@
 							</table>
 							<div id="box-interna"><ul>
 									<li>
-										La ricerca può essere richiesta per descrizione (anche solo parte del nome), per codice ISIN o UIC, per testo Nota Breve, per testo Note Associate, per range di prezzo di emissione, per tipo indicizzazione, per maggiorazioni (se presenti), per data scadenza e per data modifica/inserimento.</asp:label></li>
+										La ricerca può essere richiesta per descrizione (anche solo parte del nome), 
+										per codice ISIN o UIC, per testo Nota Breve, per testo Note Associate, per 
+										range di prezzo di emissione, per tipo indicizzazione, per maggiorazioni (se 
+										presenti), per data scadenza e per data modifica/inserimento.</asp:label></li>
 									<li>
-										Premendo il solo pulsante ‘Ricerca’ senza avere effettuato alcuna selezione si ottiene l’elenco di TUTTI i Titoli Obbligazionari attivi presenti.</asp:label></li>
+										Premendo il solo pulsante ‘Ricerca’ senza avere effettuato alcuna selezione si 
+										ottiene l’elenco di TUTTI i Titoli Obbligazionari attivi presenti.</asp:label></li>
 									<li>
-										Spuntando ‘RICERCA ANCHE NELLO STORICO’ si aggiungono automaticamente anche i Titoli storicizzati (non più attivi). Questa opzione può rallentare il lavoro.</asp:label></li>
+										Spuntando ‘RICERCA ANCHE NELLO STORICO’ si aggiungono automaticamente anche i 
+										Titoli storicizzati (non più attivi). Questa opzione può rallentare il 
+										lavoro.</asp:label></li>
 									<li>
-										Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco restituito dalla ricerca bisogna cliccare sull’intestazione della colonna desiderata</asp:label></li></ul>
+										Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco 
+										restituito dalla ricerca bisogna cliccare sull’intestazione della colonna 
+										desiderata</asp:label></li></ul>
 							</div>
 							<!--<asp:textbox id="Textbox4" style="Z-INDEX: 112" tabIndex="4" runat="server"></asp:textbox>-->
 							<asp:textbox id="Textbox1" Visible="False" style="Z-INDEX: 128" tabIndex="3" runat="server"></asp:textbox>
 						</div>
 					</div>
-				</div></div>
+				</div>
+			</div>
 		</form>
 	</body>
 </HTML>

@@ -331,16 +331,38 @@ span.labels
 
 /* RICERCA */
 #risultati-ricerca-sopra, #risultati-ricerca-sotto {
-	color: #aaa;
+	color: #4DB1E2;
 	display: block;
 	position: relative;
 	height: 30px;
 	margin-bottom: 10px;
 }
+
+#left, #right {
+    float:left;
+    display:block;
+    /*background:#eee;*/
+    width:50%;    
+    height: 20px;
+    margin-top: 20px;
+    
+}
+#left {
+	text-align:left;}
+#right {
+	text-align:right;}
+
+#left:empty {
+    width:0;
+}
+
+#left:empty + #right 
+{
+	align:right;
+    width:100%;
+}
 .risultati-ricerca-numero {
-	position: absolute;
-	left: 0;
-	bottom: 0;
+	
 }
 .risultati-ricerca-numero span.corrente {
 	font-size: 13px;
@@ -353,6 +375,7 @@ span.labels
 	font-size: 12px;
 	font-weight:bold;
 	margin-top:30px;
+	
 }
 .risultati-ricerca-numero span.totale a{
 	color: #4DB1E2;
@@ -435,9 +458,16 @@ span.labels
 .pager-style {
 	font-size: 12px; 
 	font-weight: bold;
-	color:#4DB1E2;
+	/*color:#4DB1E2;*/
 	background-color:White;
 }
+.pager-style span 
+{ color:#00547d;font-weight:bold;font-size:13px}
+
+/*.pager-style td  
+{padding-left: 5px;   
+        padding-right: 5px; }*/
+
 .item-style {
 	color:black;
 	background-color:white;

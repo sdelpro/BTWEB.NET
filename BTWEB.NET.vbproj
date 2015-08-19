@@ -890,6 +890,7 @@
                     RelPath = "css\images\ui-icons_ffffff_256x240.png"
                     BuildAction = "Content"
                 />
+                <Folder RelPath = "ESTRAZIONI\" />
                 <File
                     RelPath = "images\bollettinoestrazioni.gif"
                     BuildAction = "Content"

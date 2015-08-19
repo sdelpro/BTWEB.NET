@@ -52,8 +52,8 @@
 					<div id="interna">
 						<div id="top">
 							<span class="label-sinistra">QUOTAZIONI<img src="../images/label-sinistra-fine.png" alt=""></span>
-							<div style="MARGIN-TOP:25px;MARGIN-LEFT:640px">
-								<asp:label id="lbUpd" style="Z-INDEX: 127" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
+							<div>
+								<asp:label id="lbUpd" CssClass="label-destra" style="Z-INDEX: 127" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
 							</div>
 						</div> <!-- top -->
 						<div id="contenuto">

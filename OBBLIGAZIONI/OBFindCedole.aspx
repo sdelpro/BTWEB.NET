@@ -1,5 +1,5 @@
-<%@ Page Language="vb" AutoEventWireup="false" Codebehind="OBFindCedole.aspx.vb" Inherits="BTWEB.NET.OBFindCedole"%>
 <%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="OBFindCedole.aspx.vb" Inherits="BTWEB.NET.OBFindCedole"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -91,7 +91,7 @@
 								</tr>
 								<tr>
 									<td></td>
-									<td colspan="2">Attenzione: le date devono essere inserite nella forma GG/MM/AAAA</td>
+									<td class="note" colspan="2">Attenzione: le date devono essere inserite nella forma GG/MM/AAAA</td>
 								</tr>
 								<tr>
 									<td>DATA MODIFICA/INSERIMENTO</td>
@@ -113,15 +113,15 @@
 							<div id="box-interna">
 								<ul>
 									<li>
-										Per cambiare l’ordinamento (crescente/decrescente e di colonna) dell'elenco 
-										restituito dalla ricerca bisogna cliccare sull’intestazione della colonna 
-										desiderata</li>
+									Per cambiare l’ordinamento (crescente/decrescente e di colonna) dell'elenco 
+									restituito dalla ricerca bisogna cliccare sull’intestazione della colonna 
+									desiderata
 									<li>
-										Spuntando ‘RICERCA ANCHE NELLO STORICO’ si aggiungono automaticamente anche i 
-										Titoli storicizzati (non più attivi). Questa opzione può rallentare il lavoro.</li>
+									Spuntando ‘RICERCA ANCHE NELLO STORICO’ si aggiungono automaticamente anche i 
+									Titoli storicizzati (non più attivi). Questa opzione può rallentare il lavoro.
 									<li>
-										Premendo il solo pulsante ‘Ricerca’ senza avere effettuato alcuna selezione si 
-										ottiene l’elenco di TUTTE le cedole presenti</li>
+									Premendo il solo pulsante ‘Ricerca’ senza avere effettuato alcuna selezione si 
+									ottiene l’elenco di TUTTE le cedole presenti
 									<li>
 										La ricerca può essere richiesta per descrizione (anche solo parte del nome), 
 										per codice ISIN o UIC, oppure all’interno del range temporale tra le due date.</li>
@@ -131,24 +131,24 @@
 					</div>
 				</div>
 			</div>
-			<asp:label id="Label2" style="Z-INDEX: 118; LEFT: 16px; POSITION: absolute; TOP: 608px" runat="server"
+			<asp:label id="Label2" style="Z-INDEX: 118; POSITION: absolute; TOP: 608px; LEFT: 16px" runat="server"
 				ForeColor="Black" Font-Names="Tahoma" Font-Size="8pt" BackColor="Transparent" Width="136px"
 				Height="16px" Visible="False">DATA SCADENZA CEDOLE (GG/MM/AAAA)</asp:label>
-			<asp:textbox id="txtDtScA" style="Z-INDEX: 117; LEFT: 328px; POSITION: absolute; TOP: 608px"
+			<asp:textbox id="txtDtScA" style="Z-INDEX: 117; POSITION: absolute; TOP: 608px; LEFT: 328px"
 				tabIndex="5" runat="server" Width="85px" Height="20px" BorderStyle="Groove" Visible="False"></asp:textbox>
-			<asp:textbox id="txtDtScDa" style="Z-INDEX: 116; LEFT: 208px; POSITION: absolute; TOP: 608px"
+			<asp:textbox id="txtDtScDa" style="Z-INDEX: 116; POSITION: absolute; TOP: 608px; LEFT: 208px"
 				tabIndex="4" runat="server" Width="85px" Height="20px" BorderStyle="Groove" Visible="False"></asp:textbox>
-			<asp:label id="Label7" style="Z-INDEX: 106; LEFT: 184px; POSITION: absolute; TOP: 656px" runat="server"
+			<asp:label id="Label7" style="Z-INDEX: 106; POSITION: absolute; TOP: 656px; LEFT: 184px" runat="server"
 				ForeColor="Black" Font-Names="Tahoma" Font-Size="8pt" BackColor="Transparent" Width="24px"
 				Height="16px" Visible="False">DA</asp:label>
-			<asp:label id="Label6" style="Z-INDEX: 108; LEFT: 312px; POSITION: absolute; TOP: 656px" runat="server"
+			<asp:label id="Label6" style="Z-INDEX: 108; POSITION: absolute; TOP: 656px; LEFT: 312px" runat="server"
 				ForeColor="Black" Font-Names="Tahoma" Font-Size="8pt" BackColor="Transparent" Width="12px"
 				Height="16px" Visible="False">A</asp:label>
-			<asp:textbox id="txtDtInA" style="Z-INDEX: 109; LEFT: 328px; POSITION: absolute; TOP: 656px"
+			<asp:textbox id="txtDtInA" style="Z-INDEX: 109; POSITION: absolute; TOP: 656px; LEFT: 328px"
 				tabIndex="8" runat="server" Width="85px" Height="20px" BorderStyle="Groove" Visible="False"></asp:textbox>
-			<asp:textbox id="txtDtInDa" style="Z-INDEX: 104; LEFT: 208px; POSITION: absolute; TOP: 656px"
+			<asp:textbox id="txtDtInDa" style="Z-INDEX: 104; POSITION: absolute; TOP: 656px; LEFT: 208px"
 				tabIndex="7" runat="server" Width="85px" Height="20px" BorderStyle="Groove" Visible="False"></asp:textbox>
-			<asp:label id="Label3" style="Z-INDEX: 101; LEFT: 24px; POSITION: absolute; TOP: 656px" runat="server"
+			<asp:label id="Label3" style="Z-INDEX: 101; POSITION: absolute; TOP: 656px; LEFT: 24px" runat="server"
 				ForeColor="Black" Font-Names="Tahoma" Font-Size="8pt" BackColor="Transparent" Width="136px"
 				Height="16px" Visible="False">DATA INSERIMENTO</asp:label>
 		</form>

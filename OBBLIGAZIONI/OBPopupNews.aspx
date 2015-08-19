@@ -12,25 +12,23 @@
 	</HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
-			<div id="riga-header">
-				<div id="header"><IMG id="logo" alt="" src="../images/ImagesLogo.gif" width="352"></div>
-				</div> <!-- header --></div> <!-- riga-header -->
 			<div id="riga-menu">
-				<div id="menu">
+				<div id="menu-s">
 					<ul>
-						<li class="selected">
+						<li>
 							<A href="JavaScript:window.close();">CHIUDI</A>
 						</li>
 					</ul>
 				</div> <!-- menu --></div> <!-- riga-menu -->
 			<div id="riga-pagina">
-				<div id="pagina">
-					<div id="interna">
+				<div id="pagina-s">
+					<div id="interna-s">
 						<div id="top">
-							<div><span class="label-sinistra">NEWS<IMG alt="" src="../Images/label-sinistra-fine.png"></span></div>
+							<div><span class="label-sinistra">News<IMG alt="" src="../Images/label-sinistra-fine.png"></span></div>
 						</div>
 						<div id="contenuto">
-							<asp:table id="tbNews" runat="server" class="quattro-colonne">
+
+							<asp:table id="tbNews" runat="server">
 								<asp:TableRow Width="100%">
 									<asp:TableCell Width="100%"></asp:TableCell>
 								</asp:TableRow>

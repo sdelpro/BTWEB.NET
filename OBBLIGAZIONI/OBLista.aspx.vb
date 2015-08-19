@@ -16,6 +16,8 @@ Public Class OBLista
     Protected WithEvents lblFirstPage As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblLastPage As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblPrecPage As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblSuccPage As System.Web.UI.WebControls.LinkButton
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
@@ -674,6 +676,25 @@ Public Class OBLista
         Dim enew As New DataGridPageChangedEventArgs(sender, 0)
         dtgOBB_PageIndexChanged(sender, enew)
 
+        'dtgOBB.CurrentPageIndex = 0
+        'dtgOBB.
+
+    End Sub
+    Private Sub lblPrecPage_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblPrecPage.Click
+        If dtgOBB.CurrentPageIndex > 0 Then
+            Dim enew As New DataGridPageChangedEventArgs(sender, dtgOBB.CurrentPageIndex - 1)
+            dtgOBB_PageIndexChanged(sender, enew)
+        End If
+        'dtgOBB.CurrentPageIndex = 0
+        'dtgOBB.
+
+    End Sub
+
+    Private Sub lblSuccPage_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblSuccPage.Click
+        If dtgOBB.CurrentPageIndex < (dtgOBB.PageCount - 1) Then
+            Dim enew As New DataGridPageChangedEventArgs(sender, dtgOBB.CurrentPageIndex + 1)
+            dtgOBB_PageIndexChanged(sender, enew)
+        End If
         'dtgOBB.CurrentPageIndex = 0
         'dtgOBB.
 

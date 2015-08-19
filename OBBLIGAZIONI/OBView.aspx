@@ -127,7 +127,7 @@
 									<asp:TableCell ColumnSpan="2" Width="25%"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow >
-									<asp:TableCell ColumnSpan="8" Width="100%"></asp:TableCell>
+									
 								</asp:TableRow>
 								<asp:TableRow >
 									<asp:TableCell class="etichetta" ColumnSpan="8" Width="100%"></asp:TableCell>
@@ -169,7 +169,7 @@
 									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow >
-									<asp:TableCell ColumnSpan="8" Width="100%"></asp:TableCell>
+									
 								</asp:TableRow>
 								<asp:TableRow >
 									<asp:TableCell class="etichetta" ColumnSpan="8" Width="100%"></asp:TableCell>
@@ -185,7 +185,7 @@
 									<asp:TableCell ColumnSpan="2" Width="25%"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow >
-									<asp:TableCell ColumnSpan="8" Width="100%"></asp:TableCell>
+									
 								</asp:TableRow>
 								<asp:TableRow >
 									<asp:TableCell class="etichetta" ColumnSpan="8" Width="100%"></asp:TableCell>
@@ -202,7 +202,7 @@
 									<asp:TableCell ColumnSpan="4" Width="360px"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow >
-									<asp:TableCell ColumnSpan="8" Width="100%"></asp:TableCell>
+									
 								</asp:TableRow>
 								<asp:TableRow >
 									<asp:TableCell class="etichetta" ColumnSpan="8" Width="100%"></asp:TableCell>
