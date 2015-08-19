@@ -30,10 +30,10 @@
 							<a href="../AZIONI/AZMenu.aspx">AZIONI</a>
 						</li>
 						<li class="selected">
-							<a href="../OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
+							<a runat="server" id="lblOBBLIGAZIONI" href="../OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
 						</li>
 						<li>
-							<a href="../FindNews.aspx">INFORMAZIONI VARIE</a>
+							<a runat="server" id="lblINFOVARIE" href="../FindNews.aspx">INFORMAZIONI VARIE</a>
 						</li>
 						<li>
 							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
@@ -64,12 +64,12 @@
 								<tr>
 									<td>DESCRIZIONE</td>
 									<td>
+										<asp:textbox id="txtFind" tabIndex="2" runat="server"></asp:textbox>
 										<asp:dropdownlist id="cmbFind" runat="server" tabIndex="1">
 											<asp:ListItem Value="Contiene">Contiene</asp:ListItem>
 											<asp:ListItem Value="Inizia per">Inizia per</asp:ListItem>
 											<asp:ListItem Value="Termina per">Termina per</asp:ListItem>
 										</asp:dropdownlist>
-										<asp:textbox id="txtFind" tabIndex="2" runat="server"></asp:textbox>
 									</td>
 								</tr>
 								<tr>
@@ -91,7 +91,8 @@
 								</tr>
 								<tr>
 									<td></td>
-									<td class="note" colspan="2">Attenzione: le date devono essere inserite nella forma GG/MM/AAAA</td>
+									<td class="note" colspan="2">Attenzione: le date devono essere inserite nella forma 
+										GG/MM/AAAA</td>
 								</tr>
 								<tr>
 									<td>DATA MODIFICA/INSERIMENTO</td>

@@ -1,5 +1,5 @@
-<%@ Page Language="vb" AutoEventWireup="false" Codebehind="OBLista.aspx.vb" Inherits="BTWEB.NET.OBLista"%>
 <%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="OBLista.aspx.vb" Inherits="BTWEB.NET.OBLista"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -35,10 +35,10 @@
 							<a href="../AZIONI/AZMenu.aspx">AZIONI</a>
 						</li>
 						<li class="selected">
-							<a href="../OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
+							<a runat="server" id="lblOBBLIGAZIONI" href="../OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
 						</li>
 						<li>
-							<a href="../FindNews.aspx">INFORMAZIONI VARIE</a>
+							<a runat="server" id="lblINFOVARIE" href="../FindNews.aspx">INFORMAZIONI VARIE</a>
 						</li>
 						<li>
 							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
@@ -65,14 +65,15 @@
 								<div id="risultati-ricerca-sopra">
 									<div class="risultati-ricerca-numero">
 										<div id="left">
-											<span class="totale"><asp:label id="lblNumRecord" runat="server" /></span>
+											<span class="totale">
+												<asp:label id="lblNumRecord" runat="server" /></span>
 										</div>
 										<div id="right">
 											<span class="totale">
-											<asp:linkbutton id="lblFirstPage" runat="server">First Page -</asp:linkbutton>
-											<asp:linkbutton id="lblPrecPage" runat="server">Prev. Page -</asp:linkbutton>
-											<asp:linkbutton id="lblSuccPage" runat="server">Next Page -</asp:linkbutton>
-											<asp:linkbutton id="lblLastPage" runat="server">Last Page</asp:linkbutton>										
+												<asp:linkbutton id="lblFirstPage" runat="server">First Page -</asp:linkbutton>
+												<asp:linkbutton id="lblPrecPage" runat="server">Prev. Page -</asp:linkbutton>
+												<asp:linkbutton id="lblSuccPage" runat="server">Next Page -</asp:linkbutton>
+												<asp:linkbutton id="lblLastPage" runat="server">Last Page</asp:linkbutton>
 										</div>
 									</div>
 								</div>
@@ -93,5 +94,6 @@
 				</div>
 			</div>
 		</form>
+		</SPAN>
 	</body>
 </HTML>

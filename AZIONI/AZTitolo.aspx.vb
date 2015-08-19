@@ -7,8 +7,8 @@ Public Class AZTitolo
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
 
     End Sub
-    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
-    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
     Protected WithEvents lblTipoRicerca As System.Web.UI.WebControls.Label

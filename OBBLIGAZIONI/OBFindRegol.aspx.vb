@@ -36,8 +36,8 @@ Public Class OBFindRegol
     Protected WithEvents Label4 As System.Web.UI.WebControls.Label
     Protected WithEvents txtReg As System.Web.UI.WebControls.TextBox
     Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
-    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
-    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.

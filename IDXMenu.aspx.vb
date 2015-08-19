@@ -209,11 +209,6 @@ Public Class IDXMenu
         End With
     End Sub
 
-
-    'Private Sub lblOBBLIGAZIONI_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblOBBLIGAZIONI.Click
-    '    Response.Redirect("OBBLIGAZIONI/OBMenu.aspx")
-    'End Sub
-
     Private Sub Page_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim ds As New System.Data.DataSet
         Dim cdt As New AccessDBManager

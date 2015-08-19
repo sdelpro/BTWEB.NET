@@ -26,11 +26,11 @@
 							
 						</li>
 						<li class="selected">
-							<a href="../OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
+							<a runat="server" id="lblOBBLIGAZIONI" href="../OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
 							
 						</li>
 						<li>
-							<a href="../FindNews.aspx">INFORMAZIONI VARIE</a>							
+							<a runat="server" id="lblINFOVARIE" href="../FindNews.aspx">INFORMAZIONI VARIE</a>							
 						</li>
 						<li>
 							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
@@ -60,13 +60,13 @@
 							<table>
 								<tr>
 									<td>DESCRIZIONE</td>
+									<td><asp:textbox id="txtFind" CssClass="autcmpl" style="Z-INDEX: 100" tabIndex="2" runat="server"></asp:textbox></td>
 									<td>
 										<asp:dropdownlist id="cmbFind" style="Z-INDEX: 102" tabIndex="1" runat="server">
 											<asp:ListItem Value="Contiene">Contiene</asp:ListItem>
 											<asp:ListItem Value="Inizia per">Inizia per</asp:ListItem>
 											<asp:ListItem Value="Termina per">Termina per</asp:ListItem>
 										</asp:dropdownlist></td>
-									<td><asp:textbox id="txtFind" CssClass="autcmpl" style="Z-INDEX: 100" tabIndex="2" runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td>ISINCODE o UIC</td>

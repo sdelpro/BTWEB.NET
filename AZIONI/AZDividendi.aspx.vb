@@ -14,8 +14,8 @@ Public Class AZDividendi
     Protected WithEvents tbDiv As System.Web.UI.WebControls.Table
     Protected WithEvents tbDiv2 As System.Web.UI.WebControls.Table
     Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
-    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
-    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.

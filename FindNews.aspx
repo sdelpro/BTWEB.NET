@@ -1,5 +1,5 @@
-<%@ Page Language="vb" AutoEventWireup="false" Codebehind="FindNews.aspx.vb" Inherits="BTWEB.NET.FindNews"%>
 <%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="FindNews.aspx.vb" Inherits="BTWEB.NET.FindNews"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -23,13 +23,13 @@
 							<a href="IDXMenuIn.aspx">HOME</a>
 						</li>
 						<li>
-							<a href="AZIONI/AZMenu.aspx">AZIONI</a>
+							<a runat="server" id="lblAZIONI" href="AZIONI/AZMenu.aspx">AZIONI</a>
 						</li>
 						<li>
-							<a href="OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
+							<a runat="server" id="lblOBBLIGAZIONI" href="OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
 						</li>
 						<li class="selected">
-							<a href="FindNews.aspx">INFORMAZIONI VARIE</a>
+							<a runat="server" id="lblINFOVARIE" href="FindNews.aspx">INFORMAZIONI VARIE</a>
 						</li>
 						<li>
 							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
@@ -68,8 +68,8 @@
 								</tr>
 								<tr>
 									<td>DATA NEWS</td>
-									<td><asp:textbox CssClass="datepicker"  id="txtDtDa" runat="server" placeholder="Da" tabIndex="2"></asp:textbox>
-										<asp:textbox CssClass="datepicker"  id="txtDtA" runat="server" placeholder="A" tabIndex="3"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker" id="txtDtDa" runat="server" placeholder="Da" tabIndex="2"></asp:textbox>
+										<asp:textbox CssClass="datepicker" id="txtDtA" runat="server" placeholder="A" tabIndex="3"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td></td>

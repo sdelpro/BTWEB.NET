@@ -14,8 +14,8 @@ Public Class IDXMenuIn
     Protected WithEvents lblUsername As System.Web.UI.WebControls.Label
     Protected WithEvents lblPassword As System.Web.UI.WebControls.Label
     Protected WithEvents lblUser As System.Web.UI.WebControls.Label
-    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
-    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
     Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblError As System.Web.UI.WebControls.Label
@@ -47,11 +47,6 @@ Public Class IDXMenuIn
     End Sub
 
 #End Region
-
-    Private Sub lblOBBLIGAZIONI_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblOBBLIGAZIONI.Click
-        Response.Redirect("OBBLIGAZIONI/OBMenu.aspx")
-
-    End Sub
 
     Private Sub Page_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim sql As String
@@ -96,10 +91,6 @@ Public Class IDXMenuIn
         lblINFOVARIE.Visible = True
         lblLastLogin.Visible = True
         lblLastLogin.Text = Session("LASTLOGIN")
-    End Sub
-
-    Private Sub lblINFOVARIE_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblINFOVARIE.Click
-        Response.Redirect("FindNews.aspx")
     End Sub
 
     Private Sub lbEstrazioni_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbEstrazioni.Click

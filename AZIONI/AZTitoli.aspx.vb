@@ -13,8 +13,8 @@ Public Class AZTitoli
     Protected WithEvents dtgAZIO As System.Web.UI.WebControls.DataGrid
     Protected WithEvents lblTitoloForm As System.Web.UI.WebControls.Label
     Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
-    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
-    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
     Protected WithEvents Label1 As System.Web.UI.WebControls.Label
     Protected WithEvents lblNumRecord As System.Web.UI.WebControls.Label

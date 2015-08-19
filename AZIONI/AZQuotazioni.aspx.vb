@@ -11,8 +11,8 @@ Public Class AZQuotazioni
     Protected WithEvents cmbAnno As System.Web.UI.WebControls.DropDownList
     Protected WithEvents tbCarPrinc As System.Web.UI.WebControls.Table
     Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
-    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
-    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
     Protected WithEvents Label1 As System.Web.UI.WebControls.Label
     Protected WithEvents lblTipoRicerca As System.Web.UI.WebControls.Label

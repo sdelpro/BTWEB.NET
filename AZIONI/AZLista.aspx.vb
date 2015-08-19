@@ -17,8 +17,8 @@ Public Class AZLista
     Protected WithEvents lblLastPage As System.Web.UI.WebControls.LinkButton
     Protected WithEvents dtgAZIO As System.Web.UI.WebControls.DataGrid
     Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
-    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.WebControls.LinkButton
-    Protected WithEvents lblINFOVARIE As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
