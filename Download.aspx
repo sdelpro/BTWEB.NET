@@ -16,64 +16,77 @@
 				}
 			//-->
 		</script>
+		<LINK rel="stylesheet" type="text/css" href="css/style.css">
 	</HEAD>
-	<body bottomMargin="0" leftMargin="0" background="Images\sfMenuidx.jpg" topMargin="0"
-		rightMargin="0" MS_POSITIONING="GridLayout">
+	<body>
 		<form id="Form1" method="post" runat="server">
-			<asp:image id="Image1" style="Z-INDEX: 101; LEFT: 4px; POSITION: absolute; TOP: 32px" runat="server"
-				ImageUrl="Images\Logo.gif" Height="44px" Width="352px"></asp:image>
-			<TABLE id="Table4" style="Z-INDEX: 104; LEFT: 8px; POSITION: absolute; TOP: 80px; HEIGHT: 8px"
-				cellSpacing="0" cellPadding="0" width="99%" border="0">
-				<TR>
-					<TD><asp:label id="lblLastLogin" runat="server" Height="16px" Width="360px" BackColor="Transparent"
-							Font-Names="Tahoma" Font-Size="12px">Ultima connessione</asp:label>
-					<TD align="right"></TD>
-					</TD></TR>
-			</TABLE>
-			<TABLE id="Table2" style="Z-INDEX: 103; LEFT: 0px; POSITION: absolute; TOP: 104px" cellSpacing="0"
-				cols="2" cellPadding="0" width="99%" border="0">
-				<TR>
-					<TD style="FONT-SIZE: 10pt; WIDTH: 428px; COLOR: #ffffff; FONT-FAMILY: verdana" vAlign="middle"
-						align="left" width="428"></TD>
-					<TD align="right" width="60%" colSpan="1" rowSpan="1"></TD>
-					<TD style="HEIGHT: 30px" align="right"></TD>
-				</TR>
-			</TABLE>
-			<TABLE id="Table1" style="Z-INDEX: 102; LEFT: 8px; POSITION: absolute; TOP: 0px; HEIGHT: 8px"
-				cellSpacing="0" cols="2" cellPadding="0" width="100%" border="0">
-				<TR>
-					<TD vAlign="middle"><ucmenu:dhtmlmenucontrol 
-      id=Dhtmlmenucontrol4 runat="server" 
-      TypeMenu="TopMenu" ImagePath="Images/" 
-      Visible='<%# iif(Session("LOGIN_VALIDATE") = "ABILITATO_BT" ,"true","false") %>'></ucmenu:dhtmlmenucontrol></TD>
-					<TD style="HEIGHT: 30px" align="right"></TD>
-				</TR>
-			</TABLE>
-			<TABLE id="Table3" style="Z-INDEX: 105; LEFT: 0px; WIDTH: 100%; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; POSITION: absolute; TOP: 136px; HEIGHT: 32px; BORDER-BOTTOM-STYLE: none"
-				cellSpacing="0" cellPadding="0" border="0">
-				<tr>
-					<td>
-						<div style="POSITION: relative">
-							<table cellSpacing="0" cellPadding="0" width="100%" border="0">
-								<tr>
-									<TD style="HEIGHT: 39px"></TD>
-									<td style="HEIGHT: 39px">
-										<asp:label id="lbDir" runat="server" Width="416px" Height="24px" Font-Size="18px" Font-Names="Tahoma">Directory</asp:label></td>
-								</tr>
-								<TR>
-									<TD></TD>
-									<TD><asp:datagrid id="dg1" runat="server" Width="98%" Font-Names="Verdana" Font-Size="10pt" AllowSorting="True">
-											<HeaderStyle Font-Bold="True" BackColor="Gainsboro"></HeaderStyle>
-											<Columns>
-												<asp:ButtonColumn Text="Scarica File" ButtonType="PushButton" CommandName="Select"></asp:ButtonColumn>
-											</Columns>
-										</asp:datagrid></TD>
-								</TR>
-							</table>
+			<div id="riga-header">
+				<div id="header"><IMG id="logo" alt="" src="images/ImagesLogo.gif" width="352"></div>
+			</div>
+			<div id="riga-menu">
+				<div id="menu">
+					<ul>
+						<li>
+							<a href="IDXMenuIn.aspx">HOME</a>
+						</li>
+						<li>
+							<a href="AZIONI/AZMenu.aspx">AZIONI</a>
+						</li>
+						<li>
+							<a runat="server" id="lblOBBLIGAZIONI" href="OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
+						</li>
+						<li>
+							<a runat="server" id="lblINFOVARIE" href="FindNews.aspx">INFORMAZIONI VARIE</a>
+						</li>
+						<li class="selected">
+							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
+						</li>
+						<li>
+							<a href="Logout.aspx">LOGOUT</a>
+						</li>
+					</ul>
+					<div id="ultima-connessione">
+						<asp:label id="lblLastLogin" style="Z-INDEX: 114" runat="server">Ultima connessione</asp:label>
+					</div>
+					<div id="riga-pagina">
+						<div id="pagina">
+							<div id="interna">
+								<div id="top">
+									<span class="label-sinistra">
+										<asp:label id="lbDIR" runat="server"></asp:label><img src="Images/label-sinistra-fine.png" alt=""></span>
+								</div>
+								<div id="contenuto">
+									<TABLE id="Table3" style="Z-INDEX: 105; LEFT: 0px; WIDTH: 100%; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none;HEIGHT: 32px; BORDER-BOTTOM-STYLE: none"
+										cellSpacing="0" cellPadding="0" border="0">
+										<tr>
+											<td>
+												<div style="POSITION: relative">
+													<table cellSpacing="0" cellPadding="0" width="100%" border="0">
+														<tr>
+															<TD style="HEIGHT: 39px"></TD>
+															<td style="HEIGHT: 39px">
+																<asp:label id="Label1" runat="server" Width="416px" Height="24px" Font-Size="18px" Font-Names="Tahoma">Directory</asp:label></td>
+														</tr>
+														<TR>
+															<TD></TD>
+															<TD><asp:datagrid id="dg1" runat="server" Width="98%" Font-Names="Verdana" Font-Size="10pt" AllowSorting="True">
+																	<HeaderStyle CssClass="header-style" ForeColor="#ffffff" BackColor="#4DB1E2"></HeaderStyle>
+																	<Columns>
+																		<asp:ButtonColumn Text="Scarica File" ButtonType="PushButton" CommandName="Select"></asp:ButtonColumn>
+																	</Columns>
+																</asp:datagrid></TD>
+														</TR>
+													</table>
+												</div>
+											</td>
+										</tr>
+									</TABLE>
+								</div>
+							</div>
 						</div>
-					</td>
-				</tr>
-			</TABLE>
+					</div>
+				</div>
+			</div>
 		</form>
 	</body>
 </HTML>

@@ -84,6 +84,7 @@ Public Class OBFindDesc
                                "Contattare il supporto tecnico per maggiori informazioni."
             Me.Response.Redirect("../Error.aspx")
         End If
+        'Page.RegisterStartupScript("titoliOb", Application("LISTA_TITOLI_OB"))
         lblLastLogin.Text = Session("LASTLOGIN")
 
         Dim clsUtil As New clsUtility

@@ -20,6 +20,8 @@ Public Class AZLista
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblPrecPage As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblSuccPage As System.Web.UI.WebControls.LinkButton
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.
@@ -1320,7 +1322,25 @@ Public Class AZLista
         Dim enew As New DataGridPageChangedEventArgs(sender, 0)
         If TotRecord <> 0 Then dtgAZIO_PageIndexChanged(sender, enew)
     End Sub
+    Private Sub lblPrecPage_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblPrecPage.Click
+        If dtgAZIO.CurrentPageIndex > 0 Then
+            Dim enew As New DataGridPageChangedEventArgs(sender, dtgAZIO.CurrentPageIndex - 1)
+            dtgAZIO_PageIndexChanged(sender, enew)
+        End If
+        'dtgOBB.CurrentPageIndex = 0
+        'dtgOBB.
 
+    End Sub
+
+    Private Sub lblSuccPage_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblSuccPage.Click
+        If dtgAZIO.CurrentPageIndex < (dtgAZIO.PageCount - 1) Then
+            Dim enew As New DataGridPageChangedEventArgs(sender, dtgAZIO.CurrentPageIndex + 1)
+            dtgAZIO_PageIndexChanged(sender, enew)
+        End If
+        'dtgOBB.CurrentPageIndex = 0
+        'dtgOBB.
+
+    End Sub
     Private Sub lblLastPage_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblLastPage.Click
         Dim enew As New DataGridPageChangedEventArgs(sender, dtgAZIO.PageCount - 1)
         If TotRecord <> 0 Then dtgAZIO_PageIndexChanged(sender, enew)

@@ -70,6 +70,7 @@ Public Class OBFindScad
                                "Contattare il supporto tecnico per maggiori informazioni."
             Me.Response.Redirect("../Error.aspx")
         End If
+
         lblLastLogin.Text = Session("LASTLOGIN")
 
         Dim clsUtil As New clsUtility

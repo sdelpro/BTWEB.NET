@@ -125,26 +125,25 @@
 								</tr>
 								<tr>
 									<td></td>
-									<td colspan="2"><asp:button id="btnFind" style="Z-INDEX: 102" tabIndex="15" runat="server" Text="Ricerca"></asp:button>
+									<td colspan="2"><asp:button id="btnFind" style="Z-INDEX: 102" tabIndex="15" runat="server" Text="Ricerca"></asp:button></td>
 								</tr>
 							</table>
 							<div id="box-interna"><ul>
 									<li>
-										La ricerca può essere richiesta per descrizione (anche solo parte del nome), 
-										per codice ISIN o UIC, per testo Nota Breve, per testo Note Associate, per 
-										range di prezzo di emissione, per tipo indicizzazione, per maggiorazioni (se 
-										presenti), per data scadenza e per data modifica/inserimento.</asp:label></li>
+									La ricerca può essere richiesta per descrizione (anche solo parte del nome), 
+									per codice ISIN o UIC, per testo Nota Breve, per testo Note Associate, per 
+									range di prezzo di emissione, per tipo indicizzazione, per maggiorazioni (se 
+									presenti), per data scadenza e per data modifica/inserimento.
 									<li>
-										Premendo il solo pulsante ‘Ricerca’ senza avere effettuato alcuna selezione si 
-										ottiene l’elenco di TUTTI i Titoli Obbligazionari attivi presenti.</asp:label></li>
+									Premendo il solo pulsante ‘Ricerca’ senza avere effettuato alcuna selezione si 
+									ottiene l’elenco di TUTTI i Titoli Obbligazionari attivi presenti.
 									<li>
-										Spuntando ‘RICERCA ANCHE NELLO STORICO’ si aggiungono automaticamente anche i 
-										Titoli storicizzati (non più attivi). Questa opzione può rallentare il 
-										lavoro.</asp:label></li>
+									Spuntando ‘RICERCA ANCHE NELLO STORICO’ si aggiungono automaticamente anche i 
+									Titoli storicizzati (non più attivi). Questa opzione può rallentare il lavoro.
 									<li>
 										Per cambiare l’ordinamento (crescente/decrescente e di colonna) di ogni elenco 
 										restituito dalla ricerca bisogna cliccare sull’intestazione della colonna 
-										desiderata</asp:label></li></ul>
+										desiderata</li></ul>
 							</div>
 							<!--<asp:textbox id="Textbox4" style="Z-INDEX: 112" tabIndex="4" runat="server"></asp:textbox>-->
 							<asp:textbox id="Textbox1" Visible="False" style="Z-INDEX: 128" tabIndex="3" runat="server"></asp:textbox>

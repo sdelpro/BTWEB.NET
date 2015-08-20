@@ -1,5 +1,5 @@
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="AZLista.aspx.vb" Inherits="BTWEB.NET.AZLista"%>
+<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -14,7 +14,11 @@
 				}
 			//-->
 		</script>
-		<LINK rel="stylesheet" type="text/css" href="../css/style.css"><link rel="stylesheet" href="../css/jquery-ui.css"><script src="../js//jquery-1.10.2.js"></script><script src="../js/jquery-ui.js"></script><script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" href="../css/jquery-ui.css">
+		<script src="../js//jquery-1.10.2.js"></script>
+		<script src="../js/jquery-ui.js"></script>
+		<script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
 	</HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
@@ -62,11 +66,17 @@
 							<div id="risultati-ricerca">
 								<div id="risultati-ricerca-sopra">
 									<div class="risultati-ricerca-numero">
-										<span class="totale"><span>
-												<asp:label id="lblNumRecord" runat="server" /></span> <span style="MARGIN-LEFT:485px">
-												<asp:linkbutton id="lblFirstPage" runat="server">Prima Pag.</asp:linkbutton>
-												<asp:linkbutton id="lblLastPage" runat="server">Ultima Pag.</asp:linkbutton>
-											</span></span>
+										<div id="left">
+											<span class="totale">
+												<asp:label id="lblNumRecord" runat="server" /></span>
+										</div>
+										<div id="right">
+											<span class="totale">
+												<asp:linkbutton id="lblFirstPage" runat="server">First Page -</asp:linkbutton>
+												<asp:linkbutton id="lblPrecPage" runat="server">Prev. Page -</asp:linkbutton>
+												<asp:linkbutton id="lblSuccPage" runat="server">Next Page -</asp:linkbutton>
+												<asp:linkbutton id="lblLastPage" runat="server">Last Page</asp:linkbutton>
+										</div>
 									</div>
 								</div>
 								<!--<div class="risultati-ricerca-elenco">-->
@@ -92,5 +102,6 @@
 				</div>
 			</div>
 		</form>
+		</SPAN>
 	</body>
 </HTML>
