@@ -73,7 +73,7 @@
 												<asp:linkbutton id="lblFirstPage" runat="server">First Page -</asp:linkbutton>
 												<asp:linkbutton id="lblPrecPage" runat="server">Prev. Page -</asp:linkbutton>
 												<asp:linkbutton id="lblSuccPage" runat="server">Next Page -</asp:linkbutton>
-												<asp:linkbutton id="lblLastPage" runat="server">Last Page</asp:linkbutton>
+												<asp:linkbutton id="lblLastPage" runat="server">Last Page</asp:linkbutton></span>
 										</div>
 									</div>
 								</div>

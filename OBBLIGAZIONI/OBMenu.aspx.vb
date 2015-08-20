@@ -61,9 +61,10 @@ Public Class OBMenu
         LBLLASTLOGIN.Text = Session("LASTLOGIN")
         'LoadListaTitoliOb()
     End Sub
+
     Private Sub LoadListaTitoliOb()
         If Application("LISTA_TITOLI_OB") Is Nothing Then
-            Dim sqlTitoli As String = "select DESCRL as DENOMINAZIONE from TITOLOOBBLIGAZIONARIO"
+            Dim sqlTitoli As String = "select DESCRL as DENOMINAZIONE from TITOLOOBBLIGAZIONARIO group by DESCRL"
 
             '"select DENOMINAZIONE from TITOLOAZIONARIO group by DENOMINAZIONE order by 1"
             Dim dtt As New System.Data.DataTable
