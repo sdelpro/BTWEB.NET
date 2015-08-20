@@ -8,7 +8,11 @@
 		<meta name="CODE_LANGUAGE" content="Visual Basic .NET 7.1">
 		<meta name="vs_defaultClientScript" content="JavaScript">
 		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
-		<LINK rel="stylesheet" type="text/css" href="../css/style.css"><link rel="stylesheet" href="../css/jquery-ui.css"><script src="../js//jquery-1.10.2.js"></script><script src="../js/jquery-ui.js"></script><script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" href="../css/jquery-ui.css">
+		<script src="../js//jquery-1.10.2.js"></script>
+		<script src="../js/jquery-ui.js"></script>
+		<script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
 	</HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
@@ -52,9 +56,9 @@
 											<span class="etichetta">CODICE ISIN</span>
 											<asp:label id="lbl_codisi" runat="server" CssClass="valore">Ultima connessione</asp:label>
 										</asp:TableCell>
-										<asp:TableCell class="separa"></asp:TableCell>
+										<asp:TableCell CssClass="separa"></asp:TableCell>
 										<asp:TableCell>
-											<span class="etichetta">RAGIONE SOCIALE</span>
+											<asp:label id="spn_ragsoc" runat="server" CssClass="etichetta">RAGIONE SOCIALE</asp:label>
 											<asp:label id="lbl_ragsoc" runat="server" CssClass="valore"></asp:label>
 										</asp:TableCell>
 									</asp:TableRow>
@@ -63,7 +67,7 @@
 											<span class="etichetta">SEDE AMMINISTRATIVA</span>
 											<asp:label id="lbl_sedamm" runat="server" cssclass="valore"></asp:label>
 										</asp:TableCell>
-										<asp:TableCell class="separa"></asp:TableCell>
+										<asp:TableCell CssClass="separa"></asp:TableCell>
 										<asp:TableCell>
 											<span class="etichetta">SEDE LEGALE</span>
 											<asp:label id="lbl_sedleg" runat="server" cssclass="valore"></asp:label>
@@ -74,7 +78,7 @@
 											<span class="etichetta">TELEFONO</span>
 											<asp:label id="lbl_telefo" runat="server" cssclass="valore"></asp:label>
 										</asp:TableCell>
-										<asp:TableCell class="separa"></asp:TableCell>
+										<asp:TableCell CssClass="separa"></asp:TableCell>
 										<asp:TableCell>
 											<span class="etichetta">FAX</span>
 											<asp:label id="lbl_fax" runat="server" cssclass="valore"></asp:label>
@@ -85,7 +89,7 @@
 											<span class="etichetta">QUOTATA</span>
 											<asp:label id="lbl_quotat" runat="server" cssclass="valore"></asp:label>
 										</asp:TableCell>
-										<asp:TableCell class="separa"></asp:TableCell>
+										<asp:TableCell CssClass="separa"></asp:TableCell>
 										<asp:TableCell>
 											<span class="etichetta">VALUTA</span>
 											<asp:label id="lbl_valuta" runat="server" cssclass="valore"></asp:label>
@@ -96,7 +100,7 @@
 											<span class="etichetta">CAP. SOCIALE</span>
 											<asp:label id="lbl_capsoc" runat="server" cssclass="valore"></asp:label>
 										</asp:TableCell>
-										<asp:TableCell class="separa"></asp:TableCell>
+										<asp:TableCell CssClass="separa"></asp:TableCell>
 										<asp:TableCell>
 											<span class="etichetta">ESERC. SOCIALE DA</span>
 											<asp:label id="lbl_iniese" runat="server" cssclass="valore"></asp:label>
@@ -109,7 +113,7 @@
 											<span class="etichetta">P.IVA/C.FISCALE</span>
 											<asp:label id="lbl_pivacf" runat="server" cssclass="valore"></asp:label>
 										</asp:TableCell>
-										<asp:TableCell class="separa"></asp:TableCell>
+										<asp:TableCell CssClass="separa"></asp:TableCell>
 										<asp:TableCell>
 											<span class="etichetta">STATO</span>
 											<asp:label id="lbl_stato" runat="server" cssclass="valore"></asp:label>
@@ -120,7 +124,7 @@
 											<span class="etichetta">TIPO SOCIETA'</span>
 											<asp:label id="lbl_tipsoc" runat="server" cssclass="valore"></asp:label>
 										</asp:TableCell>
-										<asp:TableCell class="separa"></asp:TableCell>
+										<asp:TableCell CssClass="separa"></asp:TableCell>
 										<asp:TableCell>
 											<span class="etichetta">CASSE</span>
 											<asp:label id="lbl_casse" runat="server" cssclass="valore"></asp:label>
