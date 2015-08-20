@@ -107,7 +107,7 @@ Public Class OBNews
                         tch.ColumnSpan = 1
 
                         tch.Text = dt.Rows(zx).Item("DATA") & ""
-                        tch.CssClass = "etichetta"
+                        'tch.CssClass = "etichetta"
 
                         tr.Cells.Add(tch)
 
