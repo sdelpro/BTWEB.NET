@@ -253,4 +253,8 @@ Public Class News
     Private Sub lblBackRicerche_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblBackRicerche.Click
         Me.Response.Redirect("FindNews.aspx")
     End Sub
+    Private Sub lbEstrazioni_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbEstrazioni.Click
+        If Session("PROFILO3") Then Server.Transfer("Download.aspx?CD=3")
+    End Sub
+
 End Class

@@ -93,12 +93,8 @@
 					<p>Per Problemi Tecnici: <a href="#">staff@brambillatitoli.it</a></p>
 				</div> <!-- fondo -->
 			</div> <!-- riga-fondo -->
-			
-			<!--<asp:imagebutton id="imgBtnInfo1" runat="server" ImageAlign="Middle" ImageUrl="Images\tv21.gif"></asp:imagebutton><asp:imagebutton id="imgBtnInfo2" runat="server" ImageAlign="Middle" ImageUrl="Images\tv22.gif"></asp:imagebutton></TD>-->
 		</form>
 	</body>
-
-<!--<TD vAlign="middle"><ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" TypeMenu="TopMenuLogin" ImagePath="Images/"></ucmenu:dhtmlmenucontrol></TD>-->
 				
 
 </HTML>

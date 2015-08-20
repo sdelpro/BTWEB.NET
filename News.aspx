@@ -30,13 +30,13 @@
 							<a href="IDXMenuIn.aspx">HOME</a>
 						</li>
 						<li>
-							<a href="AZIONI/AZMenu.aspx">AZIONI</a>
+							<a runat="server" id="lblAZIONI" href="AZIONI/AZMenu.aspx">AZIONI</a>
 						</li>
 						<li>
-							<a href="OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
+							<a runat="server" id="lblOBBLIGAZIONI" href="OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
 						</li>
 						<li class="selected">
-							<a href="FindNews.aspx">INFORMAZIONI VARIE</a>
+							<a runat="server" id="lblINFOVARIE" href="FindNews.aspx">INFORMAZIONI VARIE</a>
 						</li>
 						<li>
 							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
