@@ -18,6 +18,7 @@ Public Class AZSocieta
     Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbl_codisi As System.Web.UI.WebControls.Label
     Protected WithEvents casse As System.Web.UI.WebControls.Label
+    Protected WithEvents spn_ragsoc As System.Web.UI.WebControls.Label
     Protected WithEvents lbl_ragsoc As System.Web.UI.WebControls.Label
     Protected WithEvents lbl_sedamm As System.Web.UI.WebControls.Label
     Protected WithEvents lbl_sedleg As System.Web.UI.WebControls.Label
@@ -95,7 +96,12 @@ Public Class AZSocieta
                     lbl_codisi.Text = CType(dt.Rows(0).Item("ISINCODE") & "", String)
 
                     'tbCarPrinc.Rows(kCol).Cells(2).Text = "RAGIONE SOCIALE"
-                    lbl_ragsoc.Text = IIf(CType(dt.Rows(0).Item("RAGSOC") & "", String) <> "", CType(dt.Rows(0).Item("RAGSOC") & "", String), ".")
+                    Dim ragSoc As String = Trim(CType(dt.Rows(0).Item("RAGSOC") & "", String))
+                    If (ragSoc = ".") Then
+                        ragSoc = ""
+                    End If
+                    lbl_ragsoc.Text = IIf(ragSoc <> "", ragSoc, "")
+                    spn_ragsoc.Visible = (ragSoc <> "")
 
                     kCol += 1
 
@@ -159,98 +165,98 @@ Public Class AZSocieta
 
                 End If
 
-                'If CType(dt.Rows.Count, Boolean) Then
-                '    Session("ISINCODE") = CType(dt.Rows(0).Item("ISINCODE") & "", String)
-                '    strIsinDes = CType(dt.Rows(0).Item("ISINCODE") & "", String) & CType(dt.Rows(0).Item("RAGSOC") & "", String)
-                '    kCol += 1
-                '    kCol += 1
+                    'If CType(dt.Rows.Count, Boolean) Then
+                    '    Session("ISINCODE") = CType(dt.Rows(0).Item("ISINCODE") & "", String)
+                    '    strIsinDes = CType(dt.Rows(0).Item("ISINCODE") & "", String) & CType(dt.Rows(0).Item("RAGSOC") & "", String)
+                    '    kCol += 1
+                    '    kCol += 1
 
-                '    tbCarPrinc.Rows(kCol).Cells(0).Text = "CODICE ISIN"
-                '    tbCarPrinc.Rows(kCol).Cells(1).Text = CType(dt.Rows(0).Item("ISINCODE") & "", String)
-                '    tbCarPrinc.Rows(kCol).Cells(2).Text = "RAGIONE SOCIALE"
-                '    tbCarPrinc.Rows(kCol).Cells(3).Text = IIf(CType(dt.Rows(0).Item("RAGSOC") & "", String) <> "", CType(dt.Rows(0).Item("RAGSOC") & "", String), ".")
+                    '    tbCarPrinc.Rows(kCol).Cells(0).Text = "CODICE ISIN"
+                    '    tbCarPrinc.Rows(kCol).Cells(1).Text = CType(dt.Rows(0).Item("ISINCODE") & "", String)
+                    '    tbCarPrinc.Rows(kCol).Cells(2).Text = "RAGIONE SOCIALE"
+                    '    tbCarPrinc.Rows(kCol).Cells(3).Text = IIf(CType(dt.Rows(0).Item("RAGSOC") & "", String) <> "", CType(dt.Rows(0).Item("RAGSOC") & "", String), ".")
 
-                '    kCol += 1
+                    '    kCol += 1
 
-                '    tbCarPrinc.Rows(kCol).Cells(0).Text = "SEDE AMMINISTRATIVA"
-                '    tbCarPrinc.Rows(kCol).Cells(1).Text = IIf(CType(dt.Rows(0).Item("SEDEAMM") & "", String) <> "", CType(dt.Rows(0).Item("SEDEAMM") & "", String), ".")
-                '    tbCarPrinc.Rows(kCol).Cells(2).Text = "SEDE LEGALE"
-                '    tbCarPrinc.Rows(kCol).Cells(3).Text = IIf(CType(dt.Rows(0).Item("SEDELEG") & "", String) <> "", CType(dt.Rows(0).Item("SEDELEG") & "", String), ".")
+                    '    tbCarPrinc.Rows(kCol).Cells(0).Text = "SEDE AMMINISTRATIVA"
+                    '    tbCarPrinc.Rows(kCol).Cells(1).Text = IIf(CType(dt.Rows(0).Item("SEDEAMM") & "", String) <> "", CType(dt.Rows(0).Item("SEDEAMM") & "", String), ".")
+                    '    tbCarPrinc.Rows(kCol).Cells(2).Text = "SEDE LEGALE"
+                    '    tbCarPrinc.Rows(kCol).Cells(3).Text = IIf(CType(dt.Rows(0).Item("SEDELEG") & "", String) <> "", CType(dt.Rows(0).Item("SEDELEG") & "", String), ".")
 
-                '    kCol += 1
+                    '    kCol += 1
 
-                '    tbCarPrinc.Rows(kCol).Cells(0).Text = "TELEFONO"
-                '    tbCarPrinc.Rows(kCol).Cells(1).Text = IIf(CType(dt.Rows(0).Item("TEL") & "", String) <> "", CType(dt.Rows(0).Item("TEL") & "", String), ".")
-                '    tbCarPrinc.Rows(kCol).Cells(2).Text = "FAX"
-                '    tbCarPrinc.Rows(kCol).Cells(3).Text = IIf(CType(dt.Rows(0).Item("FAX") & "", String) <> "", CType(dt.Rows(0).Item("FAX") & "", String), ".")
-                '    tbCarPrinc.Rows(kCol).Cells(4).Text = "QUOTATA"
-                '    tbCarPrinc.Rows(kCol).Cells(5).Text = IIf(dt.Rows(0).Item("SOCQUOTATA"), "SI", "NO")
+                    '    tbCarPrinc.Rows(kCol).Cells(0).Text = "TELEFONO"
+                    '    tbCarPrinc.Rows(kCol).Cells(1).Text = IIf(CType(dt.Rows(0).Item("TEL") & "", String) <> "", CType(dt.Rows(0).Item("TEL") & "", String), ".")
+                    '    tbCarPrinc.Rows(kCol).Cells(2).Text = "FAX"
+                    '    tbCarPrinc.Rows(kCol).Cells(3).Text = IIf(CType(dt.Rows(0).Item("FAX") & "", String) <> "", CType(dt.Rows(0).Item("FAX") & "", String), ".")
+                    '    tbCarPrinc.Rows(kCol).Cells(4).Text = "QUOTATA"
+                    '    tbCarPrinc.Rows(kCol).Cells(5).Text = IIf(dt.Rows(0).Item("SOCQUOTATA"), "SI", "NO")
 
-                '    kCol += 1
+                    '    kCol += 1
 
-                '    tbCarPrinc.Rows(kCol).Cells(0).Text = "VALUTA"
-                '    tbCarPrinc.Rows(kCol).Cells(1).Text = CType(dt.Rows(0).Item("VALUTA") & "", String)
-                '    tbCarPrinc.Rows(kCol).Cells(2).Text = "CAP. SOCIALE"
-                '    tbCarPrinc.Rows(kCol).Cells(3).Text = Replace(Replace(Replace(dt.Rows(0).Item("CAPSOC"), ",", "#"), ".", ","), "#", ".")
-                '    'tbCarPrinc.Rows(kCol).Cells(3).Text = Format(CType(dt.Rows(0).Item("CAPSOCIALE") & "", Double), "###,###,###,###.00")
-                '    tbCarPrinc.Rows(kCol).Cells(4).Text = "ESERC. SOCIALE DA"
-                '    If IsDate(CType(dt.Rows(0).Item("INIZIOESERCIZIO") & "", String)) Then
-                '        tbCarPrinc.Rows(kCol).Cells(5).Text = CType(Format(dt.Rows(0).Item("INIZIOESERCIZIO"), "dd MMM") & "", String)
-                '    Else
-                '        tbCarPrinc.Rows(kCol).Cells(5).Text = "."
-                '    End If
-                '    'tbCarPrinc.Rows(kCol).Cells(5).Text = IIf(CType(dt.Rows(0).Item("INIZIOESERCIZIO") & "", String) <> "", CType(Format(dt.Rows(0).Item("INIZIOESERCIZIO"), "dd MMM") & "", String), ".")
-                '    tbCarPrinc.Rows(kCol).Cells(6).Text = "A"
-                '    If IsDate(CType(dt.Rows(0).Item("FINEESERCIZIO") & "", String)) Then
-                '        tbCarPrinc.Rows(kCol).Cells(7).Text = CType(Format(dt.Rows(0).Item("FINEESERCIZIO"), "dd MMM") & "", String)
-                '    Else
-                '        tbCarPrinc.Rows(kCol).Cells(7).Text = "."
-                '    End If
-                '    'tbCarPrinc.Rows(kCol).Cells(7).Text = IIf(IsDate(CType(dt.Rows(0).Item("FINEESERCIZIO") & "", String)), CType(Format(dt.Rows(0).Item("FINEESERCIZIO"), "dd MMM") & "", String), ".")
+                    '    tbCarPrinc.Rows(kCol).Cells(0).Text = "VALUTA"
+                    '    tbCarPrinc.Rows(kCol).Cells(1).Text = CType(dt.Rows(0).Item("VALUTA") & "", String)
+                    '    tbCarPrinc.Rows(kCol).Cells(2).Text = "CAP. SOCIALE"
+                    '    tbCarPrinc.Rows(kCol).Cells(3).Text = Replace(Replace(Replace(dt.Rows(0).Item("CAPSOC"), ",", "#"), ".", ","), "#", ".")
+                    '    'tbCarPrinc.Rows(kCol).Cells(3).Text = Format(CType(dt.Rows(0).Item("CAPSOCIALE") & "", Double), "###,###,###,###.00")
+                    '    tbCarPrinc.Rows(kCol).Cells(4).Text = "ESERC. SOCIALE DA"
+                    '    If IsDate(CType(dt.Rows(0).Item("INIZIOESERCIZIO") & "", String)) Then
+                    '        tbCarPrinc.Rows(kCol).Cells(5).Text = CType(Format(dt.Rows(0).Item("INIZIOESERCIZIO"), "dd MMM") & "", String)
+                    '    Else
+                    '        tbCarPrinc.Rows(kCol).Cells(5).Text = "."
+                    '    End If
+                    '    'tbCarPrinc.Rows(kCol).Cells(5).Text = IIf(CType(dt.Rows(0).Item("INIZIOESERCIZIO") & "", String) <> "", CType(Format(dt.Rows(0).Item("INIZIOESERCIZIO"), "dd MMM") & "", String), ".")
+                    '    tbCarPrinc.Rows(kCol).Cells(6).Text = "A"
+                    '    If IsDate(CType(dt.Rows(0).Item("FINEESERCIZIO") & "", String)) Then
+                    '        tbCarPrinc.Rows(kCol).Cells(7).Text = CType(Format(dt.Rows(0).Item("FINEESERCIZIO"), "dd MMM") & "", String)
+                    '    Else
+                    '        tbCarPrinc.Rows(kCol).Cells(7).Text = "."
+                    '    End If
+                    '    'tbCarPrinc.Rows(kCol).Cells(7).Text = IIf(IsDate(CType(dt.Rows(0).Item("FINEESERCIZIO") & "", String)), CType(Format(dt.Rows(0).Item("FINEESERCIZIO"), "dd MMM") & "", String), ".")
 
-                '    kCol += 1
+                    '    kCol += 1
 
-                '    tbCarPrinc.Rows(kCol).Cells(0).Text = "P.IVA/C.FISCALE"
-                '    tbCarPrinc.Rows(kCol).Cells(1).Text = IIf(CType(dt.Rows(0).Item("PIVA") & "", String) = "", ".", CType(dt.Rows(0).Item("PIVA") & "", String))
-                '    tbCarPrinc.Rows(kCol).Cells(2).Text = "STATO"
-                '    tbCarPrinc.Rows(kCol).Cells(3).Text = CType(dt.Rows(0).Item("STATO") & "", String)
-                '    tbCarPrinc.Rows(kCol).Cells(4).Text = "TIPO SOCIETA'"
-                '    tbCarPrinc.Rows(kCol).Cells(5).Text = IIf(CType(dt.Rows(0).Item("NOTA") & "", String) = "SOCIETA'", "SOCIETA' DIVERSA", CType(dt.Rows(0).Item("NOTA") & "", String))
-                '    If dt.Rows(0).Item("STATOTITOLO") = "ATTIVO" Then
-                '        tbCarPrinc.Rows(kCol).Cells(6).Text = "SOCIETA' ATTIVA"
-                '        tbCarPrinc.Rows(kCol).Cells(6).ForeColor = Color.Blue
-                '    Else
-                '        tbCarPrinc.Rows(kCol).Cells(6).Text = "SOCIETA' NON PIU' ATTIVA"
-                '        tbCarPrinc.Rows(kCol).Cells(6).ForeColor = Color.Red
-                '    End If
-                '    kCol += 1
-                '    kCol += 1
-                '    tbCarPrinc.Rows(kCol).Cells(0).Text = "CASSE"
+                    '    tbCarPrinc.Rows(kCol).Cells(0).Text = "P.IVA/C.FISCALE"
+                    '    tbCarPrinc.Rows(kCol).Cells(1).Text = IIf(CType(dt.Rows(0).Item("PIVA") & "", String) = "", ".", CType(dt.Rows(0).Item("PIVA") & "", String))
+                    '    tbCarPrinc.Rows(kCol).Cells(2).Text = "STATO"
+                    '    tbCarPrinc.Rows(kCol).Cells(3).Text = CType(dt.Rows(0).Item("STATO") & "", String)
+                    '    tbCarPrinc.Rows(kCol).Cells(4).Text = "TIPO SOCIETA'"
+                    '    tbCarPrinc.Rows(kCol).Cells(5).Text = IIf(CType(dt.Rows(0).Item("NOTA") & "", String) = "SOCIETA'", "SOCIETA' DIVERSA", CType(dt.Rows(0).Item("NOTA") & "", String))
+                    '    If dt.Rows(0).Item("STATOTITOLO") = "ATTIVO" Then
+                    '        tbCarPrinc.Rows(kCol).Cells(6).Text = "SOCIETA' ATTIVA"
+                    '        tbCarPrinc.Rows(kCol).Cells(6).ForeColor = Color.Blue
+                    '    Else
+                    '        tbCarPrinc.Rows(kCol).Cells(6).Text = "SOCIETA' NON PIU' ATTIVA"
+                    '        tbCarPrinc.Rows(kCol).Cells(6).ForeColor = Color.Red
+                    '    End If
+                    '    kCol += 1
+                    '    kCol += 1
+                    '    tbCarPrinc.Rows(kCol).Cells(0).Text = "CASSE"
 
-                '    kCol += 1
-                '    tbCarPrinc.Rows(kCol).Cells(0).Text = CType(dt.Rows(0).Item("CASSE") & "", String)
+                    '    kCol += 1
+                    '    tbCarPrinc.Rows(kCol).Cells(0).Text = CType(dt.Rows(0).Item("CASSE") & "", String)
 
-                'End If
+                    'End If
 
 
 
-                If Session("ISINCODE") <> "" Then
-                    sql = "SELECT  * FROM HISTORYSOCIETA WHERE ISINCORRENTE = '" & Session("ISINCODE") & "' ORDER BY DATAMODIFICA"
-                Else
-                    Response.Redirect("AZLista.aspx")
-                End If
-                .ReadGenericQuery(dtHis, sql)
-                kCol += 1
-                'tbCarPrinc.Rows(kCol).Cells(0).Text = "PRECEDENTI DENOMINAZIONI SOCIETA'"                
-                kCol += 1
-                If dtHis.Rows.Count > 0 Then
-                    For kCol2 = 0 To dtHis.Rows.Count - 1
-                        Call CreaTabella()
-                        lbl_prdeso.Text = CType(dtHis.Rows(kCol2).Item("DENOMINAZIONE") & "", String)
-                    Next
-                Else
-                    lbl_prdeso.Text() = "nessuna"
-                End If
+                    If Session("ISINCODE") <> "" Then
+                        sql = "SELECT  * FROM HISTORYSOCIETA WHERE ISINCORRENTE = '" & Session("ISINCODE") & "' ORDER BY DATAMODIFICA"
+                    Else
+                        Response.Redirect("AZLista.aspx")
+                    End If
+                    .ReadGenericQuery(dtHis, sql)
+                    kCol += 1
+                    'tbCarPrinc.Rows(kCol).Cells(0).Text = "PRECEDENTI DENOMINAZIONI SOCIETA'"                
+                    kCol += 1
+                    If dtHis.Rows.Count > 0 Then
+                        For kCol2 = 0 To dtHis.Rows.Count - 1
+                            Call CreaTabella()
+                            lbl_prdeso.Text = CType(dtHis.Rows(kCol2).Item("DENOMINAZIONE") & "", String)
+                        Next
+                    Else
+                        lbl_prdeso.Text() = "nessuna"
+                    End If
             Catch ex As Exception
                 Throw ex
             Finally
