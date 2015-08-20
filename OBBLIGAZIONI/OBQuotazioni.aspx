@@ -37,7 +37,7 @@
 							<a runat="server" id="lblINFOVARIE" href="../FindNews.aspx">INFORMAZIONI VARIE</a>
 						</li>
 						<li>
-							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
+							<a runat="server" id="lbEstrazioni" href="../Download.aspx?CD=3">ESTRAZIONI</a>
 						</li>
 						<li>
 							<a href="../Logout.aspx">LOGOUT</a>
@@ -58,39 +58,40 @@
 								<asp:label id="lblTIPORICERCA" runat="server"></asp:label><img src="../Images/label-sinistra-fine.png" alt=""></span>
 						</div>
 						<div id="contenuto">
-							<asp:DropDownList id="cmbAnno" runat="server" AutoPostBack="True"></asp:DropDownList>
+							
 							<asp:table id="tbCarPrinc" runat="server" Width="100%" class="quattro-colonne">
 								<asp:TableRow>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
+									<asp:TableCell ></asp:TableCell>
+									<asp:TableCell ></asp:TableCell>
+									<asp:TableCell ></asp:TableCell>
+									<asp:TableCell ></asp:TableCell>
+									<asp:TableCell ></asp:TableCell>
+									<asp:TableCell ></asp:TableCell>
+									<asp:TableCell ></asp:TableCell>
+									<asp:TableCell ></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ></asp:TableCell>
 									<asp:TableCell ColumnSpan="2" Width="25%"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="4" Width="87.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="2" Width="87.5%"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ></asp:TableCell>
+									<asp:TableCell ColumnSpan="4" ></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ></asp:TableCell>
+									<asp:TableCell ColumnSpan="2" ></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="3" Width="87.5%"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ></asp:TableCell>
+									<asp:TableCell ColumnSpan="3" ></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" ColumnSpan="8" Width="100%"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ></asp:TableCell>
+									<asp:TableCell ColumnSpan="7"><asp:DropDownList id="cmbAnno" runat="server" AutoPostBack="True"></asp:DropDownList></asp:TableCell>
 								</asp:TableRow>
 							</asp:table>
 							<asp:Table id="tbQuot" class="quattro-colonne" runat="server" Width="100%">
 								<asp:TableRow>
-									<asp:TableCell ColumnSpan="8" Width="100%"></asp:TableCell>
+									<asp:TableCell ColumnSpan="8" ></asp:TableCell>
 								</asp:TableRow>
 							</asp:Table></div>
 					</div>

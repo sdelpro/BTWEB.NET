@@ -32,7 +32,7 @@
 							<a runat="server" id="lblINFOVARIE" href="FindNews.aspx">INFORMAZIONI VARIE</a>
 						</li>
 						<li>
-							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
+							<a runat="server" id="lbEstrazioni" href="Download.aspx?CD=3">ESTRAZIONI</a>
 						</li>
 						<li>
 							<a href="Logout.aspx">LOGOUT</a>
@@ -48,9 +48,7 @@
 					<div id="interna">
 						<div id="top">
 							<span class="label-sinistra">INFORMAZIONI VARIE<img src="images/label-sinistra-fine.png" alt=""></span>
-							<div style="MARGIN-TOP:25px;MARGIN-LEFT:640px">
-								<asp:label id="lbUpd" style="Z-INDEX: 127" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
-							</div>
+							<asp:label id="lbUpd" CssClass="label-destra" runat="server">Ultimo Aggiornamento: 01/01/2006 - 12:44</asp:label>
 						</div> <!-- top -->
 						<div id="contenuto">
 							<table>

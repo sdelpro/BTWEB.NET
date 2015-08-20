@@ -8,7 +8,11 @@
 		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
 		<meta content="JavaScript" name="vs_defaultClientScript">
 		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
-		<LINK rel="stylesheet" type="text/css" href="../css/style.css"><link rel="stylesheet" href="../css/jquery-ui.css"><script src="../js//jquery-1.10.2.js"></script><script src="../js/jquery-ui.js"></script><script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" href="../css/jquery-ui.css">
+		<script src="../js//jquery-1.10.2.js"></script>
+		<script src="../js/jquery-ui.js"></script>
+		<script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
 	</HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
@@ -23,16 +27,15 @@
 						</li>
 						<li>
 							<a href="../AZIONI/AZMenu.aspx">AZIONI</a>
-							
 						</li>
 						<li class="selected">
-							<a runat="server" id="lblOBBLIGAZIONI" href="../OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>							
+							<a runat="server" id="lblOBBLIGAZIONI" href="../OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
 						</li>
 						<li>
-							<a runat="server" id="lblINFOVARIE" href="../FindNews.aspx">INFORMAZIONI VARIE</a>							
+							<a runat="server" id="lblINFOVARIE" href="../FindNews.aspx">INFORMAZIONI VARIE</a>
 						</li>
 						<li>
-							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
+							<a runat="server" id="lbEstrazioni" href="../Download.aspx?CD=3">ESTRAZIONI</a>
 						</li>
 						<li>
 							<a href="../Logout.aspx">LOGOUT</a>
@@ -41,10 +44,10 @@
 					<div id="ultima-connessione">
 						<asp:label id="lblLastLogin" runat="server">Ultima connessione</asp:label>
 					</div>
-				</div> <!-- menu -->				<div id="menuazioni" align="center">
+				</div> <!-- menu -->
+				<div id="menuazioni" align="center">
 					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol3" runat="server" TypeMenu="RicercheObbligazioni"></ucmenu:dhtmlmenucontrol>
 				</div>
-
 			</div> <!-- riga-menu -->
 			<div id="riga-pagina">
 				<div id="pagina">
@@ -76,12 +79,15 @@
 								</tr>
 								<tr>
 									<td>DATA NEWS</td>
-									<td><asp:textbox CssClass="datepicker"  id="txtDtInA" style="Z-INDEX: 110" tabIndex="6" placeholder="Da" runat="server"></asp:textbox></td>
-									<td><asp:textbox CssClass="datepicker"  id="txtDtInDa" style="Z-INDEX: 107" tabIndex="5" placeholder="A" runat="server"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker" id="txtDtInA" style="Z-INDEX: 110" tabIndex="6" placeholder="Da"
+											runat="server"></asp:textbox></td>
+									<td><asp:textbox CssClass="datepicker" id="txtDtInDa" style="Z-INDEX: 107" tabIndex="5" placeholder="A"
+											runat="server"></asp:textbox></td>
 								</tr>
 								<tr>
 									<td></td>
-									<td class="note" colspan="2">Attenzione: le date devono essere inserite nella forma GG/MM/AAAA</td>
+									<td class="note" colspan="2">Attenzione: le date devono essere inserite nella forma 
+										GG/MM/AAAA</td>
 								</tr>
 								<tr>
 									<td></td>
@@ -105,7 +111,6 @@
 							</div>
 							<asp:checkbox id="ckStor" style="Z-INDEX: 120" runat="server" Text="RICERCA ANCHE NELLO STORICO"
 								Visible="False"></asp:checkbox>
-							<asp:label id="Label1" style="Z-INDEX: 111" runat="server">NEWS</asp:label>
 						</div>
 					</div>
 				</div>

@@ -35,7 +35,7 @@
 							<a runat="server" id="lblINFOVARIE" href="../FindNews.aspx">INFORMAZIONI VARIE</a>
 						</li>
 						<li>
-							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
+							<a runat="server" id="lbEstrazioni" href="../Download.aspx?CD=3">ESTRAZIONI</a>
 						</li>
 						<li>
 							<a href="../Logout.aspx">LOGOUT</a>
@@ -45,6 +45,9 @@
 						<asp:label id="LBLLASTLOGIN" runat="server">Ultima connessione</asp:label>
 					</div>
 				</div> <!-- menu -->
+				<div id="menuazioni" align="center">
+					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" TypeMenu="RicercheObbligazioni"></ucmenu:dhtmlmenucontrol>
+				</div>
 			</div> <!-- riga-menu -->
 			<div id="riga-pagina">
 				<div id="pagina">

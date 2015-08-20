@@ -34,7 +34,7 @@
 						<li>
 							<a runat="server" id="lblINFOVARIE" href="../FindNews.aspx">INFORMAZIONI VARIE</a></li>
 						<li>
-							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton></li>
+							<a runat="server" id="lbEstrazioni" href="../Download.aspx?CD=3">ESTRAZIONI</a></li>
 						<li>
 							<A href="../Logout.aspx">LOGOUT</A>
 						</li>

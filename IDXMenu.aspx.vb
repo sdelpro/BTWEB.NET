@@ -18,7 +18,6 @@ Public Class IDXMenu
     Protected WithEvents lblPassword As System.Web.UI.WebControls.Label
     Protected WithEvents lblUser As System.Web.UI.WebControls.Label
     Protected WithEvents lblError As System.Web.UI.WebControls.Label
-    Protected WithEvents Dhtmlmenucontrol4 As BTWEB.DHTML.MenuControl.DHTMLMenuControl
     Protected WithEvents Linkbutton1 As System.Web.UI.WebControls.LinkButton
     Protected WithEvents Label1 As System.Web.UI.WebControls.Label
     Protected WithEvents lbStaffbt As System.Web.UI.WebControls.Label
@@ -51,7 +50,6 @@ Public Class IDXMenu
         With cdt
             Try
                 If Not Session("LOGIN_VALIDATE") = "ABILITATO_BT" Then
-                    Dhtmlmenucontrol4.Visible = False
                     Session("ADMIN_VALIDATE") = ""
                     Session("LOGIN_VALIDATE") = ""
                     sql = "SELECT * FROM CLIENTI WHERE USERNAME = '" & txtUsername.Text & "'"
@@ -167,7 +165,6 @@ Public Class IDXMenu
 
                 End If
             Catch ex As Exception
-                Dhtmlmenucontrol4.Visible = False
                 Session("LOGIN_VALIDATE") = "NO_PERMISSION"
                 Throw ex
             Finally
@@ -223,7 +220,6 @@ Public Class IDXMenu
             'Response.Redirect("IDXMenuIn.aspx")
             'FormsAuthentication.SetAuthCookie(Session("USERNAME"), False)
             lblError.Visible = False
-            Dhtmlmenucontrol4.Visible = True
             'If Not Session("USERNAME") = "btadmin" Then
             '    If Session("PROFILO1") Then lblAZIONI.Visible = True
             '    If Session("PROFILO2") Then lblOBBLIGAZIONI.Visible = True

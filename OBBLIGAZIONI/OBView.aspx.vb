@@ -16,7 +16,7 @@ Public Class OBView
     Protected WithEvents Image1 As System.Web.UI.WebControls.Image
     Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
     Protected WithEvents lblTIPORICERCA As System.Web.UI.WebControls.Label
-    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
 
@@ -79,7 +79,7 @@ Public Class OBView
                     'tbCarPrinc.Rows(kCol).Cells(3).Text = "DESCRIZIONE BREVE"
 
                     tbCarPrinc.Rows(kCol).Cells(0).Text = "ISINCODE"
-                    tbCarPrinc.Rows(kCol).Cells(1).Text = "SETTORE"
+                    tbCarPrinc.Rows(kCol).Cells(1).Text = CType(dt.Rows(0).Item("ISINCODE") & "", String)
 
                     radioString = "<INPUT type=""radio"" value=""off"" CHECKED>"
                     If CType(dt.Rows(0).Item("INDICIZZAZIONE") & "", Int16) = 0 Then
@@ -109,7 +109,7 @@ Public Class OBView
                     'tbCarPrinc.Rows(kCol).Cells(2).Text = CType(dt.Rows(0).Item("SETTORE") & "", String)
                     'tbCarPrinc.Rows(kCol).Cells(3).Text = CType(dt.Rows(0).Item("DESCRS") & "", String)
 
-                    tbCarPrinc.Rows(kCol).Cells(0).Text = CType(dt.Rows(0).Item("ISINCODE") & "", String)
+                    tbCarPrinc.Rows(kCol).Cells(0).Text = "SETTORE"
                     tbCarPrinc.Rows(kCol).Cells(1).Text = CType(dt.Rows(0).Item("SETTORE") & "", String)
 
                     kCol += 1

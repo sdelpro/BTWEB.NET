@@ -29,7 +29,7 @@ Public Class IDXMenuIn
     Protected WithEvents lbDal As System.Web.UI.WebControls.Label
     Protected WithEvents lbInfobt As System.Web.UI.WebControls.Label
     Protected WithEvents lbStaffbt As System.Web.UI.WebControls.Label
-    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lbScarA As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbScarB As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lbScarichi As System.Web.UI.WebControls.Label
@@ -91,10 +91,6 @@ Public Class IDXMenuIn
         lblINFOVARIE.Visible = True
         lblLastLogin.Visible = True
         lblLastLogin.Text = Session("LASTLOGIN")
-    End Sub
-
-    Private Sub lbEstrazioni_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbEstrazioni.Click
-        If Session("PROFILO3") Then Server.Transfer("Download.aspx?CD=3")
     End Sub
 
     Private Sub lbScarA_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbScarA.Click

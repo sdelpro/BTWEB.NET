@@ -15,10 +15,13 @@ Public Class News
     Protected WithEvents lblLastPage As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblNoRecord As System.Web.UI.WebControls.Label
     Protected WithEvents lblBackRicerche As System.Web.UI.WebControls.LinkButton
-    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
-    Protected WithEvents Label1 As System.Web.UI.WebControls.Label
+    Protected WithEvents lbEstrazioni As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblPrecPage As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblSuccPage As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents pnlRicerca As System.Web.UI.WebControls.Panel
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
@@ -112,6 +115,7 @@ Public Class News
         'Dim sql As String = "SELECT CONVERT(VARCHAR, NEWSGENERALI.DMODIFICA, 103) AS DMOD, NEWSGENERALI.TITOLO, NEWSGENERALI.IDNEWS, NEWSGENERALI.NEWS FROM NEWSGENERALI WHERE NEWSGENERALI.STATO = 'ATTIVA' AND TITOLO <> 'COMUNICAZIONE' ORDER BY DMODIFICA DESC "
         Dim sql As String = Session("AZ_SQL")
         Dim RecCorrenti As String
+        pnlRicerca.Visible = True
 
         With clt
             Call .ReadGenericQuery(dt, sql)
@@ -149,6 +153,7 @@ Public Class News
             Else
                 lblNoRecord.Visible = True
                 dtgOBB.Visible = False
+                pnlRicerca.Visible = False
             End If
             .Dispose()
         End With
@@ -253,8 +258,6 @@ Public Class News
     Private Sub lblBackRicerche_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblBackRicerche.Click
         Me.Response.Redirect("FindNews.aspx")
     End Sub
-    Private Sub lbEstrazioni_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbEstrazioni.Click
-        If Session("PROFILO3") Then Server.Transfer("Download.aspx?CD=3")
-    End Sub
+
 
 End Class

@@ -53,7 +53,7 @@ Public Class OBFindDesc
     Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
-    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.HtmlControls.HtmlAnchor
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
@@ -187,7 +187,7 @@ Public Class OBFindDesc
         Session("OB_SQL") = sql & " " & sSql & " ORDER BY DESCRL "
         Session("TYPE_GRID") = "FINDDESC"
 
-        Response.Redirect("oblista.aspx")
+        Response.Redirect("OBLista.aspx")
     End Sub
 
     Private Sub lblMenuRicerche_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)

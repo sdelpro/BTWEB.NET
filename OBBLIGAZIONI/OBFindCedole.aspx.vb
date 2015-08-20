@@ -47,7 +47,7 @@ Public Class OBFindCedole
     Protected WithEvents lbHelp5 As System.Web.UI.WebControls.Label
     Protected WithEvents txtIsincode As System.Web.UI.WebControls.TextBox
     Protected WithEvents lbUpd As System.Web.UI.WebControls.Label
-    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
 
@@ -145,7 +145,7 @@ Public Class OBFindCedole
         Session("OB_SQL") = sql & "  " & sSql & " ORDER BY DATACED ASC, DESCRL ASC"
         Session("TYPE_GRID") = "FINDCEDOLE"
 
-        Response.Redirect("oblista.aspx")
+        Response.Redirect("OBLista.aspx")
     End Sub
 
 End Class

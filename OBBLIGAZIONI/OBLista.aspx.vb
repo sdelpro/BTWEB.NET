@@ -15,11 +15,12 @@ Public Class OBLista
     Protected WithEvents lblTipoRicerca As System.Web.UI.WebControls.Label
     Protected WithEvents lblFirstPage As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblLastPage As System.Web.UI.WebControls.LinkButton
-    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblPrecPage As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblSuccPage As System.Web.UI.WebControls.LinkButton
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents pnlRicerca As System.Web.UI.WebControls.Panel
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
@@ -177,7 +178,7 @@ Public Class OBLista
                 RecCorrenti = "0"
             End If
             lblNumRecord.Text = "Obbligazioni: " & RecCorrenti & "/" & dt.Rows.Count & " | Pagine " & Int(TotRecord / 40) + 1
-
+            pnlRicerca.Visible = True
             If Not dt.Rows.Count = 0 Then
                 Select Case Session("TYPE_GRID")
                     Case "FINDDESC"
@@ -270,11 +271,14 @@ Public Class OBLista
             Else
                 dtgOBB.Visible = False
                 lblNoRecord.Visible = True
+                pnlRicerca.Visible = False
             End If
             .Dispose()
         End With
 
     End Sub
+
+
     Private Sub SetGridFindDesc(ByVal GridCtrl As WebControls.DataGrid)
 
         With GridCtrl

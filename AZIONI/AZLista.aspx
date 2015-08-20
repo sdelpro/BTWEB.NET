@@ -41,7 +41,7 @@
 							<a runat="server" id="lblINFOVARIE" href="../FindNews.aspx">INFORMAZIONI VARIE</a>
 						</li>
 						<li>
-							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
+							<a runat="server" id="lbEstrazioni" href="../Download.aspx?CD=3">ESTRAZIONI</a>
 						</li>
 						<li>
 							<a href="../Logout.aspx">LOGOUT</a>
@@ -65,7 +65,7 @@
 						<div id="contenuto">
 							<div id="risultati-ricerca">
 								<div id="risultati-ricerca-sopra">
-									<div class="risultati-ricerca-numero">
+									<asp:Panel id="pnlRicerca" CssClass="risultati-ricerca-numero" runat="server">
 										<div id="left">
 											<span class="totale">
 												<asp:label id="lblNumRecord" runat="server" /></span>
@@ -77,7 +77,7 @@
 												<asp:linkbutton id="lblSuccPage" runat="server">Next Page -</asp:linkbutton>
 												<asp:linkbutton id="lblLastPage" runat="server">Last Page</asp:linkbutton></span>
 										</div>
-									</div>
+									</asp:Panel>
 								</div>
 								<!--<div class="risultati-ricerca-elenco">-->
 								<asp:datagrid id="dtgAZIO" style="Z-INDEX: 101" runat="server" Width="100%" ShowFooter="True"

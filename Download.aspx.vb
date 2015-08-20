@@ -12,7 +12,11 @@ Public Class Download
     Protected WithEvents Image1 As System.Web.UI.WebControls.Image
     Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
     Protected WithEvents dg1 As System.Web.UI.WebControls.DataGrid
-    Protected WithEvents lbDir As System.Web.UI.WebControls.Label
+    Protected WithEvents lbDIR As System.Web.UI.WebControls.Label
+    Protected WithEvents lbEstrazioni As System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents Label1 As System.Web.UI.WebControls.Label
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
     'Do not delete or move it.
@@ -33,43 +37,38 @@ Public Class Download
 
         If Not Session("LOGIN_VALIDATE") = "ABILITATO_BT" Then
             Session("ERROR") = "Accesso non autorizzato. Effettuare il Login"
-            Me.Response.Redirect("../Error.aspx")
+            Me.Response.Redirect("Error.aspx")
         End If
-
-
-
 
         m_request = Request.QueryString("CD")
         Select Case m_request
             Case "3"
                 If Session("PROFILO3") Then
+                    lbDIR.Text = "  Elenco ESTRAZIONI"
                     m_PathouurceFile = configHelper.pathEstrazioni
-                    lbDir.Text = "  Elenco ESTRAZIONI"
                 Else
                     Session("ERROR") = "Accesso non autorizzato."
-                    Me.Response.Redirect("../Error.aspx")
+                    Me.Response.Redirect("Error.aspx")
                 End If
             Case "5"
                 If Session("PROFILO5") Then
+                    lbDIR.Text = "  Elenco SCARICHI A"
                     m_PathouurceFile = configHelper.pathScarichiA
-                    lbDir.Text = "  Elenco SCARICHI A"
-
                 Else
                     Session("ERROR") = "Accesso non autorizzato."
-                    Me.Response.Redirect("../Error.aspx")
+                    Me.Response.Redirect("Error.aspx")
                 End If
             Case "6"
                 If Session("PROFILO6") Then
+                    lbDIR.Text = "  Elenco SCARICHI B"
                     m_PathouurceFile = configHelper.pathScarichiB
-                    lbDir.Text = "  Elenco SCARICHI B"
-
                 Else
                     Session("ERROR") = "Accesso non autorizzato."
-                    Me.Response.Redirect("../Error.aspx")
+                    Me.Response.Redirect("Error.aspx")
                 End If
             Case Else
                 Session("ERROR") = "Accesso non autorizzato."
-                Me.Response.Redirect("../Error.aspx")
+                Me.Response.Redirect("Error.aspx")
         End Select
 
         If Not Page.IsPostBack Then

@@ -12,6 +12,11 @@ Public Class ControlPanel
     Protected WithEvents btnVR As System.Web.UI.WebControls.Button
     Protected WithEvents btnST As System.Web.UI.WebControls.Button
     Protected WithEvents dtgOBB As System.Web.UI.WebControls.DataGrid
+    Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
+    Protected WithEvents lbDIR As System.Web.UI.WebControls.Label
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents lbEstrazioni As System.Web.UI.HtmlControls.HtmlAnchor
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.

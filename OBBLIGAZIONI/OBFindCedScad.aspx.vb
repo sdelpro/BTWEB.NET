@@ -41,7 +41,7 @@ Public Class OBFindCedScad
     Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
-    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.HtmlControls.HtmlAnchor
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
@@ -181,7 +181,7 @@ Public Class OBFindCedScad
             Session("OB_SQL") = sSqlPro & " ORDER BY DATACED ASC, DESCRL ASC "
         End If
         Session("TYPE_GRID") = "FINDCEDOLE"
-        Response.Redirect("oblista.aspx")
+        Response.Redirect("OBLista.aspx")
     End Sub
 
 

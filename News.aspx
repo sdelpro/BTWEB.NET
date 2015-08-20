@@ -1,5 +1,5 @@
-<%@ Page Language="vb" AutoEventWireup="false" Codebehind="News.aspx.vb" Inherits="BTWEB.NET.News"%>
 <%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="News.aspx.vb" Inherits="BTWEB.NET.News"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -39,7 +39,7 @@
 							<a runat="server" id="lblINFOVARIE" href="FindNews.aspx">INFORMAZIONI VARIE</a>
 						</li>
 						<li>
-							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
+							<a runat="server" id="lbEstrazioni" href="Download.aspx?CD=3">ESTRAZIONI</a>
 						</li>
 						<li>
 							<a href="Logout.aspx">LOGOUT</a>
@@ -53,14 +53,13 @@
 			<div id="riga-pagina">
 				<div id="pagina">
 					<div id="interna">
-						<div style="align:center"><asp:label id="Label1" Font-Bold="true" runat="server" Visible="False">La ricerca non ha prodotto risultati</asp:label></div>
 						<div id="top">
 							<span class="label-sinistra">RICERCA<img src="Images/label-sinistra-fine.png" alt=""></span>
 						</div>
 						<div id="contenuto">
 							<div id="risultati-ricerca">
 								<div id="risultati-ricerca-sopra">
-									<div class="risultati-ricerca-numero">
+									<asp:Panel id="pnlRicerca" CssClass="risultati-ricerca-numero" runat="server">
 										<div id="left">
 											<span class="totale">
 												<asp:label id="lblNumRecord" runat="server" /></span>
@@ -72,7 +71,7 @@
 												<asp:linkbutton id="lblSuccPage" runat="server">Next Page -</asp:linkbutton>
 												<asp:linkbutton id="lblLastPage" runat="server">Last Page</asp:linkbutton></span>
 										</div>
-									</div>
+									</asp:Panel>
 								</div>
 								<asp:datagrid id="dtgOBB" runat="server" AllowSorting="True" Width="100%" ShowFooter="True" BorderWidth="0"
 									CellPadding="3" GridLines="Vertical" PageSize="40" AllowPaging="True" AutoGenerateColumns="False">
@@ -84,7 +83,11 @@
 									<FooterStyle ForeColor="White" BackColor="DarkGray"></FooterStyle>
 									<PagerStyle CssClass="pager-style" NextPageText="&amp;gt; Avanti" PrevPageText="&amp;lt; Indietro"
 										HorizontalAlign="Right" Position="Top" Mode="NumericPages"></PagerStyle>
-								</asp:datagrid></div>
+								</asp:datagrid>
+								<asp:label id="lblNoRecord" runat="server" Font-Size="Medium" Font-Names="Tahoma" Width="340px"
+									BorderColor="Transparent" BackColor="Transparent" ForeColor="Red" Font-Bold="True" Height="23px"
+									Visible="False">La ricerca non ha prodotto risultati</asp:label>
+							</div>
 						</div>
 					</div>
 				</div>

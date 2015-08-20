@@ -26,7 +26,7 @@ Public Class OBFindQuot
     Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
-    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.HtmlControls.HtmlAnchor
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
@@ -101,7 +101,7 @@ Public Class OBFindQuot
         Session("PAGE_DEFAULT_VIEW") = "OBView.aspx"
         Session("OB_SQL") = sql & " " & sSql & " ORDER BY DESCRL ASC"
         Session("TYPE_GRID") = "FINDQUOT"
-        Response.Redirect("oblista.aspx")
+        Response.Redirect("OBLista.aspx")
 
     End Sub
 

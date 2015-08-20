@@ -11,7 +11,7 @@ Public Class AZWarrant
     Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
-    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lbl_codisi As System.Web.UI.WebControls.Label
     Protected WithEvents lbl_denomi As System.Web.UI.WebControls.Label
     Protected WithEvents lbl_conese As System.Web.UI.WebControls.Label

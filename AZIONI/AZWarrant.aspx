@@ -30,7 +30,7 @@
 						<li>
 							<a runat="server" id="lblINFOVARIE" href="../FindNews.aspx">INFORMAZIONI VARIE</a></li>
 						<li>
-							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton></li>
+							<a runat="server" id="lbEstrazioni" href="../Download.aspx?CD=3">ESTRAZIONI</a></li>
 						<li>
 							<A href="../Logout.aspx">LOGOUT</A>
 						</li>
@@ -80,14 +80,14 @@
 			<asp:table id="tbCarPrinc" style="Z-INDEX: 100; LEFT: 8px; POSITION: absolute; TOP: 136px"
 				runat="server" Width="100%" Height="57" Font-Names="Tahoma" Font-Size="14px">
 				<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
-					<asp:TableCell BackColor="Transparent" ColumnSpan="1" Width="12.5%" BorderColor="Black"></asp:TableCell>
-					<asp:TableCell BackColor="Transparent" ColumnSpan="1" Width="12.5%" BorderColor="Black"></asp:TableCell>
-					<asp:TableCell BackColor="Transparent" ColumnSpan="1" Width="12.5%" BorderColor="Black"></asp:TableCell>
-					<asp:TableCell BackColor="Transparent" ColumnSpan="1" Width="12.5%" BorderColor="Black"></asp:TableCell>
-					<asp:TableCell BackColor="Transparent" ColumnSpan="1" Width="12.5%" BorderColor="Black"></asp:TableCell>
-					<asp:TableCell BackColor="Transparent" ColumnSpan="1" Width="12.5%" BorderColor="Black"></asp:TableCell>
-					<asp:TableCell BackColor="Transparent" ColumnSpan="1" Width="12.5%" BorderColor="Black"></asp:TableCell>
-					<asp:TableCell BackColor="Transparent" ColumnSpan="1" Width="12.5%" BorderColor="Black"></asp:TableCell>
+					<asp:TableCell BackColor="Transparent"  BorderColor="Black"></asp:TableCell>
+					<asp:TableCell BackColor="Transparent"  BorderColor="Black"></asp:TableCell>
+					<asp:TableCell BackColor="Transparent"  BorderColor="Black"></asp:TableCell>
+					<asp:TableCell BackColor="Transparent"  BorderColor="Black"></asp:TableCell>
+					<asp:TableCell BackColor="Transparent"  BorderColor="Black"></asp:TableCell>
+					<asp:TableCell BackColor="Transparent"  BorderColor="Black"></asp:TableCell>
+					<asp:TableCell BackColor="Transparent"  BorderColor="Black"></asp:TableCell>
+					<asp:TableCell BackColor="Transparent"  BorderColor="Black"></asp:TableCell>
 				</asp:TableRow>
 				<asp:TableRow Font-Size="12px" Font-Names="Tahoma">
 					<asp:TableCell BorderStyle="Solid" BorderWidth="1px" BackColor="Gainsboro" Width="12.5%" BorderColor="Black"></asp:TableCell>

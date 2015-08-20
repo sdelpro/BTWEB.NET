@@ -99,7 +99,8 @@ Namespace BTWEB.DHTML.MenuControl
                     Case enTypeMenu.Generale
                         CreateMenuGenerale(m_ImagePath)
                     Case enTypeMenu.Obbligazioni
-                        CreateMenuObbligazioni(m_ImagePath)
+                        'CreateMenuObbligazioni(m_ImagePath)
+                        CreateMenuRicercheObbligazioni(m_ImagePath)
                     Case enTypeMenu.RicercheObbligazioni
                         CreateMenuRicercheObbligazioni(m_ImagePath)
                     Case enTypeMenu.RicercheAzioni
@@ -117,7 +118,8 @@ Namespace BTWEB.DHTML.MenuControl
                     Case enTypeMenu.TopMenu
                         CreateTopSixMenu(m_ImagePath)
                     Case enTypeMenu.Azioni
-                        CreateMenuAzioni(m_ImagePath)
+                        'CreateMenuAzioni(m_ImagePath)
+                        CreateMenuRicercheAzioni(m_ImagePath)
                     Case enTypeMenu.Titoli
                         CreateMenuTitoli(m_ImagePath)
                 End Select

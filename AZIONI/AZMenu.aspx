@@ -1,5 +1,5 @@
-<%@ Page Language="vb" AutoEventWireup="false" Codebehind="AZMenu.aspx.vb" Inherits="BTWEB.NET.AZMenu"%>
 <%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="AZMenu.aspx.vb" Inherits="BTWEB.NET.AZMenu"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -8,7 +8,11 @@
 		<meta name="CODE_LANGUAGE" content="Visual Basic .NET 7.1">
 		<meta name="vs_defaultClientScript" content="JavaScript">
 		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
-		<LINK rel="stylesheet" type="text/css" href="../css/style.css"><link rel="stylesheet" href="../css/jquery-ui.css"><script src="../js//jquery-1.10.2.js"></script><script src="../js/jquery-ui.js"></script><script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" href="../css/jquery-ui.css">
+		<script src="../js//jquery-1.10.2.js"></script>
+		<script src="../js/jquery-ui.js"></script>
+		<script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
 	</HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
@@ -31,7 +35,7 @@
 							<a runat="server" id="lblINFOVARIE" href="../FindNews.aspx">INFORMAZIONI VARIE</a>
 						</li>
 						<li>
-							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
+							<a runat="server" id="lbEstrazioni" href="../Download.aspx?CD=3">ESTRAZIONI</a>
 						</li>
 						<li>
 							<a href="../Logout.aspx">LOGOUT</a>
@@ -41,6 +45,9 @@
 						<asp:label id="lblLastLogin" runat="server">Ultima connessione</asp:label>
 					</div>
 				</div> <!-- menu -->
+				<div id="menuazioni" align="center">
+					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" TypeMenu="RicercheAzioni"></ucmenu:dhtmlmenucontrol>
+				</div>
 			</div> <!-- riga-menu -->
 			<div id="riga-pagina">
 				<div id="pagina">
@@ -52,18 +59,18 @@
 						<div id="aree">
 							<ul>
 								<li>
-									<asp:linkbutton id="lbl1" runat="server">ANAGRAFE SOCIETA'</asp:linkbutton></li>
+									<asp:linkbutton id="lbl1" runat="server">ANAGRAFE SOCIETA'</asp:linkbutton>
 								<li>
-									<asp:linkbutton id="lbl2" runat="server">TITOLI SOCIETA'</asp:linkbutton></li>
+									<asp:linkbutton id="lbl2" runat="server">TITOLI SOCIETA'</asp:linkbutton>
 								<li>
-									<asp:linkbutton id="lbl3" runat="server">CONVOCAZIONI ASSEMBLEE</asp:linkbutton></li>
+									<asp:linkbutton id="lbl3" runat="server">CONVOCAZIONI ASSEMBLEE</asp:linkbutton>
 								<li>
-									<asp:linkbutton id="lbl4" runat="server">CDA</asp:linkbutton></li>
+									<asp:linkbutton id="lbl4" runat="server">CDA</asp:linkbutton>
 								<li>
-									<asp:linkbutton id="lbl5" runat="server">DIVIDENDI</asp:linkbutton></li>
+									<asp:linkbutton id="lbl5" runat="server">DIVIDENDI</asp:linkbutton>
 								<li>
 									<asp:linkbutton id="lbl6" runat="server">NEWS AZIONI</asp:linkbutton>
-									<asp:linkbutton id="lbl7" Visible="False" runat="server">AZIONI CONVERTIBILI</asp:linkbutton></li>
+									<asp:linkbutton id="lbl7" Visible="False" runat="server">AZIONI CONVERTIBILI</asp:linkbutton>
 								<li>
 									<asp:linkbutton id="lbl8" runat="server">OPERAZIONI SUL CAPITALE</asp:linkbutton>
 									<asp:linkbutton id="lbl9" Visible="False" runat="server">TABELLA WARRANT IN CIRCOLAZIONE</asp:linkbutton>

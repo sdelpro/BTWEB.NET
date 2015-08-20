@@ -17,7 +17,7 @@ Public Class OBMaggiorazioni
     Protected WithEvents Image1 As System.Web.UI.WebControls.Image
     Protected WithEvents lblTIPORICERCA As System.Web.UI.WebControls.Label
     Protected WithEvents lblNoRecord As System.Web.UI.WebControls.Label
-    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
 

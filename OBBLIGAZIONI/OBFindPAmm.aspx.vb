@@ -45,7 +45,7 @@ Public Class OBFindPAmm
     Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
-    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.HtmlControls.HtmlAnchor
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
@@ -144,7 +144,7 @@ Public Class OBFindPAmm
         Session("OB_SQL") = sql & " " & sSql
         Session("TYPE_GRID") = "FINDPAMM"
 
-        Response.Redirect("oblista.aspx")
+        Response.Redirect("OBLista.aspx")
     End Sub
 
 

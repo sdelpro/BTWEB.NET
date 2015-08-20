@@ -30,7 +30,7 @@ Public Class PageError
             Me.Response.Write("<META HTTP-EQUIV=""refresh"" CONTENT=5;URL=""IDXMenu.aspx""")
         Else
             If Left(Session("ERROR"), 9) <> "Tentativo" And Left(Session("ERROR"), 12) <> "Accesso alla" And Session("MACADDRESSSTATUS") = "" Then
-                Me.Response.Write("<META HTTP-EQUIV=""refresh"" CONTENT=5;URL=""IDXMenu.aspx""")
+                Me.Response.Write("<META HTTP-EQUIV=""refresh"" CONTENT=3;URL=""IDXMenu.aspx""")
             Else
                 Me.Response.Write("<META HTTP-EQUIV=""refresh"" CONTENT=3;URL=""" & Session("PAGERETURN") & """")
             End If

@@ -43,7 +43,7 @@ Public Class OBFindScad
     Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
-    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.HtmlControls.HtmlAnchor
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
@@ -130,9 +130,9 @@ Public Class OBFindScad
         End If
         Session("OB_SQL") = sql & " " & sSql & " ORDER BY DSCADENZA ASC, DESCRL ASC"
         Session("TYPE_GRID") = "FINDSCAD"
-        Response.Redirect("oblista.aspx")
+        Response.Redirect("OBLista.aspx")
         'If sFlag = "OK" Then
-        '    Response.Redirect("oblista.aspx")
+        '    Response.Redirect("OBLista.aspx")
         'Else
 
         '    MsgBox("Errore, le date inserite non sono valide", , "Ricerca", ))

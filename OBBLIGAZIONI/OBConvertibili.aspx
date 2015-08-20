@@ -32,7 +32,7 @@
 							<a runat="server" id="lblINFOVARIE" href="../FindNews.aspx">INFORMAZIONI VARIE</a>
 						</li>
 						<li>
-							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
+							<a runat="server" id="lbEstrazioni" href="../Download.aspx?CD=3">ESTRAZIONI</a>
 						</li>
 						<li>
 							<a href="../Logout.aspx">LOGOUT</a>
@@ -55,14 +55,14 @@
 						<div id="contenuto">
 							<asp:table id="tbCarPrinc"	class="quattro-colonne" runat="server" Width="100%">
 								<asp:TableRow >
-									<asp:TableCell ColumnSpan="1" Width="12.5%" BorderColor="Black"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%" BorderColor="Black"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%" BorderColor="Black"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%" BorderColor="Black"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%" BorderColor="Black"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%" BorderColor="Black"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%" BorderColor="Black"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%" BorderColor="Black"></asp:TableCell>
+									<asp:TableCell  BorderColor="Black"></asp:TableCell>
+									<asp:TableCell  BorderColor="Black"></asp:TableCell>
+									<asp:TableCell  BorderColor="Black"></asp:TableCell>
+									<asp:TableCell  BorderColor="Black"></asp:TableCell>
+									<asp:TableCell  BorderColor="Black"></asp:TableCell>
+									<asp:TableCell  BorderColor="Black"></asp:TableCell>
+									<asp:TableCell  BorderColor="Black"></asp:TableCell>
+									<asp:TableCell  BorderColor="Black"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
 									<asp:TableCell class="etichetta" Width="12.5%" ></asp:TableCell>

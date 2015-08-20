@@ -23,7 +23,7 @@ Public Class FindNews
     Protected WithEvents Image1 As System.Web.UI.WebControls.Image
     Protected WithEvents lbUpd As System.Web.UI.WebControls.Label
     Protected WithEvents lblLastLogin As System.Web.UI.WebControls.Label
-    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
@@ -101,4 +101,12 @@ Public Class FindNews
         Session("AZ_SQL") = sql & " AND TITOLO <> 'COMUNICAZIONE' ORDER BY DMODIFICA DESC"  ' ORDER BY DATA"
         Response.Redirect("News.aspx")
     End Sub
+
+    'Private Sub lbScarA_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbScarA.Click
+    '    If Session("PROFILO5") Then Server.Transfer("Download.aspx?CD=5")
+    'End Sub
+
+    'Private Sub lbScarB_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbScarB.Click
+    '    If Session("PROFILO6") Then Server.Transfer("Download.aspx?CD=6")
+    'End Sub
 End Class

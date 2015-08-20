@@ -33,7 +33,7 @@
 							<a runat="server" id="lblINFOVARIE" href="../FindNews.aspx">INFORMAZIONI VARIE</a>
 						</li>
 						<li>
-							<asp:linkbutton id="lbEstrazioni" Runat="server">ESTRAZIONI</asp:linkbutton>
+							<a runat="server" id="lbEstrazioni" href="../Download.aspx?CD=3">ESTRAZIONI</a>
 						</li>
 						<li>
 							<a href="../Logout.aspx">LOGOUT</a>
@@ -54,179 +54,179 @@
 								<asp:label id="lblTIPORICERCA" runat="server"></asp:label><img src="../Images/label-sinistra-fine.png" alt=""></span>
 						</div>
 						<div id="contenuto">
-							<asp:table id="tbCarPrinc" class="quattro-colonne" runat="server">
+							<asp:table id="tbCarPrinc" CssClass="quattro-colonne" runat="server">
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="4" Width="25%"></asp:TableCell>
-									<asp:TableCell RowSpan="2" ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell RowSpan="2" ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell RowSpan="2" ColumnSpan="1" Width="12.5%"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell ColumnSpan="4"></asp:TableCell>
+									<asp:TableCell RowSpan="2"></asp:TableCell>
+									<asp:TableCell RowSpan="2"></asp:TableCell>
+									<asp:TableCell RowSpan="2"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="4" Width="25%"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell ColumnSpan="4"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
 									<asp:TableCell ColumnSpan="7" Width="87.5%"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%" HorizontalAlign="Right"></asp:TableCell>
-									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%" HorizontalAlign="Right"></asp:TableCell>
-									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%" HorizontalAlign="Right"></asp:TableCell>
-									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%" HorizontalAlign="Right"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell HorizontalAlign="Right"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell HorizontalAlign="Right"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell HorizontalAlign="Right"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell HorizontalAlign="Right"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%" HorizontalAlign="Right"></asp:TableCell>
-									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%" HorizontalAlign="Right"></asp:TableCell>
-									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%" HorizontalAlign="Right"></asp:TableCell>
-									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%" HorizontalAlign="Right"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell HorizontalAlign="Right"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell HorizontalAlign="Right"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell HorizontalAlign="Right"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell HorizontalAlign="Right"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%" HorizontalAlign="Right"></asp:TableCell>
-									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%" HorizontalAlign="Right"></asp:TableCell>
-									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%" HorizontalAlign="Right"></asp:TableCell>
-									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%" HorizontalAlign="Right"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell HorizontalAlign="Right"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell HorizontalAlign="Right"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell HorizontalAlign="Right"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell HorizontalAlign="Right"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%" HorizontalAlign="Right"></asp:TableCell>
-									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%" HorizontalAlign="Right"></asp:TableCell>
-									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%" HorizontalAlign="Right"></asp:TableCell>
-									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
-									<asp:TableCell Width="12.5%" HorizontalAlign="Right"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell HorizontalAlign="Right"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell HorizontalAlign="Right"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell HorizontalAlign="Right"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell HorizontalAlign="Right"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell ColumnSpan="2" Width="25%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="2" Width="25%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="2" Width="25%"></asp:TableCell>
+									<asp:TableCell ColumnSpan="2"></asp:TableCell>
+									<asp:TableCell ColumnSpan="2"></asp:TableCell>
+									<asp:TableCell ColumnSpan="2"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell ColumnSpan="2" Width="25%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="2" Width="25%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="2" Width="25%"></asp:TableCell>
-								</asp:TableRow>
-								<asp:TableRow></asp:TableRow>
-								<asp:TableRow>
-									<asp:TableCell class="etichetta" ColumnSpan="8" Width="100%"></asp:TableCell>
-								</asp:TableRow>
-								<asp:TableRow>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-								</asp:TableRow>
-								<asp:TableRow>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-								</asp:TableRow>
-								<asp:TableRow>
-									<asp:TableCell class="etichetta" ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell class="etichetta" ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell class="etichetta" ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell class="etichetta" ColumnSpan="1" Width="12.5%"></asp:TableCell>
-								</asp:TableRow>
-								<asp:TableRow>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-								</asp:TableRow>
-								<asp:TableRow>
-									<asp:TableCell class="etichetta" ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell class="etichetta" ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell class="etichetta" ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell class="etichetta" ColumnSpan="1" Width="12.5%"></asp:TableCell>
-								</asp:TableRow>
-								<asp:TableRow>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
+									<asp:TableCell ColumnSpan="2"></asp:TableCell>
+									<asp:TableCell ColumnSpan="2"></asp:TableCell>
+									<asp:TableCell ColumnSpan="2"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow></asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" ColumnSpan="8" Width="100%"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ColumnSpan="8"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" ColumnSpan="2" Width="25%"></asp:TableCell>
-									<asp:TableCell class="etichetta" ColumnSpan="2" Width="25%"></asp:TableCell>
-									<asp:TableCell class="etichetta" ColumnSpan="2" Width="25%"></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell ColumnSpan="2" Width="25%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="2" Width="25%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="2" Width="25%"></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+								</asp:TableRow>
+								<asp:TableRow>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+								</asp:TableRow>
+								<asp:TableRow>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+								</asp:TableRow>
+								<asp:TableRow>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+								</asp:TableRow>
+								<asp:TableRow>
+									<asp:TableCell>dddd</asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow></asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" ColumnSpan="8" Width="100%"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ColumnSpan="8"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" ColumnSpan="2" Width="25%"></asp:TableCell>
-									<asp:TableCell class="etichetta" ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell class="etichetta" ColumnSpan="1" Width="12.5%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="1" Width="12.5%"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ColumnSpan="2"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ColumnSpan="2"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ColumnSpan="2"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" ColumnSpan="2" Width="25%"></asp:TableCell>
+									<asp:TableCell ColumnSpan="2"></asp:TableCell>
+									<asp:TableCell ColumnSpan="2"></asp:TableCell>
+									<asp:TableCell ColumnSpan="2"></asp:TableCell>
+								</asp:TableRow>
+								<asp:TableRow></asp:TableRow>
+								<asp:TableRow>
+									<asp:TableCell CssClass="etichetta" ColumnSpan="8"></asp:TableCell>
+								</asp:TableRow>
+								<asp:TableRow>
+									<asp:TableCell CssClass="etichetta" ColumnSpan="2"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+									<asp:TableCell CssClass="etichetta"></asp:TableCell>
+									<asp:TableCell></asp:TableCell>
+								</asp:TableRow>
+								<asp:TableRow>
+									<asp:TableCell CssClass="etichetta" ColumnSpan="2"></asp:TableCell>
 									<asp:TableCell ColumnSpan="4" Width="360px"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow></asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" ColumnSpan="8" Width="100%"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ColumnSpan="8"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" ColumnSpan="2" Width="25%"></asp:TableCell>
-									<asp:TableCell class="etichetta" ColumnSpan="2" Width="25%"></asp:TableCell>
-									<asp:TableCell class="etichetta" ColumnSpan="2" Width="25%"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ColumnSpan="2"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ColumnSpan="2"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ColumnSpan="2"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell ColumnSpan="2" Width="25%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="2" Width="25%"></asp:TableCell>
-									<asp:TableCell ColumnSpan="2" Width="25%"></asp:TableCell>
+									<asp:TableCell ColumnSpan="2"></asp:TableCell>
+									<asp:TableCell ColumnSpan="2"></asp:TableCell>
+									<asp:TableCell ColumnSpan="2"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell ColumnSpan="8" Width="100%"></asp:TableCell>
+									<asp:TableCell ColumnSpan="8"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" ColumnSpan="8" Width="100%"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ColumnSpan="8"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell ColumnSpan="8" Width="100%"></asp:TableCell>
+									<asp:TableCell ColumnSpan="8"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell ColumnSpan="8" Width="100%"></asp:TableCell>
+									<asp:TableCell ColumnSpan="8"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" ColumnSpan="8" Width="100%"></asp:TableCell>
+									<asp:TableCell CssClass="etichetta" ColumnSpan="8"></asp:TableCell>
 								</asp:TableRow>
 							</asp:table>
 						</div>

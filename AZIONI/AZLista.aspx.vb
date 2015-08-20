@@ -19,8 +19,9 @@ Public Class AZLista
     Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
-    Protected WithEvents lbEstrazioni As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lbEstrazioni As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblPrecPage As System.Web.UI.WebControls.LinkButton
+    Protected WithEvents pnlRicerca As System.Web.UI.WebControls.Panel
     Protected WithEvents lblSuccPage As System.Web.UI.WebControls.LinkButton
 
     'NOTE: The following placeholder declaration is required by the Web Form Designer.
@@ -63,9 +64,7 @@ Public Class AZLista
         Dim zy As Integer = 0
         Dim sql As String = Session("AZ_SQL")
         Dim RecCorrenti As String
-        lblNumRecord.Visible = True
-        lblFirstPage.Visible = True
-        lblLastPage.Visible = True
+        pnlRicerca.Visible = True
 
         lblTIPORICERCA.Text = ""
         lblTIPORICERCA.Text = Session("TIPORICERCA") '"Ricerca Corrente:  " & Session("TIPORICERCA")
@@ -273,17 +272,11 @@ Public Class AZLista
                     lblNumRecord.Text = "Azioni: " & RecCorrenti & "/" & TotRecord & " | Pagine " & dtgAZIO.PageCount
                 Else
                     dtgAZIO.Visible = False
-                    lblNoRecord.Visible = True
-                    lblNumRecord.Visible = False
-                    lblFirstPage.Visible = False
-                    lblLastPage.Visible = False
+                    pnlRicerca.Visible = False
                 End If
             Else
                 dtgAZIO.Visible = False
-                lblNoRecord.Visible = True
-                lblNumRecord.Visible = False
-                lblFirstPage.Visible = False
-                lblLastPage.Visible = False
+                pnlRicerca.Visible = False
             End If
             .Dispose()
         End With
