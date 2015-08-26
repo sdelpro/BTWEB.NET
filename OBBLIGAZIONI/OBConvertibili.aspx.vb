@@ -12,6 +12,9 @@ Public Class OBConvertibili
     Protected WithEvents tbCarPrinc As System.Web.UI.WebControls.Table
     Protected WithEvents lblTIPORICERCA As System.Web.UI.WebControls.Label
     Protected WithEvents lblNoRecord As System.Web.UI.WebControls.Label
+    Protected WithEvents lblOBBLIGAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents lblINFOVARIE As System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents lbEstrazioni As System.Web.UI.HtmlControls.HtmlAnchor
 
     'NOTA: la seguente dichiarazione è richiesta da Progettazione Web Form.
     'Non spostarla o rimuoverla.
@@ -123,7 +126,7 @@ Public Class OBConvertibili
                     Else
                         lblNoRecord.Visible = True
                         kCol += 1
-                        tbCarPrinc.Rows(kCol).Cells(0).Text = "<iframe name=""I1"" width=""100%"" height=""305"" frameborder=""0"" src=""" & "" & """></iframe>"
+                        'tbCarPrinc.Rows(kCol).Cells(0).Text = "<iframe name=""I1"" width=""100%"" height=""305"" frameborder=""0"" src=""" & "" & """></iframe>"
                     End If
                     kCol += 1
                     tbCarPrinc.Rows(kCol).Cells(0).Text = "TABELLA DI PARITÀ"

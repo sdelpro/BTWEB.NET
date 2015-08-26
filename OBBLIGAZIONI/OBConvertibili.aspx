@@ -1,5 +1,5 @@
-<%@ Page Language="vb" AutoEventWireup="false" Codebehind="OBConvertibili.aspx.vb" Inherits="BTWEB.NET.OBConvertibili"%>
 <%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="OBConvertibili.aspx.vb" Inherits="BTWEB.NET.OBConvertibili"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -9,7 +9,11 @@
 		<meta name="CODE_LANGUAGE" content="Visual Basic .NET 7.1">
 		<meta name="vs_defaultClientScript" content="JavaScript">
 		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
-		<LINK rel="stylesheet" type="text/css" href="../css/style.css"><link rel="stylesheet" href="../css/jquery-ui.css"><script src="../js//jquery-1.10.2.js"></script><script src="../js/jquery-ui.js"></script><script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" href="../css/jquery-ui.css">
+		<script src="../js//jquery-1.10.2.js"></script>
+		<script src="../js/jquery-ui.js"></script>
+		<script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
 	</HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
@@ -53,19 +57,19 @@
 								<asp:label id="lblTIPORICERCA" runat="server"></asp:label><img src="../Images/label-sinistra-fine.png" alt=""></span>
 						</div>
 						<div id="contenuto">
-							<asp:table id="tbCarPrinc"	class="quattro-colonne" runat="server" Width="100%">
-								<asp:TableRow >
-									<asp:TableCell  BorderColor="Black"></asp:TableCell>
-									<asp:TableCell  BorderColor="Black"></asp:TableCell>
-									<asp:TableCell  BorderColor="Black"></asp:TableCell>
-									<asp:TableCell  BorderColor="Black"></asp:TableCell>
-									<asp:TableCell  BorderColor="Black"></asp:TableCell>
-									<asp:TableCell  BorderColor="Black"></asp:TableCell>
-									<asp:TableCell  BorderColor="Black"></asp:TableCell>
-									<asp:TableCell  BorderColor="Black"></asp:TableCell>
+							<asp:table id="tbCarPrinc" class="quattro-colonne" runat="server" Width="100%">
+								<asp:TableRow>
+									<asp:TableCell BorderColor="Black"></asp:TableCell>
+									<asp:TableCell BorderColor="Black"></asp:TableCell>
+									<asp:TableCell BorderColor="Black"></asp:TableCell>
+									<asp:TableCell BorderColor="Black"></asp:TableCell>
+									<asp:TableCell BorderColor="Black"></asp:TableCell>
+									<asp:TableCell BorderColor="Black"></asp:TableCell>
+									<asp:TableCell BorderColor="Black"></asp:TableCell>
+									<asp:TableCell BorderColor="Black"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" Width="12.5%" ></asp:TableCell>
+									<asp:TableCell class="etichetta" Width="12.5%"></asp:TableCell>
 									<asp:TableCell ColumnSpan="2" Width="25%"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
@@ -86,7 +90,7 @@
 									<asp:TableCell ColumnSpan="8" Width="100%"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
-									<asp:TableCell class="etichetta" ColumnSpan="8" Width="100%" ></asp:TableCell>
+									<asp:TableCell class="etichetta" ColumnSpan="8" Width="100%"></asp:TableCell>
 								</asp:TableRow>
 								<asp:TableRow>
 									<asp:TableCell ColumnSpan="8" Width="100%"></asp:TableCell>
@@ -98,13 +102,12 @@
 									<asp:TableCell ColumnSpan="8" Width="100%"></asp:TableCell>
 								</asp:TableRow>
 							</asp:table>
+							<asp:label id="lblNoRecord" runat="server" BackColor="Transparent" Font-Size="Medium" Font-Names="Tahoma"
+								Font-Bold="True" ForeColor="Red" Visible="False" BorderColor="Transparent">Nessun periodo trovato</asp:label>
 						</div>
 					</div>
 				</div>
 			</div>
-			<asp:label id="lblNoRecord" style="Z-INDEX: 106; LEFT: 16px; POSITION: absolute; TOP: 360px"
-				runat="server" Height="23px" Width="360px" BackColor="Transparent" Font-Size="Medium" Font-Names="Tahoma"
-				Font-Bold="True" ForeColor="Red" Visible="False" BorderColor="Transparent">Nessun periodo trovato</asp:label>
 		</form>
 	</body>
 </HTML>
