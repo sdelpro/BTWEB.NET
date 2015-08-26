@@ -90,7 +90,7 @@
 				<div id="footer">
 					<p>Per Informazioni Commerciali: <a href="#">info@brambillatitoli.it</a></p>
 					<p>Per Problemi Tecnici: <a href="#">customersupport@brambillatitoli.it</a></p>
-					<p>Powered by: <a target="_blank" href="http://www.itcube.it">ITCube Consulting srl</a></p>
+					<p>Powered by: <a target="_blank" href="http://www.itcube.it">ITCube</a></p>
 				</div> <!-- fondo -->
 			</div> <!-- riga-fondo -->
 		</form>

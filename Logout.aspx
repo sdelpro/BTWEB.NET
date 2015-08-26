@@ -17,8 +17,7 @@
 		</div> <!-- riga-header -->
 		<div id="riga-menu">
 			<div id="menu">
-				<span class="intestazione">Tuttotitoli - Brambilla &amp; C. Servizi Telematici Srl 
-					- Via Caradosso, 14 - 20124 Milano - tel. 02.20.40.45.03 - fax 02.39.19.54.04 </span>
+				<span class="intestazione">TUTTO TITOLI - BOLLETTINO DELLE ESTRAZIONI dal 1876</span>
 			</div> <!-- menu -->
 		</div> <!-- riga-menu -->
 		<form id="Form1" method="post" runat="server">
