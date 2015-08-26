@@ -28,8 +28,7 @@
 		</div> <!-- riga-header -->
 		<div id="riga-menu">
 			<div id="menu">
-				<span class="intestazione">Tuttotitoli - Brambilla &amp; C. Servizi Telematici Srl 
-					- Via Caradosso, 14 - 20124 Milano - tel. 02.20.40.45.03 - fax 02.39.19.54.04 </span>
+				<span class="intestazione">TUTTO TITOLI - BOLLETTINO DELLE ESTRAZIONI dal 1876</span>
 			</div> <!-- menu -->
 		</div> <!-- riga-menu -->
 		<form id="Form1" method="post" runat="server">
@@ -39,7 +38,7 @@
 						<div id="top">
 							<div>
 							<span class="label-sinistra">LOGIN<img src="images/label-sinistra-fine.png" alt=""></span>
-							<asp:label id="lblLastLogin" runat="server" CssClass="label-destra">Tutto Titoli</asp:label></div>
+							<asp:label id="lblLastLogin" runat="server" CssClass="label-destra">TUTTO TITOLI</asp:label></div>
 						</div> <!-- top -->
 						<div id="login">
 							<form>
@@ -85,12 +84,13 @@
 				</div> <!-- pagina -->
 			</div> <!-- riga-pagina -->
 			<div id="riga-fondo">			
-				<div id="fondo">BOLLETTINO DELLE ESTRAZIONI dal 1876</div> <!-- fondo -->
+				<div id="fondo">Brambilla &amp; C. Servizi Telematici S.r.l &egrave; una societ&agrave; Analysis</div> <!-- fondo -->
 			</div> <!-- riga-fondo -->
 			<div id="riga-footer">
 				<div id="footer">
 					<p>Per Informazioni Commerciali: <a href="#">info@brambillatitoli.it</a></p>
-					<p>Per Problemi Tecnici: <a href="#">staff@brambillatitoli.it</a></p>
+					<p>Per Problemi Tecnici: <a href="#">customersupport@brambillatitoli.it</a></p>
+					<p>Powered by: <a target="_blank" href="http://www.itcube.it">ITCube Consulting srl</a></p>
 				</div> <!-- fondo -->
 			</div> <!-- riga-fondo -->
 		</form>
