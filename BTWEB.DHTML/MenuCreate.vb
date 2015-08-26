@@ -99,8 +99,8 @@ Namespace BTWEB.DHTML.MenuControl
                     Case enTypeMenu.Generale
                         CreateMenuGenerale(m_ImagePath)
                     Case enTypeMenu.Obbligazioni
-                        'CreateMenuObbligazioni(m_ImagePath)
-                        CreateMenuRicercheObbligazioni(m_ImagePath)
+                        CreateMenuObbligazioni(m_ImagePath)
+                        'CreateMenuRicercheObbligazioni(m_ImagePath)
                     Case enTypeMenu.RicercheObbligazioni
                         CreateMenuRicercheObbligazioni(m_ImagePath)
                     Case enTypeMenu.RicercheAzioni
@@ -118,8 +118,8 @@ Namespace BTWEB.DHTML.MenuControl
                     Case enTypeMenu.TopMenu
                         CreateTopSixMenu(m_ImagePath)
                     Case enTypeMenu.Azioni
-                        'CreateMenuAzioni(m_ImagePath)
-                        CreateMenuRicercheAzioni(m_ImagePath)
+                        CreateMenuAzioni(m_ImagePath)
+                        'CreateMenuRicercheAzioni(m_ImagePath)
                     Case enTypeMenu.Titoli
                         CreateMenuTitoli(m_ImagePath)
                 End Select
@@ -463,16 +463,16 @@ Namespace BTWEB.DHTML.MenuControl
             m_strScriptMenu += " <!--" & vbCrLf
             m_strScriptMenu += " stm_bm([""menu0544"",400,"""",""" & _PathImage & "blank.gif"",0,"""","""",0,0,250,0,1000,1,0,0,""""],this);" & vbCrLf
             m_strScriptMenu += " stm_bp(""p0"",[0,4,0,0,0,0,22,0,100,"""",-2,"""",-2,50,0,0,""#fffff7"",""#00547d"","""",3,1,1,""#00547d""]);" & vbCrLf
-            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Risultati Ricerca  "","""","""",-1,-1,0,""AZLista.aspx"",""_self"","""",""Visualizza Titoli"","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#b5bed6"",0,"""","""",3,3,1,1,""#00547d"",""#ffffff"",""#ffffff"",""#000000"",""8pt Arial"" ,""8pt Arial""  ,0,0]);" & vbCrLf
-            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Titoli Associati "","""","""",-1,-1,0,""AZTitoli.aspx"",""_self"","""",""Visualizza Titoli"","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#b5bed6"",0,"""","""",3,3,1,1,""#00547d"",""#ffffff"",""#ffffff"",""#000000"",""8pt Arial"" ,""8pt Arial""  ,0,0]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""Dividendi  "","""","""",-1,-1,0,""AZDividendi.aspx"",""_self"","""",""""]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i2"",""p0i1"",[0,""Quotazioni  "","""","""",-1,-1,0,""AZQuotazioni.aspx"",""_self"","""",""""]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i3"",""p0i2"",[0,""Operazioni sul Capitale  "","""","""",-1,-1,0,""AZOpCapitale.aspx"",""_self"","""",""""]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i4"",""p0i2"",[0,""News  "","""","""",-1,-1,0,""AZNews.aspx"",""_self"","""",""""]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i5"",""p0i2"",[0,""Assemblee  "","""","""",-1,-1,0,""AZAssemblee.aspx"",""_self"","""",""""]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i6"",""p0i2"",[0,""Warrant  "","""","""",-1,-1,0,""AZWarrant.aspx"",""_self"","""",""""]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i7"",""p0i2"",[0,""CDA  "","""","""",-1,-1,0,""AZCda.aspx"",""_self"","""",""""]);" & vbCrLf
-            m_strScriptMenu += " stm_aix(""p0i8"",""p0i2"",[0,""Convertibili  "","""","""",-1,-1,0,""AZConvertibili.aspx"",""_self"","""",""""]);" & vbCrLf
+            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Risultati Ricerca - "","""","""",-1,-1,0,""AZLista.aspx"",""_self"","""",""Visualizza Titoli"","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#b5bed6"",0,"""","""",3,3,1,1,""#00547d"",""#ffffff"",""#ffffff"",""#000000"",""8pt Arial"" ,""8pt Arial""  ,0,0]);" & vbCrLf
+            m_strScriptMenu += " stm_ai(""p0i0"",[0,""Titoli Associati - "","""","""",-1,-1,0,""AZTitoli.aspx"",""_self"","""",""Visualizza Titoli"","""","""",0,0,0,"""","""",0,0,0,0,1,""#00547d"",0,""#b5bed6"",0,"""","""",3,3,1,1,""#00547d"",""#ffffff"",""#ffffff"",""#000000"",""8pt Arial"" ,""8pt Arial""  ,0,0]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p0i1"",""p0i0"",[0,""Dividendi - "","""","""",-1,-1,0,""AZDividendi.aspx"",""_self"","""",""""]);" & vbCrLf
+            'm_strScriptMenu += " stm_aix(""p0i2"",""p0i1"",[0,""Quotazioni  "","""","""",-1,-1,0,""AZQuotazioni.aspx"",""_self"","""",""""]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p0i2"",""p0i1"",[0,""Operazioni sul Capitale - "","""","""",-1,-1,0,""AZOpCapitale.aspx"",""_self"","""",""""]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p0i3"",""p0i2"",[0,""News - "","""","""",-1,-1,0,""AZNews.aspx"",""_self"","""",""""]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p0i4"",""p0i2"",[0,""Assemblee - "","""","""",-1,-1,0,""AZAssemblee.aspx"",""_self"","""",""""]);" & vbCrLf
+            'm_strScriptMenu += " stm_aix(""p0i6"",""p0i2"",[0,""Warrant  "","""","""",-1,-1,0,""AZWarrant.aspx"",""_self"","""",""""]);" & vbCrLf
+            m_strScriptMenu += " stm_aix(""p0i5"",""p0i2"",[0,""CDA"","""","""",-1,-1,0,""AZCda.aspx"",""_self"","""",""""]);" & vbCrLf
+            'm_strScriptMenu += " stm_aix(""p0i8"",""p0i2"",[0,""Convertibili  "","""","""",-1,-1,0,""AZConvertibili.aspx"",""_self"","""",""""]);" & vbCrLf
             m_strScriptMenu += " stm_ep();" & vbCrLf
             m_strScriptMenu += " stm_em();" & vbCrLf
             m_strScriptMenu += " //-->" & vbCrLf

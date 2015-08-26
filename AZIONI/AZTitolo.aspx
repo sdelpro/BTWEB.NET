@@ -42,7 +42,7 @@
 					</div>
 				</div> <!-- menu -->
 				<div id="menuazioni" align="center">
-					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" TypeMenu="Titoli"></ucmenu:dhtmlmenucontrol>
+					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" TypeMenu="Azioni"></ucmenu:dhtmlmenucontrol>
 				</div>
 			</div> <!-- riga-menu -->
 			<div id="riga-pagina">
