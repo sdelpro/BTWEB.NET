@@ -1,4 +1,4 @@
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
+<%@ Register TagPrefix="btweb" TagName="DynamicMenu" Src="../DynamicMenu.ascx" %>
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="OBQuotazioni.aspx.vb" Inherits="BTWEB.NET.OBQuotazioni"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
@@ -47,7 +47,7 @@
 						<asp:label id="lblLastLogin" style="Z-INDEX: 114" runat="server">Ultima connessione</asp:label>
 					</div>
 					<div id="menuazioni" align="center">
-						<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol1" runat="server" TypeMenu="Obbligazioni" ImagePath="../Images/"></ucmenu:dhtmlmenucontrol></div>
+						<btweb:DynamicMenu id="Dhtmlmenucontrol1" runat="server" TypeMenu="Obbligazioni" ImagePath="../Images/"></btweb:DynamicMenu></div>
 				</div> <!-- menu -->
 			</div> <!-- riga-menu -->
 			<div id="riga-pagina">

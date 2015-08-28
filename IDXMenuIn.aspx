@@ -1,5 +1,4 @@
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="IDXMenuIn.aspx.vb" Inherits="BTWEB.NET.IDXMenuIn" %>
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -32,7 +31,7 @@
 							<a runat="server" id="lblINFOVARIE" href="FindNews.aspx">INFORMAZIONI VARIE</a>
 						</li>
 						<li>
-							<a runat="server" style="display:none" id="lbEstrazioni" href="Download.aspx?CD=3">ESTRAZIONI</a>
+							<a runat="server" style="DISPLAY:none" id="lbEstrazioni" href="Download.aspx?CD=3">ESTRAZIONI</a>
 						</li>
 						<li>
 							<a href="Logout.aspx">LOGOUT</a>
@@ -52,12 +51,12 @@
 								<TR>
 									<TD>
 										<asp:PlaceHolder ID="phScarichi" Runat="server" Visible="False">
-<asp:label id="lbScarichi" runat="server" ForeColor="#00547d" Visible="False" Font-Size="18px"
-												Font-Names="Verdana">SCARICHI</asp:label>&nbsp;&nbsp; 
-<asp:linkbutton id="lbScarA" runat="server" ForeColor="#00547d" Visible="False" Font-Size="18px"
-												Font-Names="Verdana" Height="16px" Width="43px">A</asp:linkbutton>
-<asp:linkbutton id="lbScarB" runat="server" ForeColor="#00547d" Visible="False" Font-Size="18px"
-												Font-Names="Verdana" Height="16px" Width="34px">B</asp:linkbutton></asp:PlaceHolder></TD>
+<asp:label id="lbScarichi" runat="server" Visible="False" Font-Names="Verdana" Font-Size="18px"
+												ForeColor="#00547d">SCARICHI</asp:label>&nbsp;&nbsp; 
+<asp:linkbutton id="lbScarA" runat="server" Visible="False" Font-Names="Verdana" Font-Size="18px"
+												ForeColor="#00547d" Width="43px" Height="16px">A</asp:linkbutton>
+<asp:linkbutton id="lbScarB" runat="server" Visible="False" Font-Names="Verdana" Font-Size="18px"
+												ForeColor="#00547d" Width="34px" Height="16px">B</asp:linkbutton></asp:PlaceHolder></TD>
 								</TR>
 								<TR>
 									<TD><asp:table id="tbComun" runat="server" CssClass="quattro-colonne">

@@ -1,8 +1,8 @@
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="Download.aspx.vb" Inherits="BTWEB.NET.Download"%>
+<%@ Register TagPrefix="btweb" TagName="DynamicMenu" Src="DynamicMenu.ascx" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
-	<HEAD>
+  <HEAD>
 		<title>...::: Brambilla Titoli - Tutto Titoli :::...</title>
 		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
 		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
@@ -17,7 +17,7 @@
 			//-->
 		</script>
 		<LINK rel="stylesheet" type="text/css" href="css/style.css">
-	</HEAD>
+  </HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
 			<div id="riga-header">
@@ -39,7 +39,7 @@
 							<a runat="server" id="lblINFOVARIE" href="FindNews.aspx">INFORMAZIONI VARIE</a>
 						</li>
 						<li class="selected">
-							<a runat="server" style="display:none" id="lbEstrazioni" href="Download.aspx?CD=3">ESTRAZIONI</a>
+							<a runat="server" style="DISPLAY:none" id="lbEstrazioni" href="Download.aspx?CD=3">ESTRAZIONI</a>
 						</li>
 						<li>
 							<a href="Logout.aspx">LOGOUT</a>

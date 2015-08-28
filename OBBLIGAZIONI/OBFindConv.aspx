@@ -1,5 +1,5 @@
+<%@ Register TagPrefix="btweb" TagName="DynamicMenu" Src="../DynamicMenu.ascx" %>
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="OBFindConv.aspx.vb" Inherits="BTWEB.NET.OBFindConv"%>
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -8,7 +8,11 @@
 		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
 		<meta content="JavaScript" name="vs_defaultClientScript">
 		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
-		<LINK rel="stylesheet" type="text/css" href="../css/style.css"><link rel="stylesheet" href="../css/jquery-ui.css"><script src="../js//jquery-1.10.2.js"></script><script src="../js/jquery-ui.js"></script><script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" href="../css/jquery-ui.css">
+		<script src="../js//jquery-1.10.2.js"></script>
+		<script src="../js/jquery-ui.js"></script>
+		<script>$(function() {$.datepicker.setDefaults($.datepicker.regional['it']); $(".datepicker").datepicker(); $(".datepicker").datepicker("option", "dateFormat", "dd/mm/yy");	});	</script>
 	</HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
@@ -23,17 +27,16 @@
 						</li>
 						<li>
 							<a href="../AZIONI/AZMenu.aspx">AZIONI</a>
-							
 						</li>
 						<li class="selected">
 							<a runat="server" id="lblOBBLIGAZIONI" href="../OBBLIGAZIONI/OBMenu.aspx">OBBLIGAZIONI</a>
-							
 						</li>
 						<li>
-							<a runat="server" id="lblINFOVARIE" href="../FindNews.aspx">INFORMAZIONI VARIE</a>							
+							<a runat="server" id="lblINFOVARIE" href="../FindNews.aspx">INFORMAZIONI VARIE</a>
 						</li>
 						<li>
-							<a runat="server" style="display:none" id="lbEstrazioni" href="../Download.aspx?CD=3">ESTRAZIONI</a>
+							<a runat="server" style="DISPLAY:none" id="lbEstrazioni" href="../Download.aspx?CD=3">
+								ESTRAZIONI</a>
 						</li>
 						<li>
 							<a href="../Logout.aspx">LOGOUT</a>
@@ -42,10 +45,10 @@
 					<div id="ultima-connessione">
 						<asp:label id="lblLastLogin" runat="server">Ultima connessione</asp:label>
 					</div>
-				</div> <!-- menu -->				<div id="menuazioni" align="center">
-					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol3" runat="server" TypeMenu="RicercheObbligazioni"></ucmenu:dhtmlmenucontrol>
+				</div> <!-- menu -->
+				<div id="menuazioni" align="center">
+					<btweb:DynamicMenu id="Dhtmlmenucontrol3" runat="server" TypeMenu="RicercheObbligazioni"></btweb:DynamicMenu>
 				</div>
-
 			</div> <!-- riga-menu -->
 			<div id="riga-pagina">
 				<div id="pagina">

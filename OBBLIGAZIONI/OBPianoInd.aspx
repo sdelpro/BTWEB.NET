@@ -1,5 +1,5 @@
 <%@ Page CodeBehind="OBPianoInd.aspx.vb" Language="vb" AutoEventWireup="false" Inherits="BTWEB.NET.OBPianoInd" %>
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
+<%@ Register TagPrefix="btweb" TagName="DynamicMenu" Src="../DynamicMenu.ascx" %>
 <HTML>
 	<HEAD>
 		<title>...::: Brambilla Titoli - Tutto Titoli :::...</title>
@@ -39,7 +39,7 @@
 						<asp:label id="lblLastLogin" style="Z-INDEX: 114" runat="server">Ultima connessione</asp:label>
 					</div>
 					<div id="menuazioni" align="center">
-						<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol1" runat="server" TypeMenu="Obbligazioni" ImagePath="../Images/"></ucmenu:dhtmlmenucontrol></div>
+						<btweb:DynamicMenu id="Dhtmlmenucontrol1" runat="server" TypeMenu="Obbligazioni" ImagePath="../Images/"></btweb:DynamicMenu></div>
 				</div> <!-- menu -->
 			</div> <!-- riga-menu -->
 			<div id="riga-pagina">

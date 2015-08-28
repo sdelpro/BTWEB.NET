@@ -1,5 +1,5 @@
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="AZConvertibili.aspx.vb" Inherits="BTWEB.NET.AZConvertibili"%>
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
+<%@ Register TagPrefix="btweb" TagName="DynamicMenu" Src="../DynamicMenu.ascx" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -42,7 +42,7 @@
 					<div id="ultima-connessione"><asp:label style="Z-INDEX: 114" id="lblLastLogin" runat="server">Ultima connessione</asp:label></div>
 				</div> <!-- menu -->
 				<div id="menuazioni" align="center">
-					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol2" runat="server" TypeMenu="Titoli"></ucmenu:dhtmlmenucontrol>
+					<btweb:DynamicMenu id="Dhtmlmenucontrol2" runat="server" TypeMenu="Titoli"></btweb:DynamicMenu>
 				</div>
 			</div> <!-- riga-menu -->
 			<div id="riga-pagina">

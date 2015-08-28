@@ -1,5 +1,5 @@
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="AZTitolo.aspx.vb" Inherits="BTWEB.NET.AZTitolo" %>
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
+<%@ Register TagPrefix="btweb" TagName="DynamicMenu" Src="../DynamicMenu.ascx" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
@@ -42,7 +42,7 @@
 					</div>
 				</div> <!-- menu -->
 				<div id="menuazioni" align="center">
-					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol4" runat="server" TypeMenu="Azioni"></ucmenu:dhtmlmenucontrol>
+					<btweb:DynamicMenu id="Dhtmlmenucontrol4" runat="server" TypeMenu="Azioni"></btweb:DynamicMenu>
 				</div>
 			</div> <!-- riga-menu -->
 			<div id="riga-pagina">
