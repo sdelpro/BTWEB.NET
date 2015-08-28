@@ -687,7 +687,7 @@ span.labels
 #sub-menu li {
 	float: left;
 	transition: background-color 0.3s ease;
-	font-size: 10px;
+	font-size: 11px;
 }
 #sub-menu li a {
 	color: #ffffff;
