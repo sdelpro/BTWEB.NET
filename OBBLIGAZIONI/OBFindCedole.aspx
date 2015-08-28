@@ -1,4 +1,4 @@
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
+<%@ Register TagPrefix="btweb" TagName="DynamicMenu" Src="../DynamicMenu.ascx" %>
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="OBFindCedole.aspx.vb" Inherits="BTWEB.NET.OBFindCedole"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
@@ -47,7 +47,7 @@
 					</div>
 				</div>
 				<div id="menuazioni" align="center">
-					<ucmenu:dhtmlmenucontrol id="Dhtmlmenucontrol3" runat="server" TypeMenu="RicercheObbligazioni"></ucmenu:dhtmlmenucontrol>
+					<btweb:DynamicMenu id="Dhtmlmenucontrol3" runat="server" TypeMenu="RicercheObbligazioni"></btweb:DynamicMenu>
 				</div>
 			</div> <!-- riga-menu -->
 			<div id="riga-pagina">

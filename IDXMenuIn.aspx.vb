@@ -20,7 +20,6 @@ Public Class IDXMenuIn
     Protected WithEvents lblAZIONI As System.Web.UI.HtmlControls.HtmlAnchor
     Protected WithEvents lblError As System.Web.UI.WebControls.Label
     Protected WithEvents tbComun As System.Web.UI.WebControls.Table
-    Protected WithEvents Dhtmlmenucontrol4 As BTWEB.DHTML.MenuControl.DHTMLMenuControl
     Protected WithEvents Linkbutton1 As System.Web.UI.WebControls.LinkButton
     Protected WithEvents Label1 As System.Web.UI.WebControls.Label
     Protected WithEvents Label2 As System.Web.UI.WebControls.Label
