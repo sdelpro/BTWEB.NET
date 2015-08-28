@@ -1,4 +1,4 @@
-<%@ Register TagPrefix="ucMenu" NameSpace="BTWEB.DHTML.MenuControl" Assembly="BTWEB.DHTML.Menu"%>
+<%@ Register TagPrefix="btweb" TagName="DynamicMenu" Src="DynamicMenu.ascx" %>
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="News.aspx.vb" Inherits="BTWEB.NET.News"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>

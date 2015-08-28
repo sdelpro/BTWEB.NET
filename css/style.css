@@ -656,4 +656,50 @@ span.labels
 	padding-left: 20px;
 }
 
+/* SUB MENU */
+#riga-sub-menu {
+	width: 100%;
+	text-align: center;
+	background-color: #E1E1E1;
+	position: relative;
+	z-index: 2;
+	-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+#sub-menu-cnt {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #00547d;
+	color: #ffffff;
+	display: block;
+	position: relative;
+}
+#sub-menu {
+	width: auto;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #00547d;
+	color: #ffffff;
+	display: table;
+	position: relative;
+}
+#sub-menu li {
+	float: left;
+	transition: background-color 0.3s ease;
+	font-size: 10px;
+}
+#sub-menu li a {
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	padding: 4px 4px 4px 10px;
+}
+#sub-menu li:hover {
+	background-color: #4DB1E2;
+}
+#sub-menu li.selected {
+	background-color: #4DB1E2;
+}
+
 
